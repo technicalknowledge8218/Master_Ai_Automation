@@ -490,9 +490,16 @@ def render_video(topic: str, character: str, voice_speaker: str, script_text: st
 
         # Write frame to pipe
         raw_bytes = frame.tobytes()
-        proc.stdin.write(raw_bytes)
+        try:
+            proc.stdin.write(raw_bytes)
+        except (BrokenPipeError, IOError):
+            print(f"\n      [FFmpeg Pipe] Reached end of audio stream at frame {f_idx}/{frame_count}. Completing video...")
+            break
 
-    proc.stdin.close()
+    try:
+        proc.stdin.close()
+    except Exception:
+        pass
     proc.wait()
 
     print(f"[5/5] Render complete! Master video saved at:\n      {out_mp4}")

@@ -12,7 +12,10 @@ import time
 import shutil
 import threading
 from pathlib import Path
-from http.server import HTTPServer, SimpleHTTPRequestHandler
+try:
+    from http.server import ThreadingHTTPServer as ServerClass, SimpleHTTPRequestHandler
+except ImportError:
+    from http.server import HTTPServer as ServerClass, SimpleHTTPRequestHandler
 import urllib.parse
 
 # Dynamic Workspace Discovery
@@ -443,7 +446,7 @@ def find_available_port(start_port=PORT, max_attempts=10):
 def run_server(port=None):
     active_port = find_available_port(PORT) if port is None else port
     server_address = ("", active_port)
-    httpd = HTTPServer(server_address, MasterAIDashboardHandler)
+    httpd = ServerClass(server_address, MasterAIDashboardHandler)
     print(f"============================================================")
     print(f" MASTER AI AUTONOMOUS DASHBOARD ONLINE")
     print(f" Powered by Zovron Technologies")

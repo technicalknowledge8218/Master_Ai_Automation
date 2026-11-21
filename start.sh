@@ -30,12 +30,17 @@ if ! command -v ffmpeg &> /dev/null; then
     fi
 fi
 
-# 3. Grant Storage access on Termux if on Android
+# 3. Grant Storage access & acquire wake-lock on Termux
 if command -v termux-setup-storage &> /dev/null; then
     if [ ! -d "$HOME/storage" ]; then
         echo "[+] Requesting Android storage permission..."
         termux-setup-storage
     fi
+fi
+
+if command -v termux-wake-lock &> /dev/null; then
+    echo "[+] Keeping CPU awake in background for browser rendering..."
+    termux-wake-lock
 fi
 
 # 4. Resolve Directory

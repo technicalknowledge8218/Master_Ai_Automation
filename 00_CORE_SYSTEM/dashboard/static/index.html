@@ -271,9 +271,9 @@
             <!-- 1. Topic / Core Hook -->
             <div class="space-y-1.5 mb-3.5">
               <label class="text-xs font-semibold text-slate-700 dark:text-slate-300">Topic / Core Hook</label>
-              <input id="input-topic" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-lpignore="true" data-i18n="placeholder_topic" value="Claude Code On Mobile Termux" 
+              <input id="input-topic" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-lpignore="true" data-i18n="placeholder_topic" value="" 
                      class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl px-3.5 py-2 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-cyan-500 transition-colors" 
-                     placeholder="e.g. Claude Code on Mobile Termux">
+                     placeholder="e.g. AI Voice Call Scam Alert">
             </div>
 
             <!-- 2. AI Grill-Me Story Director (Interactive Chat Box) -->
@@ -472,11 +472,11 @@
             <div class="space-y-1.5 mb-3.5">
               <div class="flex items-center justify-between">
                 <label class="text-xs font-semibold text-slate-700 dark:text-slate-300">Spoken Script (Pure Devanagari Hindi)</label>
-                <button type="button" onclick="insertSampleScript()" class="text-[11px] text-cyan-600 dark:text-cyan-400 hover:underline font-semibold">Sample Script</button>
+                <button type="button" onclick="insertSampleScript()" class="text-[11px] text-cyan-600 dark:text-cyan-400 hover:underline font-semibold">✨ Insert Sample</button>
               </div>
               <textarea id="input-script" rows="3" 
                         class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl p-3 text-xs sm:text-sm text-slate-900 dark:text-white focus:outline-none focus:border-cyan-500 transition-colors leading-relaxed"
-                        placeholder="पहले टर्मक्स में नोड जेएस इन्स्टॉल करो, फिर क्लॉड कमांड रन करो और पूरा एआई मोबाइल में रेडी!">पहले टर्मक्स में नोड जेएस इन्स्टॉल करो, फिर क्लॉड कमांड रन करो और पूरा एआई मोबाइल में रेडी!</textarea>
+                        placeholder="यहाँ अपनी कहानी या स्क्रिप्ट लिखें, या ऊपर 'Ask AI' से 15-सेकंड स्क्रिप्ट जनरेट करें..."></textarea>
             </div>
 
             <!-- Hidden Creator Name / Role Fields (Auto-synced) -->
@@ -489,13 +489,13 @@
               <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                 <label class="text-xs font-semibold text-slate-700 dark:text-slate-300">Save Video To Folder</label>
                 <div class="flex items-center gap-1 overflow-x-auto pb-0.5">
-                  <button type="button" onclick="setFastPath('Desktop')" class="px-2 py-0.5 rounded text-[10px] font-mono bg-obsidian-bg border border-obsidian-border hover:border-cyan-500/50 text-slate-700 dark:text-slate-300">Desktop</button>
+                  <button type="button" onclick="setFastPath('Termux')" class="px-2 py-0.5 rounded text-[10px] font-mono bg-cyan-500/10 border border-cyan-500/30 text-cyan-600 dark:text-cyan-400 font-bold">Termux</button>
                   <button type="button" onclick="setFastPath('Downloads')" class="px-2 py-0.5 rounded text-[10px] font-mono bg-obsidian-bg border border-obsidian-border hover:border-cyan-500/50 text-slate-700 dark:text-slate-300">Downloads</button>
+                  <button type="button" onclick="setFastPath('Desktop')" class="px-2 py-0.5 rounded text-[10px] font-mono bg-obsidian-bg border border-obsidian-border hover:border-cyan-500/50 text-slate-700 dark:text-slate-300">Desktop</button>
                   <button type="button" onclick="setFastPath('Videos')" class="px-2 py-0.5 rounded text-[10px] font-mono bg-obsidian-bg border border-obsidian-border hover:border-cyan-500/50 text-slate-700 dark:text-slate-300">Videos</button>
-                  <button type="button" onclick="setFastPath('Termux')" class="px-2 py-0.5 rounded text-[10px] font-mono bg-obsidian-bg border border-obsidian-border hover:border-cyan-500/50 text-slate-700 dark:text-slate-300">Termux</button>
                 </div>
               </div>
-              <input id="input-save-path" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-lpignore="true" value="Desktop/Master_AI_Videos" 
+              <input id="input-save-path" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-lpignore="true" value="" placeholder="Downloads/Master_AI_Videos (Default)" 
                      class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl px-3.5 py-2 text-xs text-slate-900 dark:text-white font-mono focus:outline-none focus:border-cyan-500 transition-colors">
               <span class="text-[10px] text-slate-500">Auto-saved to destination folder on completion.</span>
             </div>
@@ -503,8 +503,9 @@
             <!-- 7. Call to Action -->
             <div class="space-y-1.5 mb-6">
               <label class="text-xs font-semibold text-slate-700 dark:text-slate-300">Call To Action (CTA)</label>
-              <input id="input-cta" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-lpignore="true" data-i18n="placeholder_cta" value="Comment TERMUX for Full Guide" 
-                     class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl px-4 py-2.5 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-cyan-500 transition-colors">
+              <input id="input-cta" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-lpignore="true" data-i18n="placeholder_cta" value="" 
+                     class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl px-4 py-2.5 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-cyan-500 transition-colors"
+                     placeholder="e.g. Comment GUIDE for Full Code">
             </div>
 
             <!-- Action Button -->
@@ -1105,8 +1106,12 @@
     }
 
     function insertSampleScript() {
+      const topicEl = document.getElementById('input-topic');
+      if (topicEl && !topicEl.value) topicEl.value = "AI Voice Scam Se Kaise Bachein";
       document.getElementById('input-script').value = 
         "पहले टर्मक्स में नोड जेएस इन्स्टॉल करो, फिर क्लॉड कमांड रन करो और पूरा एआई मोबाइल में रेडी!";
+      const ctaEl = document.getElementById('input-cta');
+      if (ctaEl && !ctaEl.value) ctaEl.value = "Comment TERMUX for Full Guide";
     }
 
     async function refreshVideoList() {
@@ -1186,10 +1191,10 @@
           playVideo(data.video_url, data.name);
           refreshVideoList();
         } else {
-          statusText.textContent = `Error: ${data.error}`;
+          statusText.textContent = `❌ Render Error: ${data.error || 'Pipeline failed'}`;
         }
       } catch (err) {
-        statusText.textContent = `Server offline. Please run start_dashboard.bat (PC) or bash start.sh (Mobile).`;
+        statusText.textContent = `⚠️ Connection notice: ${err.message || 'Server timeout or offline'}. Check Termux terminal to ensure 'bash start.sh' is active.`;
       } finally {
         btn.disabled = false;
         btn.classList.remove('opacity-50');
