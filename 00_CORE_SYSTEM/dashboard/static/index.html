@@ -347,86 +347,73 @@
               
               <!-- Solo Cards (Default) -->
               <div id="char-grid-solo" class="grid grid-cols-2 sm:grid-cols-4 gap-2">
-                <label class="cursor-pointer">
-                  <input type="radio" name="character" value="dev" checked class="peer sr-only" onchange="syncCharacterDefault('Dev', 'Tech Solo')">
-                  <div class="p-2 sm:p-2.5 rounded-xl border-2 border-cyan-500 bg-cyan-500/10 peer-checked:border-cyan-500 peer-checked:bg-cyan-500/10 text-center transition-all char-pill">
-                    <svg class="w-5 h-5 mx-auto mb-0.5 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
-                    <span class="text-xs font-bold block text-slate-900 dark:text-slate-200">Dev</span>
-                    <span class="text-[10px] text-slate-500">Tech Solo</span>
-                  </div>
-                </label>
-                <label class="cursor-pointer">
-                  <input type="radio" name="character" value="neha" class="peer sr-only" onchange="syncCharacterDefault('Neha', 'Host / Lead')">
-                  <div class="p-2 sm:p-2.5 rounded-xl border border-obsidian-border bg-obsidian-bg peer-checked:border-cyan-500 peer-checked:bg-cyan-500/10 text-center transition-all char-pill">
-                    <svg class="w-5 h-5 mx-auto mb-0.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
-                    <span class="text-xs font-bold block text-slate-900 dark:text-slate-200">Neha</span>
-                    <span class="text-[10px] text-slate-500">Host / Lead</span>
-                  </div>
-                </label>
-                <label class="cursor-pointer">
-                  <input type="radio" name="character" value="kabir" class="peer sr-only" onchange="syncCharacterDefault('Dr. Kabir', 'Mentor')">
-                  <div class="p-2 sm:p-2.5 rounded-xl border border-obsidian-border bg-obsidian-bg peer-checked:border-cyan-500 peer-checked:bg-cyan-500/10 text-center transition-all char-pill">
-                    <svg class="w-5 h-5 mx-auto mb-0.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
-                    <span class="text-xs font-bold block text-slate-900 dark:text-slate-200">Dr. Kabir</span>
-                    <span class="text-[10px] text-slate-500">Mentor</span>
-                  </div>
-                </label>
-                <label class="cursor-pointer">
-                  <input type="radio" name="character" value="arjun" class="peer sr-only" onchange="syncCharacterDefault('Arjun', 'Builder')">
-                  <div class="p-2 sm:p-2.5 rounded-xl border border-obsidian-border bg-obsidian-bg peer-checked:border-cyan-500 peer-checked:bg-cyan-500/10 text-center transition-all char-pill">
-                    <svg class="w-5 h-5 mx-auto mb-0.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                    <span class="text-xs font-bold block text-slate-900 dark:text-slate-200">Arjun</span>
-                    <span class="text-[10px] text-slate-500">Builder</span>
-                  </div>
-                </label>
+                <input type="radio" name="character" value="dev" checked class="hidden">
+                <input type="radio" name="character" value="neha" class="hidden">
+                <input type="radio" name="character" value="kabir" class="hidden">
+                <input type="radio" name="character" value="arjun" class="hidden">
+
+                <div onclick="selectCharacter('dev', 'Dev', 'Tech Solo')" id="char-card-dev" data-char="dev" class="char-card p-2 sm:p-2.5 rounded-xl border-2 border-cyan-500 bg-cyan-500/10 cursor-pointer text-center transition-all shadow-sm">
+                  <svg class="char-icon w-5 h-5 mx-auto mb-0.5 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                  <span class="text-xs font-bold block text-slate-900 dark:text-slate-200">Dev</span>
+                  <span class="text-[10px] text-slate-500">Tech Solo</span>
+                </div>
+                <div onclick="selectCharacter('neha', 'Neha', 'Host / Lead')" id="char-card-neha" data-char="neha" class="char-card p-2 sm:p-2.5 rounded-xl border border-obsidian-border bg-obsidian-bg cursor-pointer text-center transition-all hover:border-slate-400">
+                  <svg class="char-icon w-5 h-5 mx-auto mb-0.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                  <span class="text-xs font-bold block text-slate-900 dark:text-slate-200">Neha</span>
+                  <span class="text-[10px] text-slate-500">Host / Lead</span>
+                </div>
+                <div onclick="selectCharacter('kabir', 'Dr. Kabir', 'Mentor')" id="char-card-kabir" data-char="kabir" class="char-card p-2 sm:p-2.5 rounded-xl border border-obsidian-border bg-obsidian-bg cursor-pointer text-center transition-all hover:border-slate-400">
+                  <svg class="char-icon w-5 h-5 mx-auto mb-0.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span class="text-xs font-bold block text-slate-900 dark:text-slate-200">Dr. Kabir</span>
+                  <span class="text-[10px] text-slate-500">Mentor</span>
+                </div>
+                <div onclick="selectCharacter('arjun', 'Arjun', 'Builder')" id="char-card-arjun" data-char="arjun" class="char-card p-2 sm:p-2.5 rounded-xl border border-obsidian-border bg-obsidian-bg cursor-pointer text-center transition-all hover:border-slate-400">
+                  <svg class="char-icon w-5 h-5 mx-auto mb-0.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                  <span class="text-xs font-bold block text-slate-900 dark:text-slate-200">Arjun</span>
+                  <span class="text-[10px] text-slate-500">Builder</span>
+                </div>
               </div>
 
               <!-- Duo Cards (2 Persons) -->
               <div id="char-grid-duo" class="hidden grid grid-cols-1 sm:grid-cols-3 gap-2">
-                <label class="cursor-pointer">
-                  <input type="radio" name="character" value="dev_neha" class="peer sr-only" onchange="syncCharacterDefault('Dev & Neha', 'Studio Banter')">
-                  <div class="p-2.5 rounded-xl border border-obsidian-border bg-obsidian-bg peer-checked:border-cyan-500 peer-checked:bg-cyan-500/10 transition-all char-pill flex items-center gap-2">
-                    <span class="text-lg">👥</span>
-                    <div>
-                      <span class="text-xs font-bold block text-slate-900 dark:text-slate-200">Dev & Neha</span>
-                      <span class="text-[10px] text-slate-500">Founder & Co-Host Banter</span>
-                    </div>
+                <input type="radio" name="character" value="dev_neha" class="hidden">
+                <input type="radio" name="character" value="aman_kabir" class="hidden">
+                <input type="radio" name="character" value="arjun_dev" class="hidden">
+
+                <div onclick="selectCharacter('dev_neha', 'Dev & Neha', 'Studio Banter')" id="char-card-dev_neha" data-char="dev_neha" class="char-card p-2.5 rounded-xl border border-obsidian-border bg-obsidian-bg cursor-pointer transition-all flex items-center gap-2">
+                  <span class="text-lg">👥</span>
+                  <div>
+                    <span class="text-xs font-bold block text-slate-900 dark:text-slate-200">Dev & Neha</span>
+                    <span class="text-[10px] text-slate-500">Founder & Co-Host Banter</span>
                   </div>
-                </label>
-                <label class="cursor-pointer">
-                  <input type="radio" name="character" value="aman_kabir" class="peer sr-only" onchange="syncCharacterDefault('Aman & Kabir', 'Student & Mentor')">
-                  <div class="p-2.5 rounded-xl border border-obsidian-border bg-obsidian-bg peer-checked:border-cyan-500 peer-checked:bg-cyan-500/10 transition-all char-pill flex items-center gap-2">
-                    <span class="text-lg">👥</span>
-                    <div>
-                      <span class="text-xs font-bold block text-slate-900 dark:text-slate-200">Aman & Dr. Kabir</span>
-                      <span class="text-[10px] text-slate-500">Curious Student & Expert</span>
-                    </div>
+                </div>
+                <div onclick="selectCharacter('aman_kabir', 'Aman & Kabir', 'Student & Mentor')" id="char-card-aman_kabir" data-char="aman_kabir" class="char-card p-2.5 rounded-xl border border-obsidian-border bg-obsidian-bg cursor-pointer transition-all flex items-center gap-2">
+                  <span class="text-lg">👥</span>
+                  <div>
+                    <span class="text-xs font-bold block text-slate-900 dark:text-slate-200">Aman & Dr. Kabir</span>
+                    <span class="text-[10px] text-slate-500">Curious Student & Expert</span>
                   </div>
-                </label>
-                <label class="cursor-pointer">
-                  <input type="radio" name="character" value="arjun_dev" class="peer sr-only" onchange="syncCharacterDefault('Arjun & Dev', 'Tech Builders')">
-                  <div class="p-2.5 rounded-xl border border-obsidian-border bg-obsidian-bg peer-checked:border-cyan-500 peer-checked:bg-cyan-500/10 transition-all char-pill flex items-center gap-2">
-                    <span class="text-lg">👥</span>
-                    <div>
-                      <span class="text-xs font-bold block text-slate-900 dark:text-slate-200">Arjun & Dev</span>
-                      <span class="text-[10px] text-slate-500">Junior & Lead Architect</span>
-                    </div>
+                </div>
+                <div onclick="selectCharacter('arjun_dev', 'Arjun & Dev', 'Tech Builders')" id="char-card-arjun_dev" data-char="arjun_dev" class="char-card p-2.5 rounded-xl border border-obsidian-border bg-obsidian-bg cursor-pointer transition-all flex items-center gap-2">
+                  <span class="text-lg">👥</span>
+                  <div>
+                    <span class="text-xs font-bold block text-slate-900 dark:text-slate-200">Arjun & Dev</span>
+                    <span class="text-[10px] text-slate-500">Junior & Lead Architect</span>
                   </div>
-                </label>
+                </div>
               </div>
 
               <!-- Group Card (3 Persons) -->
               <div id="char-grid-group" class="hidden">
-                <label class="cursor-pointer">
-                  <input type="radio" name="character" value="group" class="peer sr-only" onchange="syncCharacterDefault('Studio Trio', 'Team Panel')">
-                  <div class="p-3 rounded-xl border border-obsidian-border bg-obsidian-bg peer-checked:border-cyan-500 peer-checked:bg-cyan-500/10 transition-all char-pill flex items-center gap-3">
-                    <span class="text-xl">👥👥</span>
-                    <div>
-                      <span class="text-xs font-bold block text-slate-900 dark:text-slate-200">Full Studio Panel (Dev, Neha & Dr. Kabir)</span>
-                      <span class="text-[10px] text-slate-500">Multi-speaker team round-table analysis & reaction</span>
-                    </div>
+                <input type="radio" name="character" value="group" class="hidden">
+
+                <div onclick="selectCharacter('group', 'Studio Trio', 'Team Panel')" id="char-card-group" data-char="group" class="char-card p-3 rounded-xl border border-obsidian-border bg-obsidian-bg cursor-pointer transition-all flex items-center gap-3">
+                  <span class="text-xl">👥👥</span>
+                  <div>
+                    <span class="text-xs font-bold block text-slate-900 dark:text-slate-200">Full Studio Panel (Dev, Neha & Dr. Kabir)</span>
+                    <span class="text-[10px] text-slate-500">Multi-speaker team round-table analysis & reaction</span>
                   </div>
-                </label>
+                </div>
               </div>
 
             </div>
@@ -495,6 +482,7 @@
             <!-- Hidden Creator Name / Role Fields (Auto-synced) -->
             <input id="input-creator-name" type="hidden" value="Dev">
             <input id="input-creator-role" type="hidden" value="Tech Solo">
+            <span id="preview-badge" class="hidden">$ dev run --task</span>
 
             <!-- 6. Output Save Folder Path (Dynamic + 1-Click Shortcuts) -->
             <div class="space-y-1.5 mb-4">
@@ -833,6 +821,15 @@
 
   <!-- Client-side Logic Script -->
   <script>
+    function setLanguage(l) {
+      localStorage.setItem('preferred_language', l);
+      if (window.I18N_DICTIONARY && typeof window.applyLanguageDict === 'function') {
+        window.applyLanguageDict(l);
+      } else {
+        location.reload();
+      }
+    }
+
     function switchTab(tab) {
       ['creator', 'vault', 'coder', 'automation'].forEach(t => {
         const contentEl = document.getElementById(`content-${t}`);
@@ -900,9 +897,9 @@
         const grid = document.getElementById(`char-grid-${m}`);
         if (btn) {
           if (m === mode) {
-            btn.className = "cast-btn py-2 px-1.5 rounded-xl border-2 border-cyan-500 bg-cyan-500/10 text-xs font-bold text-slate-900 dark:text-white flex flex-col items-center gap-0.5 transition-all";
+            btn.className = "cast-btn py-2 px-1.5 rounded-xl border-2 border-cyan-500 bg-cyan-500/10 text-xs font-bold text-slate-900 dark:text-white flex flex-col items-center gap-0.5 transition-all shadow-sm";
           } else {
-            btn.className = "cast-btn py-2 px-1.5 rounded-xl border border-obsidian-border bg-obsidian-bg text-xs font-semibold text-slate-600 dark:text-slate-300 flex flex-col items-center gap-0.5 transition-all";
+            btn.className = "cast-btn py-2 px-1.5 rounded-xl border border-obsidian-border bg-obsidian-bg text-xs font-semibold text-slate-600 dark:text-slate-300 flex flex-col items-center gap-0.5 transition-all hover:border-slate-400";
           }
         }
         if (grid) {
@@ -912,17 +909,14 @@
 
       const lbl = document.getElementById('character-section-label');
       if (mode === 'solo') {
-        lbl.textContent = 'Select Character Archetype (Solo)';
-        const radio = document.querySelector('input[name="character"][value="dev"]');
-        if (radio) { radio.checked = true; syncCharacterDefault('Dev', 'Tech Solo'); }
+        if (lbl) lbl.textContent = 'Select Character Archetype (Solo)';
+        selectCharacter('dev', 'Dev', 'Tech Solo');
       } else if (mode === 'duo') {
-        lbl.textContent = 'Select 2-Person Cast (Duo Banter / Q&A)';
-        const radio = document.querySelector('input[name="character"][value="dev_neha"]');
-        if (radio) { radio.checked = true; syncCharacterDefault('Dev & Neha', 'Studio Banter'); }
+        if (lbl) lbl.textContent = 'Select 2-Person Cast (Duo Banter / Q&A)';
+        selectCharacter('dev_neha', 'Dev & Neha', 'Studio Banter');
       } else {
-        lbl.textContent = 'Select 3-Person Team Panel (Group)';
-        const radio = document.querySelector('input[name="character"][value="group"]');
-        if (radio) { radio.checked = true; syncCharacterDefault('Studio Trio', 'Team Panel'); }
+        if (lbl) lbl.textContent = 'Select 3-Person Team Panel (Group)';
+        selectCharacter('group', 'Studio Trio', 'Team Panel');
       }
     }
 
@@ -1033,22 +1027,57 @@
     }
 
     // Dynamic Creator Name and Badge Sync
+    let selectedCharacter = 'dev';
     const creatorNameInput = document.getElementById('input-creator-name');
     const badgePreview = document.getElementById('preview-badge');
-    creatorNameInput.addEventListener('input', (e) => {
-      const val = e.target.value.trim() || 'dev';
-      badgePreview.textContent = `$ ${val.toLowerCase()} run --task`;
-    });
+    if (creatorNameInput && badgePreview) {
+      creatorNameInput.addEventListener('input', (e) => {
+        const val = e.target.value.trim() || 'dev';
+        badgePreview.textContent = `$ ${val.toLowerCase()} run --task`;
+      });
+    }
 
     function syncCharacterDefault(name, role) {
-      document.getElementById('input-creator-name').value = name;
-      document.getElementById('input-creator-role').value = role;
-      badgePreview.textContent = `$ ${name.toLowerCase().replace(/[^a-z0-9]/g, '')} run --task`;
+      const nameEl = document.getElementById('input-creator-name');
+      if (nameEl) nameEl.value = name;
+      const roleEl = document.getElementById('input-creator-role');
+      if (roleEl) roleEl.value = role;
+      const badge = document.getElementById('preview-badge');
+      if (badge) {
+        badge.textContent = `$ ${name.toLowerCase().replace(/[^a-z0-9]/g, '')} run --task`;
+      }
+    }
+
+    function selectCharacter(charKey, name, role) {
+      selectedCharacter = charKey;
+      const radio = document.querySelector(`input[name="character"][value="${charKey}"]`);
+      if (radio) radio.checked = true;
+      syncCharacterDefault(name, role);
+
+      // Visual highlight toggle across all character cards
+      document.querySelectorAll('.char-card').forEach(card => {
+        const cId = card.getAttribute('data-char');
+        const icon = card.querySelector('.char-icon');
+        if (cId === charKey) {
+          card.className = "char-card p-2 sm:p-2.5 rounded-xl border-2 border-cyan-500 bg-cyan-500/10 cursor-pointer text-center transition-all shadow-sm";
+          if (icon) {
+            icon.classList.remove('text-slate-500', 'text-slate-400');
+            icon.classList.add('text-cyan-500');
+          }
+        } else {
+          card.className = "char-card p-2 sm:p-2.5 rounded-xl border border-obsidian-border bg-obsidian-bg cursor-pointer text-center transition-all hover:border-slate-400";
+          if (icon) {
+            icon.classList.remove('text-cyan-500');
+            icon.classList.add('text-slate-500');
+          }
+        }
+      });
     }
 
     // 1-Click Fast Destination Path Setters
     function setFastPath(type) {
       const pathInput = document.getElementById('input-save-path');
+      if (!pathInput) return;
       if (type === 'Desktop') pathInput.value = 'Desktop/Master_AI_Videos';
       if (type === 'Downloads') pathInput.value = 'Downloads/Master_AI_Videos';
       if (type === 'Videos') pathInput.value = 'Videos/Master_AI_Videos';
@@ -1064,10 +1093,18 @@
     };
 
     function playCurrentVoiceSample() {
-      const spk = document.getElementById('select-speaker').value;
+      const spkEl = document.getElementById('select-speaker');
+      const spk = spkEl ? spkEl.value : 'aditya';
       const audioEl = document.getElementById('inline-voice-sample');
-      audioEl.src = voiceSampleMap[spk] || voiceSampleMap['aditya'];
-      audioEl.play();
+      if (audioEl) {
+        audioEl.src = voiceSampleMap[spk] || voiceSampleMap['aditya'];
+        audioEl.play().catch(e => console.log('Audio autoplay prevented or sample missing:', e));
+      }
+    }
+
+    function playSpecificVoiceSample(spk) {
+      selectVoiceEngine(spk);
+      playCurrentVoiceSample();
     }
 
     function updateVoiceSampleSrc() {
@@ -1127,14 +1164,15 @@
     }
 
     async function startVideoRender() {
-      const topic = document.getElementById('input-topic').value;
-      const character = document.querySelector('input[name="character"]:checked').value;
-      const creator_name = document.getElementById('input-creator-name').value.trim() || 'Dev';
-      const creator_role = document.getElementById('input-creator-role').value.trim() || 'Tech Solo';
-      const speaker = document.getElementById('select-speaker').value;
-      const script = document.getElementById('input-script').value;
-      const cta = document.getElementById('input-cta').value;
-      const savePath = document.getElementById('input-save-path').value;
+      const topic = document.getElementById('input-topic')?.value || 'AI Automation on Mobile';
+      const charRadio = document.querySelector('input[name="character"]:checked');
+      const character = charRadio ? charRadio.value : (selectedCharacter || 'dev');
+      const creator_name = document.getElementById('input-creator-name')?.value.trim() || 'Dev';
+      const creator_role = document.getElementById('input-creator-role')?.value.trim() || 'Tech Solo';
+      const speaker = document.getElementById('select-speaker')?.value || 'aditya';
+      const script = document.getElementById('input-script')?.value || 'पहले टर्मक्स में नोड जेएस इन्स्टॉल करो!';
+      const cta = document.getElementById('input-cta')?.value || 'Comment TERMUX for Full Guide';
+      const savePath = document.getElementById('input-save-path')?.value || 'Desktop/Master_AI_Videos';
 
       const btn = document.getElementById('btn-render');
       const statusBox = document.getElementById('render-status-box');
@@ -1355,28 +1393,28 @@
     refreshVideoList();
   </script>
   <!-- Mobile Bottom Navigation Bar (Visible on mobile screens) -->
-  <nav class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-obsidian-surface/95 backdrop-blur-lg border-t border-obsidian-border px-2 py-2 flex justify-around items-center">
-    <button onclick="switchTab('creator')" id="mob-tab-creator" class="flex flex-col items-center gap-1 text-cyan-400">
+  <nav class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-obsidian-surface/95 backdrop-blur-lg border-t border-obsidian-border px-1 py-1.5 flex justify-between items-center shadow-lg">
+    <button onclick="switchTab('creator')" id="mob-tab-creator" class="flex flex-col items-center justify-center gap-0.5 text-cyan-500 flex-1 py-1">
       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-      <span class="text-[10px] font-semibold" data-i18n="nav_studio">Studio</span>
+      <span class="text-[9px] font-bold tracking-tight">Studio</span>
     </button>
-    <button onclick="switchTab('vault')" id="mob-tab-vault" class="flex flex-col items-center gap-1 text-slate-400 hover:text-white">
+    <button onclick="switchTab('vault')" id="mob-tab-vault" class="flex flex-col items-center justify-center gap-0.5 text-slate-400 hover:text-white flex-1 py-1">
       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/></svg>
-      <span class="text-[10px] font-semibold" data-i18n="nav_vault">Vault</span>
+      <span class="text-[9px] font-semibold tracking-tight">Vault</span>
     </button>
-    <button onclick="switchTab('coder')" id="mob-tab-coder" class="flex flex-col items-center gap-1 text-slate-400 hover:text-white relative">
-      <span class="absolute -top-0.5 right-2 w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+    <button onclick="switchTab('coder')" id="mob-tab-coder" class="flex flex-col items-center justify-center gap-0.5 text-slate-400 hover:text-white relative flex-1 py-1">
+      <span class="absolute top-0 right-3 sm:right-6 w-1.5 h-1.5 rounded-full bg-amber-400"></span>
       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-      <span class="text-[10px] font-semibold" data-i18n="nav_coder">Coder</span>
+      <span class="text-[9px] font-semibold tracking-tight">Coder</span>
     </button>
-    <button onclick="switchTab('automation')" id="mob-tab-automation" class="flex flex-col items-center gap-1 text-slate-400 hover:text-white relative">
-      <span class="absolute -top-0.5 right-2 w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+    <button onclick="switchTab('automation')" id="mob-tab-automation" class="flex flex-col items-center justify-center gap-0.5 text-slate-400 hover:text-white relative flex-1 py-1">
+      <span class="absolute top-0 right-3 sm:right-6 w-1.5 h-1.5 rounded-full bg-amber-400"></span>
       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>
-      <span class="text-[10px] font-semibold" data-i18n="nav_automation">Auto</span>
+      <span class="text-[9px] font-semibold tracking-tight">Auto</span>
     </button>
-    <button onclick="toggleTheme()" id="mob-theme-btn" class="flex flex-col items-center gap-1 text-slate-400 hover:text-white">
-      <span id="mob-theme-icon" class="text-base leading-none">🌙</span>
-      <span class="text-[10px] font-semibold">Theme</span>
+    <button onclick="toggleTheme()" id="mob-theme-btn" class="flex flex-col items-center justify-center gap-0.5 text-slate-400 hover:text-white flex-1 py-1">
+      <span id="mob-theme-icon" class="text-sm leading-none">🌙</span>
+      <span class="text-[9px] font-semibold tracking-tight">Theme</span>
     </button>
   </nav>
 
