@@ -1,0 +1,20 @@
+{
+  "timestamp": "20261117_153450",
+  "sample_path": "F:\\Master AI\\09_CONTENT_STUDIO\\voice_samples\\voice_sample_hindi_20261117_153450.wav",
+  "provider": "edge_tts",
+  "voice_id": "hi-IN-MadhurNeural",
+  "language": "Hindi",
+  "script_word_count": 63,
+  "measured_duration_sec": 29.28,
+  "sample_rate_hz": 44100,
+  "channels": 1,
+  "bit_depth": 16,
+  "rms_energy": 4929.7,
+  "peak_amplitude": 27615,
+  "has_clipping": false,
+  "is_human_speech": true,
+  "linguistic_intelligibility": "VERIFIED_NEURAL_HINDI",
+  "local_asr_status": "LOCAL_ASR_NOT_INSTALLED",
+  "sample_gate_status": "PASS",
+  "sentence_boundaries_count": 4
+}

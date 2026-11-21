@@ -1,0 +1,34 @@
+[
+  {
+    "act": 1,
+    "title": "अंक 1: सवाना की सुबह (Act I: Dawn on the Savannah)",
+    "duration_sec": 60.0,
+    "voiceover_hindi": "जब अफ्रीकी सवाना पर भोर की पहली किरण पड़ती है, तब जागता है प्रकृति का सबसे भव्य शासक — शेर। यह केवल एक शिकारी नहीं, बल्कि इस प्राचीन जंगल की धड़कन है।",
+    "voiceover_english": "When the first rays of dawn touch the African savannah, nature's most majestic ruler awakens — the lion. He is not merely a predator, but the heartbeat of this ancient wild.",
+    "visual_prompt": "Majestic male lion with full mane standing on rocky savannah outcrop at golden sunrise, wide panoramic shot"
+  },
+  {
+    "act": 2,
+    "title": "अंक 2: झुंड और शिकार का संतुलन (Act II: The Pride & The Hunt)",
+    "duration_sec": 90.0,
+    "voiceover_hindi": "शेर की ताकत उसकी एकांत शक्ति में नहीं, बल्कि उसके परिवार यानी 'प्राइड' के अटूट बंधन में है। शिकार की रणनीति में कुशल शेरनियों का तालमेल अद्वितीय होता है।",
+    "voiceover_english": "The lion's true strength lies not in isolation, but in the unbreakable bond of the pride. The cooperative hunting tactics of the lionesses are unmatched in nature.",
+    "visual_prompt": "Pride of lionesses coordinating stalking behavior across tall savannah grasslands, dynamic documentary action"
+  },
+  {
+    "act": 3,
+    "title": "अंक 3: सीमाओं की रक्षा और गर्जना (Act III: Territorial Defense)",
+    "duration_sec": 90.0,
+    "voiceover_hindi": "शेर की शक्तिशाली दहाड़ आठ किलोमीटर दूर तक सवाना को कंपा देती है। यह केवल एक चेतावनी नहीं, बल्कि सवाना के हर कोने में उसकी सम्प्रभुता का ऐलान है।",
+    "voiceover_english": "A lion's mighty roar can shake the savannah across eight kilometers. It is not just a warning, but a proclamation of sovereignty across every corner of the wild.",
+    "visual_prompt": "Roaring adult male lion, dusk atmosphere, intense acoustic posture, cinematic dramatic rim lighting"
+  },
+  {
+    "act": 4,
+    "title": "अंक 4: संरक्षण और अमर विरासत (Act IV: Twilight & Conservation)",
+    "duration_sec": 60.0,
+    "voiceover_hindi": "आज शेर विलुप्ति के खतरे का सामना कर रहे हैं। भारत के गिर राष्ट्रीय उद्यान से लेकर अफ्रीका के जंगलों तक, इनकी रक्षा करना हमारा कर्तव्य है ताकि यह राजसी गर्जना सदैव गूंजती रहे।",
+    "voiceover_english": "Today lions face the threat of extinction. From Gir National Park in India to Africa's protected reserves, safeguarding their habitat is our collective duty so this royal roar echoes forever.",
+    "visual_prompt": "Lion pride resting peacefully under star-lit acacia trees in twilight savannah, peaceful conservation atmosphere"
+  }
+]

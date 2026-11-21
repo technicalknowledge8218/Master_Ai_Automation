@@ -1,0 +1,20 @@
+[Script Info]
+Title: सवाना का सम्राट: शेर (The Sovereign Lion)
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.601
+PlayResX: 1920
+PlayResY: 1080
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,48,&H00FFFFFF,&H000000FF,&H00121212,&H80000000,-1,0,0,0,100,100,0,0,1,3,2,2,60,60,60,1
+Style: HindiDevanagari,Nirmala UI,52,&H00F5D547,&H000000FF,&H00101010,&H90000000,-1,0,0,0,100,100,0,0,1,3,2,2,60,60,70,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.50,0:00:03.30,HindiDevanagari,,0,0,0,,जब अफ्रीकी सवाना पर भोर की पहली किरण पड़ती है, तब जागता है प्रकृति का सबसे भव्य शासक — शेर। यह केवल एक शिकारी नहीं, बल्कि इस प्राचीन जंगल की धड़कन है।
+Dialogue: 0,0:00:03.50,0:00:06.30,HindiDevanagari,,0,0,0,,शेर की ताकत उसकी एकांत शक्ति में नहीं, बल्कि उसके परिवार यानी 'प्राइड' के अटूट बंधन में है। शिकार की रणनीति में कुशल शेरनियों का तालमेल अद्वितीय होता है।
+Dialogue: 0,0:00:06.50,0:00:09.30,HindiDevanagari,,0,0,0,,शेर की शक्तिशाली दहाड़ आठ किलोमीटर दूर तक सवाना को कंपा देती है। यह केवल एक चेतावनी नहीं, बल्कि सवाना के हर कोने में उसकी सम्प्रभुता का ऐलान है।
+Dialogue: 0,0:00:09.50,0:00:12.30,HindiDevanagari,,0,0,0,,आज शेर विलुप्ति के खतरे का सामना कर रहे हैं। भारत के गिर राष्ट्रीय उद्यान से लेकर अफ्रीका के जंगलों तक, इनकी रक्षा करना हमारा कर्तव्य है ताकि यह राजसी गर्जना सदैव गूंजती रहे।

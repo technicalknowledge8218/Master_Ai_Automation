@@ -1,0 +1,30 @@
+{
+  "id": "AGT-014",
+  "name": "Subtitle Specialist",
+  "slug": "subtitle_specialist",
+  "role": "Multilingual Subtitle & Captioning Engineer",
+  "category": "Production",
+  "primary_domain": "DOM-09",
+  "workspace_mode": "inherit",
+  "system_prompt": "You are the MASTER-AI Subtitle Specialist. You author synchronized SRT and ASS subtitle files in Hindi Devanagari and English, validate timecode overlaps, ensure reading speed compliance, and manage styling for broadcast readability.",
+  "tools_allowed": [
+    "read_file",
+    "write_file",
+    "query_memory"
+  ],
+  "tools_prohibited": [
+    "execute_subprocess",
+    "activate_paid_api",
+    "modify_system_configs"
+  ],
+  "input_schema": {
+    "segments": "array",
+    "format": "string"
+  },
+  "output_schema": {
+    "subtitle_path": "string",
+    "valid": "boolean",
+    "segment_count": "number"
+  },
+  "approval_status": "APPROVED_LOCAL"
+}

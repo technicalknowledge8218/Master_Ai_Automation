@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MasterAITaskSchema",
+  "type": "object",
+  "required": [
+    "task_id",
+    "title",
+    "description",
+    "complexity",
+    "required_agents",
+    "approval_state",
+    "created_at"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "pattern": "^TSK-[A-Za-z0-9_-]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3
+    },
+    "description": {
+      "type": "string"
+    },
+    "complexity": {
+      "type": "string",
+      "enum": [
+        "SIMPLE_SINGLE_AGENT",
+        "MODERATE_SEQUENTIAL",
+        "COMPLEX_PIPELINE",
+        "FULL_LIFECYCLE_FEDERATION"
+      ]
+    },
+    "required_agents": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "approval_state": {
+      "type": "string",
+      "enum": [
+        "PROPOSED",
+        "REVIEW_REQUIRED",
+        "APPROVED",
+        "EXECUTING",
+        "VERIFIED",
+        "COMPLETED",
+        "REJECTED",
+        "FAILED",
+        "ROLLED_BACK"
+      ]
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "context": {
+      "type": "object"
+    },
+    "timeout_seconds": {
+      "type": "integer",
+      "minimum": 1,
+      "default": 30
+    }
+  },
+  "additionalProperties": false
+}

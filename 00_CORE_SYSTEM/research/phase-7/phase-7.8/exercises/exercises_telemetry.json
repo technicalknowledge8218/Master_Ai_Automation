@@ -1,0 +1,86 @@
+[
+  {
+    "file": "ex01_cinematic_zoom.mp4",
+    "module": "Module 03: Cinematography",
+    "frames": 120,
+    "target_frames": 120,
+    "duration": 5.0,
+    "resolution": "1920x1080",
+    "size_kb": 530.0029296875,
+    "mean_dy": 0.20625495179031947,
+    "max_dy": 1.0105993146328274,
+    "status": "PASS"
+  },
+  {
+    "file": "ex02_character_reaction.mp4",
+    "module": "Module 05: Character Animation",
+    "frames": 120,
+    "target_frames": 120,
+    "duration": 5.0,
+    "resolution": "1920x1080",
+    "size_kb": 116.794921875,
+    "mean_dy": 0.09662035022500243,
+    "max_dy": 0.7654221126312564,
+    "status": "PASS"
+  },
+  {
+    "file": "ex03_dialogue_lipsync.mp4",
+    "module": "Module 05 & 09: Lip-Sync & Dialogue",
+    "frames": 120,
+    "target_frames": 120,
+    "duration": 5.0,
+    "resolution": "1920x1080",
+    "size_kb": 114.328125,
+    "mean_dy": 0.004442677306963297,
+    "max_dy": 0.024307439222866378,
+    "status": "PASS"
+  },
+  {
+    "file": "ex04_suspense_editing.mp4",
+    "module": "Module 04 & 11: Suspense & Metric Cuts",
+    "frames": 120,
+    "target_frames": 120,
+    "duration": 5.0,
+    "resolution": "1920x1080",
+    "size_kb": 118.931640625,
+    "mean_dy": 0.9482915012894473,
+    "max_dy": 78.29362494710836,
+    "status": "PASS"
+  },
+  {
+    "file": "ex05_action_impact.mp4",
+    "module": "Module 03 & 07: Action & Damped Shake",
+    "frames": 120,
+    "target_frames": 120,
+    "duration": 5.0,
+    "resolution": "1920x1080",
+    "size_kb": 413.0615234375,
+    "mean_dy": 0.06794202218605006,
+    "max_dy": 1.268334922379438,
+    "status": "PASS"
+  },
+  {
+    "file": "ex06_continuity_multishot.mp4",
+    "module": "Module 02 & 04: Multi-Shot Continuity",
+    "frames": 240,
+    "target_frames": 240,
+    "duration": 10.0,
+    "resolution": "1920x1080",
+    "size_kb": 97.8251953125,
+    "mean_dy": 0.11982654138856232,
+    "max_dy": 15.445646342267992,
+    "status": "PASS"
+  },
+  {
+    "file": "ex07_comedy_timing.mp4",
+    "module": "Module 11: Comedy Timing & Pacing",
+    "frames": 240,
+    "target_frames": 240,
+    "duration": 10.0,
+    "resolution": "1920x1080",
+    "size_kb": 196.607421875,
+    "mean_dy": 0.5666708858870938,
+    "max_dy": 117.97590942620019,
+    "status": "PASS"
+  }
+]

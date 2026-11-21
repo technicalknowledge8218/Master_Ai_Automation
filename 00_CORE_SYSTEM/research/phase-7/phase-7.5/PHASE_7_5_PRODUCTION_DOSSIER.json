@@ -1,0 +1,49 @@
+{
+  "title": "आखिरी चिट्ठी — स्मरण (The Last Letter: Remembrance)",
+  "phase": "7.5",
+  "description": "Broadcast-grade 30-second cinematic short film testing professional audio, voiceover, and editing engine.",
+  "master_video": {
+    "path": "F:\\Master AI\\09_CONTENT_STUDIO\\renders\\phase_7_5_acceptance\\aakhiri_chitti_cinematic_30s.mp4",
+    "sha256": "c30a6fc6cefcc289b337b68a4675449a30cec08ab686522f1d99b29b5ce454c2",
+    "duration_sec": 29.96,
+    "resolution": "1280x720",
+    "fps": 24.0,
+    "total_frames": 719,
+    "file_size_bytes": 6055245
+  },
+  "soundtrack": {
+    "path": "F:\\Master AI\\09_CONTENT_STUDIO\\renders\\phase_7_5_acceptance\\master_mixed_soundtrack_30s.wav",
+    "sha256": "561ff2cdb72771f8751964ff4720ec1f0416cf4411a5ecd2cc1885bd75203f2e",
+    "rms_dbfs": -20.49,
+    "peak_dbfs": -1.68,
+    "clipped_samples": 0,
+    "tracks_mixed": 8,
+    "music_license": "CC0 1.0 (Chopin Nocturne Op. 37 No. 1 via Musopen)",
+    "ambient_license": "Public Domain (Rain on Window)",
+    "spot_sfx_count": 5
+  },
+  "voiceover": {
+    "path": "F:\\Master AI\\09_CONTENT_STUDIO\\renders\\phase_7_5_acceptance\\aakhiri_chitti_narration_30s.wav",
+    "language": "Hindi",
+    "voice": "hi-IN-MadhurNeural",
+    "cues": 3,
+    "engine": "Edge-TTS 7.3.1 Neural",
+    "cost_usd": 0.0
+  },
+  "subtitles": {
+    "path": "F:\\Master AI\\09_CONTENT_STUDIO\\renders\\phase_7_5_acceptance\\aakhiri_chitti_30s.srt",
+    "sha256": "1ba98d96f7c39764501aa576bfdd40b7a783fd5e29b7301f9b5c39af9c55bf15",
+    "cues": 3,
+    "language": "Hindi"
+  },
+  "qa_verdict": {
+    "black_ratio": 0.0139,
+    "frozen_ratio": 0.2712,
+    "is_corrupted": false,
+    "audio_clipping": false,
+    "overall_status": "BROADCAST_COMPLIANT"
+  },
+  "zero_budget_verified": true,
+  "total_cost_usd": 0.0,
+  "generated_at": "2026-11-17T22:36:05Z"
+}

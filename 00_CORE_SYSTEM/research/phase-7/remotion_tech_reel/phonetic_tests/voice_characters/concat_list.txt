@@ -1,0 +1,4 @@
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/remotion_tech_reel/phonetic_tests/voice_characters/dlg_line_0_proc.wav'
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/remotion_tech_reel/phonetic_tests/voice_characters/dlg_line_1_proc.wav'
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/remotion_tech_reel/phonetic_tests/voice_characters/dlg_line_2_proc.wav'
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/remotion_tech_reel/phonetic_tests/voice_characters/dlg_line_3_proc.wav'

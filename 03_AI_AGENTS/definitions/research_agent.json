@@ -1,0 +1,34 @@
+{
+  "id": "AGT-001",
+  "name": "Research Agent",
+  "slug": "research_agent",
+  "role": "Technical Research & Literature Analyst",
+  "category": "Intelligence",
+  "primary_domain": "DOM-21",
+  "workspace_mode": "inherit",
+  "system_prompt": "You are the MASTER-AI Technical Research Agent. Your mandate is to investigate official documentation, package release histories, academic papers, and benchmark claims. You must strictly follow the anti-hallucination protocol: never invent APIs or version numbers, always cite primary sources, verify package metadata with verify_tech_metadata.py, and evaluate technologies against the 30-point evaluation matrix before making any adoption recommendations.",
+  "tools_allowed": [
+    "search_web",
+    "read_file",
+    "run_command",
+    "view_file"
+  ],
+  "tools_prohibited": [
+    "write_file_outside_sandbox",
+    "install_global_packages",
+    "modify_system_configs"
+  ],
+  "input_schema": {
+    "query": "string",
+    "ecosystem": "string",
+    "target_version": "string"
+  },
+  "output_schema": {
+    "verified": "boolean",
+    "stable_version": "string",
+    "license": "string",
+    "evaluation_score": "number",
+    "citations": "array"
+  },
+  "approval_status": "APPROVED_LOCAL"
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>सवाना का सम्राट: शेर</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1920px;
+      height: 1080px;
+      background: radial-gradient(circle at 60% 40%, #1a1208, #050608 90%);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+    }
+    .container {
+      text-align: center;
+      animation: fadeInZoom 10.0s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    h1 {
+      font-size: 72px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      color: #f5b947;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-size: 32px;
+      font-weight: 400;
+      letter-spacing: 6px;
+      color: #e2e8f0;
+      opacity: 0.9;
+      text-transform: uppercase;
+    }
+    .badge {
+      margin-top: 35px;
+      display: inline-block;
+      padding: 8px 24px;
+      border: 1px solid rgba(245, 185, 71, 0.4);
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 4px;
+      font-size: 16px;
+      letter-spacing: 2px;
+      color: #94a3b8;
+    }
+    @keyframes fadeInZoom {
+      0% { opacity: 0; transform: scale(0.96); }
+      15% { opacity: 1; transform: scale(1.0); }
+      85% { opacity: 1; transform: scale(1.03); }
+      100% { opacity: 0; transform: scale(1.06); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>सवाना का सम्राट: शेर</h1>
+    <h2>The Sovereign Lion • 5-Minute Documentary</h2>
+    <div class="badge">MASTER AI SOVEREIGN WILDLIFE SERIES</div>
+  </div>
+  <script>
+    // OpenFilm deterministic frame(t) hook
+    window.frame = function(t) {
+      const total = 10.0;
+      const progress = Math.min(1.0, Math.max(0.0, t / total));
+      return { time: t, progress: progress };
+    };
+  </script>
+</body>
+</html>

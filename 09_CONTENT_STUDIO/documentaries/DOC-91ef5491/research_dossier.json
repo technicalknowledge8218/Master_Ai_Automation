@@ -1,0 +1,23 @@
+{
+  "topic": "Lion (Panthera leo)",
+  "classification": {
+    "kingdom": "Animalia",
+    "class": "Mammalia",
+    "order": "Carnivora",
+    "family": "Felidae",
+    "genus": "Panthera",
+    "species": "Panthera leo"
+  },
+  "facts": [
+    "Lions are the only felids that live in social family groups known as prides.",
+    "Coordinated hunting is predominantly carried out by females in the pride.",
+    "Male lions possess a prominent mane serving as protective neck armor and vigor signaling.",
+    "Roar acoustic power can propagate over distances exceeding 8 kilometers.",
+    "Asiatic lions survive as an isolated population in Gir National Park, India."
+  ],
+  "citations": [
+    "IUCN Red List 2024",
+    "National Geographic Wildlife Compendium"
+  ],
+  "license": "Public Domain Facts"
+}

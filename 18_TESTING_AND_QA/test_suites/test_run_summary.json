@@ -1,0 +1,248 @@
+{
+  "timestamp": "2026-11-17T23:20:44.371113",
+  "duration_total_seconds": 308.119,
+  "total_tests": 25,
+  "positive_tests_count": 14,
+  "negative_tests_count": 11,
+  "passed": 25,
+  "failed": 0,
+  "all_passed": true,
+  "test_results": [
+    {
+      "id": "TC-POS-001",
+      "type": "POSITIVE",
+      "name": "Quality Gate Audit on Workspace",
+      "passed": true,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "duration_seconds": 0.711,
+      "output_preview": "{\n  \"status\": \"ALL_GATES_PASSED\",\n  \"skills_audit\": {\n    \"total\": 12,\n    \"passed\": 12,\n    \"failures\": []\n  },\n  \"agents_audit\": {\n    \"total\": 15,\n    \"passed\": 15,\n    \"failures\": []\n  },\n  \"regis"
+    },
+    {
+      "id": "TC-POS-002",
+      "type": "POSITIVE",
+      "name": "Prompt Token Estimator (Valid Text)",
+      "passed": true,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "duration_seconds": 0.193,
+      "output_preview": "{\n  \"characters\": 28,\n  \"words\": 5,\n  \"estimated_tokens\": 7,\n  \"max_tokens_budget\": 100,\n  \"within_budget\": true\n}"
+    },
+    {
+      "id": "TC-POS-003",
+      "type": "POSITIVE",
+      "name": "Lint & Secret Hygiene Scanner on Clean Code",
+      "passed": true,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "duration_seconds": 0.187,
+      "output_preview": "{\n  \"file\": \"F:\\\\Master AI\\\\00_CORE_SYSTEM\\\\discovery_engine\\\\discovery_engine.py\",\n  \"scanned_lines\": 211,\n  \"issues_count\": 0,\n  \"issues\": [],\n  \"passed\": true\n}"
+    },
+    {
+      "id": "TC-POS-004",
+      "type": "POSITIVE",
+      "name": "Capability Gap Evaluator on Valid Domain",
+      "passed": true,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "duration_seconds": 0.214,
+      "output_preview": "{\n  \"domain_id\": \"DOM-02\",\n  \"domain_name\": \"Prompt Engineering and Context Engineering\",\n  \"category\": \"Core AI\",\n  \"readiness_status\": \"PARTIAL\",\n  \"covering_skills\": [\n    \"prompt-engineering\"\n  ],"
+    },
+    {
+      "id": "TC-POS-005",
+      "type": "POSITIVE",
+      "name": "Discovery Engine & Gap Evaluation",
+      "passed": true,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "duration_seconds": 0.203,
+      "output_preview": "{\n  \"workspace_skills_count\": 12,\n  \"workspace_agents_count\": 15,\n  \"host_mcp_servers_count\": 8,\n  \"domain_readiness_summary\": {\n    \"total_domains\": 30,\n    \"covered_ready\": 5,\n    \"covered_partial\":"
+    },
+    {
+      "id": "TC-POS-006",
+      "type": "POSITIVE",
+      "name": "Architecture Specification Validator",
+      "passed": true,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "duration_seconds": 0.185,
+      "output_preview": "{\n  \"file\": \"F:\\\\Master AI\\\\02_SKILLS\\\\software-architecture\\\\examples\\\\modular_system_spec.json\",\n  \"system_name\": \"CoreCommerceService\",\n  \"pattern\": \"Modular Monolith\",\n  \"total_layers\": 3,\n  \"tota"
+    },
+    {
+      "id": "TC-POS-007",
+      "type": "POSITIVE",
+      "name": "ADR Structure Validator",
+      "passed": true,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "duration_seconds": 0.201,
+      "output_preview": "{\n  \"file\": \"F:\\\\Master AI\\\\02_SKILLS\\\\documentation-engineering\\\\examples\\\\ADR_SAMPLE.md\",\n  \"adr_id\": \"ADR-001\",\n  \"title\": \"Adoption of Model Context Protocol (MCP) for Tool Integration\",\n  \"status"
+    },
+    {
+      "id": "TC-POS-008",
+      "type": "POSITIVE",
+      "name": "Phase 1 Foundational Infrastructure Smoke Suite",
+      "passed": true,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "duration_seconds": 17.63,
+      "output_preview": "[PASS] Python Runtime: 3.14.5 on Windows (AMD64)\n[PASS] FastAPI 0.163.1: Health routing and TestClient verified.\n[PASS] Qdrant Client 1.20.0: In-memory collection, ingestion, and cosine search verifie"
+    },
+    {
+      "id": "TC-POS-009",
+      "type": "POSITIVE",
+      "name": "Phase 2 Intelligence & LLM Management Suite",
+      "passed": true,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "duration_seconds": 21.29,
+      "output_preview": "[PASS] Test 01: Model registry profiles, constraints, and validation verified.\n[PASS] Test 02: Provider adapter availability and health reporting verified.\n[PASS] Test 03: Offline mock deterministic o"
+    },
+    {
+      "id": "TC-POS-010",
+      "type": "POSITIVE",
+      "name": "Phase 3 RAG, Knowledge Base & Long-Term Memory Suite",
+      "passed": true,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "duration_seconds": 4.178,
+      "output_preview": ""
+    },
+    {
+      "id": "TC-POS-011",
+      "type": "POSITIVE",
+      "name": "Phase 4 GitHub Discovery & Skills Intelligence Suite",
+      "passed": true,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "duration_seconds": 8.891,
+      "output_preview": "{\n  \"status\": \"ALL_GATES_PASSED\",\n  \"skills_audit\": {\n    \"total\": 12,\n    \"passed\": 12,\n    \"failures\": []\n  },\n  \"agents_audit\": {\n    \"total\": 15,\n    \"passed\": 15,\n    \"failures\": []\n  },\n  \"regis"
+    },
+    {
+      "id": "TC-POS-012",
+      "type": "POSITIVE",
+      "name": "Phase 5 Autonomous Multi-Agent Orchestration & Task Execution Suite",
+      "passed": true,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "duration_seconds": 4.957,
+      "output_preview": ""
+    },
+    {
+      "id": "TC-POS-013",
+      "type": "POSITIVE",
+      "name": "Phase 6 Automated Content Studio & Video Production Suite",
+      "passed": true,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "duration_seconds": 238.165,
+      "output_preview": ""
+    },
+    {
+      "id": "TC-POS-014",
+      "type": "POSITIVE",
+      "name": "Phase 6.5 Complete AI Video & Distribution Ecosystem Adapters Suite",
+      "passed": true,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "duration_seconds": 9.867,
+      "output_preview": ""
+    },
+    {
+      "id": "TC-NEG-001",
+      "type": "NEGATIVE",
+      "name": "Invalid Skill YAML Frontmatter Rejection",
+      "passed": true,
+      "expected_behavior": "Reject skill without '---' YAML delimiters",
+      "duration_seconds": 0.057
+    },
+    {
+      "id": "TC-NEG-002",
+      "type": "NEGATIVE",
+      "name": "Duplicate Skill Identifier Rejection",
+      "passed": true,
+      "expected_behavior": "Detect duplicate ID in registry",
+      "duration_seconds": 0.0
+    },
+    {
+      "id": "TC-NEG-003",
+      "type": "NEGATIVE",
+      "name": "Invalid Agent JSON Syntax Rejection",
+      "passed": true,
+      "expected_behavior": "JSON parser must throw exception on malformed syntax",
+      "duration_seconds": 0.001
+    },
+    {
+      "id": "TC-NEG-004",
+      "type": "NEGATIVE",
+      "name": "Missing Required Agent Fields Rejection",
+      "passed": true,
+      "expected_behavior": "Validation fails when required fields are missing",
+      "duration_seconds": 0.0
+    },
+    {
+      "id": "TC-NEG-005",
+      "type": "NEGATIVE",
+      "name": "Invalid Registry Reference Path Detection",
+      "passed": true,
+      "expected_behavior": "Registry validator flags non-existent skill path",
+      "duration_seconds": 0.0
+    },
+    {
+      "id": "TC-NEG-006",
+      "type": "NEGATIVE",
+      "name": "Fake Secret & Antipattern Detection",
+      "passed": true,
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "expected_behavior": "Scanner fails with exit code 1 when secret or antipattern is found",
+      "duration_seconds": 0.222
+    },
+    {
+      "id": "TC-NEG-007",
+      "type": "NEGATIVE",
+      "name": "Broken Relative Documentation Link Detection",
+      "passed": true,
+      "expected_behavior": "Link verifier identifies unresolvable relative markdown link",
+      "duration_seconds": 0.002
+    },
+    {
+      "id": "TC-NEG-008",
+      "type": "NEGATIVE",
+      "name": "Prompt Token Budget Exceeded Rejection",
+      "passed": true,
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "expected_behavior": "Token script exits with code 1 when estimated tokens exceed max budget",
+      "duration_seconds": 0.236
+    },
+    {
+      "id": "TC-NEG-009",
+      "type": "NEGATIVE",
+      "name": "Invalid Capability Domain Rejection",
+      "passed": true,
+      "expected_behavior": "Gap evaluator returns passed: false for unknown domain",
+      "duration_seconds": 0.235
+    },
+    {
+      "id": "TC-NEG-010",
+      "type": "NEGATIVE",
+      "name": "Invalid Rollback Snapshot Rejection",
+      "passed": true,
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "expected_behavior": "Rollback utility exits with code 1 when snapshot archive does not exist",
+      "duration_seconds": 0.245
+    },
+    {
+      "id": "TC-NEG-011",
+      "type": "NEGATIVE",
+      "name": "ZipSlip Path Traversal Rejection Security Test",
+      "passed": true,
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "expected_behavior": "Rollback utility aborts and rejects archive containing '..' directory escapes",
+      "duration_seconds": 0.224
+    }
+  ]
+}

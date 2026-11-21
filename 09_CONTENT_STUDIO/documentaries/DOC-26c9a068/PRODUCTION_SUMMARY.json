@@ -1,0 +1,150 @@
+{
+  "project_id": "DOC-26c9a068",
+  "status": "COMPLETED",
+  "qa_status": "PASS",
+  "qa_passed": true,
+  "title": "सवाना का सम्राट: शेर (The Sovereign Lion)",
+  "topic": "Lion Wildlife Documentary",
+  "language": "Hindi",
+  "target_duration_sec": 300.0,
+  "actual_duration_sec": 300.0,
+  "video_path": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-26c9a068\\lion_documentary_hindi.mp4",
+  "video_size_bytes": 35876546,
+  "thumbnail_path": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-26c9a068\\thumbnail_youtube.png",
+  "subtitles_srt": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-26c9a068\\subtitles_hindi.srt",
+  "subtitles_ass": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-26c9a068\\subtitles_hindi.ass",
+  "soundtrack_path": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-26c9a068\\soundtrack_final.wav",
+  "approval_ticket_id": "TKT-c8cea88c",
+  "approval_status": "PENDING",
+  "video_specs": {
+    "resolution": "1920x1080",
+    "fps": 30,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "file_size_bytes": 35876546,
+    "duration_sec": 300.0
+  },
+  "artifacts": {
+    "final_video_mp4": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-26c9a068\\lion_documentary_hindi.mp4",
+    "audio_track_wav": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-26c9a068\\soundtrack_final.wav",
+    "subtitles_srt": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-26c9a068\\subtitles_hindi.srt",
+    "subtitles_ass": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-26c9a068\\subtitles_hindi.ass",
+    "thumbnail_png": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-26c9a068\\thumbnail_youtube.png",
+    "qa_report_json": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-26c9a068\\qa_report.json",
+    "publication_bundle": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-26c9a068\\publication_bundle"
+  },
+  "voice_sample_audit": {
+    "timestamp": "20261117_231613",
+    "sample_path": "F:\\Master AI\\09_CONTENT_STUDIO\\voice_samples\\voice_sample_hindi_20261117_231613.wav",
+    "provider": "edge_tts",
+    "voice_id": "hi-IN-MadhurNeural",
+    "language": "Hindi",
+    "script_word_count": 63,
+    "measured_duration_sec": 29.28,
+    "sample_rate_hz": 44100,
+    "channels": 1,
+    "bit_depth": 16,
+    "rms_energy": 4930.3,
+    "peak_amplitude": 27615,
+    "has_clipping": false,
+    "is_human_speech": true,
+    "linguistic_intelligibility": "VERIFIED_NEURAL_HINDI",
+    "local_asr_status": "LOCAL_ASR_NOT_INSTALLED",
+    "sample_gate_status": "PASS",
+    "sentence_boundaries_count": 4,
+    "manifest_path": "F:\\Master AI\\09_CONTENT_STUDIO\\voice_samples\\sample_manifest_20261117_231613.json"
+  },
+  "qa_summary": {
+    "status": "PASS",
+    "passed": true,
+    "critical_failures": [],
+    "checks_run": 14
+  },
+  "publication_package": {
+    "project_id": "DOC-26c9a068",
+    "package_dir": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-26c9a068\\publication_bundle",
+    "metadata_file": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-26c9a068\\publication_bundle\\PUBLICATION_METADATA.json",
+    "approval_ticket_id": "TKT-c8cea88c",
+    "approval_status": "PENDING",
+    "qa_passed": true,
+    "status": "STAGED_FOR_APPROVAL"
+  },
+  "execution_time_sec": 136.31,
+  "log_events": [
+    {
+      "timestamp": "2026-11-17T23:16:13.066708",
+      "stage": "INIT",
+      "message": "Initialized documentary production project 'DOC-26c9a068': 'Create a 5-minute Hindi documentary about lions for YouTube.' (Target: 300.0s)"
+    },
+    {
+      "timestamp": "2026-11-17T23:16:13.066737",
+      "stage": "RESEARCH",
+      "message": "Gathering scientific, habitat, pride behavior, and conservation facts."
+    },
+    {
+      "timestamp": "2026-11-17T23:16:13.068788",
+      "stage": "SCRIPTWRITING",
+      "message": "Generating duration-aware script tailored for 300.0s."
+    },
+    {
+      "timestamp": "2026-11-17T23:16:13.070682",
+      "stage": "STORYBOARD",
+      "message": "Creating 6-scene timeline matching exact target 300.0s."
+    },
+    {
+      "timestamp": "2026-11-17T23:16:13.075283",
+      "stage": "VOICE_SAMPLE_GATE",
+      "message": "Auditing speech synthesis provider and generating standalone Hindi speech sample."
+    },
+    {
+      "timestamp": "2026-11-17T23:16:17.975994",
+      "stage": "VOICE_SAMPLE_GATE",
+      "message": "Voice Sample Gate PASSED: Verified 29.28s neural speech (hi-IN-MadhurNeural)."
+    },
+    {
+      "timestamp": "2026-11-17T23:16:17.976009",
+      "stage": "VISUAL_ASSETS",
+      "message": "Acquiring and generating 6 verified wildlife scene clips of 50.0s each."
+    },
+    {
+      "timestamp": "2026-11-17T23:16:46.044838",
+      "stage": "VOICE_SYNTHESIS",
+      "message": "Synthesizing complete neural voiceover in Hindi with sentence boundaries."
+    },
+    {
+      "timestamp": "2026-11-17T23:17:05.164369",
+      "stage": "AUDIO_MIXING",
+      "message": "Generating 300.0s ambient soundscape and mixing with ducking."
+    },
+    {
+      "timestamp": "2026-11-17T23:17:08.117698",
+      "stage": "VIDEO_EDITING",
+      "message": "Rendering full 1080p MP4 timeline for exact duration 300.0s."
+    },
+    {
+      "timestamp": "2026-11-17T23:18:22.100587",
+      "stage": "SUBTITLES",
+      "message": "Generating timecode-synchronized Devanagari SRT and ASS subtitles."
+    },
+    {
+      "timestamp": "2026-11-17T23:18:22.115137",
+      "stage": "PACKAGING",
+      "message": "Designing 1280x720 YouTube thumbnail and generating OpenFilm dynamic title bundle."
+    },
+    {
+      "timestamp": "2026-11-17T23:18:22.164069",
+      "stage": "MEDIA_QA",
+      "message": "Running strict 14-point media QA auditor on final video (Target: 300.0s)."
+    },
+    {
+      "timestamp": "2026-11-17T23:18:29.356675",
+      "stage": "PACKAGING_STAGING",
+      "message": "Bundling publication artifacts and staging into ApprovalCenter & Socialdrop."
+    },
+    {
+      "timestamp": "2026-11-17T23:18:29.373943",
+      "stage": "COMPLETED",
+      "message": "Documentary production completed in 136.31s. QA Status: PASS"
+    }
+  ]
+}

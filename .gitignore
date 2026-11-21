@@ -1,0 +1,126 @@
+# Secrets & Environment Variables
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.keystore
+
+# Operating System Files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Dependencies & Build Outputs
+node_modules/
+dist/
+build/
+coverage/
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+.venv_py310/
+venv/
+env/
+vault_config.json
+*.wav
+*.mp4
+
+# Large Video & Media Files (Managed via manifests / cloud storage)
+16_VIDEO_LIBRARY/raw_footage/*
+!16_VIDEO_LIBRARY/raw_footage/.gitkeep
+16_VIDEO_LIBRARY/renders/*
+!16_VIDEO_LIBRARY/renders/.gitkeep
+# Audio & Video Media Files
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wav
+*.flac
+*.mp3
+*.ogg
+*.webm
+*.part
+
+# 3D CGI & Blender Binaries (3+ GB)
+07_3D_CGI/engine/
+07_3D_CGI/renders/*
+!07_3D_CGI/renders/.gitkeep
+07_3D_CGI/contact_sheets/*
+!07_3D_CGI/contact_sheets/.gitkeep
+
+# Content Studio Renders & Exports
+09_CONTENT_STUDIO/renders/*
+!09_CONTENT_STUDIO/renders/.gitkeep
+09_CONTENT_STUDIO/exports/*
+!09_CONTENT_STUDIO/exports/.gitkeep
+09_CONTENT_STUDIO/reels_and_shorts/*
+!09_CONTENT_STUDIO/reels_and_shorts/.gitkeep
+09_CONTENT_STUDIO/audits/*
+!09_CONTENT_STUDIO/audits/.gitkeep
+18_TESTING_AND_QA/legacy_tests/*
+!18_TESTING_AND_QA/legacy_tests/.gitkeep
+
+# Reference Videos & External Cloned Repos
+15_ASSETS/reference_videos/
+00_CORE_SYSTEM/research/external_repos/
+
+# Ephemeral Runs & Session Audits
+03_AI_AGENTS/runs/RUN-TSK-*
+03_AI_AGENTS/runs/SUBPROCESS_AUDIT.jsonl
+03_AI_AGENTS/runs/traces/*
+!03_AI_AGENTS/runs/traces/.gitkeep
+03_AI_AGENTS/runs/workflows/*
+!03_AI_AGENTS/runs/workflows/WORKFLOW_INDEX.json
+03_AI_AGENTS/orchestrator/run_acceptance_test_*.py
+03_AI_AGENTS/orchestrator/run_remediation_test_*.py
+SESSION_AUDIT_LOG_LAST_1_HOUR.md
+c_drive_*
+C_DRIVE_*
+
+# IDE & Editor Files
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# Temporary & Log Files
+*.log
+*.lock
+*.bak
+*.tmp*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.temp/
+tmp/
+*.zip
+23_CHANGELOG_AND_BACKUP/snapshots/*.zip
+!23_CHANGELOG_AND_BACKUP/snapshots/.gitkeep
+
+# Vector DB & Embeddings Storage
+04_LLM_AND_AI/rag_systems/qdrant_db/
+*.qdrant
+storage/
+04_LLM_AND_AI/models/whisper_cache/
+
+# Ephemeral Agent Sandbox Task Workspaces
+03_AI_AGENTS/sandbox/tasks/*
+!03_AI_AGENTS/sandbox/tasks/.gitkeep
+03_AI_AGENTS/sandbox/repo_eval/*
+!03_AI_AGENTS/sandbox/repo_eval/.gitkeep
+
+# Discovery Cache & Staging
+00_CORE_SYSTEM/discovery_engine/cache/
+00_CORE_SYSTEM/staging/*
+!00_CORE_SYSTEM/staging/.gitkeep
+
+# Voice Vault User Keys
+00_CORE_SYSTEM/engine/tts/vault_config.json
+00_CORE_SYSTEM/engine/tts/tts_config.json
+!00_CORE_SYSTEM/engine/tts/vault_config.example.json

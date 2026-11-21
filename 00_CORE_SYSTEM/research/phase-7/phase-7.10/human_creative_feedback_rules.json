@@ -1,0 +1,54 @@
+{
+  "id": 5,
+  "production_id": "PHASE_7.9",
+  "film_title": "\u0930\u094b\u092c\u094b\u091f \u0914\u0930 2 AM \u091a\u093e\u092f",
+  "human_creative_rating": "3/10",
+  "status": "REJECTED_CREATIVELY",
+  "categories": {
+    "story": {
+      "critique": "Storytelling was boring and predictable.",
+      "rule_generated": "RULE_STORY_01: Stories must have genuine interpersonal conflict, emotional vulnerability, and clear cause-and-effect relationship stakes rather than simple errand plots."
+    },
+    "dialogue": {
+      "critique": "Dialogue delivery felt robotic and disconnected; excessive gaps between spoken lines made scenes unnatural.",
+      "rule_generated": "RULE_DIALOGUE_01: Dialogue turns must maintain natural conversational pacing (gaps between lines strictly <= 0.45s). Dead-air silences > 0.60s are forbidden."
+    },
+    "character_design": {
+      "critique": "2D character visuals lacked the polished, expressive appeal of modern animated shorts.",
+      "rule_generated": "RULE_CHAR_01: Characters must adhere to stylized vector editorial proportions with bold outlines, distinct clothing palettes, and expressive facial features."
+    },
+    "character_acting": {
+      "critique": "Characters felt stiff; merely moving mouth shapes and blinking is not sufficient acting.",
+      "rule_generated": "RULE_CHAR_02: Characters must exhibit multi-joint kinematic posing: expressive eyebrow tilt (-25 to +25 deg), head turns, arm gestures, and postural shifts."
+    },
+    "editing": {
+      "critique": "Editing was weak; 8 uniform scenes felt like a metronome with poor cuts.",
+      "rule_generated": "RULE_EDITING_01: Editorial engine must enforce Average Shot Length <= 4.8s with shot/reverse-shot exchanges, motivated cuts, and rapid 1.5s-2.5s reaction shots during climax."
+    },
+    "cinematography": {
+      "critique": "Scene composition and shot selection were poor; full-bleed landscape felt empty.",
+      "rule_generated": "RULE_CINEMA_01: Employ a structured 4-tier visual hierarchy with centered focal card, dynamic topic badge pills, progress bar, and adaptive day/night backdrops."
+    },
+    "visual_effects": {
+      "critique": "Effects and cinematic presentation were weak.",
+      "rule_generated": "RULE_VFX_01: Reusable vector shaders must include animated progress bar, bouncing topic pills, micro-thought cards (?, !), and dynamic word-level karaoke subtitles."
+    },
+    "background_music": {
+      "critique": "BGM was not convincing and did not match the emotional storyline.",
+      "rule_generated": "RULE_MUSIC_01: Scores must evolve across a 3-part dramatic movement (Playful bounce -> Minor piano tension solo -> Warm acoustic resolution) rather than looping drones."
+    },
+    "sound_effects": {
+      "critique": "Sound effects were poorly selected, poorly timed or ineffective.",
+      "rule_generated": "RULE_SFX_01: Sound design must operate on a multi-track sound-event timeline with 6 distinct stems (Dialogue, Score, Ambience, Foley, Action SFX, Impacts)."
+    },
+    "voice_quality": {
+      "critique": "Vocal delivery sounded like disconnected narration sentences.",
+      "rule_generated": "RULE_VOICE_01: Voice generation must use conversational, natural urban Hindustani with natural breath pauses, pitch contours, and context-aware responses."
+    },
+    "overall_entertainment": {
+      "critique": "Overall film scored 3/10; technical verification passed but creative entertainment failed.",
+      "rule_generated": "RULE_GOVERNANCE_01: Never equate automated technical compliance (zero black frames, EBU R128 audio) with creative entertainment value. Final approval is human-only."
+    }
+  },
+  "timestamp": "2026-11-18 16:10:00"
+}

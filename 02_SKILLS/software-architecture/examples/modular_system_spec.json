@@ -1,0 +1,21 @@
+{
+  "system_name": "CoreCommerceService",
+  "pattern": "Modular Monolith",
+  "layers": [
+    {
+      "name": "presentation",
+      "modules": ["api_routes", "middleware", "dto_serializers"],
+      "responsibilities": "HTTP parsing, JWT validation, status code mapping"
+    },
+    {
+      "name": "domain",
+      "modules": ["order_service", "inventory_checker", "pricing_engine"],
+      "responsibilities": "Pure business rules, state transition enforcement"
+    },
+    {
+      "name": "infrastructure",
+      "modules": ["postgres_order_repo", "stripe_payment_gateway", "redis_cache"],
+      "responsibilities": "Database queries, third-party network calls, caching"
+    }
+  ]
+}

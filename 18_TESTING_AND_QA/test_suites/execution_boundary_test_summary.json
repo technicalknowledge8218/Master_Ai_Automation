@@ -1,0 +1,176 @@
+{
+  "timestamp": "2026-11-17T02:58:47",
+  "total": 24,
+  "passed": 24,
+  "all_passed": true,
+  "results": [
+    {
+      "id": "BOUND-001",
+      "name": "Absolute Windows Path Outside Sandbox",
+      "passed": true,
+      "expected": "SandboxSecurityViolation",
+      "actual": "Blocked path escape"
+    },
+    {
+      "id": "BOUND-002",
+      "name": "Relative Traversal Escape",
+      "passed": true,
+      "expected": "SandboxSecurityViolation",
+      "actual": "Blocked traversal"
+    },
+    {
+      "id": "BOUND-003",
+      "name": "UNC Path Rejection",
+      "passed": true,
+      "expected": "is_safe_path returns False",
+      "actual": "is_safe_path = False"
+    },
+    {
+      "id": "BOUND-004",
+      "name": "Directory Junction Write-Escape Blocked",
+      "passed": true,
+      "expected": "SandboxSecurityViolation on junction write",
+      "actual": "Caught: True"
+    },
+    {
+      "id": "BOUND-005",
+      "name": "DOS Device Name Rejection",
+      "passed": true,
+      "expected": "SandboxSecurityViolation on CON.txt",
+      "actual": "Caught: True"
+    },
+    {
+      "id": "BOUND-006",
+      "name": "Alternate Data Stream (ADS) Rejection",
+      "passed": true,
+      "expected": "SandboxSecurityViolation on ADS",
+      "actual": "Caught: True"
+    },
+    {
+      "id": "BOUND-007",
+      "name": "Null Byte Path Rejection",
+      "passed": true,
+      "expected": "SandboxSecurityViolation on null byte",
+      "actual": "Caught: True"
+    },
+    {
+      "id": "BOUND-008",
+      "name": "Host Profile Root & .gemini Write Block",
+      "passed": true,
+      "expected": "SandboxSecurityViolation",
+      "actual": "Caught: True"
+    },
+    {
+      "id": "BOUND-009",
+      "name": "Python Raw Socket Connection Blocked",
+      "passed": true,
+      "expected": "PermissionError / Network Block",
+      "actual": "PERMISSION_DENIED: MASTER-AI Network Block: Outbound network connection to '('1.1.1.1', 53)' is prohibited under offline sandbox execution policy."
+    },
+    {
+      "id": "BOUND-010",
+      "name": "Python urllib Connection Fails via Proxy",
+      "passed": true,
+      "expected": "URLLIB_BLOCKED",
+      "actual": "URLLIB_BLOCKED: URLError"
+    },
+    {
+      "id": "BOUND-011",
+      "name": "Local Loopback Allowed Under Offline Sandbox",
+      "passed": true,
+      "expected": "LOOPBACK_OK",
+      "actual": "LOOPBACK_OK"
+    },
+    {
+      "id": "BOUND-012",
+      "name": "Git Remote Operations Blocked Without Approval",
+      "passed": true,
+      "expected": "SandboxSecurityViolation",
+      "actual": "Git remote operation 'ls-remote' is blocked. External network access is prohibited without Trust Level 3 approval."
+    },
+    {
+      "id": "BOUND-013",
+      "name": "Network Allowed Flag Disables Dead Proxy",
+      "passed": true,
+      "expected": "PROXY_PRESENT: False",
+      "actual": "PROXY_PRESENT: False"
+    },
+    {
+      "id": "BOUND-014",
+      "name": "Git Push Blocked",
+      "passed": true,
+      "expected": "SandboxSecurityViolation",
+      "actual": "Caught: True"
+    },
+    {
+      "id": "BOUND-015",
+      "name": "Git Destructive Reset (--hard) Blocked",
+      "passed": true,
+      "expected": "SandboxSecurityViolation",
+      "actual": "Caught: True"
+    },
+    {
+      "id": "BOUND-016",
+      "name": "Git Branch Deletion (-D) Blocked",
+      "passed": true,
+      "expected": "SandboxSecurityViolation",
+      "actual": "Caught: True"
+    },
+    {
+      "id": "BOUND-017",
+      "name": "Git Global Config Change Blocked",
+      "passed": true,
+      "expected": "SandboxSecurityViolation",
+      "actual": "Caught: True"
+    },
+    {
+      "id": "BOUND-018",
+      "name": "Git Safe Local Commands Allowed",
+      "passed": true,
+      "expected": "Executed without SecurityViolation",
+      "actual": "Exit: 0"
+    },
+    {
+      "id": "BOUND-019",
+      "name": "CWD Binary Hijacking Blocked",
+      "passed": true,
+      "expected": "Used sys.executable (C:\\Python314\\python.exe)",
+      "actual": "C:\\Python314\\python.exe"
+    },
+    {
+      "id": "BOUND-020",
+      "name": "Windows Command Argument Caret (^) Rejected",
+      "passed": true,
+      "expected": "SandboxSecurityViolation",
+      "actual": "Caught: True"
+    },
+    {
+      "id": "BOUND-021",
+      "name": "Windows Unescaped Trailing Backslash Rejected",
+      "passed": true,
+      "expected": "SandboxSecurityViolation",
+      "actual": "Caught: True"
+    },
+    {
+      "id": "BOUND-022",
+      "name": "Trust Level Operation Permissions Check",
+      "passed": true,
+      "expected": "Level 0 < Level 1 < Level 2 < Level 3 enforced",
+      "actual": "Matrix Valid: True"
+    },
+    {
+      "id": "BOUND-023",
+      "name": "Agent Self-Escalation Attempt Blocked",
+      "passed": true,
+      "expected": "TrustEscalationViolation",
+      "actual": "Caught self-escalation attempt"
+    },
+    {
+      "id": "BOUND-024",
+      "name": "Escalation to Level 3 Requires Human Approval",
+      "passed": true,
+      "expected": "ApprovalViolation on non-approved task",
+      "actual": "Caught: True"
+    }
+  ]
+}

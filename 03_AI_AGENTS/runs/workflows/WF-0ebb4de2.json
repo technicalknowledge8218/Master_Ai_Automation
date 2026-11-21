@@ -1,0 +1,208 @@
+{
+  "workflow_id": "WF-0ebb4de2",
+  "plan_id": "PLAN-750ce908",
+  "goal": "Research lions and prepare a Hindi documentary production plan.",
+  "complexity": "FULL_LIFECYCLE_FEDERATION",
+  "status": "COMPLETED",
+  "created_at": "2026-11-17T06:08:57.677269",
+  "started_at": "2026-11-17T06:08:57.713956",
+  "completed_at": "2026-11-17T06:08:57.904554",
+  "current_wave_index": 4,
+  "waves": [
+    [
+      "PLAN-750ce908-ST-01"
+    ],
+    [
+      "PLAN-750ce908-ST-02"
+    ],
+    [
+      "PLAN-750ce908-ST-03",
+      "PLAN-750ce908-ST-04"
+    ],
+    [
+      "PLAN-750ce908-ST-05"
+    ]
+  ],
+  "subtasks": {
+    "PLAN-750ce908-ST-01": {
+      "subtask_id": "PLAN-750ce908-ST-01",
+      "title": "Scientific & Habitat Research: lions",
+      "description": "Gather factual data, biological traits, pride behavior, ecological impact, and conservation status for lions.",
+      "assigned_agent": "AGT-001",
+      "priority": "HIGH",
+      "status": "QUEUED",
+      "depends_on": [],
+      "inputs": {
+        "topic": "lions",
+        "scope": "comprehensive"
+      },
+      "expected_outputs": [
+        "research_dossier.json",
+        "factual_citations.md"
+      ],
+      "outputs": {},
+      "artifacts": [],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 2,
+      "started_at": null,
+      "completed_at": null,
+      "duration_seconds": 0.0
+    },
+    "PLAN-750ce908-ST-02": {
+      "subtask_id": "PLAN-750ce908-ST-02",
+      "title": "Documentary Architecture & 5-Minute Storyboard",
+      "description": "Design 4-act documentary pacing (300 seconds total), scene breakdown, visual cues, and audio soundscape.",
+      "assigned_agent": "AGT-002",
+      "priority": "HIGH",
+      "status": "QUEUED",
+      "depends_on": [
+        "PLAN-750ce908-ST-01"
+      ],
+      "inputs": {
+        "target_duration_sec": 300,
+        "act_count": 4
+      },
+      "expected_outputs": [
+        "documentary_storyboard.json",
+        "scene_pacing_spec.md"
+      ],
+      "outputs": {},
+      "artifacts": [],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 2,
+      "started_at": null,
+      "completed_at": null,
+      "duration_seconds": 0.0
+    },
+    "PLAN-750ce908-ST-03": {
+      "subtask_id": "PLAN-750ce908-ST-03",
+      "title": "Storyboard Timing & Factual Verification",
+      "description": "Perform mathematical verification of scene timings (summing to 300s) and validate factual alignment.",
+      "assigned_agent": "AGT-004",
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "depends_on": [
+        "PLAN-750ce908-ST-02"
+      ],
+      "inputs": {
+        "required_duration_sec": 300
+      },
+      "expected_outputs": [
+        "timing_validation_report.json"
+      ],
+      "outputs": {},
+      "artifacts": [],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 2,
+      "started_at": null,
+      "completed_at": null,
+      "duration_seconds": 0.0
+    },
+    "PLAN-750ce908-ST-04": {
+      "subtask_id": "PLAN-750ce908-ST-04",
+      "title": "Content Compliance & Licensing Audit",
+      "description": "Verify educational compliance, copyright safety of proposed references, and content appropriateness.",
+      "assigned_agent": "AGT-006",
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "depends_on": [
+        "PLAN-750ce908-ST-01",
+        "PLAN-750ce908-ST-02"
+      ],
+      "inputs": {
+        "compliance_standard": "educational_fair_use"
+      },
+      "expected_outputs": [
+        "content_risk_audit.json"
+      ],
+      "outputs": {},
+      "artifacts": [],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 1,
+      "started_at": null,
+      "completed_at": null,
+      "duration_seconds": 0.0
+    },
+    "PLAN-750ce908-ST-05": {
+      "subtask_id": "PLAN-750ce908-ST-05",
+      "title": "Production Plan & Hindi Narration Script",
+      "description": "Compile comprehensive production handbook with complete Hindi voiceover script (Devanagari & Romanized), director cues, and audio-visual cues.",
+      "assigned_agent": "AGT-005",
+      "priority": "HIGH",
+      "status": "QUEUED",
+      "depends_on": [
+        "PLAN-750ce908-ST-03",
+        "PLAN-750ce908-ST-04"
+      ],
+      "inputs": {
+        "target_language": "Hindi",
+        "include_transliteration": true
+      },
+      "expected_outputs": [
+        "documentary_production_plan_hindi.md",
+        "narration_script.json"
+      ],
+      "outputs": {},
+      "artifacts": [],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 2,
+      "started_at": null,
+      "completed_at": null,
+      "duration_seconds": 0.0
+    }
+  },
+  "artifacts": [],
+  "checkpoint_history": [
+    {
+      "timestamp": "2026-11-17T06:08:57.677269",
+      "status": "PLANNED",
+      "tag": "WORKFLOW_INITIALIZED"
+    },
+    {
+      "timestamp": "2026-11-17T06:08:57.696139",
+      "status": "APPROVED",
+      "tag": "Plan approved"
+    },
+    {
+      "timestamp": "2026-11-17T06:08:57.705866",
+      "status": "QUEUED",
+      "tag": "Ready for execution"
+    },
+    {
+      "timestamp": "2026-11-17T06:08:57.713956",
+      "status": "RUNNING",
+      "tag": "Starting execution run"
+    },
+    {
+      "timestamp": "2026-11-17T06:08:57.890612",
+      "status": "VALIDATING",
+      "tag": "Validating deliverable outputs"
+    },
+    {
+      "timestamp": "2026-11-17T06:08:57.904554",
+      "status": "COMPLETED",
+      "tag": "All subtasks verified"
+    }
+  ],
+  "final_deliverable": {
+    "workflow_id": "WF-0ebb4de2",
+    "goal": "Research lions and prepare a Hindi documentary production plan.",
+    "status": "SUCCESS",
+    "completed_subtasks": 0,
+    "artifacts_produced": [
+      "content_risk_audit.json",
+      "documentary_production_plan_hindi.md",
+      "documentary_storyboard.json",
+      "research_dossier.json",
+      "timing_validation_report.json"
+    ],
+    "sandbox_path": "F:\\Master AI\\03_AI_AGENTS\\sandbox\\tasks\\WF-0ebb4de2",
+    "verified_by": "AGT-004_and_AGT-006",
+    "compiled_at": "2026-11-17T06:08:57.900402"
+  }
+}

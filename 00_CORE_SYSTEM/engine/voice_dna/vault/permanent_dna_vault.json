@@ -1,0 +1,79 @@
+{
+  "female_laura_quirky": {
+    "name": "Laura (Quirky & High-Energy Tech Creator)",
+    "gender": "female",
+    "voice_id": "FGY2WhTYpPnrIDTdsKH5",
+    "desc": "High energy social media female creator, viral hooks",
+    "dna_stats": {
+      "duration_sec": 7.71,
+      "f0_median_hz": 211.7
+    },
+    "sample_dialogue": "अरे सुनो! अगर आप भी रोज़-रोज़ बोरिंग कोडिंग करके थक चुके हैं, तो ये नया एआई टूल आपकी लाइफ 10 गुना आसान बना देगा!"
+  },
+  "female_jessica_bright": {
+    "name": "Jessica (Bright & Warm UI/UX Designer)",
+    "gender": "female",
+    "voice_id": "cgSgspJ2msm6clMCkdW9",
+    "desc": "Polite, creative, relatable young female designer",
+    "dna_stats": {
+      "duration_sec": 6.97,
+      "f0_median_hz": 209.4
+    },
+    "sample_dialogue": "लाला जी, पूरा यूआई डिज़ाइन तैयार है। बस एक बार रिव्यू कर लीजिए, इस बार क्लाइंट को कोई शिकायत नहीं मिलेगी।"
+  },
+  "female_matilda_executive": {
+    "name": "Matilda (Senior Tech Director & Architect)",
+    "gender": "female",
+    "voice_id": "XrExE9yKIg1WjnnlVkGX",
+    "desc": "Authoritative, calm, executive decision maker",
+    "dna_stats": {
+      "duration_sec": 7.43,
+      "f0_median_hz": 204.7
+    },
+    "sample_dialogue": "टीम, प्रोडक्शन रिलीज से पहले सिक्योरिटी ऑडिट पूरा होना चाहिए। कोई भी कोड बिना रिव्यू के मर्ज नहीं होगा।"
+  },
+  "female_lily_storyteller": {
+    "name": "Lily (Velvety Dramatic Storyteller)",
+    "gender": "female",
+    "voice_id": "pFZP5JQG7iQjIQuC4Bku",
+    "desc": "Dramatic, suspenseful, documentary storytelling",
+    "dna_stats": {
+      "duration_sec": 7.76,
+      "f0_median_hz": 167.4
+    },
+    "sample_dialogue": "साल 2026 की ये वो सबसे बड़ी गलती थी, जिसने पूरी टेक इंडस्ट्री को हिला कर रख दिया... कहानी ध्यान से सुनिए।"
+  },
+  "male_will_friendly_buddy": {
+    "name": "Will (Friendly Chill Tech Colleague)",
+    "gender": "male",
+    "voice_id": "bIHbv24MWmeRgasZH58o",
+    "desc": "Supportive coworker, relaxed, friendly office mate",
+    "dna_stats": {
+      "duration_sec": 7.06,
+      "f0_median_hz": 125.3
+    },
+    "sample_dialogue": "अरे चिंटू भाई, टेंशन मत ले यार! कॉफी पीते हैं और मिलकर ये बग आधे घंटे में फिक्स कर देंगे, चिल कर!"
+  },
+  "male_daniel_broadcaster": {
+    "name": "Daniel (Tech News & Explainer Broadcaster)",
+    "gender": "male",
+    "voice_id": "onwK4e9ZLuTAKqWW03F9",
+    "desc": "Authoritative news anchor, serious documentary",
+    "dna_stats": {
+      "duration_sec": 11.47,
+      "f0_median_hz": 139.2
+    },
+    "sample_dialogue": "आज की सबसे बड़ी टेक खबर: गूगल और माइक्रोसॉफ्ट ने मिलकर अपने नए एआई एजेंट्स लॉन्च कर दिए हैं। जानिए इसका पूरा सच।"
+  },
+  "male_callum_rival_founder": {
+    "name": "Callum (Aggressive Rival Startup Founder)",
+    "gender": "male",
+    "voice_id": "N2lVS1w4EtoT3dr4eOWO",
+    "desc": "Cocky rival, intense drama, sharp antagonist",
+    "dna_stats": {
+      "duration_sec": 7.34,
+      "f0_median_hz": 162.3
+    },
+    "sample_dialogue": "लाला जी, आपकी कंपनी पुरानी हो चुकी है! अगले तीन महीने में हमारा प्रोडक्ट आपका पूरा मार्केट खत्म कर देगा!"
+  }
+}

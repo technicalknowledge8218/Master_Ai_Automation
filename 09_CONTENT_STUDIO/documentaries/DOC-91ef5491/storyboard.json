@@ -1,0 +1,39 @@
+{
+  "title": "सवाना का सम्राट: शेर (The Sovereign Lion)",
+  "target_duration_sec": 300.0,
+  "resolution": "1920x1080",
+  "scenes": [
+    {
+      "scene_index": 1,
+      "title": "अंक 1: सवाना की सुबह (Act I: Dawn on the Savannah)",
+      "duration_sec": 60.0,
+      "visual_prompt": "Majestic male lion with full mane standing on rocky savannah outcrop at golden sunrise, wide panoramic shot",
+      "voiceover": "जब अफ्रीकी सवाना पर भोर की पहली किरण पड़ती है, तब जागता है प्रकृति का सबसे भव्य शासक — शेर। यह केवल एक शिकारी नहीं, बल्कि इस प्राचीन जंगल की धड़कन है।",
+      "motion": "Ken Burns Slow Pan & Zoom"
+    },
+    {
+      "scene_index": 2,
+      "title": "अंक 2: झुंड और शिकार का संतुलन (Act II: The Pride & The Hunt)",
+      "duration_sec": 90.0,
+      "visual_prompt": "Pride of lionesses coordinating stalking behavior across tall savannah grasslands, dynamic documentary action",
+      "voiceover": "शेर की ताकत उसकी एकांत शक्ति में नहीं, बल्कि उसके परिवार यानी 'प्राइड' के अटूट बंधन में है। शिकार की रणनीति में कुशल शेरनियों का तालमेल अद्वितीय होता है।",
+      "motion": "Ken Burns Slow Pan & Zoom"
+    },
+    {
+      "scene_index": 3,
+      "title": "अंक 3: सीमाओं की रक्षा और गर्जना (Act III: Territorial Defense)",
+      "duration_sec": 90.0,
+      "visual_prompt": "Roaring adult male lion, dusk atmosphere, intense acoustic posture, cinematic dramatic rim lighting",
+      "voiceover": "शेर की शक्तिशाली दहाड़ आठ किलोमीटर दूर तक सवाना को कंपा देती है। यह केवल एक चेतावनी नहीं, बल्कि सवाना के हर कोने में उसकी सम्प्रभुता का ऐलान है।",
+      "motion": "Ken Burns Slow Pan & Zoom"
+    },
+    {
+      "scene_index": 4,
+      "title": "अंक 4: संरक्षण और अमर विरासत (Act IV: Twilight & Conservation)",
+      "duration_sec": 60.0,
+      "visual_prompt": "Lion pride resting peacefully under star-lit acacia trees in twilight savannah, peaceful conservation atmosphere",
+      "voiceover": "आज शेर विलुप्ति के खतरे का सामना कर रहे हैं। भारत के गिर राष्ट्रीय उद्यान से लेकर अफ्रीका के जंगलों तक, इनकी रक्षा करना हमारा कर्तव्य है ताकि यह राजसी गर्जना सदैव गूंजती रहे।",
+      "motion": "Ken Burns Slow Pan & Zoom"
+    }
+  ]
+}

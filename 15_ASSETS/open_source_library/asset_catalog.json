@@ -1,0 +1,159 @@
+{
+  "version": "1.0.0-phase7.2",
+  "updated_at": "2026-11-18T02:01:17.225629",
+  "assets": {
+    "hdri_aarfontein_sunrise": {
+      "asset_id": "hdri_aarfontein_sunrise",
+      "title": "Aarfontein Sunrise (African Savanna Environment)",
+      "category": "hdri_environments",
+      "source_repo": "Poly Haven",
+      "source_url": "https://polyhaven.com/a/aarfontein_sunrise",
+      "creator": "Jarod Guest & Sergej Majboroda",
+      "license": "CC0 1.0",
+      "commercial_allowed": true,
+      "modification_allowed": true,
+      "attribution_required": false,
+      "attribution_text": "'Aarfontein Sunrise (African Savanna Environment)' (Poly Haven, CC0 1.0)",
+      "quarantine_status": "APPROVED",
+      "quarantine_reason": "Permissive commercial license verified.",
+      "sha256": "f20d5d171ce61d87a95b0d7c2871aba96892d1d38c85a9a3b4a0df4eed5e7329",
+      "file_size_bytes": 1586844,
+      "local_path": "F:\\Master AI\\15_ASSETS\\open_source_library\\hdri\\aarfontein_sunrise_1k.hdr",
+      "download_date": "2026-11-18T02:01:14.015522",
+      "tags": [
+        "savanna",
+        "africa",
+        "sunrise",
+        "karoo",
+        "sky",
+        "lighting",
+        "cc0"
+      ],
+      "technical_metadata": {
+        "resolution": "1024x512",
+        "format": "Radiance HDR",
+        "color_space": "Linear Raw"
+      }
+    },
+    "tex_aerial_ground_rock": {
+      "asset_id": "tex_aerial_ground_rock",
+      "title": "Aerial Ground Rock & Savanna Soil PBR Material",
+      "category": "materials_and_textures",
+      "source_repo": "Poly Haven",
+      "source_url": "https://polyhaven.com/a/aerial_ground_rock",
+      "creator": "Rob Tuytel",
+      "license": "CC0 1.0",
+      "commercial_allowed": true,
+      "modification_allowed": true,
+      "attribution_required": false,
+      "attribution_text": "'Aerial Ground Rock & Savanna Soil PBR Material' (Poly Haven, CC0 1.0)",
+      "quarantine_status": "APPROVED",
+      "quarantine_reason": "Permissive commercial license verified.",
+      "sha256": "c14761998b32630dd193b0fbfd31c8c6f5a144a701b84f87f9d7c33596cc554f",
+      "file_size_bytes": 599629,
+      "local_path": "F:\\Master AI\\15_ASSETS\\open_source_library\\textures\\aerial_ground_rock_diff_1k.jpg",
+      "download_date": "2026-11-18T02:01:17.210799",
+      "tags": [
+        "ground",
+        "dirt",
+        "rock",
+        "savanna",
+        "pbr",
+        "cc0",
+        "photogrammetry"
+      ],
+      "technical_metadata": {
+        "diffuse": "F:\\Master AI\\15_ASSETS\\open_source_library\\textures\\aerial_ground_rock_diff_1k.jpg",
+        "roughness": "F:\\Master AI\\15_ASSETS\\open_source_library\\textures\\aerial_ground_rock_rough_1k.jpg",
+        "resolution": "1024x1024"
+      }
+    },
+    "model_3d_african_lion_hero": {
+      "asset_id": "model_3d_african_lion_hero",
+      "title": "Master AI Advanced Anatomical African Lion CGI Asset",
+      "category": "3d_animal_characters",
+      "source_repo": "Master AI Production Library",
+      "source_url": "https://github.com/MasterAI/3D-CGI",
+      "creator": "Master AI Technical Team",
+      "license": "CC0 1.0",
+      "commercial_allowed": true,
+      "modification_allowed": true,
+      "attribution_required": false,
+      "attribution_text": "'Master AI Advanced Anatomical African Lion CGI Asset' (Master AI Production Library, CC0 1.0)",
+      "quarantine_status": "APPROVED",
+      "quarantine_reason": "Permissive commercial license verified.",
+      "sha256": "9d8e79896ef7ba221942855fc0846378c13b5014c93f18e83bd665d37acb5985",
+      "file_size_bytes": 11702,
+      "local_path": "F:\\Master AI\\07_3D_CGI\\scenes\\scene_improved_lion.py",
+      "download_date": "2026-11-18T02:01:17.212557",
+      "tags": [
+        "lion",
+        "wildlife",
+        "animal",
+        "panthera_leo",
+        "cgi",
+        "anatomical",
+        "rigged"
+      ],
+      "technical_metadata": {
+        "articulation": "Multi-segment Spine & Limbs",
+        "shading": "PBR Subsurface Scattering + Procedural Fur"
+      }
+    },
+    "ref_smithsonian_lion_cranial_3d": {
+      "asset_id": "ref_smithsonian_lion_cranial_3d",
+      "title": "Smithsonian 3D Open Access: Panthera leo Specimen USNM 163158",
+      "category": "scientific_and_historical",
+      "source_repo": "Smithsonian 3D Open Access",
+      "source_url": "https://3d.si.edu/object/3d/panthera-leo:d58e378c-02ff-4b5b-8012-70b89aa61a07",
+      "creator": "Smithsonian Digitization Program Office",
+      "license": "CC0 1.0",
+      "commercial_allowed": true,
+      "modification_allowed": true,
+      "attribution_required": false,
+      "attribution_text": "'Smithsonian 3D Open Access: Panthera leo Specimen USNM 163158' (Smithsonian 3D Open Access, CC0 1.0)",
+      "quarantine_status": "APPROVED",
+      "quarantine_reason": "Permissive commercial license verified.",
+      "sha256": "0a8cb4837fc49d1a3f11e0a36efc7ad3177e4b4ae815b2ba53d243ce3750e971",
+      "file_size_bytes": 382,
+      "local_path": "F:\\Master AI\\15_ASSETS\\open_source_library\\models\\smithsonian_panthera_leo_record.json",
+      "download_date": "2026-11-18T02:01:17.216831",
+      "tags": [
+        "smithsonian",
+        "panthera_leo",
+        "lion",
+        "skull",
+        "skeleton",
+        "cc0",
+        "3d_scan"
+      ],
+      "technical_metadata": {
+        "dataset": "Smithsonian Open Access 3D",
+        "specimen": "USNM 163158"
+      }
+    },
+    "sample_quarantined_asset": {
+      "asset_id": "sample_quarantined_asset",
+      "title": "Restricted Academic Lion Mesh (Sample)",
+      "category": "3d_animal_characters",
+      "source_repo": "Academic Archive",
+      "source_url": "https://example.org/lion-nc",
+      "creator": "Academic Lab",
+      "license": "CC BY-NC 4.0",
+      "commercial_allowed": false,
+      "modification_allowed": true,
+      "attribution_required": true,
+      "attribution_text": "'Restricted Academic Lion Mesh (Sample)' by Academic Lab (Academic Archive), licensed under CC BY-NC 4.0. Source: https://example.org/lion-nc",
+      "quarantine_status": "QUARANTINED",
+      "quarantine_reason": "License 'CC BY-NC 4.0' contains Non-Commercial, ShareAlike, or No-Derivatives restrictions.",
+      "sha256": "37e446d5e93414c3781de81d5455f3bc4f9d6c6ad12df0964bde9116977abffc",
+      "file_size_bytes": 43,
+      "local_path": "F:\\Master AI\\15_ASSETS\\open_source_library\\models\\quarantined_test_asset.json",
+      "download_date": "2026-11-18T02:01:17.225485",
+      "tags": [
+        "quarantine_test"
+      ],
+      "technical_metadata": {}
+    }
+  }
+}

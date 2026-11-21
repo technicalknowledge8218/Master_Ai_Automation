@@ -1,0 +1,4 @@
+file 'F:/Master AI/09_CONTENT_STUDIO/documentaries/DOC-91ef5491/assets/scene_01_motion.mp4'
+file 'F:/Master AI/09_CONTENT_STUDIO/documentaries/DOC-91ef5491/assets/scene_02_motion.mp4'
+file 'F:/Master AI/09_CONTENT_STUDIO/documentaries/DOC-91ef5491/assets/scene_03_motion.mp4'
+file 'F:/Master AI/09_CONTENT_STUDIO/documentaries/DOC-91ef5491/assets/scene_04_motion.mp4'

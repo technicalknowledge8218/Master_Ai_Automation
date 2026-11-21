@@ -1,0 +1,3 @@
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/remotion_tech_reel/phonetic_tests/speed_and_flow_calibration/calibrated_line1_boss_comp.wav'
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/remotion_tech_reel/phonetic_tests/speed_and_flow_calibration/calibrated_line2_emp_comp.wav'
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/remotion_tech_reel/phonetic_tests/speed_and_flow_calibration/calibrated_line3_narrator_comp.wav'

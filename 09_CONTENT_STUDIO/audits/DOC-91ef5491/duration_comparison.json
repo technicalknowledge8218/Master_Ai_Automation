@@ -1,0 +1,52 @@
+{
+  "intended_duration_target_seconds": 300.0,
+  "actual_durations": {
+    "storyboard_duration_sec": 300.0,
+    "script_estimated_duration_sec": 300.0,
+    "narration_wav_duration_sec": 55.8,
+    "soundtrack_wav_duration_sec": 55.8,
+    "final_mp4_video_duration_sec": 12.0,
+    "subtitle_total_span_sec": 11.8
+  },
+  "duration_mismatches_against_5min_target": {
+    "storyboard_vs_target": {
+      "diff_seconds": 0.0,
+      "percentage": 0.0,
+      "comment": "Storyboard was authored for a compact 27s demo cut instead of full 300s."
+    },
+    "script_vs_target": {
+      "diff_seconds": 0.0,
+      "percentage": 0.0,
+      "comment": "Script estimated duration was 27s."
+    },
+    "soundtrack_vs_target": {
+      "diff_seconds": -244.2,
+      "percentage": -81.4,
+      "comment": "Soundtrack WAV duration is 55.80s."
+    },
+    "mp4_vs_target": {
+      "diff_seconds": -288.0,
+      "percentage": -96.0,
+      "comment": "MP4 video duration is 12.00s."
+    },
+    "subtitles_vs_target": {
+      "diff_seconds": -288.2,
+      "percentage": -96.07,
+      "comment": "Subtitle span is 11.80s."
+    }
+  },
+  "internal_synchronization_mismatches": {
+    "mp4_vs_soundtrack_wav": {
+      "diff_seconds": -43.8,
+      "comment": "MP4 container duration exactly matches or terminates with soundtrack."
+    },
+    "soundtrack_wav_vs_narration_wav": {
+      "diff_seconds": 0.0,
+      "comment": "Soundtrack matches narration track."
+    },
+    "mp4_vs_subtitles": {
+      "diff_seconds": -0.3,
+      "comment": "Subtitles conclude at 12.30s, video runs until 12.00s."
+    }
+  }
+}

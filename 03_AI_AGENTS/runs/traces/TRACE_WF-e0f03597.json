@@ -1,0 +1,29 @@
+{
+  "workflow_id": "WF-e0f03597",
+  "goal": "Build an API in Python",
+  "started_at": "2026-11-17T15:42:46.032441",
+  "completed_at": null,
+  "duration_seconds": 0.007,
+  "estimated_cost_usd": 0.0,
+  "active_subtask": null,
+  "timeline": [
+    {
+      "event_id": "EVT-7917e5",
+      "timestamp": "2026-11-17T15:42:46.039602",
+      "elapsed_seconds": 0.007,
+      "event_type": "PLAN_APPROVED",
+      "message": "Plan 'PLAN-eb41488c' approved for workflow 'WF-e0f03597'.",
+      "agent_id": null,
+      "subtask_id": null,
+      "details": {}
+    }
+  ],
+  "metrics": {
+    "total_events": 1,
+    "tool_calls": 0,
+    "model_calls": 0,
+    "retries": 0,
+    "errors": 0,
+    "approvals_requested": 0
+  }
+}

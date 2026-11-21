@@ -1,0 +1,132 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "name": "MASTER-AI Universal Design Tokens",
+  "version": "1.0.0",
+  "last_updated": "2026-11-17",
+  "tokens": {
+    "colors": {
+      "light": {
+        "background": "#ffffff",
+        "surface": "#f8fafc",
+        "surface_elevated": "#ffffff",
+        "border": "#e2e8f0",
+        "text_primary": "#0f172a",
+        "text_secondary": "#475569",
+        "text_muted": "#94a3b8",
+        "primary": "#2563eb",
+        "primary_hover": "#1d4ed8",
+        "primary_contrast": "#ffffff",
+        "secondary": "#64748b",
+        "secondary_hover": "#475569",
+        "success": "#16a34a",
+        "success_bg": "#f0fdf4",
+        "warning": "#d97706",
+        "warning_bg": "#fffbeb",
+        "danger": "#dc2626",
+        "danger_bg": "#fef2f2"
+      },
+      "dark": {
+        "background": "#0b0f19",
+        "surface": "#111827",
+        "surface_elevated": "#1f2937",
+        "border": "#374151",
+        "text_primary": "#f9fafb",
+        "text_secondary": "#cbd5e1",
+        "text_muted": "#6b7280",
+        "primary": "#3b82f6",
+        "primary_hover": "#60a5fa",
+        "primary_contrast": "#ffffff",
+        "secondary": "#94a3b8",
+        "secondary_hover": "#cbd5e1",
+        "success": "#22c55e",
+        "success_bg": "#052e16",
+        "warning": "#f59e0b",
+        "warning_bg": "#451a03",
+        "danger": "#ef4444",
+        "danger_bg": "#450a0a"
+      }
+    },
+    "typography": {
+      "font_families": {
+        "sans": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+        "mono": "'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace",
+        "display": "'Plus Jakarta Sans', Inter, sans-serif"
+      },
+      "font_sizes": {
+        "xs": {"size": "0.75rem", "line_height": "1rem"},
+        "sm": {"size": "0.875rem", "line_height": "1.25rem"},
+        "base": {"size": "1rem", "line_height": "1.5rem"},
+        "lg": {"size": "1.125rem", "line_height": "1.75rem"},
+        "xl": {"size": "1.25rem", "line_height": "1.75rem"},
+        "2xl": {"size": "1.5rem", "line_height": "2rem"},
+        "3xl": {"size": "1.875rem", "line_height": "2.25rem"},
+        "4xl": {"size": "2.25rem", "line_height": "2.5rem"},
+        "5xl": {"size": "3rem", "line_height": "1.16"}
+      },
+      "font_weights": {
+        "regular": 400,
+        "medium": 500,
+        "semibold": 600,
+        "bold": 700
+      }
+    },
+    "spacing": {
+      "base_unit_px": 4,
+      "scale": {
+        "0": "0px",
+        "1": "0.25rem",
+        "2": "0.5rem",
+        "3": "0.75rem",
+        "4": "1rem",
+        "5": "1.25rem",
+        "6": "1.5rem",
+        "8": "2rem",
+        "10": "2.5rem",
+        "12": "3rem",
+        "16": "4rem",
+        "20": "5rem",
+        "24": "6rem"
+      }
+    },
+    "breakpoints": {
+      "xs": "320px",
+      "sm": "640px",
+      "md": "768px",
+      "lg": "1024px",
+      "xl": "1280px",
+      "2xl": "1536px"
+    },
+    "radii": {
+      "none": "0px",
+      "sm": "0.25rem",
+      "md": "0.375rem",
+      "lg": "0.5rem",
+      "xl": "0.75rem",
+      "2xl": "1rem",
+      "full": "9999px"
+    },
+    "shadows": {
+      "sm": "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+      "md": "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+      "lg": "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
+      "xl": "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)"
+    },
+    "motion": {
+      "duration_fast_ms": 150,
+      "duration_normal_ms": 250,
+      "duration_slow_ms": 350,
+      "easing_standard": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "easing_decelerate": "cubic-bezier(0.0, 0, 0.2, 1)",
+      "easing_accelerate": "cubic-bezier(0.4, 0, 1, 1)"
+    },
+    "z_indices": {
+      "dropdown": 1000,
+      "sticky": 1020,
+      "fixed": 1030,
+      "modal_backdrop": 1040,
+      "modal": 1050,
+      "popover": 1060,
+      "toast": 1070
+    }
+  }
+}

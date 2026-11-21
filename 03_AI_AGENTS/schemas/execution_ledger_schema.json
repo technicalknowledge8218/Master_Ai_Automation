@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MasterAIExecutionLedgerSchema",
+  "type": "object",
+  "required": [
+    "run_id",
+    "task_id",
+    "complexity",
+    "status",
+    "started_at",
+    "subtasks",
+    "handoffs",
+    "artifacts_summary",
+    "final_result"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "complexity": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["INITIALIZED", "RUNNING", "COMPLETED", "FAILED", "ROLLED_BACK"]
+    },
+    "started_at": {
+      "type": "string"
+    },
+    "completed_at": {
+      "type": "string"
+    },
+    "subtasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["subtask_id", "agent_id", "status"],
+        "properties": {
+          "subtask_id": {"type": "string"},
+          "agent_id": {"type": "string"},
+          "status": {"type": "string"},
+          "execution_time_seconds": {"type": "number"},
+          "response_summary": {"type": "string"}
+        }
+      }
+    },
+    "handoffs": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "artifacts_summary": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "final_result": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,153 @@
+{
+  "title": "आखिरी चिट्ठी — एक भावनात्मक कहानी (The Last Letter: An Emotional Story)",
+  "phase": "7.6",
+  "description": "Broadcast-grade 30-second 100% 2D animated cinematic short film featuring multi-layer parallax, character walking cycles, interactive props, progressive calligraphy, and 8-track audio mixing.",
+  "production_mode": "100% 2D Vector & Multi-Plane Compositing (Zero 3D CGI, Zero static photos)",
+  "master_video": {
+    "path": "F:\\Master AI\\09_CONTENT_STUDIO\\renders\\phase_7_6_acceptance\\aakhiri_chitti_2d_animated_master_30s.mp4",
+    "sha256": "697444249f38d60746092f0f594d397246c74cf5ea3445187000d9f5da336085",
+    "duration_sec": 29.96,
+    "resolution": "1280x720",
+    "fps": 24.0,
+    "total_frames": 719,
+    "file_size_bytes": 6265169
+  },
+  "scenes": [
+    {
+      "id": "SC-01",
+      "name": "Midnight Ancestral Gateway",
+      "duration_sec": 7.0,
+      "transition": "smoothleft",
+      "layers": [
+        "Midnight Sky",
+        "Parallax Moon",
+        "Ancestral Mansion",
+        "Rohit Walking Silhouette",
+        "Drifting Mist/Leaves"
+      ]
+    },
+    {
+      "id": "SC-02",
+      "name": "Desolate Hallway & Swaying Lantern",
+      "duration_sec": 7.0,
+      "transition": "wipeleft",
+      "layers": [
+        "Perspective Wood Hallway",
+        "Mother's Wall Portrait",
+        "Pendulum Brass Lantern",
+        "Dynamic Light Cone",
+        "Rohit Walk & Pause",
+        "Floating Dust Motes"
+      ]
+    },
+    {
+      "id": "SC-03",
+      "name": "The Secret Desk & Keepsake Box",
+      "duration_sec": 7.0,
+      "transition": "circleopen",
+      "layers": [
+        "Rain Window & Lightning",
+        "Antique Mahogany Desk",
+        "Sliding Secret Drawer",
+        "Ornate Brass Box",
+        "Hands Opening Latch",
+        "Parchment Envelope"
+      ]
+    },
+    {
+      "id": "SC-04",
+      "name": "Unfolding Letter & Revelation",
+      "duration_sec": 7.0,
+      "transition": "dissolve",
+      "layers": [
+        "Vignette Backdrop",
+        "Unfolding Parchment Sheet",
+        "Dynamic Hindi Calligraphy",
+        "Spiritual Maternal Blessing",
+        "Falling Tear Smudge",
+        "Rising Stardust"
+      ]
+    },
+    {
+      "id": "SC-05",
+      "name": "Window by Dusk & Eternal Love",
+      "duration_sec": 6.0,
+      "transition": "fadeblack",
+      "layers": [
+        "3-Plane Parallax Sunset Clouds",
+        "Descending Sun",
+        "Foreground Arched Window",
+        "Swaying Lace Curtains",
+        "Rohit Clutching Letter",
+        "Rising Golden Orbs",
+        "Memorial Typography"
+      ]
+    }
+  ],
+  "soundtrack": {
+    "path": "F:\\Master AI\\09_CONTENT_STUDIO\\renders\\phase_7_6_acceptance\\master_mixed_soundtrack_30s.wav",
+    "sha256": "fa851f4dd8b60925f4182d7a906b649bd6a6824ca8ab88be64d0e0de4f70d679",
+    "rms_dbfs": -19.14,
+    "peak_dbfs": -1.52,
+    "clipped_samples": 0,
+    "tracks_mixed": 8,
+    "music_license": "CC0 1.0 Universal (Frédéric Chopin Nocturne Op. 37 No. 1 in G minor via Musopen)",
+    "ambient_license": "Public Domain (Natural Rain against Window by Cori)",
+    "spot_sfx": [
+      {
+        "id": "sfx_footsteps_wood",
+        "license": "CC BY-SA 4.0",
+        "time": 1.2
+      },
+      {
+        "id": "sfx_rain_window",
+        "license": "Public Domain",
+        "time": 6.5
+      },
+      {
+        "id": "sfx_door_creak",
+        "license": "Public Domain",
+        "time": 13.5
+      },
+      {
+        "id": "sfx_paper_turn",
+        "license": "Public Domain",
+        "time": 19.0
+      },
+      {
+        "id": "sfx_bowl_chime",
+        "license": "CC BY-SA 4.0",
+        "time": 23.5
+      }
+    ]
+  },
+  "voiceover": {
+    "path": "F:\\Master AI\\09_CONTENT_STUDIO\\renders\\phase_7_6_acceptance\\aakhiri_chitti_narration_full_30s.wav",
+    "language": "Hindi",
+    "voice": "hi-IN-MadhurNeural",
+    "cues": 5,
+    "coverage_duration_sec": 30.0,
+    "engine": "Edge-TTS 7.3.1 Neural",
+    "licensing_disclosure": "Microsoft ReadAloud free educational/research protocol; non-commercial zero-spend verification.",
+    "cost_usd": 0.0
+  },
+  "subtitles": {
+    "path": "F:\\Master AI\\09_CONTENT_STUDIO\\renders\\phase_7_6_acceptance\\aakhiri_chitti_full_30s.srt",
+    "sha256": "34a166fe9ddcac15fbbc9d9c841593e9f59b3f95124bc08f0352ec7cc8b489be",
+    "cues": 5,
+    "language": "Hindi"
+  },
+  "qa_verdict": {
+    "decoded_frames": 719,
+    "expected_frames": 719,
+    "black_ratio": 0.0097,
+    "frozen_ratio": 0.299,
+    "average_motion_delta": 1.1151,
+    "is_slideshow": false,
+    "has_clipping": false,
+    "overall_status": "EXCELLENT_BROADCAST_COMPLIANT"
+  },
+  "zero_budget_verified": true,
+  "total_cost_usd": 0.0,
+  "generated_at": "2026-11-17T22:55:44Z"
+}

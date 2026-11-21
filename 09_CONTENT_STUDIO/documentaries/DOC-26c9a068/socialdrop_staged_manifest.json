@@ -1,0 +1,54 @@
+{
+  "status": "STAGED",
+  "project_id": "DOC-26c9a068",
+  "staged_directory": "F:\\Master AI\\10_SOCIAL_MEDIA\\staged_publications\\DOC-26c9a068",
+  "approval_ticket": "TKT-APPROVAL-STAGED",
+  "platforms": [
+    "youtube",
+    "tiktok",
+    "instagram",
+    "twitter",
+    "linkedin"
+  ],
+  "dry_run_results": {
+    "youtube": {
+      "status": "DRY_RUN_SUCCESS",
+      "platform": "youtube",
+      "target_api": "YouTube Data API v3",
+      "scheduled_time": "IMMEDIATE",
+      "simulated_post_url": "https://youtube.com/staged-test/DOC-26c9a068",
+      "privacy": "private_staged",
+      "dry_run": true
+    },
+    "tiktok": {
+      "status": "DRY_RUN_SUCCESS",
+      "platform": "tiktok",
+      "target_api": "TikTok Content Posting API",
+      "scheduled_time": "IMMEDIATE",
+      "simulated_post_url": "https://tiktok.com/staged-test/DOC-26c9a068",
+      "privacy": "private_staged",
+      "dry_run": true
+    },
+    "instagram": {
+      "status": "DRY_RUN_SUCCESS",
+      "platform": "instagram",
+      "target_api": "Instagram Graph API (Reels)",
+      "scheduled_time": "IMMEDIATE",
+      "simulated_post_url": "https://instagram.com/staged-test/DOC-26c9a068",
+      "privacy": "private_staged",
+      "dry_run": true
+    },
+    "twitter": {
+      "status": "UNSUPPORTED_PLATFORM"
+    },
+    "linkedin": {
+      "status": "DRY_RUN_SUCCESS",
+      "platform": "linkedin",
+      "target_api": "LinkedIn Community Management API",
+      "scheduled_time": "IMMEDIATE",
+      "simulated_post_url": "https://linkedin.com/staged-test/DOC-26c9a068",
+      "privacy": "private_staged",
+      "dry_run": true
+    }
+  }
+}

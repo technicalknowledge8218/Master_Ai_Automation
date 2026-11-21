@@ -1,0 +1,123 @@
+{
+  "status": "SUCCESS",
+  "style_applied": "wildlife_documentary",
+  "total_scenes": 6,
+  "allocated_duration_sec": 300.0,
+  "directing_instructions": [
+    {
+      "scene_index": 1,
+      "title": "अंक 1: सवाना की भोर और सम्राट का जागरण (Act I: Dawn on the Savannah)",
+      "duration_sec": 50.0,
+      "estimated_voice_duration_sec": 0.0,
+      "pacing": "deliberate_majestic",
+      "audio_ducking_db": -14.0,
+      "recommended_shots": [
+        {
+          "type": "primary_subject_action",
+          "suggested_duration": 30.0
+        },
+        {
+          "type": "environmental_cutaway",
+          "suggested_duration": 20.0
+        }
+      ],
+      "editing_notes": "Apply fade_cross_1.0s. Hold final 50.0s on ambient soundscape."
+    },
+    {
+      "scene_index": 2,
+      "title": "अंक 2: प्राइड का अटूट सामाजिक ताना-बाना (Act II: The Pride & Family Bonds)",
+      "duration_sec": 50.0,
+      "estimated_voice_duration_sec": 0.0,
+      "pacing": "deliberate_majestic",
+      "audio_ducking_db": -14.0,
+      "recommended_shots": [
+        {
+          "type": "primary_subject_action",
+          "suggested_duration": 30.0
+        },
+        {
+          "type": "environmental_cutaway",
+          "suggested_duration": 20.0
+        }
+      ],
+      "editing_notes": "Apply fade_cross_1.0s. Hold final 50.0s on ambient soundscape."
+    },
+    {
+      "scene_index": 3,
+      "title": "अंक 3: सवाना का सन्नाटा और रणनीति का शिकार (Act III: The Silent Stalk & The Hunt)",
+      "duration_sec": 50.0,
+      "estimated_voice_duration_sec": 0.0,
+      "pacing": "deliberate_majestic",
+      "audio_ducking_db": -14.0,
+      "recommended_shots": [
+        {
+          "type": "primary_subject_action",
+          "suggested_duration": 30.0
+        },
+        {
+          "type": "environmental_cutaway",
+          "suggested_duration": 20.0
+        }
+      ],
+      "editing_notes": "Apply fade_cross_1.0s. Hold final 50.0s on ambient soundscape."
+    },
+    {
+      "scene_index": 4,
+      "title": "अंक 4: राजसी गर्जना और सीमा की रक्षा (Act IV: The Royal Roar & Territorial Defense)",
+      "duration_sec": 50.0,
+      "estimated_voice_duration_sec": 0.0,
+      "pacing": "deliberate_majestic",
+      "audio_ducking_db": -14.0,
+      "recommended_shots": [
+        {
+          "type": "primary_subject_action",
+          "suggested_duration": 30.0
+        },
+        {
+          "type": "environmental_cutaway",
+          "suggested_duration": 20.0
+        }
+      ],
+      "editing_notes": "Apply fade_cross_1.0s. Hold final 50.0s on ambient soundscape."
+    },
+    {
+      "scene_index": 5,
+      "title": "अंक 5: शावकों का पालन और अगली पीढ़ी (Act V: Cubs & The Next Generation)",
+      "duration_sec": 50.0,
+      "estimated_voice_duration_sec": 0.0,
+      "pacing": "deliberate_majestic",
+      "audio_ducking_db": -14.0,
+      "recommended_shots": [
+        {
+          "type": "primary_subject_action",
+          "suggested_duration": 30.0
+        },
+        {
+          "type": "environmental_cutaway",
+          "suggested_duration": 20.0
+        }
+      ],
+      "editing_notes": "Apply fade_cross_1.0s. Hold final 50.0s on ambient soundscape."
+    },
+    {
+      "scene_index": 6,
+      "title": "अंक 6: गिर से अफ्रीका: संरक्षण की अमर धरोहर (Act VI: Conservation Legacy & Twilight)",
+      "duration_sec": 50.0,
+      "estimated_voice_duration_sec": 0.0,
+      "pacing": "deliberate_majestic",
+      "audio_ducking_db": -14.0,
+      "recommended_shots": [
+        {
+          "type": "primary_subject_action",
+          "suggested_duration": 30.0
+        },
+        {
+          "type": "environmental_cutaway",
+          "suggested_duration": 20.0
+        }
+      ],
+      "editing_notes": "Apply fade_cross_1.0s. Hold final 50.0s on ambient soundscape."
+    }
+  ],
+  "execution_time_sec": 0.0
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "line1_boy",
+    "speaker": "Boy (Junior)",
+    "voice": "hi-IN-MadhurNeural",
+    "rate": "+18%",
+    "pitch": "+6Hz",
+    "text": "भैया! Oracle Cloud से मेल आया है कि मेरा फ्री सर्वर सात दिन में बंद हो जाएगा! मेरा सारा डेटा चला जाएगा क्या?!",
+    "sub": "Bhaiya! OCI Free Server 7 din mein band ho jayega?! Saara data udd jayega?!",
+    "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\oracle_cloud_reel\\chibi_dialogue\\line1_boy.wav",
+    "dur": 9.24
+  },
+  {
+    "id": "line2_sci",
+    "speaker": "Scientist (Mentor)",
+    "voice": "en-IN-PrabhatNeural",
+    "rate": "+12%",
+    "pitch": "-2Hz",
+    "text": "Arrey chill karo! Ye Oracle ki 7-day idle policy hai. Agar CPU 20 percent se kam raha toh server delete hota hai. Par board par dekho, do solid tareeqe hain!",
+    "sub": "Chill karo! 7-day idle policy hai (CPU < 20%). Board par dekho, 2 hacks hain!",
+    "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\oracle_cloud_reel\\chibi_dialogue\\line2_sci.wav",
+    "dur": 13.824013605442177
+  },
+  {
+    "id": "line3_boy",
+    "speaker": "Boy (Junior)",
+    "voice": "hi-IN-MadhurNeural",
+    "rate": "+18%",
+    "pitch": "+6Hz",
+    "text": "कौनसे दो तरीके भैया? क्या कोई पैसे लगेंगे?!",
+    "sub": "Kaunse do hacks bhaiya? Paise lagenge kya?!",
+    "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\oracle_cloud_reel\\chibi_dialogue\\line3_boy.wav",
+    "dur": 4.368004535147392
+  },
+  {
+    "id": "line4_sci",
+    "speaker": "Scientist (Mentor)",
+    "voice": "en-IN-PrabhatNeural",
+    "rate": "+12%",
+    "pitch": "-2Hz",
+    "text": "Ek rupya bhi nahi! Pehla tareeqa: PAYG mein upgrade karo, Always Free par hamesha zero bill aayega! Aur doosra: terminal mein lookbusy daemon run karo taaki CPU 22 percent safe rahe!",
+    "sub": "Re 1 bhi nahi! 1: PAYG upgrade ($0 bill!) | 2: lookbusy daemon (22% CPU lock!)",
+    "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\oracle_cloud_reel\\chibi_dialogue\\line4_sci.wav",
+    "dur": 13.68
+  },
+  {
+    "id": "line5_boy",
+    "speaker": "Boy (Junior)",
+    "voice": "hi-IN-MadhurNeural",
+    "rate": "+18%",
+    "pitch": "+6Hz",
+    "text": "वाह भैया! अभी रील सेव करता हूँ!",
+    "sub": "Woah bhaiya! Abhi reel save karta hoon!",
+    "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\oracle_cloud_reel\\chibi_dialogue\\line5_boy.wav",
+    "dur": 3.768004535147392
+  },
+  {
+    "id": "line6_sci",
+    "speaker": "Scientist (Mentor)",
+    "voice": "en-IN-PrabhatNeural",
+    "rate": "+12%",
+    "pitch": "-2Hz",
+    "text": "Aur comment mein likho ORACLE, poori setup commands turant bhej denge!",
+    "sub": "Save Reel & Comment 'ORACLE' for Full Setup Commands!",
+    "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\oracle_cloud_reel\\chibi_dialogue\\line6_sci.wav",
+    "dur": 4.968004535147393
+  }
+]

@@ -1,0 +1,709 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-11-17",
+  "domains": [
+    {
+      "id": "DOM-01",
+      "name": "LLMs and Foundation Models",
+      "category": "Core AI",
+      "status": "active"
+    },
+    {
+      "id": "DOM-02",
+      "name": "Prompt Engineering and Context Engineering",
+      "category": "Core AI",
+      "status": "active"
+    },
+    {
+      "id": "DOM-03",
+      "name": "RAG and Knowledge Systems",
+      "category": "AI Systems",
+      "status": "active"
+    },
+    {
+      "id": "DOM-04",
+      "name": "AI Agents and Multi-Agent Systems",
+      "category": "Autonomous Systems",
+      "status": "active"
+    },
+    {
+      "id": "DOM-05",
+      "name": "Skills and Agent Frameworks",
+      "category": "Frameworks",
+      "status": "active"
+    },
+    {
+      "id": "DOM-06",
+      "name": "MCP and Tool Calling",
+      "category": "Integration",
+      "status": "active"
+    },
+    {
+      "id": "DOM-07",
+      "name": "Software and Web Development",
+      "category": "Engineering",
+      "status": "active"
+    },
+    {
+      "id": "DOM-08",
+      "name": "Android and Cross-Platform Apps",
+      "category": "Engineering",
+      "status": "active"
+    },
+    {
+      "id": "DOM-09",
+      "name": "UI/UX and Graphic Design",
+      "category": "Design",
+      "status": "active"
+    },
+    {
+      "id": "DOM-10",
+      "name": "Video Creation and Editing",
+      "category": "Media",
+      "status": "active"
+    },
+    {
+      "id": "DOM-11",
+      "name": "Documentary and Reels Production",
+      "category": "Media",
+      "status": "active"
+    },
+    {
+      "id": "DOM-12",
+      "name": "Image Generation and Editing",
+      "category": "Media",
+      "status": "active"
+    },
+    {
+      "id": "DOM-13",
+      "name": "Voice, Audio and Music Production",
+      "category": "Media",
+      "status": "active"
+    },
+    {
+      "id": "DOM-14",
+      "name": "Social Media Management",
+      "category": "Growth",
+      "status": "active"
+    },
+    {
+      "id": "DOM-15",
+      "name": "YouTube Automation",
+      "category": "Growth",
+      "status": "active"
+    },
+    {
+      "id": "DOM-16",
+      "name": "Instagram and Facebook Automation",
+      "category": "Growth",
+      "status": "active"
+    },
+    {
+      "id": "DOM-17",
+      "name": "Telegram, X and Other Platform Integrations",
+      "category": "Growth",
+      "status": "active"
+    },
+    {
+      "id": "DOM-18",
+      "name": "Multi-Platform Publishing",
+      "category": "Automation",
+      "status": "active"
+    },
+    {
+      "id": "DOM-19",
+      "name": "Browser Automation and Computer Use",
+      "category": "Automation",
+      "status": "active"
+    },
+    {
+      "id": "DOM-20",
+      "name": "Business Process Automation",
+      "category": "Automation",
+      "status": "active"
+    },
+    {
+      "id": "DOM-21",
+      "name": "Research and Data Analysis",
+      "category": "Intelligence",
+      "status": "active"
+    },
+    {
+      "id": "DOM-22",
+      "name": "Cybersecurity and Privacy",
+      "category": "Security",
+      "status": "active"
+    },
+    {
+      "id": "DOM-23",
+      "name": "Software Testing and Quality Assurance",
+      "category": "Quality",
+      "status": "active"
+    },
+    {
+      "id": "DOM-24",
+      "name": "DevOps and Cloud Infrastructure",
+      "category": "Operations",
+      "status": "active"
+    },
+    {
+      "id": "DOM-25",
+      "name": "Marketing, SEO and Analytics",
+      "category": "Growth",
+      "status": "active"
+    },
+    {
+      "id": "DOM-26",
+      "name": "Business Operations and Customer Support",
+      "category": "Operations",
+      "status": "active"
+    },
+    {
+      "id": "DOM-27",
+      "name": "Document and Presentation Creation",
+      "category": "Productivity",
+      "status": "active"
+    },
+    {
+      "id": "DOM-28",
+      "name": "Learning and Educational Systems",
+      "category": "Education",
+      "status": "active"
+    },
+    {
+      "id": "DOM-29",
+      "name": "Robotics and IoT",
+      "category": "Emerging Tech",
+      "status": "active"
+    },
+    {
+      "id": "DOM-30",
+      "name": "Emerging AI Technologies",
+      "category": "Emerging Tech",
+      "status": "active"
+    }
+  ],
+  "skills": [
+    {
+      "id": "SKILL-001",
+      "name": "technical-research",
+      "path": "02_SKILLS/technical-research/SKILL.md",
+      "category": "Intelligence",
+      "domain_id": "DOM-21",
+      "maturity": "APPROVED",
+      "scope": "workspace",
+      "tested": true,
+      "approval_status": "APPROVED_LOCAL"
+    },
+    {
+      "id": "SKILL-002",
+      "name": "prompt-engineering",
+      "path": "02_SKILLS/prompt-engineering/SKILL.md",
+      "category": "Core AI",
+      "domain_id": "DOM-02",
+      "maturity": "TESTED",
+      "scope": "workspace",
+      "tested": true,
+      "approval_status": "APPROVED_LOCAL"
+    },
+    {
+      "id": "SKILL-003",
+      "name": "software-architecture",
+      "path": "02_SKILLS/software-architecture/SKILL.md",
+      "category": "Engineering",
+      "domain_id": "DOM-07",
+      "maturity": "TESTED",
+      "scope": "workspace",
+      "tested": true,
+      "approval_status": "APPROVED_LOCAL"
+    },
+    {
+      "id": "SKILL-004",
+      "name": "coding-standards",
+      "path": "02_SKILLS/coding-standards/SKILL.md",
+      "category": "Quality",
+      "domain_id": "DOM-07",
+      "maturity": "TESTED",
+      "scope": "workspace",
+      "tested": true,
+      "approval_status": "APPROVED_LOCAL"
+    },
+    {
+      "id": "SKILL-005",
+      "name": "documentation-engineering",
+      "path": "02_SKILLS/documentation-engineering/SKILL.md",
+      "category": "Productivity",
+      "domain_id": "DOM-27",
+      "maturity": "TESTED",
+      "scope": "workspace",
+      "tested": true,
+      "approval_status": "APPROVED_LOCAL"
+    },
+    {
+      "id": "SKILL-006",
+      "name": "capability-research",
+      "path": "02_SKILLS/capability-research/SKILL.md",
+      "category": "Intelligence",
+      "domain_id": "DOM-30",
+      "maturity": "TESTED",
+      "scope": "workspace",
+      "tested": true,
+      "approval_status": "APPROVED_LOCAL"
+    },
+    {
+      "id": "SKILL-007",
+      "name": "frontend-engineering",
+      "path": "02_SKILLS/frontend-engineering/SKILL.md",
+      "category": "Development",
+      "domain_id": "DOM-08",
+      "maturity": "APPROVED",
+      "scope": "workspace",
+      "tested": true,
+      "approval_status": "APPROVED_LOCAL"
+    },
+    {
+      "id": "SKILL-008",
+      "name": "backend-engineering",
+      "path": "02_SKILLS/backend-engineering/SKILL.md",
+      "category": "Development",
+      "domain_id": "DOM-09",
+      "maturity": "APPROVED",
+      "scope": "workspace",
+      "tested": true,
+      "approval_status": "APPROVED_LOCAL"
+    },
+    {
+      "id": "SKILL-009",
+      "name": "database-engineering",
+      "path": "02_SKILLS/database-engineering/SKILL.md",
+      "category": "Development",
+      "domain_id": "DOM-10",
+      "maturity": "APPROVED",
+      "scope": "workspace",
+      "tested": true,
+      "approval_status": "APPROVED_LOCAL"
+    },
+    {
+      "id": "SKILL-010",
+      "name": "mobile-engineering",
+      "path": "02_SKILLS/mobile-engineering/SKILL.md",
+      "category": "Development",
+      "domain_id": "DOM-11",
+      "maturity": "APPROVED",
+      "scope": "workspace",
+      "tested": true,
+      "approval_status": "APPROVED_LOCAL"
+    },
+    {
+      "id": "SKILL-011",
+      "name": "api-engineering",
+      "path": "02_SKILLS/api-engineering/SKILL.md",
+      "category": "Development",
+      "domain_id": "DOM-09",
+      "maturity": "APPROVED",
+      "scope": "workspace",
+      "tested": true,
+      "approval_status": "APPROVED_LOCAL"
+    },
+    {
+      "id": "SKILL-012",
+      "name": "ui-ux-design",
+      "path": "02_SKILLS/ui-ux-design/SKILL.md",
+      "category": "Design",
+      "domain_id": "DOM-08",
+      "maturity": "APPROVED",
+      "scope": "workspace",
+      "tested": true,
+      "approval_status": "APPROVED_LOCAL"
+    }
+  ],
+  "agents": [
+    {
+      "id": "AGT-001",
+      "name": "Research Agent",
+      "definition_file": "03_AI_AGENTS/definitions/research_agent.json",
+      "spec_file": "03_AI_AGENTS/specialists/RESEARCH_AGENT.md",
+      "category": "Intelligence",
+      "primary_domain": "DOM-21",
+      "status": "TESTED",
+      "workspace_mode": "inherit",
+      "approval_status": "APPROVED_LOCAL",
+      "runtime_tier": "TIER_D_TESTED"
+    },
+    {
+      "id": "AGT-002",
+      "name": "Software Architect",
+      "definition_file": "03_AI_AGENTS/definitions/software_architect.json",
+      "spec_file": "03_AI_AGENTS/architect/SOFTWARE_ARCHITECT.md",
+      "category": "Architecture",
+      "primary_domain": "DOM-07",
+      "status": "TESTED",
+      "workspace_mode": "inherit",
+      "approval_status": "APPROVED_LOCAL",
+      "runtime_tier": "TIER_D_TESTED"
+    },
+    {
+      "id": "AGT-003",
+      "name": "Coding Agent",
+      "definition_file": "03_AI_AGENTS/definitions/coding_agent.json",
+      "spec_file": "03_AI_AGENTS/engineers/CODING_AGENT.md",
+      "category": "Engineering",
+      "primary_domain": "DOM-07",
+      "status": "TESTED",
+      "workspace_mode": "branch",
+      "approval_status": "APPROVED_LOCAL",
+      "runtime_tier": "TIER_D_TESTED"
+    },
+    {
+      "id": "AGT-004",
+      "name": "Testing Agent",
+      "definition_file": "03_AI_AGENTS/definitions/testing_agent.json",
+      "spec_file": "03_AI_AGENTS/engineers/TESTING_AGENT.md",
+      "category": "Quality",
+      "primary_domain": "DOM-23",
+      "status": "TESTED",
+      "workspace_mode": "inherit",
+      "approval_status": "APPROVED_LOCAL",
+      "runtime_tier": "TIER_D_TESTED"
+    },
+    {
+      "id": "AGT-005",
+      "name": "Documentation Agent",
+      "definition_file": "03_AI_AGENTS/definitions/documentation_agent.json",
+      "spec_file": "03_AI_AGENTS/specialists/DOCUMENTATION_AGENT.md",
+      "category": "Productivity",
+      "primary_domain": "DOM-27",
+      "status": "TESTED",
+      "workspace_mode": "inherit",
+      "approval_status": "APPROVED_LOCAL",
+      "runtime_tier": "TIER_D_TESTED"
+    },
+    {
+      "id": "AGT-006",
+      "name": "Security Auditor",
+      "definition_file": "03_AI_AGENTS/definitions/security_auditor.json",
+      "spec_file": "03_AI_AGENTS/specialists/SECURITY_AUDITOR.md",
+      "category": "Security",
+      "primary_domain": "DOM-22",
+      "status": "TESTED",
+      "workspace_mode": "inherit",
+      "approval_status": "APPROVED_LOCAL",
+      "runtime_tier": "TIER_D_TESTED"
+    },
+    {
+      "id": "AGT-007",
+      "name": "Capability Discovery Agent",
+      "definition_file": "03_AI_AGENTS/definitions/capability_discovery_agent.json",
+      "spec_file": "03_AI_AGENTS/specialists/CAPABILITY_DISCOVERY_AGENT.md",
+      "category": "Intelligence",
+      "primary_domain": "DOM-30",
+      "status": "TESTED",
+      "workspace_mode": "inherit",
+      "approval_status": "APPROVED_LOCAL",
+      "runtime_tier": "TIER_D_TESTED"
+    },
+    {
+      "id": "AGT-008",
+      "name": "Content Producer Agent",
+      "definition_file": "03_AI_AGENTS/definitions/content_producer.json",
+      "category": "Production",
+      "primary_domain": "DOM-09",
+      "status": "TESTED",
+      "workspace_mode": "inherit",
+      "approval_status": "APPROVED_LOCAL",
+      "runtime_tier": "TIER_D_TESTED"
+    },
+    {
+      "id": "AGT-009",
+      "name": "Scriptwriter Agent",
+      "definition_file": "03_AI_AGENTS/definitions/scriptwriter.json",
+      "category": "Production",
+      "primary_domain": "DOM-09",
+      "status": "TESTED",
+      "workspace_mode": "inherit",
+      "approval_status": "APPROVED_LOCAL",
+      "runtime_tier": "TIER_D_TESTED"
+    },
+    {
+      "id": "AGT-010",
+      "name": "Storyboard Director Agent",
+      "definition_file": "03_AI_AGENTS/definitions/storyboard_director.json",
+      "category": "Production",
+      "primary_domain": "DOM-09",
+      "status": "TESTED",
+      "workspace_mode": "inherit",
+      "approval_status": "APPROVED_LOCAL",
+      "runtime_tier": "TIER_D_TESTED"
+    },
+    {
+      "id": "AGT-011",
+      "name": "Visual Asset Researcher Agent",
+      "definition_file": "03_AI_AGENTS/definitions/visual_asset_researcher.json",
+      "category": "Production",
+      "primary_domain": "DOM-09",
+      "status": "TESTED",
+      "workspace_mode": "inherit",
+      "approval_status": "APPROVED_LOCAL",
+      "runtime_tier": "TIER_D_TESTED"
+    },
+    {
+      "id": "AGT-012",
+      "name": "Voice Director Agent",
+      "definition_file": "03_AI_AGENTS/definitions/voice_director.json",
+      "category": "Production",
+      "primary_domain": "DOM-09",
+      "status": "TESTED",
+      "workspace_mode": "inherit",
+      "approval_status": "APPROVED_LOCAL",
+      "runtime_tier": "TIER_D_TESTED"
+    },
+    {
+      "id": "AGT-013",
+      "name": "Video Editor Agent",
+      "definition_file": "03_AI_AGENTS/definitions/video_editor.json",
+      "category": "Production",
+      "primary_domain": "DOM-09",
+      "status": "TESTED",
+      "workspace_mode": "inherit",
+      "approval_status": "APPROVED_LOCAL",
+      "runtime_tier": "TIER_D_TESTED"
+    },
+    {
+      "id": "AGT-014",
+      "name": "Subtitle Specialist Agent",
+      "definition_file": "03_AI_AGENTS/definitions/subtitle_specialist.json",
+      "category": "Production",
+      "primary_domain": "DOM-09",
+      "status": "TESTED",
+      "workspace_mode": "inherit",
+      "approval_status": "APPROVED_LOCAL",
+      "runtime_tier": "TIER_D_TESTED"
+    },
+    {
+      "id": "AGT-015",
+      "name": "Media QA Auditor Agent",
+      "definition_file": "03_AI_AGENTS/definitions/media_qa_auditor.json",
+      "category": "Production",
+      "primary_domain": "DOM-09",
+      "status": "TESTED",
+      "workspace_mode": "inherit",
+      "approval_status": "APPROVED_LOCAL",
+      "runtime_tier": "TIER_D_TESTED"
+    }
+  ],
+  "mcp_servers": [
+    {
+      "id": "MCP-01",
+      "name": "chrome-devtools-mcp",
+      "transport": "stdio",
+      "command": "npx -y chrome-devtools-mcp@latest",
+      "status": "CONFIGURED_HOST",
+      "verified": true
+    },
+    {
+      "id": "MCP-02",
+      "name": "cloudrun",
+      "transport": "stdio",
+      "command": "npx -y @google-cloud/cloud-run-mcp",
+      "status": "CONFIGURED_HOST",
+      "verified": true
+    },
+    {
+      "id": "MCP-03",
+      "name": "genkit-mcp-server",
+      "transport": "stdio",
+      "command": "npx -y genkit-cli@^1.28.0 mcp",
+      "status": "CONFIGURED_HOST",
+      "verified": true
+    },
+    {
+      "id": "MCP-04",
+      "name": "gmp-code-assist",
+      "transport": "sse",
+      "serverUrl": "https://mapscodeassist.googleapis.com/mcp",
+      "status": "CONFIGURED_HOST",
+      "verified": true
+    },
+    {
+      "id": "MCP-05",
+      "name": "google-home-developer",
+      "transport": "sse",
+      "serverUrl": "https://homedevelopers.googleapis.com/mcp",
+      "status": "CONFIGURED_HOST",
+      "verified": true
+    },
+    {
+      "id": "MCP-06",
+      "name": "playwright",
+      "transport": "stdio",
+      "command": "npx -y @playwright/mcp@latest",
+      "status": "CONFIGURED_HOST",
+      "verified": true
+    },
+    {
+      "id": "MCP-07",
+      "name": "get-shit-done",
+      "transport": "stdio",
+      "command": "npx -y @gsd-build/mcp-server",
+      "status": "CONFIGURED_HOST",
+      "verified": true
+    },
+    {
+      "id": "MCP-08",
+      "name": "gsd-task-manager",
+      "transport": "stdio",
+      "command": "npx -y gsd-mcp-server",
+      "status": "CONFIGURED_HOST",
+      "verified": true
+    }
+  ],
+  "github_repositories": [
+    {
+      "repo": "langchain-ai/langgraph",
+      "category": "Agent Frameworks",
+      "domain_id": "DOM-04",
+      "stars_k": 18,
+      "recommendation": "REFERENCE"
+    },
+    {
+      "repo": "crewAIInc/crewAI",
+      "category": "Agent Frameworks",
+      "domain_id": "DOM-04",
+      "stars_k": 26,
+      "recommendation": "REFERENCE"
+    },
+    {
+      "repo": "microsoft/autogen",
+      "category": "Agent Frameworks",
+      "domain_id": "DOM-04",
+      "stars_k": 38,
+      "recommendation": "REFERENCE"
+    },
+    {
+      "repo": "All-Hands-AI/OpenHands",
+      "category": "Coding Agents",
+      "domain_id": "DOM-04",
+      "stars_k": 45,
+      "recommendation": "REFERENCE"
+    },
+    {
+      "repo": "Aider-AI/aider",
+      "category": "Coding Agents",
+      "domain_id": "DOM-07",
+      "stars_k": 28,
+      "recommendation": "REFERENCE"
+    },
+    {
+      "repo": "modelcontextprotocol/servers",
+      "category": "MCP",
+      "domain_id": "DOM-06",
+      "stars_k": 15,
+      "recommendation": "USE"
+    },
+    {
+      "repo": "modelcontextprotocol/python-sdk",
+      "category": "MCP",
+      "domain_id": "DOM-06",
+      "stars_k": 5,
+      "recommendation": "USE"
+    },
+    {
+      "repo": "qdrant/qdrant",
+      "category": "Vector DB",
+      "domain_id": "DOM-03",
+      "stars_k": 22,
+      "recommendation": "USE"
+    },
+    {
+      "repo": "pgvector/pgvector",
+      "category": "Vector DB",
+      "domain_id": "DOM-03",
+      "stars_k": 14,
+      "recommendation": "USE"
+    },
+    {
+      "repo": "vllm-project/vllm",
+      "category": "Local LLM",
+      "domain_id": "DOM-01",
+      "stars_k": 35,
+      "recommendation": "REFERENCE"
+    },
+    {
+      "repo": "ollama/ollama",
+      "category": "Local LLM",
+      "domain_id": "DOM-01",
+      "stars_k": 115,
+      "recommendation": "USE"
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "category": "Automation",
+      "domain_id": "DOM-20",
+      "stars_k": 62,
+      "recommendation": "USE"
+    },
+    {
+      "repo": "microsoft/playwright",
+      "category": "Browser Automation",
+      "domain_id": "DOM-19",
+      "stars_k": 68,
+      "recommendation": "USE"
+    },
+    {
+      "repo": "shadcn-ui/ui",
+      "category": "UI/UX",
+      "domain_id": "DOM-09",
+      "stars_k": 75,
+      "recommendation": "USE"
+    },
+    {
+      "repo": "Remotion-dev/remotion",
+      "category": "Video Synthesis",
+      "domain_id": "DOM-10",
+      "stars_k": 22,
+      "recommendation": "TEST"
+    },
+    {
+      "repo": "openai/whisper",
+      "category": "Voice/Audio",
+      "domain_id": "DOM-13",
+      "stars_k": 72,
+      "recommendation": "USE"
+    },
+    {
+      "repo": "vitest-dev/vitest",
+      "category": "Testing",
+      "domain_id": "DOM-23",
+      "stars_k": 14,
+      "recommendation": "USE"
+    },
+    {
+      "repo": "trufflesecurity/trufflehog",
+      "category": "Security",
+      "domain_id": "DOM-22",
+      "stars_k": 17,
+      "recommendation": "USE"
+    },
+    {
+      "repo": "fastify/fastify",
+      "category": "Web Dev",
+      "domain_id": "DOM-07",
+      "stars_k": 33,
+      "recommendation": "USE"
+    },
+    {
+      "repo": "tiangolo/fastapi",
+      "category": "Web Dev",
+      "domain_id": "DOM-07",
+      "stars_k": 78,
+      "recommendation": "USE"
+    }
+  ],
+  "summary": {
+    "total_domains": 30,
+    "total_skills": 12,
+    "total_agents": 7,
+    "total_mcp_servers": 8,
+    "total_github_targets": 20
+  }
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "scene1_hook",
+    "speaker": "Aryan (Employee)",
+    "char": "aryan",
+    "sub": "Lala Company mein 2 saal din raat mehnat ke baad, appraisal day par cabin mein bulaya...",
+    "topic": "LALA COMPANY APPRAISAL DAY",
+    "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\corporate_drama_reel\\audio\\scene1_mastered.wav",
+    "dur": 9.24
+  },
+  {
+    "id": "scene2_manager_gaslight",
+    "speaker": "Mr. Sharma (Manager)",
+    "char": "sharma",
+    "sub": "Aryan, kaam theek hai par ownership missing hai! Market down hai, appraisal bhool jao!",
+    "topic": "THE GASLIGHTING TRAP",
+    "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\corporate_drama_reel\\audio\\scene2_mastered.wav",
+    "dur": 14.74
+  },
+  {
+    "id": "scene3_employee_shock",
+    "speaker": "Aryan (Employee)",
+    "char": "aryan",
+    "sub": "Sir, 6 mahine se har weekend 14 ghante login kiya! Client ne khud appreciation mail bheja!",
+    "topic": "THE BITTER TRUTH (PROOF)",
+    "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\corporate_drama_reel\\audio\\scene3_mastered.wav",
+    "dur": 14.71
+  },
+  {
+    "id": "scene4_manager_ultimatum",
+    "speaker": "Mr. Sharma (Manager)",
+    "char": "sharma",
+    "sub": "Seedha faisla hai—ya 0% hike par 14 ghante kaam karo, ya resignation rakh do!",
+    "topic": "THE TOXIC ULTIMATUM",
+    "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\corporate_drama_reel\\audio\\scene4_mastered.wav",
+    "dur": 13.7
+  },
+  {
+    "id": "scene5_cliffhanger",
+    "speaker": "Aryan (Employee)",
+    "char": "aryan",
+    "sub": "Ghar par Rs 45,000 EMI ka pressure tha, aur samne meri self-respect ki nilami ho rahi thi...",
+    "topic": "THE MORAL DILEMMA",
+    "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\corporate_drama_reel\\audio\\scene5_mastered.wav",
+    "dur": 10.63
+  },
+  {
+    "id": "scene6_audience_question",
+    "speaker": "Aryan (Employee)",
+    "char": "aryan",
+    "sub": "Agar meri jagah aap hote toh kya karte? Comment karein, aur maine kya kiya... dekho Part 2 mein!",
+    "topic": "WHAT WOULD YOU DO? (PART 2)",
+    "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\corporate_drama_reel\\audio\\scene6_mastered.wav",
+    "dur": 13.63
+  }
+]

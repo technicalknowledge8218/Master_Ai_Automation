@@ -1,0 +1,102 @@
+{
+  "project_id": "DOC-91ef5491",
+  "title": "सवाना का सम्राट: शेर (The Sovereign Lion)",
+  "request_prompt": "Create a 5-minute Hindi documentary about lions for YouTube.",
+  "total_duration_sec": 24.52,
+  "project_dir": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-91ef5491",
+  "artifacts": {
+    "final_video_mp4": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-91ef5491\\lion_documentary_hindi.mp4",
+    "audio_track_wav": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-91ef5491\\soundtrack_final.wav",
+    "subtitles_srt": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-91ef5491\\subtitles_hindi.srt",
+    "subtitles_ass": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-91ef5491\\subtitles_hindi.ass",
+    "thumbnail_png": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-91ef5491\\thumbnail_youtube.png",
+    "qa_report_json": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-91ef5491\\qa_report.json",
+    "publication_bundle": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-91ef5491\\publication_bundle",
+    "approval_ticket_id": "TKT-b87dffe8"
+  },
+  "video_specs": {
+    "resolution": "1920x1080",
+    "aspect_ratio": "16:9",
+    "fps": 30,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "file_size_bytes": 809821
+  },
+  "voice_synthesis": {
+    "provider": "procedural_speech",
+    "language": "Hindi",
+    "real_execution": true
+  },
+  "qa_status": "PASS",
+  "qa_passed": true,
+  "approval_ticket_id": "TKT-b87dffe8",
+  "approval_status": "PENDING",
+  "timeline_events": [
+    {
+      "timestamp": "2026-11-17T14:42:36.889899",
+      "stage": "INIT",
+      "message": "Initialized documentary production project 'DOC-91ef5491': 'Create a 5-minute Hindi documentary about lions for YouTube.'"
+    },
+    {
+      "timestamp": "2026-11-17T14:42:36.889949",
+      "stage": "RESEARCH",
+      "message": "Gathering scientific, habitat, pride behavior, and conservation facts."
+    },
+    {
+      "timestamp": "2026-11-17T14:42:36.893788",
+      "stage": "SCRIPTWRITING",
+      "message": "Authoring 4-act narrative script in Hindi with Devanagari text."
+    },
+    {
+      "timestamp": "2026-11-17T14:42:36.896435",
+      "stage": "STORYBOARD",
+      "message": "Generating scene shot lists, camera motions, and timecodes."
+    },
+    {
+      "timestamp": "2026-11-17T14:42:36.899377",
+      "stage": "VISUAL_ASSETS",
+      "message": "Rendering high-resolution cinematic scenes and Ken Burns motion clips."
+    },
+    {
+      "timestamp": "2026-11-17T14:42:46.422257",
+      "stage": "VOICE_SYNTHESIS",
+      "message": "Synthesizing voiceover track in Hindi."
+    },
+    {
+      "timestamp": "2026-11-17T14:42:55.629868",
+      "stage": "AUDIO_MIXING",
+      "message": "Generating licensed savannah wind ambient track and ducking."
+    },
+    {
+      "timestamp": "2026-11-17T14:42:56.161761",
+      "stage": "SUBTITLES",
+      "message": "Generating Hindi Devanagari SRT and ASS subtitle files."
+    },
+    {
+      "timestamp": "2026-11-17T14:42:56.170045",
+      "stage": "VIDEO_RENDERING",
+      "message": "Rendering H.264 MP4 (1920x1080 @ 30fps) via FFmpeg."
+    },
+    {
+      "timestamp": "2026-11-17T14:43:00.020026",
+      "stage": "THUMBNAIL",
+      "message": "Creating high-CTR 1280x720 YouTube thumbnail."
+    },
+    {
+      "timestamp": "2026-11-17T14:43:00.112247",
+      "stage": "MEDIA_QA",
+      "message": "Auditing video integrity, black frames, silence, and subtitle bounds."
+    },
+    {
+      "timestamp": "2026-11-17T14:43:01.403000",
+      "stage": "PACKAGING",
+      "message": "Compiling YouTube publication package and staging for human approval."
+    },
+    {
+      "timestamp": "2026-11-17T14:43:01.411270",
+      "stage": "COMPLETE",
+      "message": "Documentary production successfully completed in 24.52s."
+    }
+  ],
+  "status": "COMPLETED"
+}

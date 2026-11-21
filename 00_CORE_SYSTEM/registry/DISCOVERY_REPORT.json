@@ -1,0 +1,697 @@
+{
+  "timestamp": "2026-11-17",
+  "workspace_skills_count": 12,
+  "workspace_skills": [
+    {
+      "name": "api-engineering",
+      "description": "Designs, specifies, documents, and validates resilient RESTful and event-driven APIs using OpenAPI 3.1. Enforces contract-first design, semantic HTTP status codes, rate limiting, versioning, and client SDK generation.",
+      "path": "02_SKILLS\\api-engineering\\SKILL.md",
+      "has_references": false,
+      "has_scripts": false,
+      "has_examples": false,
+      "valid_frontmatter": true
+    },
+    {
+      "name": "backend-engineering",
+      "description": "Architects secure, scalable, and resilient backend services and APIs using Node.js/Express or Python/FastAPI. Covers middleware pipelines, authentication flows, structured JSON logging, input validation, and transactional integrity.",
+      "path": "02_SKILLS\\backend-engineering\\SKILL.md",
+      "has_references": false,
+      "has_scripts": false,
+      "has_examples": false,
+      "valid_frontmatter": true
+    },
+    {
+      "name": "capability-research",
+      "description": "Discovers, benchmarks, and audits AI capabilities across the 30 master domains, identifies tool and skill gaps in the MASTER-AI ecosystem, and evaluates feasibility against hardware and API limits. Use when assessing missing capabilities or evaluating new AI modalities.",
+      "path": "02_SKILLS\\capability-research\\SKILL.md",
+      "has_references": true,
+      "has_scripts": true,
+      "has_examples": false,
+      "valid_frontmatter": true
+    },
+    {
+      "name": "coding-standards",
+      "description": "Enforces modern, strict programming standards across TypeScript, Python, and SQL, including type safety, zero hardcoded secrets, input sanitization, and clean code conventions. Use before committing code, during code reviews, or when setting up linters.",
+      "path": "02_SKILLS\\coding-standards\\SKILL.md",
+      "has_references": true,
+      "has_scripts": true,
+      "has_examples": false,
+      "valid_frontmatter": true
+    },
+    {
+      "name": "database-engineering",
+      "description": "Designs performant, normalized relational and document schemas, writes efficient queries and indexes, executes zero-downtime database migrations, and enforces ACID transactional integrity across PostgreSQL, MongoDB, and Redis.",
+      "path": "02_SKILLS\\database-engineering\\SKILL.md",
+      "has_references": false,
+      "has_scripts": false,
+      "has_examples": false,
+      "valid_frontmatter": true
+    },
+    {
+      "name": "documentation-engineering",
+      "description": "Structures, authors, and maintains high-yield technical documentation, Architecture Decision Records (ADRs), API specifications, and README manifests. Use whenever documenting system architecture, recording major technical decisions, or generating documentation sets.",
+      "path": "02_SKILLS\\documentation-engineering\\SKILL.md",
+      "has_references": true,
+      "has_scripts": true,
+      "has_examples": true,
+      "valid_frontmatter": true
+    },
+    {
+      "name": "frontend-engineering",
+      "description": "Builds accessible, high-performance, and responsive frontend applications using modern React, TypeScript strict mode, token-driven Tailwind CSS, and robust state management. Use when creating UI components, wiring forms with validation, optimizing client performance, or implementing WCAG 2.2 AAA accessibility.",
+      "path": "02_SKILLS\\frontend-engineering\\SKILL.md",
+      "has_references": false,
+      "has_scripts": false,
+      "has_examples": false,
+      "valid_frontmatter": true
+    },
+    {
+      "name": "mobile-engineering",
+      "description": "Builds secure, responsive, and offline-first mobile applications using native Android (Jetpack Compose) or cross-platform Capacitor. Governs mobile lifecycle, Keystore secure storage, runtime permissions, and hardware bridging.",
+      "path": "02_SKILLS\\mobile-engineering\\SKILL.md",
+      "has_references": false,
+      "has_scripts": false,
+      "has_examples": false,
+      "valid_frontmatter": true
+    },
+    {
+      "name": "prompt-engineering",
+      "description": "Designs, optimizes, and evaluates high-precision LLM prompts, structured JSON schemas, few-shot exemplars, and context-window minimization strategies. Use whenever authoring system instructions, structuring LLM outputs, or preventing prompt injection.",
+      "path": "02_SKILLS\\prompt-engineering\\SKILL.md",
+      "has_references": true,
+      "has_scripts": true,
+      "has_examples": true,
+      "valid_frontmatter": true
+    },
+    {
+      "name": "software-architecture",
+      "description": "Designs modular, decoupled, and scalable software systems following clean architecture, domain-driven design, and strict separation of concerns. Use when architecting new projects, evaluating microservice vs monolith trade-offs, or defining module interfaces.",
+      "path": "02_SKILLS\\software-architecture\\SKILL.md",
+      "has_references": true,
+      "has_scripts": true,
+      "has_examples": true,
+      "valid_frontmatter": true
+    },
+    {
+      "name": "technical-research",
+      "description": "Researches, benchmarks, and validates software technologies, libraries, and APIs against official documentation and specifications before implementation. Use whenever investigating a new technology, evaluating library versions, or verifying API capabilities.",
+      "path": "02_SKILLS\\technical-research\\SKILL.md",
+      "has_references": true,
+      "has_scripts": true,
+      "has_examples": false,
+      "valid_frontmatter": true
+    },
+    {
+      "name": "ui-ux-design",
+      "description": "Designs accessible, beautiful, and user-centered design systems, layouts, and interaction patterns. Translates design tokens into cohesive interfaces following WCAG 2.2 AAA guidelines and mobile-first principles.",
+      "path": "02_SKILLS\\ui-ux-design\\SKILL.md",
+      "has_references": false,
+      "has_scripts": false,
+      "has_examples": false,
+      "valid_frontmatter": true
+    }
+  ],
+  "workspace_agents_count": 15,
+  "workspace_agents": [
+    {
+      "id": "AGT-007",
+      "name": "Capability Discovery Agent",
+      "role": "Ecosystem Intelligence & Horizon Scanner",
+      "path": "03_AI_AGENTS\\definitions\\capability_discovery_agent.json",
+      "primary_domain": "DOM-30",
+      "tools_allowed": [
+        "read_file",
+        "run_command",
+        "view_file"
+      ],
+      "tools_prohibited": [
+        "modify_global_settings",
+        "install_unapproved_packages"
+      ],
+      "valid_json": true
+    },
+    {
+      "id": "AGT-003",
+      "name": "Coding Agent",
+      "role": "Full-Stack Implementation Specialist",
+      "path": "03_AI_AGENTS\\definitions\\coding_agent.json",
+      "primary_domain": "DOM-07",
+      "tools_allowed": [
+        "read_file",
+        "write_file",
+        "edit_file",
+        "run_command"
+      ],
+      "tools_prohibited": [
+        "git_push_remote",
+        "bypass_lint_rules",
+        "store_credentials"
+      ],
+      "valid_json": true
+    },
+    {
+      "id": "AGT-008",
+      "name": "Content Producer",
+      "role": "Executive Media & Documentary Producer",
+      "path": "03_AI_AGENTS\\definitions\\content_producer.json",
+      "primary_domain": "DOM-09",
+      "tools_allowed": [
+        "read_file",
+        "write_file",
+        "search_knowledge_base",
+        "query_memory"
+      ],
+      "tools_prohibited": [
+        "activate_paid_api",
+        "modify_system_configs",
+        "publish_without_approval"
+      ],
+      "valid_json": true
+    },
+    {
+      "id": "AGT-005",
+      "name": "Documentation Agent",
+      "role": "Technical Documentation & ADR Engineer",
+      "path": "03_AI_AGENTS\\definitions\\documentation_agent.json",
+      "primary_domain": "DOM-27",
+      "tools_allowed": [
+        "read_file",
+        "write_file",
+        "edit_file",
+        "view_file"
+      ],
+      "tools_prohibited": [
+        "delete_existing_docs_without_archive",
+        "hardcode_credentials"
+      ],
+      "valid_json": true
+    },
+    {
+      "id": "AGT-015",
+      "name": "Media QA Auditor",
+      "role": "Multimedia Quality Assurance & Compliance Auditor",
+      "path": "03_AI_AGENTS\\definitions\\media_qa_auditor.json",
+      "primary_domain": "DOM-09",
+      "tools_allowed": [
+        "read_file",
+        "write_file",
+        "sandbox_eval",
+        "query_memory"
+      ],
+      "tools_prohibited": [
+        "activate_paid_api",
+        "override_qa_failures",
+        "modify_system_configs"
+      ],
+      "valid_json": true
+    },
+    {
+      "id": "AGT-001",
+      "name": "Research Agent",
+      "role": "Technical Research & Literature Analyst",
+      "path": "03_AI_AGENTS\\definitions\\research_agent.json",
+      "primary_domain": "DOM-21",
+      "tools_allowed": [
+        "search_web",
+        "read_file",
+        "run_command",
+        "view_file"
+      ],
+      "tools_prohibited": [
+        "write_file_outside_sandbox",
+        "install_global_packages",
+        "modify_system_configs"
+      ],
+      "valid_json": true
+    },
+    {
+      "id": "AGT-009",
+      "name": "Scriptwriter",
+      "role": "Documentary Scriptwriter & Narrative Designer",
+      "path": "03_AI_AGENTS\\definitions\\scriptwriter.json",
+      "primary_domain": "DOM-09",
+      "tools_allowed": [
+        "read_file",
+        "write_file",
+        "search_knowledge_base",
+        "query_memory"
+      ],
+      "tools_prohibited": [
+        "execute_subprocess",
+        "activate_paid_api",
+        "modify_system_configs"
+      ],
+      "valid_json": true
+    },
+    {
+      "id": "AGT-006",
+      "name": "Security Auditor",
+      "role": "Zero-Trust Security & OWASP Auditor",
+      "path": "03_AI_AGENTS\\definitions\\security_auditor.json",
+      "primary_domain": "DOM-22",
+      "tools_allowed": [
+        "read_file",
+        "run_command",
+        "view_file"
+      ],
+      "tools_prohibited": [
+        "bypass_security_gates",
+        "disable_secret_scanner"
+      ],
+      "valid_json": true
+    },
+    {
+      "id": "AGT-002",
+      "name": "Software Architect",
+      "role": "System Architecture & Interface Designer",
+      "path": "03_AI_AGENTS\\definitions\\software_architect.json",
+      "primary_domain": "DOM-07",
+      "tools_allowed": [
+        "read_file",
+        "write_file",
+        "edit_file",
+        "view_file"
+      ],
+      "tools_prohibited": [
+        "deploy_to_production_without_approval",
+        "modify_security_policies"
+      ],
+      "valid_json": true
+    },
+    {
+      "id": "AGT-010",
+      "name": "Storyboard Director",
+      "role": "Visual Storyboard & Shot Director",
+      "path": "03_AI_AGENTS\\definitions\\storyboard_director.json",
+      "primary_domain": "DOM-09",
+      "tools_allowed": [
+        "read_file",
+        "write_file",
+        "search_knowledge_base",
+        "query_memory"
+      ],
+      "tools_prohibited": [
+        "execute_subprocess",
+        "activate_paid_api",
+        "modify_system_configs"
+      ],
+      "valid_json": true
+    },
+    {
+      "id": "AGT-014",
+      "name": "Subtitle Specialist",
+      "role": "Multilingual Subtitle & Captioning Engineer",
+      "path": "03_AI_AGENTS\\definitions\\subtitle_specialist.json",
+      "primary_domain": "DOM-09",
+      "tools_allowed": [
+        "read_file",
+        "write_file",
+        "query_memory"
+      ],
+      "tools_prohibited": [
+        "execute_subprocess",
+        "activate_paid_api",
+        "modify_system_configs"
+      ],
+      "valid_json": true
+    },
+    {
+      "id": "AGT-004",
+      "name": "Testing Agent",
+      "role": "Quality Assurance & Test Automation Specialist",
+      "path": "03_AI_AGENTS\\definitions\\testing_agent.json",
+      "primary_domain": "DOM-23",
+      "tools_allowed": [
+        "read_file",
+        "write_file",
+        "run_command",
+        "view_file"
+      ],
+      "tools_prohibited": [
+        "suppress_test_failures",
+        "modify_production_code_directly"
+      ],
+      "valid_json": true
+    },
+    {
+      "id": "AGT-013",
+      "name": "Video Editor",
+      "role": "Lead Programmatic Video Editor",
+      "path": "03_AI_AGENTS\\definitions\\video_editor.json",
+      "primary_domain": "DOM-09",
+      "tools_allowed": [
+        "read_file",
+        "write_file",
+        "sandbox_eval",
+        "query_memory"
+      ],
+      "tools_prohibited": [
+        "activate_paid_api",
+        "delete_external_files",
+        "modify_system_configs"
+      ],
+      "valid_json": true
+    },
+    {
+      "id": "AGT-011",
+      "name": "Visual Asset Researcher",
+      "role": "Media Asset Curator & Visual Generator",
+      "path": "03_AI_AGENTS\\definitions\\visual_asset_researcher.json",
+      "primary_domain": "DOM-09",
+      "tools_allowed": [
+        "read_file",
+        "write_file",
+        "search_knowledge_base",
+        "sandbox_eval"
+      ],
+      "tools_prohibited": [
+        "activate_paid_api",
+        "download_unauthorized_content",
+        "modify_system_configs"
+      ],
+      "valid_json": true
+    },
+    {
+      "id": "AGT-012",
+      "name": "Voice Director",
+      "role": "Voiceover Director & Speech Synthesis Supervisor",
+      "path": "03_AI_AGENTS\\definitions\\voice_director.json",
+      "primary_domain": "DOM-09",
+      "tools_allowed": [
+        "read_file",
+        "write_file",
+        "query_memory",
+        "sandbox_eval"
+      ],
+      "tools_prohibited": [
+        "activate_paid_api",
+        "execute_arbitrary_shell",
+        "modify_system_configs"
+      ],
+      "valid_json": true
+    }
+  ],
+  "host_mcp_servers_count": 8,
+  "host_mcp_servers": [
+    "chrome-devtools-mcp",
+    "cloudrun",
+    "genkit-mcp-server",
+    "gmp-code-assist",
+    "google-home-developer",
+    "playwright",
+    "get-shit-done",
+    "gsd-task-manager"
+  ],
+  "domain_readiness_summary": {
+    "total_domains": 30,
+    "covered_ready": 5,
+    "covered_partial": 6,
+    "uncovered_gaps": 19
+  },
+  "domain_coverage_details": [
+    {
+      "domain_id": "DOM-01",
+      "domain_name": "LLMs and Foundation Models",
+      "category": "Core AI",
+      "coverage_status": "UNCOVERED_GAP",
+      "covering_skills": [],
+      "covering_agents": []
+    },
+    {
+      "domain_id": "DOM-02",
+      "domain_name": "Prompt Engineering and Context Engineering",
+      "category": "Core AI",
+      "coverage_status": "COVERED_PARTIAL",
+      "covering_skills": [
+        "prompt-engineering"
+      ],
+      "covering_agents": []
+    },
+    {
+      "domain_id": "DOM-03",
+      "domain_name": "RAG and Knowledge Systems",
+      "category": "AI Systems",
+      "coverage_status": "UNCOVERED_GAP",
+      "covering_skills": [],
+      "covering_agents": []
+    },
+    {
+      "domain_id": "DOM-04",
+      "domain_name": "AI Agents and Multi-Agent Systems",
+      "category": "Autonomous Systems",
+      "coverage_status": "UNCOVERED_GAP",
+      "covering_skills": [],
+      "covering_agents": []
+    },
+    {
+      "domain_id": "DOM-05",
+      "domain_name": "Skills and Agent Frameworks",
+      "category": "Frameworks",
+      "coverage_status": "UNCOVERED_GAP",
+      "covering_skills": [],
+      "covering_agents": []
+    },
+    {
+      "domain_id": "DOM-06",
+      "domain_name": "MCP and Tool Calling",
+      "category": "Integration",
+      "coverage_status": "UNCOVERED_GAP",
+      "covering_skills": [],
+      "covering_agents": []
+    },
+    {
+      "domain_id": "DOM-07",
+      "domain_name": "Software and Web Development",
+      "category": "Engineering",
+      "coverage_status": "COVERED_READY",
+      "covering_skills": [
+        "software-architecture",
+        "coding-standards"
+      ],
+      "covering_agents": [
+        "Software Architect",
+        "Coding Agent"
+      ]
+    },
+    {
+      "domain_id": "DOM-08",
+      "domain_name": "Android and Cross-Platform Apps",
+      "category": "Engineering",
+      "coverage_status": "COVERED_PARTIAL",
+      "covering_skills": [
+        "frontend-engineering",
+        "ui-ux-design"
+      ],
+      "covering_agents": []
+    },
+    {
+      "domain_id": "DOM-09",
+      "domain_name": "UI/UX and Graphic Design",
+      "category": "Design",
+      "coverage_status": "COVERED_READY",
+      "covering_skills": [
+        "backend-engineering",
+        "api-engineering"
+      ],
+      "covering_agents": [
+        "Content Producer Agent",
+        "Scriptwriter Agent",
+        "Storyboard Director Agent",
+        "Visual Asset Researcher Agent",
+        "Voice Director Agent",
+        "Video Editor Agent",
+        "Subtitle Specialist Agent",
+        "Media QA Auditor Agent"
+      ]
+    },
+    {
+      "domain_id": "DOM-10",
+      "domain_name": "Video Creation and Editing",
+      "category": "Media",
+      "coverage_status": "COVERED_PARTIAL",
+      "covering_skills": [
+        "database-engineering"
+      ],
+      "covering_agents": []
+    },
+    {
+      "domain_id": "DOM-11",
+      "domain_name": "Documentary and Reels Production",
+      "category": "Media",
+      "coverage_status": "COVERED_PARTIAL",
+      "covering_skills": [
+        "mobile-engineering"
+      ],
+      "covering_agents": []
+    },
+    {
+      "domain_id": "DOM-12",
+      "domain_name": "Image Generation and Editing",
+      "category": "Media",
+      "coverage_status": "UNCOVERED_GAP",
+      "covering_skills": [],
+      "covering_agents": []
+    },
+    {
+      "domain_id": "DOM-13",
+      "domain_name": "Voice, Audio and Music Production",
+      "category": "Media",
+      "coverage_status": "UNCOVERED_GAP",
+      "covering_skills": [],
+      "covering_agents": []
+    },
+    {
+      "domain_id": "DOM-14",
+      "domain_name": "Social Media Management",
+      "category": "Growth",
+      "coverage_status": "UNCOVERED_GAP",
+      "covering_skills": [],
+      "covering_agents": []
+    },
+    {
+      "domain_id": "DOM-15",
+      "domain_name": "YouTube Automation",
+      "category": "Growth",
+      "coverage_status": "UNCOVERED_GAP",
+      "covering_skills": [],
+      "covering_agents": []
+    },
+    {
+      "domain_id": "DOM-16",
+      "domain_name": "Instagram and Facebook Automation",
+      "category": "Growth",
+      "coverage_status": "UNCOVERED_GAP",
+      "covering_skills": [],
+      "covering_agents": []
+    },
+    {
+      "domain_id": "DOM-17",
+      "domain_name": "Telegram, X and Other Platform Integrations",
+      "category": "Growth",
+      "coverage_status": "UNCOVERED_GAP",
+      "covering_skills": [],
+      "covering_agents": []
+    },
+    {
+      "domain_id": "DOM-18",
+      "domain_name": "Multi-Platform Publishing",
+      "category": "Automation",
+      "coverage_status": "UNCOVERED_GAP",
+      "covering_skills": [],
+      "covering_agents": []
+    },
+    {
+      "domain_id": "DOM-19",
+      "domain_name": "Browser Automation and Computer Use",
+      "category": "Automation",
+      "coverage_status": "UNCOVERED_GAP",
+      "covering_skills": [],
+      "covering_agents": []
+    },
+    {
+      "domain_id": "DOM-20",
+      "domain_name": "Business Process Automation",
+      "category": "Automation",
+      "coverage_status": "UNCOVERED_GAP",
+      "covering_skills": [],
+      "covering_agents": []
+    },
+    {
+      "domain_id": "DOM-21",
+      "domain_name": "Research and Data Analysis",
+      "category": "Intelligence",
+      "coverage_status": "COVERED_READY",
+      "covering_skills": [
+        "technical-research"
+      ],
+      "covering_agents": [
+        "Research Agent"
+      ]
+    },
+    {
+      "domain_id": "DOM-22",
+      "domain_name": "Cybersecurity and Privacy",
+      "category": "Security",
+      "coverage_status": "COVERED_PARTIAL",
+      "covering_skills": [],
+      "covering_agents": [
+        "Security Auditor"
+      ]
+    },
+    {
+      "domain_id": "DOM-23",
+      "domain_name": "Software Testing and Quality Assurance",
+      "category": "Quality",
+      "coverage_status": "COVERED_PARTIAL",
+      "covering_skills": [],
+      "covering_agents": [
+        "Testing Agent"
+      ]
+    },
+    {
+      "domain_id": "DOM-24",
+      "domain_name": "DevOps and Cloud Infrastructure",
+      "category": "Operations",
+      "coverage_status": "UNCOVERED_GAP",
+      "covering_skills": [],
+      "covering_agents": []
+    },
+    {
+      "domain_id": "DOM-25",
+      "domain_name": "Marketing, SEO and Analytics",
+      "category": "Growth",
+      "coverage_status": "UNCOVERED_GAP",
+      "covering_skills": [],
+      "covering_agents": []
+    },
+    {
+      "domain_id": "DOM-26",
+      "domain_name": "Business Operations and Customer Support",
+      "category": "Operations",
+      "coverage_status": "UNCOVERED_GAP",
+      "covering_skills": [],
+      "covering_agents": []
+    },
+    {
+      "domain_id": "DOM-27",
+      "domain_name": "Document and Presentation Creation",
+      "category": "Productivity",
+      "coverage_status": "COVERED_READY",
+      "covering_skills": [
+        "documentation-engineering"
+      ],
+      "covering_agents": [
+        "Documentation Agent"
+      ]
+    },
+    {
+      "domain_id": "DOM-28",
+      "domain_name": "Learning and Educational Systems",
+      "category": "Education",
+      "coverage_status": "UNCOVERED_GAP",
+      "covering_skills": [],
+      "covering_agents": []
+    },
+    {
+      "domain_id": "DOM-29",
+      "domain_name": "Robotics and IoT",
+      "category": "Emerging Tech",
+      "coverage_status": "UNCOVERED_GAP",
+      "covering_skills": [],
+      "covering_agents": []
+    },
+    {
+      "domain_id": "DOM-30",
+      "domain_name": "Emerging AI Technologies",
+      "category": "Emerging Tech",
+      "coverage_status": "COVERED_READY",
+      "covering_skills": [
+        "capability-research"
+      ],
+      "covering_agents": [
+        "Capability Discovery Agent"
+      ]
+    }
+  ],
+  "status": "DISCOVERY_AND_GAP_EVALUATION_COMPLETE"
+}

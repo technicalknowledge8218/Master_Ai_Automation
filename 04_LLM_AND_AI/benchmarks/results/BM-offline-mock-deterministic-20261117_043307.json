@@ -1,0 +1,91 @@
+{
+  "benchmark_id": "BM-offline-mock-deterministic-20261117_043307",
+  "timestamp": "2026-11-17T04:33:07.944226",
+  "model_id": "offline-mock-deterministic",
+  "provider": "OfflineMockProvider",
+  "total_tasks": 7,
+  "tasks_passed": 4,
+  "pass_rate_percent": 57.1,
+  "average_latency_ms": 0.07,
+  "total_cost_usd": 0.0,
+  "overall_rating": "MARGINAL",
+  "results": [
+    {
+      "task_id": "BM-01-REASONING",
+      "category": "general_reasoning",
+      "prompt_tokens": 60,
+      "completion_tokens": 44,
+      "latency_ms": 0.06,
+      "passed_validation": true,
+      "estimated_cost_usd": 0.0,
+      "output_snippet": "Master AI Deterministic Response to: A farmer has 17 sheep. All but 9 die. How many sheep does the farmer have left? ",
+      "error": null
+    },
+    {
+      "task_id": "BM-02-RESEARCH",
+      "category": "research_synthesis",
+      "prompt_tokens": 42,
+      "completion_tokens": 28,
+      "latency_ms": 0.04,
+      "passed_validation": true,
+      "estimated_cost_usd": 0.0,
+      "output_snippet": "Master AI Deterministic Response to: Summarize the key differences between monolithic architectures and microservices",
+      "error": null
+    },
+    {
+      "task_id": "BM-03-CODING",
+      "category": "coding_generation",
+      "prompt_tokens": 52,
+      "completion_tokens": 44,
+      "latency_ms": 0.03,
+      "passed_validation": false,
+      "estimated_cost_usd": 0.0,
+      "output_snippet": "```python # Master AI Generated Code Block def master_ai_pipeline(input_data: dict) -> dict:     \"\"\"Process input data deterministically.\"\"\"     return {'proces",
+      "error": null
+    },
+    {
+      "task_id": "BM-04-STRUCTURED-JSON",
+      "category": "structured_output",
+      "prompt_tokens": 68,
+      "completion_tokens": 42,
+      "latency_ms": 0.09,
+      "passed_validation": true,
+      "estimated_cost_usd": 0.0,
+      "output_snippet": "{   \"status\": \"success\",   \"message\": \"Processed successfully by Master AI Offline Mock\",   \"extracted_entities\": [     \"Master AI\",     \"Intelligence Layer\"   ",
+      "error": null
+    },
+    {
+      "task_id": "BM-05-INSTRUCTION-FOLLOWING",
+      "category": "instruction_following",
+      "prompt_tokens": 54,
+      "completion_tokens": 34,
+      "latency_ms": 0.03,
+      "passed_validation": true,
+      "estimated_cost_usd": 0.0,
+      "output_snippet": "Master AI Deterministic Response to: Reply with exactly three bullet points, each starting with the word 'VERIFIED'. ",
+      "error": null
+    },
+    {
+      "task_id": "BM-06-BILINGUAL-HINDI",
+      "category": "bilingual_hindi_english",
+      "prompt_tokens": 56,
+      "completion_tokens": 40,
+      "latency_ms": 0.04,
+      "passed_validation": false,
+      "estimated_cost_usd": 0.0,
+      "output_snippet": "\u0928\u092e\u0938\u094d\u0924\u0947! \u092e\u093e\u0938\u094d\u091f\u0930 \u090f\u0906\u0908 (Master AI) \u0915\u0940 \u0911\u092b\u0932\u093e\u0907\u0928 \u0907\u0902\u091f\u0947\u0932\u093f\u091c\u0947\u0902\u0938 \u0938\u0947\u0935\u093e \u092e\u0947\u0902 \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948\u0964 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u0938\u0939\u093e\u092f\u0924\u093e \u0915\u0947 \u0932\u093f\u090f \u0924\u0948\u092f\u093e\u0930 \u0939\u0942\u0901\u0964",
+      "error": null
+    },
+    {
+      "task_id": "BM-07-LONG-CONTEXT",
+      "category": "long_context_retrieval",
+      "prompt_tokens": 648,
+      "completion_tokens": 44,
+      "latency_ms": 0.23,
+      "passed_validation": false,
+      "estimated_cost_usd": 0.0,
+      "output_snippet": "```python # Master AI Generated Code Block def master_ai_pipeline(input_data: dict) -> dict:     \"\"\"Process input data deterministically.\"\"\"     return {'proces",
+      "error": null
+    }
+  ]
+}

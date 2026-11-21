@@ -1,0 +1,46 @@
+{
+  "format": "9:16 Vertical",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "total_duration": 7.5,
+  "video_tracks": [
+    {
+      "clip_id": "vid_01",
+      "source_path": "dummy_clip_1.mp4",
+      "start_time": 0.0,
+      "duration": 3.0,
+      "in_point": 0.0,
+      "track": "video",
+      "speed": 1.0,
+      "transform": {
+        "scale": 1.0,
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "clip_id": "vid_02",
+      "source_path": "dummy_clip_2.mp4",
+      "start_time": 3.0,
+      "duration": 4.5,
+      "in_point": 0.0,
+      "track": "video",
+      "speed": 1.0,
+      "transform": {
+        "scale": 1.0,
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "broll_tracks": [],
+  "audio_tracks": [],
+  "captions": [
+    {
+      "text": "TEST HOOK CAPTION",
+      "start_time": 0.5,
+      "end_time": 2.5,
+      "highlight_word": "HOOK"
+    }
+  ]
+}

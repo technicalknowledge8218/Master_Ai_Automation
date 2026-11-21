@@ -1,0 +1,38 @@
+{
+  "ffprobe_output": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'F:\\Master AI\\09_CONTENT_STUDIO\\renders\\pilot_lion_documentary\\african_lion_life_in_the_wild_720p.mp4':\n  Metadata:\n    major_brand     : isom\n    minor_version   : 512\n    compatible_brands: isomiso2avc1mp41\n    encoder         : Lavf61.7.100\n  Duration: 00:01:03.00, start: 0.000000, bitrate: 1126 kb/s\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1280x720 [SAR 1:1 DAR 16:9], 965 kb/s, 24 fps, 24 tbr, 12288 tbn (default)\n      Metadata:\n        handler_name    : VideoHandler\n        vendor_id       : [0][0][0][0]\n        encoder         : Lavc61.19.100 libx264\n  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 155 kb/s (default)\n      Metadata:\n        handler_name    : SoundHandler\n        vendor_id       : [0][0][0][0]\nAt least one output file must be specified\n",
+  "video_metrics": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24.0,
+    "reported_frames": 1511,
+    "decoded_frames": 1511,
+    "duration_sec": 62.958,
+    "black_frames_count": 7,
+    "black_frames_sample": [
+      741,
+      742,
+      743,
+      744,
+      910,
+      911,
+      912
+    ],
+    "static_frames_count": 809,
+    "mean_luminance": 73.77,
+    "min_luminance": 0.0,
+    "max_luminance": 163.02,
+    "file_size_bytes": 8868106
+  },
+  "audio_metrics": {
+    "has_audio": true,
+    "channels": 2,
+    "sample_width_bytes": 2,
+    "framerate": 44100,
+    "duration_sec": 63.019,
+    "rms_amplitude": 0.0363,
+    "peak_amplitude": 0.3264,
+    "silence_ratio": 0.6419,
+    "is_audible": true
+  },
+  "contact_sheet_path": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\phase-7.2.1-audit\\contact_sheet_verified_mp4.png"
+}

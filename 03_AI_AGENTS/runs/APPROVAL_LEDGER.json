@@ -1,0 +1,389 @@
+{
+  "TSK-E2E-FULL-PIPELINE": {
+    "task_id": "TSK-E2E-FULL-PIPELINE",
+    "title": "Full Multi-Agent Engineering Federation Pipeline",
+    "state": "COMPLETED",
+    "trust_level": 2,
+    "is_high_risk": false,
+    "risk_reasons": [],
+    "approval_token": "AUTH-TSK-E2E-FULL-PIPELINE-a36e3bb90a85",
+    "token_issued_at": 1794863214.4745958,
+    "token_ttl_seconds": 3600,
+    "history": [
+      {
+        "from_state": null,
+        "to_state": "PROPOSED",
+        "timestamp": "2026-11-17T02:36:54.470648",
+        "actor": "system",
+        "reason": "Task registered with initial Trust Level LEVEL_2_LOCAL_EXECUTION"
+      },
+      {
+        "from_state": "PROPOSED",
+        "to_state": "APPROVED",
+        "timestamp": "2026-11-17T02:36:54.474598",
+        "actor": "orchestrator",
+        "reason": "Automated risk clearance"
+      },
+      {
+        "from_state": "APPROVED",
+        "to_state": "EXECUTING",
+        "timestamp": "2026-11-17T02:36:54.478650",
+        "actor": "orchestrator",
+        "reason": "Starting execution run"
+      },
+      {
+        "from_state": "EXECUTING",
+        "to_state": "VERIFIED",
+        "timestamp": "2026-11-17T02:36:54.893135",
+        "actor": "orchestrator",
+        "reason": "All subtasks passed"
+      },
+      {
+        "from_state": "VERIFIED",
+        "to_state": "COMPLETED",
+        "timestamp": "2026-11-17T02:36:54.896852",
+        "actor": "orchestrator",
+        "reason": "Execution run complete"
+      }
+    ]
+  },
+  "TSK-FAIL-SAFE-TEST": {
+    "task_id": "TSK-FAIL-SAFE-TEST",
+    "title": "Intentionally Failing Task",
+    "state": "FAILED",
+    "trust_level": 2,
+    "is_high_risk": false,
+    "risk_reasons": [],
+    "approval_token": "AUTH-TSK-FAIL-SAFE-TEST-aaa31edf85aa",
+    "token_issued_at": 1794863214.9070385,
+    "token_ttl_seconds": 3600,
+    "history": [
+      {
+        "from_state": null,
+        "to_state": "PROPOSED",
+        "timestamp": "2026-11-17T02:36:54.903256",
+        "actor": "system",
+        "reason": "Task registered with initial Trust Level LEVEL_2_LOCAL_EXECUTION"
+      },
+      {
+        "from_state": "PROPOSED",
+        "to_state": "APPROVED",
+        "timestamp": "2026-11-17T02:36:54.907040",
+        "actor": "orchestrator",
+        "reason": "Automated risk clearance"
+      },
+      {
+        "from_state": "APPROVED",
+        "to_state": "EXECUTING",
+        "timestamp": "2026-11-17T02:36:54.910339",
+        "actor": "orchestrator",
+        "reason": "Starting execution run"
+      },
+      {
+        "from_state": "EXECUTING",
+        "to_state": "FAILED",
+        "timestamp": "2026-11-17T02:36:54.914179",
+        "actor": "orchestrator",
+        "reason": "\"Specialist agent 'AGT-NONEXISTENT' is not registered.\""
+      }
+    ]
+  },
+  "TSK-UNAUTH-GLOBAL-TEST": {
+    "task_id": "TSK-UNAUTH-GLOBAL-TEST",
+    "title": "Unauthorized Global Deployment",
+    "state": "REVIEW_REQUIRED",
+    "trust_level": 4,
+    "is_high_risk": true,
+    "risk_reasons": [
+      "Attempts global Antigravity installation/deployment (.gemini)"
+    ],
+    "approval_token": null,
+    "token_issued_at": null,
+    "token_ttl_seconds": 3600,
+    "history": [
+      {
+        "from_state": null,
+        "to_state": "REVIEW_REQUIRED",
+        "timestamp": "2026-11-17T02:36:54.919947",
+        "actor": "system",
+        "reason": "Task registered with initial Trust Level LEVEL_4_HOST_GLOBAL"
+      }
+    ]
+  },
+  "TSK-TEST-SCENARIO-1": {
+    "task_id": "TSK-TEST-SCENARIO-1",
+    "title": "Scenario 1",
+    "state": "APPROVED",
+    "trust_level": 2,
+    "is_high_risk": false,
+    "risk_reasons": [],
+    "approval_token": "AUTH-TSK-TEST-SCENARIO-1-97ffc36db954",
+    "token_issued_at": 1794863213.9050484,
+    "token_ttl_seconds": 3600,
+    "history": [
+      {
+        "from_state": null,
+        "to_state": "PROPOSED",
+        "timestamp": "2026-11-17T02:36:53.901290",
+        "actor": "system",
+        "reason": "Task registered with initial Trust Level LEVEL_2_LOCAL_EXECUTION"
+      },
+      {
+        "from_state": "PROPOSED",
+        "to_state": "APPROVED",
+        "timestamp": "2026-11-17T02:36:53.905050",
+        "actor": "test_runner",
+        "reason": ""
+      }
+    ]
+  },
+  "TSK-TEST-SCENARIO-2": {
+    "task_id": "TSK-TEST-SCENARIO-2",
+    "title": "Scenario 2",
+    "state": "APPROVED",
+    "trust_level": 2,
+    "is_high_risk": false,
+    "risk_reasons": [],
+    "approval_token": "AUTH-TSK-TEST-SCENARIO-2-592caf964225",
+    "token_issued_at": 1794863213.9158063,
+    "token_ttl_seconds": 3600,
+    "history": [
+      {
+        "from_state": null,
+        "to_state": "PROPOSED",
+        "timestamp": "2026-11-17T02:36:53.911283",
+        "actor": "system",
+        "reason": "Task registered with initial Trust Level LEVEL_2_LOCAL_EXECUTION"
+      },
+      {
+        "from_state": "PROPOSED",
+        "to_state": "APPROVED",
+        "timestamp": "2026-11-17T02:36:53.915812",
+        "actor": "test_runner",
+        "reason": ""
+      }
+    ]
+  },
+  "TSK-TEST-SCENARIO-3": {
+    "task_id": "TSK-TEST-SCENARIO-3",
+    "title": "Scenario 3",
+    "state": "APPROVED",
+    "trust_level": 2,
+    "is_high_risk": false,
+    "risk_reasons": [],
+    "approval_token": "AUTH-TSK-TEST-SCENARIO-3-85f8346030cc",
+    "token_issued_at": 1794863214.0246277,
+    "token_ttl_seconds": 3600,
+    "history": [
+      {
+        "from_state": null,
+        "to_state": "PROPOSED",
+        "timestamp": "2026-11-17T02:36:54.021199",
+        "actor": "system",
+        "reason": "Task registered with initial Trust Level LEVEL_2_LOCAL_EXECUTION"
+      },
+      {
+        "from_state": "PROPOSED",
+        "to_state": "APPROVED",
+        "timestamp": "2026-11-17T02:36:54.024629",
+        "actor": "test_runner",
+        "reason": ""
+      }
+    ]
+  },
+  "TSK-TEST-SCENARIO-4": {
+    "task_id": "TSK-TEST-SCENARIO-4",
+    "title": "Scenario 4",
+    "state": "APPROVED",
+    "trust_level": 2,
+    "is_high_risk": false,
+    "risk_reasons": [],
+    "approval_token": "AUTH-TSK-TEST-SCENARIO-4-02b572b6d0ea",
+    "token_issued_at": 1794863214.125839,
+    "token_ttl_seconds": 3600,
+    "history": [
+      {
+        "from_state": null,
+        "to_state": "PROPOSED",
+        "timestamp": "2026-11-17T02:36:54.122345",
+        "actor": "system",
+        "reason": "Task registered with initial Trust Level LEVEL_2_LOCAL_EXECUTION"
+      },
+      {
+        "from_state": "PROPOSED",
+        "to_state": "APPROVED",
+        "timestamp": "2026-11-17T02:36:54.125840",
+        "actor": "test_runner",
+        "reason": ""
+      }
+    ]
+  },
+  "TSK-TEST-SCENARIO-5": {
+    "task_id": "TSK-TEST-SCENARIO-5",
+    "title": "Scenario 5",
+    "state": "APPROVED",
+    "trust_level": 2,
+    "is_high_risk": false,
+    "risk_reasons": [],
+    "approval_token": "AUTH-TSK-TEST-SCENARIO-5-43854ca520ce",
+    "token_issued_at": 1794863214.3562007,
+    "token_ttl_seconds": 3600,
+    "history": [
+      {
+        "from_state": null,
+        "to_state": "PROPOSED",
+        "timestamp": "2026-11-17T02:36:54.350951",
+        "actor": "system",
+        "reason": "Task registered with initial Trust Level LEVEL_2_LOCAL_EXECUTION"
+      },
+      {
+        "from_state": "PROPOSED",
+        "to_state": "APPROVED",
+        "timestamp": "2026-11-17T02:36:54.356203",
+        "actor": "test_runner",
+        "reason": ""
+      }
+    ]
+  },
+  "TSK-TEST-SCENARIO-6": {
+    "task_id": "TSK-TEST-SCENARIO-6",
+    "title": "Scenario 6",
+    "state": "APPROVED",
+    "trust_level": 2,
+    "is_high_risk": false,
+    "risk_reasons": [],
+    "approval_token": "AUTH-TSK-TEST-SCENARIO-6-e5f8cf75f9c2",
+    "token_issued_at": 1794863214.3677404,
+    "token_ttl_seconds": 3600,
+    "history": [
+      {
+        "from_state": null,
+        "to_state": "PROPOSED",
+        "timestamp": "2026-11-17T02:36:54.363960",
+        "actor": "system",
+        "reason": "Task registered with initial Trust Level LEVEL_2_LOCAL_EXECUTION"
+      },
+      {
+        "from_state": "PROPOSED",
+        "to_state": "APPROVED",
+        "timestamp": "2026-11-17T02:36:54.367742",
+        "actor": "test_runner",
+        "reason": ""
+      }
+    ]
+  },
+  "TSK-TASK-A": {
+    "task_id": "TSK-TASK-A",
+    "title": "Task A",
+    "state": "APPROVED",
+    "trust_level": 2,
+    "is_high_risk": false,
+    "risk_reasons": [],
+    "approval_token": "AUTH-TSK-TASK-A-03c4a76769fa",
+    "token_issued_at": 1794863202.2396264,
+    "token_ttl_seconds": 3600,
+    "history": [
+      {
+        "from_state": null,
+        "to_state": "PROPOSED",
+        "timestamp": "2026-11-17T02:36:42.236233",
+        "actor": "system",
+        "reason": "Task registered with initial Trust Level LEVEL_2_LOCAL_EXECUTION"
+      },
+      {
+        "from_state": "PROPOSED",
+        "to_state": "APPROVED",
+        "timestamp": "2026-11-17T02:36:42.239629",
+        "actor": "operator",
+        "reason": ""
+      }
+    ]
+  },
+  "TSK-TASK-B": {
+    "task_id": "TSK-TASK-B",
+    "title": "Task B",
+    "state": "PROPOSED",
+    "trust_level": 2,
+    "is_high_risk": false,
+    "risk_reasons": [],
+    "approval_token": null,
+    "token_issued_at": null,
+    "token_ttl_seconds": 3600,
+    "history": [
+      {
+        "from_state": null,
+        "to_state": "PROPOSED",
+        "timestamp": "2026-11-17T02:36:42.243224",
+        "actor": "system",
+        "reason": "Task registered with initial Trust Level LEVEL_2_LOCAL_EXECUTION"
+      }
+    ]
+  },
+  "TSK-SEC-004-EXPIRED": {
+    "task_id": "TSK-SEC-004-EXPIRED",
+    "title": "Expired Task",
+    "state": "APPROVED",
+    "trust_level": 2,
+    "is_high_risk": false,
+    "risk_reasons": [],
+    "approval_token": "AUTH-TSK-SEC-004-EXPIRED-0b5f8cfd5682",
+    "token_issued_at": 1794863202.2534504,
+    "token_ttl_seconds": 1,
+    "history": [
+      {
+        "from_state": null,
+        "to_state": "PROPOSED",
+        "timestamp": "2026-11-17T02:36:42.249695",
+        "actor": "system",
+        "reason": "Task registered with initial Trust Level LEVEL_2_LOCAL_EXECUTION"
+      },
+      {
+        "from_state": "PROPOSED",
+        "to_state": "APPROVED",
+        "timestamp": "2026-11-17T02:36:42.253453",
+        "actor": "operator",
+        "reason": ""
+      }
+    ]
+  },
+  "TSK-SEC-005-SELF-APP": {
+    "task_id": "TSK-SEC-005-SELF-APP",
+    "title": "Self Approval Test",
+    "state": "PROPOSED",
+    "trust_level": 2,
+    "is_high_risk": false,
+    "risk_reasons": [],
+    "approval_token": null,
+    "token_issued_at": null,
+    "token_ttl_seconds": 3600,
+    "history": [
+      {
+        "from_state": null,
+        "to_state": "PROPOSED",
+        "timestamp": "2026-11-17T02:36:43.461931",
+        "actor": "system",
+        "reason": "Task registered with initial Trust Level LEVEL_2_LOCAL_EXECUTION"
+      }
+    ]
+  },
+  "TSK-BOUND-024": {
+    "task_id": "TSK-BOUND-024",
+    "title": "Network Task",
+    "state": "PROPOSED",
+    "trust_level": 2,
+    "is_high_risk": false,
+    "risk_reasons": [],
+    "approval_token": null,
+    "token_issued_at": null,
+    "token_ttl_seconds": 3600,
+    "history": [
+      {
+        "from_state": null,
+        "to_state": "PROPOSED",
+        "timestamp": "2026-11-17T02:58:47.191050",
+        "actor": "system",
+        "reason": "Task registered with initial Trust Level LEVEL_2_LOCAL_EXECUTION"
+      }
+    ]
+  }
+}

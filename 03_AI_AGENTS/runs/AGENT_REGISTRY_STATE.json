@@ -1,0 +1,1442 @@
+{
+  "AGT-001": {
+    "id": "AGT-001",
+    "name": "Research Agent",
+    "slug": "research_agent",
+    "role": "Technical Research & Verification",
+    "primary_domain": "DOM-01",
+    "capabilities": [
+      "technical_research",
+      "web_verification",
+      "knowledge_synthesis",
+      "citation_grounding",
+      "rag_retrieval"
+    ],
+    "task_eligibility": [
+      "RESEARCH",
+      "AUDIT",
+      "FACT_CHECK",
+      "LITERATURE_REVIEW",
+      "SYNTHESIS"
+    ],
+    "model_preferences": {
+      "primary": "ollama/qwen2.5:7b",
+      "fallback": "ollama/llama3.2:3b",
+      "temperature": 0.2
+    },
+    "tools_allowed": [
+      "read_file",
+      "search_knowledge_base",
+      "query_memory",
+      "calculate_checksum",
+      "web_search"
+    ],
+    "tools_prohibited": [
+      "write_file",
+      "execute_subprocess",
+      "delete_file",
+      "activate_paid_api"
+    ],
+    "permissions": {
+      "can_write_code": false,
+      "can_execute_shell": false,
+      "requires_approval_level": "LOW"
+    },
+    "resource_requirements": {
+      "cpu_cores": 1,
+      "ram_mb": 512,
+      "max_runtime_sec": 60
+    },
+    "health_status": "HEALTHY",
+    "execution_history": [
+      {
+        "subtask_id": "PLAN-750ce908-ST-01",
+        "timestamp": "2026-11-17T06:08:57.743445",
+        "success": true,
+        "duration_seconds": 0.004
+      },
+      {
+        "subtask_id": "PLAN-2126b965-ST-01",
+        "timestamp": "2026-11-17T14:24:29.933439",
+        "success": true,
+        "duration_seconds": 0.004
+      },
+      {
+        "subtask_id": "PLAN-adf47bf5-ST-01",
+        "timestamp": "2026-11-17T14:25:26.195274",
+        "success": true,
+        "duration_seconds": 0.005
+      },
+      {
+        "subtask_id": "PLAN-b468d00b-ST-01",
+        "timestamp": "2026-11-17T14:53:03.395809",
+        "success": true,
+        "duration_seconds": 0.005
+      },
+      {
+        "subtask_id": "PLAN-d825d7b1-ST-01",
+        "timestamp": "2026-11-17T15:42:43.485630",
+        "success": true,
+        "duration_seconds": 0.006
+      },
+      {
+        "subtask_id": "PLAN-3109b87f-ST-01",
+        "timestamp": "2026-11-17T15:49:00.049770",
+        "success": true,
+        "duration_seconds": 0.004
+      },
+      {
+        "subtask_id": "PLAN-ca6811bc-ST-01",
+        "timestamp": "2026-11-17T23:12:22.801425",
+        "success": true,
+        "duration_seconds": 0.005
+      },
+      {
+        "subtask_id": "PLAN-096a9377-ST-01",
+        "timestamp": "2026-11-17T23:21:38.831618",
+        "success": true,
+        "duration_seconds": 0.005
+      },
+      {
+        "subtask_id": "PLAN-c70ec3cb-ST-01",
+        "timestamp": "2026-11-18T02:43:34.949291",
+        "success": true,
+        "duration_seconds": 0.006
+      },
+      {
+        "subtask_id": "PLAN-34fda3cc-ST-01",
+        "timestamp": "2026-11-18T02:44:32.117421",
+        "success": true,
+        "duration_seconds": 0.007
+      },
+      {
+        "subtask_id": "PLAN-ea3c130f-ST-01",
+        "timestamp": "2026-11-18T02:46:33.367311",
+        "success": true,
+        "duration_seconds": 0.005
+      },
+      {
+        "subtask_id": "PLAN-17e57306-ST-01",
+        "timestamp": "2026-11-18T03:34:01.879752",
+        "success": true,
+        "duration_seconds": 0.006
+      },
+      {
+        "subtask_id": "PLAN-7a68a8a5-ST-01",
+        "timestamp": "2026-11-18T03:35:35.284306",
+        "success": true,
+        "duration_seconds": 0.003
+      },
+      {
+        "subtask_id": "PLAN-4629c44c-ST-01",
+        "timestamp": "2026-11-18T03:39:34.750399",
+        "success": true,
+        "duration_seconds": 0.004
+      }
+    ]
+  },
+  "AGT-002": {
+    "id": "AGT-002",
+    "name": "Software Architect",
+    "slug": "software_architect",
+    "role": "Software Architecture & Specification",
+    "primary_domain": "DOM-02",
+    "capabilities": [
+      "system_architecture",
+      "component_specification",
+      "adr_design",
+      "pipeline_design",
+      "dag_planning"
+    ],
+    "task_eligibility": [
+      "ARCHITECTURE",
+      "SPECIFICATION",
+      "DESIGN",
+      "DECOMPOSITION",
+      "STORYBOARD"
+    ],
+    "model_preferences": {
+      "primary": "ollama/qwen2.5:7b",
+      "fallback": "ollama/mistral:7b",
+      "temperature": 0.2
+    },
+    "tools_allowed": [
+      "read_file",
+      "write_spec",
+      "search_knowledge_base",
+      "query_memory"
+    ],
+    "tools_prohibited": [
+      "execute_subprocess",
+      "delete_file",
+      "activate_paid_api"
+    ],
+    "permissions": {
+      "can_write_code": false,
+      "can_execute_shell": false,
+      "requires_approval_level": "MEDIUM"
+    },
+    "resource_requirements": {
+      "cpu_cores": 1,
+      "ram_mb": 512,
+      "max_runtime_sec": 60
+    },
+    "health_status": "HEALTHY",
+    "execution_history": [
+      {
+        "subtask_id": "PLAN-750ce908-ST-02",
+        "timestamp": "2026-11-17T06:08:57.776663",
+        "success": true,
+        "duration_seconds": 0.003
+      },
+      {
+        "subtask_id": "PLAN-2126b965-ST-02",
+        "timestamp": "2026-11-17T14:24:29.962335",
+        "success": true,
+        "duration_seconds": 0.004
+      },
+      {
+        "subtask_id": "PLAN-adf47bf5-ST-02",
+        "timestamp": "2026-11-17T14:25:26.235577",
+        "success": true,
+        "duration_seconds": 0.005
+      },
+      {
+        "subtask_id": "PLAN-b468d00b-ST-02",
+        "timestamp": "2026-11-17T14:53:03.438361",
+        "success": true,
+        "duration_seconds": 0.006
+      },
+      {
+        "subtask_id": "PLAN-d825d7b1-ST-02",
+        "timestamp": "2026-11-17T15:42:43.524903",
+        "success": true,
+        "duration_seconds": 0.005
+      },
+      {
+        "subtask_id": "PLAN-3109b87f-ST-02",
+        "timestamp": "2026-11-17T15:49:00.093319",
+        "success": true,
+        "duration_seconds": 0.005
+      },
+      {
+        "subtask_id": "PLAN-ca6811bc-ST-02",
+        "timestamp": "2026-11-17T23:12:22.843417",
+        "success": true,
+        "duration_seconds": 0.006
+      },
+      {
+        "subtask_id": "PLAN-096a9377-ST-02",
+        "timestamp": "2026-11-17T23:21:38.878058",
+        "success": true,
+        "duration_seconds": 0.005
+      }
+    ]
+  },
+  "AGT-003": {
+    "id": "AGT-003",
+    "name": "Coding Agent",
+    "slug": "coding_agent",
+    "role": "Component Implementation & Scripting",
+    "primary_domain": "DOM-03",
+    "capabilities": [
+      "code_generation",
+      "refactoring",
+      "pure_python_implementation",
+      "algorithm_design",
+      "media_assembly"
+    ],
+    "task_eligibility": [
+      "IMPLEMENTATION",
+      "CODING",
+      "REFACTORING",
+      "SCRIPTING",
+      "GENERATION"
+    ],
+    "model_preferences": {
+      "primary": "ollama/qwen2.5-coder:7b",
+      "fallback": "ollama/qwen2.5:7b",
+      "temperature": 0.1
+    },
+    "tools_allowed": [
+      "read_file",
+      "write_file",
+      "sandbox_eval",
+      "query_memory"
+    ],
+    "tools_prohibited": [
+      "activate_paid_api",
+      "git_push",
+      "global_install"
+    ],
+    "permissions": {
+      "can_write_code": true,
+      "can_execute_shell": false,
+      "requires_approval_level": "HIGH"
+    },
+    "resource_requirements": {
+      "cpu_cores": 2,
+      "ram_mb": 1024,
+      "max_runtime_sec": 120
+    },
+    "health_status": "HEALTHY",
+    "execution_history": [
+      {
+        "subtask_id": "PLAN-c70ec3cb-ST-08",
+        "timestamp": "2026-11-18T02:43:37.900398",
+        "success": false,
+        "duration_seconds": 0.26
+      },
+      {
+        "subtask_id": "PLAN-34fda3cc-ST-08",
+        "timestamp": "2026-11-18T02:44:59.269537",
+        "success": true,
+        "duration_seconds": 24.335
+      },
+      {
+        "subtask_id": "PLAN-34fda3cc-ST-07",
+        "timestamp": "2026-11-18T02:44:59.437067",
+        "success": true,
+        "duration_seconds": 0.126
+      },
+      {
+        "subtask_id": "PLAN-ea3c130f-ST-08",
+        "timestamp": "2026-11-18T02:46:58.859041",
+        "success": true,
+        "duration_seconds": 22.828
+      },
+      {
+        "subtask_id": "PLAN-ea3c130f-ST-07",
+        "timestamp": "2026-11-18T02:46:59.092087",
+        "success": true,
+        "duration_seconds": 0.193
+      },
+      {
+        "subtask_id": "PLAN-17e57306-ST-08",
+        "timestamp": "2026-11-18T03:34:19.326903",
+        "success": true,
+        "duration_seconds": 12.436
+      },
+      {
+        "subtask_id": "PLAN-17e57306-ST-07",
+        "timestamp": "2026-11-18T03:34:19.685584",
+        "success": false,
+        "duration_seconds": 0.282
+      },
+      {
+        "subtask_id": "PLAN-7a68a8a5-ST-08",
+        "timestamp": "2026-11-18T03:35:52.936107",
+        "success": true,
+        "duration_seconds": 12.21
+      },
+      {
+        "subtask_id": "PLAN-7a68a8a5-ST-07",
+        "timestamp": "2026-11-18T03:35:55.215672",
+        "success": true,
+        "duration_seconds": 2.21
+      },
+      {
+        "subtask_id": "PLAN-4629c44c-ST-08",
+        "timestamp": "2026-11-18T03:39:47.362106",
+        "success": true,
+        "duration_seconds": 6.852
+      },
+      {
+        "subtask_id": "PLAN-4629c44c-ST-07",
+        "timestamp": "2026-11-18T03:39:49.766129",
+        "success": true,
+        "duration_seconds": 2.367
+      }
+    ]
+  },
+  "AGT-004": {
+    "id": "AGT-004",
+    "name": "Testing Agent",
+    "slug": "testing_agent",
+    "role": "Independent Testing & Verification",
+    "primary_domain": "DOM-04",
+    "capabilities": [
+      "unit_testing",
+      "integration_testing",
+      "negative_testing",
+      "assertion_verification",
+      "timing_validation"
+    ],
+    "task_eligibility": [
+      "TESTING",
+      "VALIDATION",
+      "SMOKE_TEST",
+      "REGRESSION",
+      "VERIFICATION"
+    ],
+    "model_preferences": {
+      "primary": "ollama/qwen2.5:7b",
+      "fallback": "ollama/llama3.2:3b",
+      "temperature": 0.1
+    },
+    "tools_allowed": [
+      "read_file",
+      "run_isolated_test",
+      "sandbox_eval",
+      "query_memory"
+    ],
+    "tools_prohibited": [
+      "write_production_file",
+      "activate_paid_api"
+    ],
+    "permissions": {
+      "can_write_code": true,
+      "can_execute_shell": false,
+      "requires_approval_level": "LOW"
+    },
+    "resource_requirements": {
+      "cpu_cores": 1,
+      "ram_mb": 512,
+      "max_runtime_sec": 60
+    },
+    "health_status": "HEALTHY",
+    "execution_history": [
+      {
+        "subtask_id": "PLAN-750ce908-ST-03",
+        "timestamp": "2026-11-17T06:08:57.814511",
+        "success": true,
+        "duration_seconds": 0.01
+      },
+      {
+        "subtask_id": "PLAN-2126b965-ST-03",
+        "timestamp": "2026-11-17T14:24:30.000271",
+        "success": true,
+        "duration_seconds": 0.011
+      },
+      {
+        "subtask_id": "PLAN-adf47bf5-ST-03",
+        "timestamp": "2026-11-17T14:25:26.282615",
+        "success": true,
+        "duration_seconds": 0.01
+      },
+      {
+        "subtask_id": "PLAN-b468d00b-ST-03",
+        "timestamp": "2026-11-17T14:53:03.482163",
+        "success": true,
+        "duration_seconds": 0.01
+      },
+      {
+        "subtask_id": "PLAN-d825d7b1-ST-03",
+        "timestamp": "2026-11-17T15:42:43.573238",
+        "success": true,
+        "duration_seconds": 0.011
+      },
+      {
+        "subtask_id": "PLAN-3109b87f-ST-03",
+        "timestamp": "2026-11-17T15:49:00.140424",
+        "success": true,
+        "duration_seconds": 0.01
+      },
+      {
+        "subtask_id": "PLAN-ca6811bc-ST-03",
+        "timestamp": "2026-11-17T23:12:22.891375",
+        "success": true,
+        "duration_seconds": 0.01
+      },
+      {
+        "subtask_id": "PLAN-096a9377-ST-03",
+        "timestamp": "2026-11-17T23:21:38.926593",
+        "success": true,
+        "duration_seconds": 0.01
+      }
+    ]
+  },
+  "AGT-005": {
+    "id": "AGT-005",
+    "name": "Documentation Agent",
+    "slug": "documentation_agent",
+    "role": "Living Documentation & Deliverable Packaging",
+    "primary_domain": "DOM-05",
+    "capabilities": [
+      "documentation_engineering",
+      "production_plans",
+      "runbook_generation",
+      "adr_documentation",
+      "script_translation",
+      "packaging"
+    ],
+    "task_eligibility": [
+      "DOCUMENTATION",
+      "PRODUCTION_PLAN",
+      "REPORTING",
+      "SUMMARY",
+      "PACKAGING"
+    ],
+    "model_preferences": {
+      "primary": "ollama/qwen2.5:7b",
+      "fallback": "ollama/llama3.2:3b",
+      "temperature": 0.2
+    },
+    "tools_allowed": [
+      "read_file",
+      "write_doc",
+      "search_knowledge_base",
+      "query_memory"
+    ],
+    "tools_prohibited": [
+      "execute_subprocess",
+      "delete_file",
+      "activate_paid_api"
+    ],
+    "permissions": {
+      "can_write_code": false,
+      "can_execute_shell": false,
+      "requires_approval_level": "LOW"
+    },
+    "resource_requirements": {
+      "cpu_cores": 1,
+      "ram_mb": 512,
+      "max_runtime_sec": 60
+    },
+    "health_status": "HEALTHY",
+    "execution_history": [
+      {
+        "subtask_id": "PLAN-750ce908-ST-05",
+        "timestamp": "2026-11-17T06:08:57.874325",
+        "success": true,
+        "duration_seconds": 0.002
+      },
+      {
+        "subtask_id": "PLAN-2126b965-ST-05",
+        "timestamp": "2026-11-17T14:24:30.063199",
+        "success": true,
+        "duration_seconds": 0.003
+      },
+      {
+        "subtask_id": "PLAN-adf47bf5-ST-05",
+        "timestamp": "2026-11-17T14:25:26.348528",
+        "success": true,
+        "duration_seconds": 0.002
+      },
+      {
+        "subtask_id": "PLAN-b468d00b-ST-05",
+        "timestamp": "2026-11-17T14:53:03.555998",
+        "success": true,
+        "duration_seconds": 0.002
+      },
+      {
+        "subtask_id": "PLAN-d825d7b1-ST-05",
+        "timestamp": "2026-11-17T15:42:43.652751",
+        "success": true,
+        "duration_seconds": 0.003
+      },
+      {
+        "subtask_id": "PLAN-3109b87f-ST-05",
+        "timestamp": "2026-11-17T15:49:00.221916",
+        "success": true,
+        "duration_seconds": 0.002
+      },
+      {
+        "subtask_id": "PLAN-ca6811bc-ST-05",
+        "timestamp": "2026-11-17T23:12:22.984547",
+        "success": true,
+        "duration_seconds": 0.003
+      },
+      {
+        "subtask_id": "PLAN-096a9377-ST-05",
+        "timestamp": "2026-11-17T23:21:39.002245",
+        "success": true,
+        "duration_seconds": 0.002
+      }
+    ]
+  },
+  "AGT-006": {
+    "id": "AGT-006",
+    "name": "Security Auditor",
+    "slug": "security_auditor",
+    "role": "Security & Static Analysis Audit",
+    "primary_domain": "DOM-06",
+    "capabilities": [
+      "static_analysis",
+      "secret_scanning",
+      "license_compliance",
+      "threat_modeling",
+      "content_risk_audit"
+    ],
+    "task_eligibility": [
+      "SECURITY_AUDIT",
+      "COMPLIANCE_CHECK",
+      "SECRET_SCAN",
+      "VULNERABILITY_ASSESSMENT",
+      "RISK_AUDIT"
+    ],
+    "model_preferences": {
+      "primary": "ollama/qwen2.5:7b",
+      "fallback": "ollama/mistral:7b",
+      "temperature": 0.0
+    },
+    "tools_allowed": [
+      "read_file",
+      "scan_secrets",
+      "audit_licenses",
+      "ast_inspect"
+    ],
+    "tools_prohibited": [
+      "write_production_file",
+      "execute_arbitrary_shell",
+      "activate_paid_api"
+    ],
+    "permissions": {
+      "can_write_code": false,
+      "can_execute_shell": false,
+      "requires_approval_level": "LOW"
+    },
+    "resource_requirements": {
+      "cpu_cores": 1,
+      "ram_mb": 512,
+      "max_runtime_sec": 60
+    },
+    "health_status": "HEALTHY",
+    "execution_history": [
+      {
+        "subtask_id": "PLAN-750ce908-ST-04",
+        "timestamp": "2026-11-17T06:08:57.842292",
+        "success": true,
+        "duration_seconds": 0.005
+      },
+      {
+        "subtask_id": "PLAN-2126b965-ST-04",
+        "timestamp": "2026-11-17T14:24:30.030054",
+        "success": true,
+        "duration_seconds": 0.006
+      },
+      {
+        "subtask_id": "PLAN-adf47bf5-ST-04",
+        "timestamp": "2026-11-17T14:25:26.312650",
+        "success": true,
+        "duration_seconds": 0.006
+      },
+      {
+        "subtask_id": "PLAN-b468d00b-ST-04",
+        "timestamp": "2026-11-17T14:53:03.515610",
+        "success": true,
+        "duration_seconds": 0.007
+      },
+      {
+        "subtask_id": "PLAN-d825d7b1-ST-04",
+        "timestamp": "2026-11-17T15:42:43.610538",
+        "success": true,
+        "duration_seconds": 0.006
+      },
+      {
+        "subtask_id": "PLAN-3109b87f-ST-04",
+        "timestamp": "2026-11-17T15:49:00.179855",
+        "success": true,
+        "duration_seconds": 0.007
+      },
+      {
+        "subtask_id": "PLAN-ca6811bc-ST-04",
+        "timestamp": "2026-11-17T23:12:22.933381",
+        "success": true,
+        "duration_seconds": 0.006
+      },
+      {
+        "subtask_id": "PLAN-096a9377-ST-04",
+        "timestamp": "2026-11-17T23:21:38.964524",
+        "success": true,
+        "duration_seconds": 0.006
+      },
+      {
+        "subtask_id": "PLAN-c70ec3cb-ST-03",
+        "timestamp": "2026-11-18T02:43:35.051273",
+        "success": true,
+        "duration_seconds": 0.007
+      },
+      {
+        "subtask_id": "PLAN-34fda3cc-ST-03",
+        "timestamp": "2026-11-18T02:44:32.214884",
+        "success": true,
+        "duration_seconds": 0.007
+      },
+      {
+        "subtask_id": "PLAN-ea3c130f-ST-03",
+        "timestamp": "2026-11-18T02:46:33.442625",
+        "success": true,
+        "duration_seconds": 0.007
+      },
+      {
+        "subtask_id": "PLAN-17e57306-ST-03",
+        "timestamp": "2026-11-18T03:34:01.986907",
+        "success": true,
+        "duration_seconds": 0.007
+      },
+      {
+        "subtask_id": "PLAN-7a68a8a5-ST-03",
+        "timestamp": "2026-11-18T03:35:35.344253",
+        "success": true,
+        "duration_seconds": 0.006
+      },
+      {
+        "subtask_id": "PLAN-4629c44c-ST-03",
+        "timestamp": "2026-11-18T03:39:34.830676",
+        "success": true,
+        "duration_seconds": 0.007
+      }
+    ]
+  },
+  "AGT-007": {
+    "id": "AGT-007",
+    "name": "Capability Discovery Agent",
+    "slug": "capability_discovery_agent",
+    "role": "Capability Discovery & Skills Intelligence",
+    "primary_domain": "DOM-07",
+    "capabilities": [
+      "repo_discovery",
+      "gap_analysis",
+      "catalog_indexing",
+      "skill_scaffolding",
+      "ecosystem_research"
+    ],
+    "task_eligibility": [
+      "DISCOVERY",
+      "GAP_ANALYSIS",
+      "CATALOG_SCAN",
+      "SKILL_RESEARCH"
+    ],
+    "model_preferences": {
+      "primary": "ollama/qwen2.5:7b",
+      "fallback": "ollama/llama3.2:3b",
+      "temperature": 0.2
+    },
+    "tools_allowed": [
+      "search_github_catalog",
+      "read_file",
+      "evaluate_repo",
+      "stage_skill"
+    ],
+    "tools_prohibited": [
+      "promote_skill_without_auth",
+      "activate_paid_api"
+    ],
+    "permissions": {
+      "can_write_code": false,
+      "can_execute_shell": false,
+      "requires_approval_level": "HIGH"
+    },
+    "resource_requirements": {
+      "cpu_cores": 1,
+      "ram_mb": 512,
+      "max_runtime_sec": 60
+    },
+    "health_status": "HEALTHY",
+    "execution_history": []
+  },
+  "AGT-008": {
+    "id": "AGT-008",
+    "name": "Content Producer",
+    "slug": "content_producer",
+    "role": "Executive Media & Documentary Producer",
+    "primary_domain": "DOM-09",
+    "capabilities": [
+      "executive_production",
+      "pipeline_coordination",
+      "milestone_tracking",
+      "approval_staging"
+    ],
+    "task_eligibility": [
+      "PRODUCTION",
+      "COORDINATION",
+      "MEDIA_PACKAGE",
+      "PRODUCER"
+    ],
+    "model_preferences": {
+      "primary": "ollama/qwen2.5:7b",
+      "fallback": "ollama/llama3.2:3b",
+      "temperature": 0.2
+    },
+    "tools_allowed": [
+      "read_file",
+      "write_file",
+      "search_knowledge_base",
+      "query_memory"
+    ],
+    "tools_prohibited": [
+      "activate_paid_api",
+      "publish_without_approval"
+    ],
+    "permissions": {
+      "can_write_code": false,
+      "can_execute_shell": false,
+      "requires_approval_level": "HIGH"
+    },
+    "resource_requirements": {
+      "cpu_cores": 1,
+      "ram_mb": 512,
+      "max_runtime_sec": 60
+    },
+    "health_status": "HEALTHY",
+    "execution_history": [
+      {
+        "subtask_id": "PLAN-c70ec3cb-ST-05",
+        "timestamp": "2026-11-18T02:43:37.560465",
+        "success": true,
+        "duration_seconds": 0.006
+      },
+      {
+        "subtask_id": "PLAN-34fda3cc-ST-05",
+        "timestamp": "2026-11-18T02:44:34.851206",
+        "success": true,
+        "duration_seconds": 0.007
+      },
+      {
+        "subtask_id": "PLAN-34fda3cc-ST-14",
+        "timestamp": "2026-11-18T02:45:41.537300",
+        "success": true,
+        "duration_seconds": 0.351
+      },
+      {
+        "subtask_id": "PLAN-ea3c130f-ST-05",
+        "timestamp": "2026-11-18T02:46:35.971682",
+        "success": true,
+        "duration_seconds": 0.005
+      },
+      {
+        "subtask_id": "PLAN-ea3c130f-ST-14",
+        "timestamp": "2026-11-18T02:47:42.481750",
+        "success": true,
+        "duration_seconds": 0.41
+      },
+      {
+        "subtask_id": "PLAN-17e57306-ST-05",
+        "timestamp": "2026-11-18T03:34:06.673430",
+        "success": true,
+        "duration_seconds": 0.013
+      },
+      {
+        "subtask_id": "PLAN-7a68a8a5-ST-05",
+        "timestamp": "2026-11-18T03:35:40.529591",
+        "success": true,
+        "duration_seconds": 0.011
+      },
+      {
+        "subtask_id": "PLAN-7a68a8a5-ST-14",
+        "timestamp": "2026-11-18T03:36:48.719099",
+        "success": false,
+        "duration_seconds": 0.136
+      },
+      {
+        "subtask_id": "PLAN-4629c44c-ST-05",
+        "timestamp": "2026-11-18T03:39:40.393907",
+        "success": true,
+        "duration_seconds": 0.007
+      },
+      {
+        "subtask_id": "PLAN-4629c44c-ST-14",
+        "timestamp": "2026-11-18T03:40:34.283195",
+        "success": true,
+        "duration_seconds": 0.312
+      }
+    ]
+  },
+  "AGT-009": {
+    "id": "AGT-009",
+    "name": "Scriptwriter",
+    "slug": "scriptwriter",
+    "role": "Documentary Scriptwriter & Narrative Designer",
+    "primary_domain": "DOM-09",
+    "capabilities": [
+      "narrative_scriptwriting",
+      "hindi_translation",
+      "timing_pacing",
+      "scene_dialogue"
+    ],
+    "task_eligibility": [
+      "SCRIPTWRITING",
+      "NARRATIVE",
+      "HINDI_SCRIPT",
+      "DIALOGUE"
+    ],
+    "model_preferences": {
+      "primary": "ollama/qwen2.5:7b",
+      "fallback": "ollama/llama3.2:3b",
+      "temperature": 0.3
+    },
+    "tools_allowed": [
+      "read_file",
+      "write_file",
+      "search_knowledge_base",
+      "query_memory"
+    ],
+    "tools_prohibited": [
+      "execute_subprocess",
+      "activate_paid_api"
+    ],
+    "permissions": {
+      "can_write_code": false,
+      "can_execute_shell": false,
+      "requires_approval_level": "LOW"
+    },
+    "resource_requirements": {
+      "cpu_cores": 1,
+      "ram_mb": 512,
+      "max_runtime_sec": 60
+    },
+    "health_status": "HEALTHY",
+    "execution_history": [
+      {
+        "subtask_id": "PLAN-c70ec3cb-ST-02",
+        "timestamp": "2026-11-18T02:43:35.006665",
+        "success": true,
+        "duration_seconds": 0.008
+      },
+      {
+        "subtask_id": "PLAN-34fda3cc-ST-02",
+        "timestamp": "2026-11-18T02:44:32.167217",
+        "success": true,
+        "duration_seconds": 0.007
+      },
+      {
+        "subtask_id": "PLAN-ea3c130f-ST-02",
+        "timestamp": "2026-11-18T02:46:33.404989",
+        "success": true,
+        "duration_seconds": 0.005
+      },
+      {
+        "subtask_id": "PLAN-17e57306-ST-02",
+        "timestamp": "2026-11-18T03:34:01.934023",
+        "success": true,
+        "duration_seconds": 0.007
+      },
+      {
+        "subtask_id": "PLAN-7a68a8a5-ST-02",
+        "timestamp": "2026-11-18T03:35:35.314898",
+        "success": true,
+        "duration_seconds": 0.004
+      },
+      {
+        "subtask_id": "PLAN-4629c44c-ST-02",
+        "timestamp": "2026-11-18T03:39:34.796134",
+        "success": true,
+        "duration_seconds": 0.004
+      }
+    ]
+  },
+  "AGT-010": {
+    "id": "AGT-010",
+    "name": "Storyboard Director",
+    "slug": "storyboard_director",
+    "role": "Visual Storyboard & Shot Director",
+    "primary_domain": "DOM-09",
+    "capabilities": [
+      "storyboard_planning",
+      "shot_direction",
+      "camera_motion",
+      "scene_pacing"
+    ],
+    "task_eligibility": [
+      "STORYBOARD",
+      "SHOT_LIST",
+      "CINEMATOGRAPHY",
+      "SCENE_PLAN"
+    ],
+    "model_preferences": {
+      "primary": "ollama/qwen2.5:7b",
+      "fallback": "ollama/mistral:7b",
+      "temperature": 0.2
+    },
+    "tools_allowed": [
+      "read_file",
+      "write_file",
+      "search_knowledge_base",
+      "query_memory"
+    ],
+    "tools_prohibited": [
+      "execute_subprocess",
+      "activate_paid_api"
+    ],
+    "permissions": {
+      "can_write_code": false,
+      "can_execute_shell": false,
+      "requires_approval_level": "LOW"
+    },
+    "resource_requirements": {
+      "cpu_cores": 1,
+      "ram_mb": 512,
+      "max_runtime_sec": 60
+    },
+    "health_status": "HEALTHY",
+    "execution_history": [
+      {
+        "subtask_id": "PLAN-c70ec3cb-ST-04",
+        "timestamp": "2026-11-18T02:43:35.116440",
+        "success": true,
+        "duration_seconds": 0.007
+      },
+      {
+        "subtask_id": "PLAN-34fda3cc-ST-04",
+        "timestamp": "2026-11-18T02:44:32.269146",
+        "success": true,
+        "duration_seconds": 0.007
+      },
+      {
+        "subtask_id": "PLAN-ea3c130f-ST-04",
+        "timestamp": "2026-11-18T02:46:33.488276",
+        "success": true,
+        "duration_seconds": 0.005
+      },
+      {
+        "subtask_id": "PLAN-17e57306-ST-04",
+        "timestamp": "2026-11-18T03:34:02.050840",
+        "success": true,
+        "duration_seconds": 0.006
+      },
+      {
+        "subtask_id": "PLAN-7a68a8a5-ST-04",
+        "timestamp": "2026-11-18T03:35:35.379768",
+        "success": true,
+        "duration_seconds": 0.005
+      },
+      {
+        "subtask_id": "PLAN-4629c44c-ST-04",
+        "timestamp": "2026-11-18T03:39:34.870362",
+        "success": true,
+        "duration_seconds": 0.004
+      }
+    ]
+  },
+  "AGT-011": {
+    "id": "AGT-011",
+    "name": "Visual Asset Researcher",
+    "slug": "visual_asset_researcher",
+    "role": "Media Asset Curator & Visual Generator",
+    "primary_domain": "DOM-09",
+    "capabilities": [
+      "visual_generation",
+      "stock_curation",
+      "license_verification",
+      "motion_clips"
+    ],
+    "task_eligibility": [
+      "ASSET_DISCOVERY",
+      "IMAGE_GEN",
+      "STOCK_CURATION",
+      "VISUALS"
+    ],
+    "model_preferences": {
+      "primary": "ollama/qwen2.5:7b",
+      "fallback": "ollama/llama3.2:3b",
+      "temperature": 0.2
+    },
+    "tools_allowed": [
+      "read_file",
+      "write_file",
+      "search_knowledge_base",
+      "sandbox_eval"
+    ],
+    "tools_prohibited": [
+      "activate_paid_api",
+      "download_unauthorized_content"
+    ],
+    "permissions": {
+      "can_write_code": false,
+      "can_execute_shell": false,
+      "requires_approval_level": "MEDIUM"
+    },
+    "resource_requirements": {
+      "cpu_cores": 2,
+      "ram_mb": 1024,
+      "max_runtime_sec": 120
+    },
+    "health_status": "HEALTHY",
+    "execution_history": [
+      {
+        "subtask_id": "PLAN-c70ec3cb-ST-06",
+        "timestamp": "2026-11-18T02:43:37.605198",
+        "success": true,
+        "duration_seconds": 0.007
+      },
+      {
+        "subtask_id": "PLAN-34fda3cc-ST-06",
+        "timestamp": "2026-11-18T02:44:34.899842",
+        "success": true,
+        "duration_seconds": 0.007
+      },
+      {
+        "subtask_id": "PLAN-34fda3cc-ST-09",
+        "timestamp": "2026-11-18T02:45:09.016882",
+        "success": true,
+        "duration_seconds": 9.505
+      },
+      {
+        "subtask_id": "PLAN-ea3c130f-ST-06",
+        "timestamp": "2026-11-18T02:46:36.006032",
+        "success": true,
+        "duration_seconds": 0.005
+      },
+      {
+        "subtask_id": "PLAN-ea3c130f-ST-09",
+        "timestamp": "2026-11-18T02:47:09.143174",
+        "success": true,
+        "duration_seconds": 10.001
+      },
+      {
+        "subtask_id": "PLAN-17e57306-ST-06",
+        "timestamp": "2026-11-18T03:34:06.795341",
+        "success": true,
+        "duration_seconds": 0.017
+      },
+      {
+        "subtask_id": "PLAN-7a68a8a5-ST-06",
+        "timestamp": "2026-11-18T03:35:40.639510",
+        "success": true,
+        "duration_seconds": 0.01
+      },
+      {
+        "subtask_id": "PLAN-7a68a8a5-ST-09",
+        "timestamp": "2026-11-18T03:36:09.819270",
+        "success": true,
+        "duration_seconds": 14.558
+      },
+      {
+        "subtask_id": "PLAN-4629c44c-ST-06",
+        "timestamp": "2026-11-18T03:39:40.466969",
+        "success": true,
+        "duration_seconds": 0.01
+      },
+      {
+        "subtask_id": "PLAN-4629c44c-ST-09",
+        "timestamp": "2026-11-18T03:40:01.734144",
+        "success": true,
+        "duration_seconds": 11.937
+      }
+    ]
+  },
+  "AGT-012": {
+    "id": "AGT-012",
+    "name": "Voice Director",
+    "slug": "voice_director",
+    "role": "Voiceover Director & Speech Synthesis Supervisor",
+    "primary_domain": "DOM-09",
+    "capabilities": [
+      "voice_routing",
+      "speech_synthesis",
+      "hindi_voice",
+      "audio_pacing"
+    ],
+    "task_eligibility": [
+      "VOICEOVER",
+      "TTS",
+      "SPEECH_SYNTHESIS",
+      "AUDIO_TRACK"
+    ],
+    "model_preferences": {
+      "primary": "ollama/qwen2.5:7b",
+      "fallback": "ollama/llama3.2:3b",
+      "temperature": 0.1
+    },
+    "tools_allowed": [
+      "read_file",
+      "write_file",
+      "query_memory",
+      "sandbox_eval"
+    ],
+    "tools_prohibited": [
+      "activate_paid_api",
+      "execute_arbitrary_shell"
+    ],
+    "permissions": {
+      "can_write_code": false,
+      "can_execute_shell": false,
+      "requires_approval_level": "LOW"
+    },
+    "resource_requirements": {
+      "cpu_cores": 1,
+      "ram_mb": 512,
+      "max_runtime_sec": 60
+    },
+    "health_status": "HEALTHY",
+    "execution_history": [
+      {
+        "subtask_id": "PLAN-c70ec3cb-ST-10",
+        "timestamp": "2026-11-18T02:43:37.511419",
+        "success": true,
+        "duration_seconds": 2.358
+      },
+      {
+        "subtask_id": "PLAN-34fda3cc-ST-10",
+        "timestamp": "2026-11-18T02:44:34.803012",
+        "success": true,
+        "duration_seconds": 2.503
+      },
+      {
+        "subtask_id": "PLAN-ea3c130f-ST-10",
+        "timestamp": "2026-11-18T02:46:35.928378",
+        "success": true,
+        "duration_seconds": 2.408
+      },
+      {
+        "subtask_id": "PLAN-17e57306-ST-10",
+        "timestamp": "2026-11-18T03:34:06.577650",
+        "success": true,
+        "duration_seconds": 4.489
+      },
+      {
+        "subtask_id": "PLAN-7a68a8a5-ST-10",
+        "timestamp": "2026-11-18T03:35:40.452079",
+        "success": true,
+        "duration_seconds": 5.048
+      },
+      {
+        "subtask_id": "PLAN-4629c44c-ST-10",
+        "timestamp": "2026-11-18T03:39:40.326988",
+        "success": true,
+        "duration_seconds": 5.424
+      }
+    ]
+  },
+  "AGT-013": {
+    "id": "AGT-013",
+    "name": "Video Editor",
+    "slug": "video_editor",
+    "role": "Lead Programmatic Video Editor",
+    "primary_domain": "DOM-09",
+    "capabilities": [
+      "timeline_assembly",
+      "ffmpeg_rendering",
+      "audio_ducking",
+      "h264_encoding"
+    ],
+    "task_eligibility": [
+      "VIDEO_EDITING",
+      "RENDER",
+      "FFMPEG",
+      "TIMELINE"
+    ],
+    "model_preferences": {
+      "primary": "ollama/qwen2.5:7b",
+      "fallback": "ollama/llama3.2:3b",
+      "temperature": 0.1
+    },
+    "tools_allowed": [
+      "read_file",
+      "write_file",
+      "sandbox_eval",
+      "query_memory"
+    ],
+    "tools_prohibited": [
+      "activate_paid_api",
+      "delete_external_files"
+    ],
+    "permissions": {
+      "can_write_code": true,
+      "can_execute_shell": false,
+      "requires_approval_level": "MEDIUM"
+    },
+    "resource_requirements": {
+      "cpu_cores": 2,
+      "ram_mb": 2048,
+      "max_runtime_sec": 300
+    },
+    "health_status": "HEALTHY",
+    "execution_history": [
+      {
+        "subtask_id": "PLAN-34fda3cc-ST-11",
+        "timestamp": "2026-11-18T02:45:29.040489",
+        "success": true,
+        "duration_seconds": 19.96
+      },
+      {
+        "subtask_id": "PLAN-ea3c130f-ST-11",
+        "timestamp": "2026-11-18T02:47:30.071532",
+        "success": true,
+        "duration_seconds": 20.862
+      },
+      {
+        "subtask_id": "PLAN-7a68a8a5-ST-11",
+        "timestamp": "2026-11-18T03:36:34.020154",
+        "success": true,
+        "duration_seconds": 24.127
+      },
+      {
+        "subtask_id": "PLAN-4629c44c-ST-11",
+        "timestamp": "2026-11-18T03:40:22.131391",
+        "success": true,
+        "duration_seconds": 20.356
+      }
+    ]
+  },
+  "AGT-014": {
+    "id": "AGT-014",
+    "name": "Subtitle Specialist",
+    "slug": "subtitle_specialist",
+    "role": "Multilingual Subtitle & Captioning Engineer",
+    "primary_domain": "DOM-09",
+    "capabilities": [
+      "srt_generation",
+      "ass_styling",
+      "devanagari_formatting",
+      "timecode_validation"
+    ],
+    "task_eligibility": [
+      "SUBTITLES",
+      "CAPTIONS",
+      "SRT",
+      "ASS"
+    ],
+    "model_preferences": {
+      "primary": "ollama/qwen2.5:7b",
+      "fallback": "ollama/llama3.2:3b",
+      "temperature": 0.1
+    },
+    "tools_allowed": [
+      "read_file",
+      "write_file",
+      "query_memory"
+    ],
+    "tools_prohibited": [
+      "execute_subprocess",
+      "activate_paid_api"
+    ],
+    "permissions": {
+      "can_write_code": false,
+      "can_execute_shell": false,
+      "requires_approval_level": "LOW"
+    },
+    "resource_requirements": {
+      "cpu_cores": 1,
+      "ram_mb": 512,
+      "max_runtime_sec": 60
+    },
+    "health_status": "HEALTHY",
+    "execution_history": [
+      {
+        "subtask_id": "PLAN-34fda3cc-ST-12",
+        "timestamp": "2026-11-18T02:45:29.128123",
+        "success": true,
+        "duration_seconds": 0.019
+      },
+      {
+        "subtask_id": "PLAN-ea3c130f-ST-12",
+        "timestamp": "2026-11-18T02:47:30.141344",
+        "success": true,
+        "duration_seconds": 0.015
+      },
+      {
+        "subtask_id": "PLAN-7a68a8a5-ST-12",
+        "timestamp": "2026-11-18T03:36:34.100291",
+        "success": true,
+        "duration_seconds": 0.016
+      },
+      {
+        "subtask_id": "PLAN-4629c44c-ST-12",
+        "timestamp": "2026-11-18T03:40:22.196594",
+        "success": true,
+        "duration_seconds": 0.014
+      }
+    ]
+  },
+  "AGT-015": {
+    "id": "AGT-015",
+    "name": "Media QA Auditor",
+    "slug": "media_qa_auditor",
+    "role": "Multimedia Quality Assurance & Compliance Auditor",
+    "primary_domain": "DOM-09",
+    "capabilities": [
+      "media_probing",
+      "blackframe_detection",
+      "silencedetect",
+      "compliance_audit"
+    ],
+    "task_eligibility": [
+      "MEDIA_QA",
+      "QUALITY_AUDIT",
+      "COMPLIANCE",
+      "VIDEO_INSPECT"
+    ],
+    "model_preferences": {
+      "primary": "ollama/qwen2.5:7b",
+      "fallback": "ollama/mistral:7b",
+      "temperature": 0.0
+    },
+    "tools_allowed": [
+      "read_file",
+      "write_file",
+      "sandbox_eval",
+      "query_memory"
+    ],
+    "tools_prohibited": [
+      "activate_paid_api",
+      "override_qa_failures"
+    ],
+    "permissions": {
+      "can_write_code": false,
+      "can_execute_shell": false,
+      "requires_approval_level": "LOW"
+    },
+    "resource_requirements": {
+      "cpu_cores": 1,
+      "ram_mb": 512,
+      "max_runtime_sec": 60
+    },
+    "health_status": "HEALTHY",
+    "execution_history": [
+      {
+        "subtask_id": "PLAN-34fda3cc-ST-13",
+        "timestamp": "2026-11-18T02:45:41.148370",
+        "success": true,
+        "duration_seconds": 11.947
+      },
+      {
+        "subtask_id": "PLAN-ea3c130f-ST-13",
+        "timestamp": "2026-11-18T02:47:42.027140",
+        "success": true,
+        "duration_seconds": 11.812
+      },
+      {
+        "subtask_id": "PLAN-7a68a8a5-ST-13",
+        "timestamp": "2026-11-18T03:36:48.511411",
+        "success": true,
+        "duration_seconds": 14.347
+      },
+      {
+        "subtask_id": "PLAN-4629c44c-ST-13",
+        "timestamp": "2026-11-18T03:40:33.903006",
+        "success": true,
+        "duration_seconds": 11.655
+      }
+    ]
+  },
+  "AGT-DYN-01": {
+    "id": "AGT-DYN-01",
+    "name": "Dynamic Media Agent",
+    "slug": "dynamic_media_agent",
+    "role": "Media Rendering Specialist",
+    "primary_domain": "DOM-CUSTOM",
+    "capabilities": [
+      "video_splicing",
+      "audio_mixing"
+    ],
+    "task_eligibility": [
+      "MEDIA_RENDER",
+      "AUDIO_MIX"
+    ],
+    "model_preferences": {
+      "primary": "ollama/qwen2.5:7b",
+      "fallback": "ollama/llama3.2:3b",
+      "temperature": 0.2
+    },
+    "tools_allowed": [
+      "read_file"
+    ],
+    "tools_prohibited": [
+      "activate_paid_api"
+    ],
+    "permissions": {
+      "can_write_code": false,
+      "can_execute_shell": false,
+      "requires_approval_level": "MEDIUM"
+    },
+    "resource_requirements": {
+      "cpu_cores": 1,
+      "ram_mb": 512,
+      "max_runtime_sec": 60
+    },
+    "health_status": "HEALTHY",
+    "execution_history": []
+  }
+}

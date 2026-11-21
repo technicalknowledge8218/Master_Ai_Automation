@@ -1,0 +1,57 @@
+{
+  "project_id": "DOC-7b06c3a7",
+  "soundtrack": {
+    "path": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-7b06c3a7\\soundtrack_final.wav",
+    "file_size_bytes": 26460078,
+    "channels": 1,
+    "sample_width": 2,
+    "bit_depth": 16,
+    "sample_rate_hz": 44100,
+    "total_frames": 13230000,
+    "duration_sec": 300.0,
+    "peak_amplitude": 30283,
+    "rms_energy": 3484.91,
+    "has_clipping": false
+  },
+  "narration": {
+    "path": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-7b06c3a7\\narration_raw.wav",
+    "file_size_bytes": 26460078,
+    "channels": 1,
+    "sample_width": 2,
+    "bit_depth": 16,
+    "sample_rate_hz": 44100,
+    "total_frames": 13230000,
+    "duration_sec": 300.0,
+    "peak_amplitude": 28789,
+    "rms_energy": 3310.56,
+    "has_clipping": false
+  },
+  "ambient": {
+    "path": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-7b06c3a7\\ambient_soundscape.wav",
+    "file_size_bytes": 26460078,
+    "channels": 1,
+    "sample_width": 2,
+    "bit_depth": 16,
+    "sample_rate_hz": 44100,
+    "total_frames": 13230000,
+    "duration_sec": 300.0,
+    "peak_amplitude": 632,
+    "rms_energy": 117.32,
+    "has_clipping": false
+  },
+  "tail_audio_analysis_273_to_300s": {
+    "rms_level_db": -61.743166,
+    "is_silent": true,
+    "explanation": "Narration ends at 273.4s; remaining 26.6s contains continuous ambient savannah soundscape."
+  },
+  "voice_synthesis_audit": {
+    "provider": "edge_tts",
+    "voice_id": "hi-IN-MadhurNeural",
+    "language": "Hindi",
+    "nature": "NEURAL_HUMAN_SPEECH",
+    "procedural_sine_hum_detected": false,
+    "local_asr_installed": false,
+    "linguistic_intelligibility_status": "NOT INDEPENDENTLY VERIFIED",
+    "rationale": "No Hindi ASR model (Whisper/Vosk) is installed in the local environment. Under Phase 6.3 audit rules, waveform inspection and neural metadata alone do not constitute independent linguistic transcription proof."
+  }
+}

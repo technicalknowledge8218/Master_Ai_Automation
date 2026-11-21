@@ -1,0 +1,42 @@
+{
+  "title": "आखिरी चिट्ठी — 15-Second Quality Remediation Acceptance Test",
+  "phase": "7.6.1",
+  "duration_sec": 15.0,
+  "total_frames": 359,
+  "fps": 24.0,
+  "resolution": "1280x720",
+  "average_motion_delta": 1.171,
+  "black_frames_pct": 0.0,
+  "voiceover": {
+    "status": "CONTINUOUS_VERIFIED",
+    "cue_count": 3,
+    "speech_coverage_pct": 100.0,
+    "rms_dbfs": -16.15,
+    "peak_dbfs": -1.51
+  },
+  "audio_mix": {
+    "integrated_rms_dbfs": -16.33,
+    "true_peak_dbfs": -1.51,
+    "ducking_applied": "-14 dB sidechain under speech"
+  },
+  "devanagari_shaping": {
+    "engine": "Google Chrome (Blink/HarfBuzz/Skia)",
+    "test_sheet": "devanagari_test_sheet.png",
+    "verified_words": [
+      "कि, की, कु, कृ",
+      "क्ष, त्र, ज्ञ, श्र",
+      "प्र, क्र, स्त्र",
+      "माँ, आँखें, चिट्ठी, आंसू"
+    ]
+  },
+  "deliverables": {
+    "master_mp4": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\phase-7.6.1\\aakhiri_chitti_15s_remediation.mp4",
+    "narration_wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\phase-7.6.1\\narration_15s.wav",
+    "music_wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\phase-7.6.1\\music_15s.wav",
+    "sfx_wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\phase-7.6.1\\sfx_15s.wav",
+    "master_mixed_wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\phase-7.6.1\\master_mixed_15s.wav",
+    "subtitles_srt": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\phase-7.6.1\\subtitles_15s.srt",
+    "contact_sheet_png": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\phase-7.6.1\\contact_sheet_15s.png",
+    "test_sheet_png": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\phase-7.6.1\\devanagari_test_sheet.png"
+  }
+}

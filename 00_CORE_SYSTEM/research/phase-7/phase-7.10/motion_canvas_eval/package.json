@@ -1,0 +1,16 @@
+{
+  "name": "motion-canvas-eval",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@motion-canvas/2d": "^3.17.2",
+    "@motion-canvas/core": "^3.17.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

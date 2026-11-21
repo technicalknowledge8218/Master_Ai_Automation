@@ -1,0 +1,4 @@
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/remotion_tech_reel/phonetic_tests/senior_continuous_flow/line1_boss_continuous.wav'
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/remotion_tech_reel/phonetic_tests/senior_continuous_flow/line2_employee_continuous.wav'
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/remotion_tech_reel/phonetic_tests/senior_continuous_flow/line3_lalaji_boss_continuous.wav'
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/remotion_tech_reel/phonetic_tests/senior_continuous_flow/line4_narrator_continuous.wav'

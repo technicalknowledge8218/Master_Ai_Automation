@@ -1,0 +1,4 @@
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/remotion_tech_reel/phonetic_tests/dramatic_tone_suite/line_01_lala_boss.master.wav'
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/remotion_tech_reel/phonetic_tests/dramatic_tone_suite/line_02_junior_employee.master.wav'
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/remotion_tech_reel/phonetic_tests/dramatic_tone_suite/line_03_lala_boss.master.wav'
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/remotion_tech_reel/phonetic_tests/dramatic_tone_suite/line_04_suspense_narrator.master.wav'

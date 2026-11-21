@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MASTER-AI Full-Stack Standards Registry",
+  "version": "1.0.0",
+  "last_updated": "2026-11-17",
+  "standards": [
+    {
+      "id": "STD-001",
+      "slug": "software-architecture",
+      "title": "Software Architecture Standards",
+      "path": "05_DEVELOPMENT/standards/software_architecture.md",
+      "lead_agent": "AGT-002",
+      "domains": ["DOM-07", "DOM-20"],
+      "key_topics": ["Clean Architecture", "Three-Tier Decoupled", "Monolith vs Microservices", "ADRs"],
+      "status": "APPROVED"
+    },
+    {
+      "id": "STD-002",
+      "slug": "frontend-engineering",
+      "title": "Frontend Engineering Standards",
+      "path": "05_DEVELOPMENT/standards/frontend_engineering.md",
+      "lead_agent": "AGT-003",
+      "domains": ["DOM-07", "DOM-08"],
+      "key_topics": ["React 19", "TypeScript Strict", "State Management", "WCAG 2.2 AAA Accessibility"],
+      "status": "APPROVED"
+    },
+    {
+      "id": "STD-003",
+      "slug": "backend-engineering",
+      "title": "Backend Engineering Standards",
+      "path": "05_DEVELOPMENT/standards/backend_engineering.md",
+      "lead_agent": "AGT-003",
+      "domains": ["DOM-07", "DOM-09"],
+      "key_topics": ["Node.js LTS", "Express", "RESTful OpenAPI 3.1", "Structured JSON Logging", "RFC 7807"],
+      "status": "APPROVED"
+    },
+    {
+      "id": "STD-004",
+      "slug": "database-engineering",
+      "title": "Database Engineering Standards",
+      "path": "05_DEVELOPMENT/standards/database_engineering.md",
+      "lead_agent": "AGT-002",
+      "domains": ["DOM-07", "DOM-10"],
+      "key_topics": ["PostgreSQL", "MongoDB", "ACID Transactions", "Indexing Strategies", "Expand/Contract Migrations"],
+      "status": "APPROVED"
+    },
+    {
+      "id": "STD-005",
+      "slug": "mobile-engineering",
+      "title": "Mobile Engineering Standards",
+      "path": "05_DEVELOPMENT/standards/mobile_engineering.md",
+      "lead_agent": "AGT-003",
+      "domains": ["DOM-07", "DOM-11"],
+      "key_topics": ["Native Android Jetpack Compose", "Capacitor Hybrid", "Keystore/Keychain", "Offline-First Sync"],
+      "status": "APPROVED"
+    },
+    {
+      "id": "STD-006",
+      "slug": "security-engineering",
+      "title": "Security Engineering Standards",
+      "path": "05_DEVELOPMENT/standards/security_engineering.md",
+      "lead_agent": "AGT-006",
+      "domains": ["DOM-07", "DOM-22"],
+      "key_topics": ["OWASP Top 10", "Secret-Zero", "JWT/Session Cookies", "SCA Vulnerability Scanning"],
+      "status": "APPROVED"
+    },
+    {
+      "id": "STD-007",
+      "slug": "testing-and-qa",
+      "title": "Testing and QA Standards",
+      "path": "05_DEVELOPMENT/standards/testing_and_qa.md",
+      "lead_agent": "AGT-004",
+      "domains": ["DOM-07", "DOM-23"],
+      "key_topics": ["4-Tier Testing Pyramid", "80% Coverage Gate", "Deterministic Mocks", "Playwright E2E"],
+      "status": "APPROVED"
+    },
+    {
+      "id": "STD-008",
+      "slug": "devops-and-deployment",
+      "title": "DevOps & Deployment Standards",
+      "path": "05_DEVELOPMENT/standards/devops_and_deployment.md",
+      "lead_agent": "AGT-002",
+      "domains": ["DOM-07", "DOM-24"],
+      "key_topics": ["Trunk-Based Git", "Multi-Stage Docker", "Blue-Green/Canary", "RPO/RTO Disaster Recovery"],
+      "status": "APPROVED"
+    }
+  ]
+}

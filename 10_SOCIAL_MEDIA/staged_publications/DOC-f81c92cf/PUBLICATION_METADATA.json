@@ -1,0 +1,25 @@
+{
+  "project_id": "DOC-f81c92cf",
+  "title": "\u0938\u0935\u093e\u0928\u093e \u0915\u093e \u0938\u092e\u094d\u0930\u093e\u091f: \u0936\u0947\u0930 (The Sovereign Lion)",
+  "description": "5-minute wildlife documentary exploring the social pride hierarchy, cooperative hunting, and conservation of African and Asiatic lions.",
+  "media_path": "F:\\Master AI\\03_AI_AGENTS\\sandbox\\tasks\\phase6_tests\\DOC-f81c92cf\\lion_documentary_hindi.mp4",
+  "thumbnail_path": "F:\\Master AI\\03_AI_AGENTS\\sandbox\\tasks\\phase6_tests\\DOC-f81c92cf\\thumbnail_youtube.png",
+  "platforms": [
+    "youtube",
+    "tiktok",
+    "instagram",
+    "twitter",
+    "linkedin"
+  ],
+  "tags": [
+    "wildlife",
+    "lions",
+    "documentary",
+    "hindi",
+    "nature",
+    "conservation"
+  ],
+  "approval_ticket": "TKT-APPROVAL-STAGED",
+  "staged_at": "2026-11-17T17:55:29Z",
+  "status": "AWAITING_APPROVAL"
+}

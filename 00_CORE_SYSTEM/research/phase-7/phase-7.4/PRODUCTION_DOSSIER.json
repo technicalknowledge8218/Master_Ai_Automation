@@ -1,0 +1,25 @@
+{
+  "workflow_id": "PLAN-4629c44c",
+  "plan_id": "PLAN-4629c44c",
+  "topic": "आखिरी चिट्ठी — The Last Letter",
+  "genre": "FAMILY_DRAMA",
+  "master_video_path": "F:/Master AI/09_CONTENT_STUDIO/renders/autonomous_jobs\\PLAN-4629c44c\\aakhiri_chitti_master_720p.mp4",
+  "subtitles_path": "F:/Master AI/09_CONTENT_STUDIO/renders/autonomous_jobs\\PLAN-4629c44c\\aakhiri_chitti_subtitles_hindi.srt",
+  "runtime_seconds": 58.958,
+  "resolution": "1280x720",
+  "fps": 24.0,
+  "audio_checkpoint": {
+    "checkpoint_id": "CHK_AUDIO_59S",
+    "language": "Hindi",
+    "status": "PENDING_USER_AUDIO",
+    "target_duration_sec": 59.0,
+    "sentence_count": 8,
+    "expected_audio_path": "F:\\Master AI\\03_AI_AGENTS\\sandbox\\tasks\\WF-77a4d400\\user_narration.wav",
+    "handbook_path": "F:\\Master AI\\03_AI_AGENTS\\sandbox\\tasks\\WF-77a4d400\\narration_recording_script.txt"
+  },
+  "commercial_clearance_status": "PENDING_USER_VOICE",
+  "quality_assurance_verdict": "FLAGGED",
+  "zero_budget_compliant": true,
+  "cost_usd": 0.0,
+  "packaged_at": "2026-11-18T03:40:34.265585"
+}

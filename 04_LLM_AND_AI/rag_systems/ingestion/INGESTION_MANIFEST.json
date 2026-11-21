@@ -1,0 +1,44 @@
+{
+  "documents": {
+    "README.md": {
+      "file_path": "F:\\Master AI\\03_AI_AGENTS\\README.md",
+      "sha256": "5040b7663eeea8d265134ba1dad88d794dbd9d59fd1ed0bc7922430e6ede8bca",
+      "collection_name": "knowledge_docs",
+      "point_ids": [
+        "README.md#chunk-0",
+        "README.md#chunk-1",
+        "README.md#chunk-2",
+        "README.md#chunk-3",
+        "README.md#chunk-4",
+        "README.md#chunk-5"
+      ],
+      "chunk_count": 6,
+      "updated_at": null
+    }
+  },
+  "chunks": {
+    "90267fb6ddb23466a33ca5670a8f76c7e7713e2582547b925ac758f79a33595f": "README.md#chunk-0",
+    "10fdb86de0c4938f0f7e82ff792bd1d73940ce99169d09daa84fe586a7c84bd8": "README.md#chunk-1",
+    "6badc7789fa94c04a669ae2d84eca3d67f1cc05e41bc0725aa634b27d00380c6": "README.md#chunk-2",
+    "338868a01f8b9cb2a32fd8a6d8bc7000014bb19e4c745a12d16eb78ffbd30f9f": "README.md#chunk-3",
+    "4d2aef7cd80629a62c20523bd180e034cffacb5241a36dfc89ce38ec17c0a02e": "README.md#chunk-4",
+    "4661dcc85e292678c2e65d4daca8c4a455a6277a0abeb4c0095f8bdf97926172": "README.md#chunk-5",
+    "be9f277c338e283dc7d5ca47ce9a7f28f87b7d141f057c76ea37413edf854837": "README.md#chunk-6",
+    "c586e654fb0087a300257d7a84ae9d71fc1b63cbaaa290383804d9f713fdc2ce": "README.md#chunk-7",
+    "69eda3c7d538b8a3065e9061d7215370dbeff4872b8409d01b77bd594cbaa72d": "README.md#chunk-8",
+    "294dc0dd19f4dda8aab618374ae8e8eb2b39976e38cab0733e26f22cd3e35d43": "README.md#chunk-9",
+    "1baf630532823fb92dde7fe9e01714f03e00cc319c42d772e18a577bce537fca": "README.md#chunk-10",
+    "57da094fdce3a5fdccf24c09937b268d006e0c063b6df013ed5efcfd8722738c": "README.md#chunk-11",
+    "44a7e094e04741cc819cb2e6ad9f4af7f388d4619d1eefb631b2a18c45783ba3": "README.md#chunk-12",
+    "4d9a1d22b2bd362b970ccee6a494ca4c9360426e9d19a91a02569df0f6833fc9": "README.md#chunk-13",
+    "250e21dc444f2523a82eff6dcb918d48887a39f880e97016558606e35a2a7369": "README.md#chunk-14",
+    "2b12302fc0341f18e6968b1a575fb031e44e7f612f09935a7f871bd07338075b": "README.md#chunk-15",
+    "190584b85728ce520c3ee8015adf6181883d861e43bb6473bfc31d1bf7ef4381": "README.md#chunk-16",
+    "d8004e766d8b106833b8c1fff4541f77392311655784435ef667a7b4bec0b923": "README.md#chunk-0",
+    "9b30aeaaf7e5e33687d76e25e686eb67060cfe16c7f255674b175d7e40097d15": "README.md#chunk-1",
+    "a581a49eab58ff534720a681b6be0f809cb743d1e81cd6e57d2c35bc95e16d75": "README.md#chunk-2",
+    "814125b4631094c8621689160479693c1e06f2b869a3ec9d8bf78da8e8de7b5c": "README.md#chunk-3",
+    "ca94c7e607271e18f82ce7f22819c7da92c5f718882e4b7dda4f6005780605f8": "README.md#chunk-4",
+    "23f2086b3c4ace715e3eb912ec905943c8cc4e333614d1ddf35b0e00dc2cf34e": "README.md#chunk-5"
+  }
+}

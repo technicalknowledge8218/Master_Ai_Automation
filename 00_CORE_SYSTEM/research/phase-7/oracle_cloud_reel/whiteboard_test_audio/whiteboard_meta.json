@@ -1,0 +1,50 @@
+[
+  {
+    "id": "turn1_neha",
+    "speaker": "Neha (Junior)",
+    "char_type": "neha",
+    "voice": "hi-IN-SwaraNeural",
+    "rate": "+15%",
+    "pitch": "+2Hz",
+    "text": "भैया! Oracle Cloud का मेरा फ्री सर्वर डिलीट हो जाएगा क्या?! मेल आया है कि सात दिन में बंद हो जाएगा!",
+    "sub": "Neha: Bhaiya! Mera Free Server 7 din mein DELETE ho jayega?! Mail aaya hai!",
+    "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\oracle_cloud_reel\\whiteboard_test_audio\\turn1_neha.wav",
+    "dur": 8.496009070294784
+  },
+  {
+    "id": "turn2_kabir",
+    "speaker": "Dr. Kabir (Senior)",
+    "char_type": "kabir",
+    "voice": "en-IN-PrabhatNeural",
+    "rate": "+12%",
+    "pitch": "-2Hz",
+    "text": "Neha chill karo! Ye Oracle ka idle rule hai—agar CPU 20 percent se kam raha toh reclaim hota hai. Par board par dekho, do solid hacks hain!",
+    "sub": "Dr. Kabir: Chill karo! OCI ka 7-day idle rule hai. Board par dekho, 2 hacks hain!",
+    "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\oracle_cloud_reel\\whiteboard_test_audio\\turn2_kabir.wav",
+    "dur": 11.688004535147392
+  },
+  {
+    "id": "turn3_neha",
+    "speaker": "Neha (Junior)",
+    "char_type": "neha",
+    "voice": "hi-IN-SwaraNeural",
+    "rate": "+15%",
+    "pitch": "+3Hz",
+    "text": "कौनसे दो तरीके भैया? क्या कोई पैसे लगेंगे?!",
+    "sub": "Neha: Kaunse do hacks bhaiya? Paise lagenge kya?!",
+    "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\oracle_cloud_reel\\whiteboard_test_audio\\turn3_neha.wav",
+    "dur": 4.584013605442177
+  },
+  {
+    "id": "turn4_kabir",
+    "speaker": "Dr. Kabir (Senior)",
+    "char_type": "kabir",
+    "voice": "en-IN-PrabhatNeural",
+    "rate": "+12%",
+    "pitch": "-2Hz",
+    "text": "Ek rupya bhi nahi! Pehla tareeqa: PAYG mein upgrade karo, bill hamesha zero aayega. Doosra: terminal mein lookbusy daemon run karo—CPU hamesha 22 percent safe rahega!",
+    "sub": "Dr. Kabir: Method 1: PAYG upgrade ($0 bill!) | Method 2: lookbusy 22% CPU lock!",
+    "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\oracle_cloud_reel\\whiteboard_test_audio\\turn4_kabir.wav",
+    "dur": 12.936009070294785
+  }
+]

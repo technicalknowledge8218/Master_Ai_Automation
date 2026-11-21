@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "production_id": "PHASE_7.6",
+    "scene_id": "GLOBAL",
+    "skill_category": "ANIMATION_AND_EDITING",
+    "user_critique": "Not good. Static photographs with basic zooming, lack of animation, poor editing.",
+    "problem_description": "Images felt like flat slides with simple pan/zoom without secondary action or multi-plane depth.",
+    "root_cause": "Single-plane 2D rendering without parallax layers; absence of character rigging.",
+    "proposed_improvement": "Implement Camera2D parallax engine with 4 depth planes and character Poisson blinking/breathing.",
+    "applied_patch": "Created motion_director.py with Camera2D and BlinkController.",
+    "verification_result": "Multi-layer rendering active.",
+    "acceptance_status": "SUPERSEDED_BY_7.7",
+    "timestamp": "2026-11-18 09:08:57"
+  },
+  {
+    "id": 2,
+    "production_id": "PHASE_7.6.1",
+    "scene_id": "SCENE_01_TO_08",
+    "skill_category": "VFX_TYPOGRAPHY_AND_VOICE",
+    "user_critique": "Broken Hindi text, narration stops after 6 seconds.",
+    "problem_description": "Devanagari characters were missing matras and conjuncts. Voice was cut abruptly.",
+    "root_cause": "PIL font rendering lacks HarfBuzz complex text shaping; voice pipeline generated disconnected cues.",
+    "proposed_improvement": "Use Headless Chrome HarfBuzz typography rendering; master voiceover on continuous timeline.",
+    "applied_patch": "Created devanagari_renderer.py and build_audio_pipeline with continuous multi-track assembly.",
+    "verification_result": "Prism-sharp ligatures verified.",
+    "acceptance_status": "SUPERSEDED_BY_7.7.2",
+    "timestamp": "2026-11-18 09:08:57"
+  },
+  {
+    "id": 3,
+    "production_id": "PHASE_7.7.2",
+    "scene_id": "GLOBAL",
+    "skill_category": "STORY_AND_CHARACTER",
+    "user_critique": "Characters look poor and story is boring and predictable.",
+    "problem_description": "Audience did not connect with characters; repetitive moral twist lacked emotional surprise.",
+    "root_cause": "Generic prompt generation without genre-specific narrative tension matrices.",
+    "proposed_improvement": "Build Genre-Specific Narrative Matrices and character turnaround model sheets.",
+    "applied_patch": "Generated high-fidelity turnaround sheets and structured screenplays.",
+    "verification_result": "Improved visual designs.",
+    "acceptance_status": "SUPERSEDED_BY_7.7.4",
+    "timestamp": "2026-11-18 09:08:57"
+  },
+  {
+    "id": 4,
+    "production_id": "PHASE_7.7.4",
+    "scene_id": "ALL_SCENES",
+    "skill_category": "QUALITY_CONTROL_AND_RENDERING",
+    "user_critique": "Severe continuous vertical up/down glitch or jitter throughout video. Visually unwatchable.",
+    "problem_description": "Whole video violently wrapped scanlines vertically 24 times every second.",
+    "root_cause": "PyMuPDF rendered SVG at dpi=96 (2560x1440 = 11,059,200 bytes) into FFmpeg stdin expecting 1920x1080 (6,220,800 bytes). Automated QA falsely passed due to naive SAD check.",
+    "proposed_improvement": "Enforce dpi=72 and assert exact len == 1920*1080*3 bytes. Implement optical flow stability QA.",
+    "applied_patch": "Implemented render_svg_to_image_safe and dual optical flow stability verifier.",
+    "verification_result": "Stride error reduced to 0 bytes; scanline tearing completely eliminated.",
+    "acceptance_status": "VERIFIED_IN_CALIBRATION_7.7.4.1",
+    "timestamp": "2026-11-18 09:08:57"
+  },
+  {
+    "id": 5,
+    "production_id": "PHASE_7.9",
+    "film_title": "\u0930\u094b\u092c\u094b\u091f \u0914\u0930 2 AM \u091a\u093e\u092f",
+    "human_creative_rating": "3/10",
+    "status": "REJECTED_CREATIVELY",
+    "categories": {
+      "story": {
+        "critique": "Storytelling was boring and predictable.",
+        "rule_generated": "RULE_STORY_01: Stories must have genuine interpersonal conflict, emotional vulnerability, and clear cause-and-effect relationship stakes rather than simple errand plots."
+      },
+      "dialogue": {
+        "critique": "Dialogue delivery felt robotic and disconnected; excessive gaps between spoken lines made scenes unnatural.",
+        "rule_generated": "RULE_DIALOGUE_01: Dialogue turns must maintain natural conversational pacing (gaps between lines strictly <= 0.45s). Dead-air silences > 0.60s are forbidden."
+      },
+      "character_design": {
+        "critique": "2D character visuals lacked the polished, expressive appeal of modern animated shorts.",
+        "rule_generated": "RULE_CHAR_01: Characters must adhere to stylized vector editorial proportions with bold outlines, distinct clothing palettes, and expressive facial features."
+      },
+      "character_acting": {
+        "critique": "Characters felt stiff; merely moving mouth shapes and blinking is not sufficient acting.",
+        "rule_generated": "RULE_CHAR_02: Characters must exhibit multi-joint kinematic posing: expressive eyebrow tilt (-25 to +25 deg), head turns, arm gestures, and postural shifts."
+      },
+      "editing": {
+        "critique": "Editing was weak; 8 uniform scenes felt like a metronome with poor cuts.",
+        "rule_generated": "RULE_EDITING_01: Editorial engine must enforce Average Shot Length <= 4.8s with shot/reverse-shot exchanges, motivated cuts, and rapid 1.5s-2.5s reaction shots during climax."
+      },
+      "cinematography": {
+        "critique": "Scene composition and shot selection were poor; full-bleed landscape felt empty.",
+        "rule_generated": "RULE_CINEMA_01: Employ a structured 4-tier visual hierarchy with centered focal card, dynamic topic badge pills, progress bar, and adaptive day/night backdrops."
+      },
+      "visual_effects": {
+        "critique": "Effects and cinematic presentation were weak.",
+        "rule_generated": "RULE_VFX_01: Reusable vector shaders must include animated progress bar, bouncing topic pills, micro-thought cards (?, !), and dynamic word-level karaoke subtitles."
+      },
+      "background_music": {
+        "critique": "BGM was not convincing and did not match the emotional storyline.",
+        "rule_generated": "RULE_MUSIC_01: Scores must evolve across a 3-part dramatic movement (Playful bounce -> Minor piano tension solo -> Warm acoustic resolution) rather than looping drones."
+      },
+      "sound_effects": {
+        "critique": "Sound effects were poorly selected, poorly timed or ineffective.",
+        "rule_generated": "RULE_SFX_01: Sound design must operate on a multi-track sound-event timeline with 6 distinct stems (Dialogue, Score, Ambience, Foley, Action SFX, Impacts)."
+      },
+      "voice_quality": {
+        "critique": "Vocal delivery sounded like disconnected narration sentences.",
+        "rule_generated": "RULE_VOICE_01: Voice generation must use conversational, natural urban Hindustani with natural breath pauses, pitch contours, and context-aware responses."
+      },
+      "overall_entertainment": {
+        "critique": "Overall film scored 3/10; technical verification passed but creative entertainment failed.",
+        "rule_generated": "RULE_GOVERNANCE_01: Never equate automated technical compliance (zero black frames, EBU R128 audio) with creative entertainment value. Final approval is human-only."
+      }
+    },
+    "timestamp": "2026-11-18 16:10:00"
+  }
+]

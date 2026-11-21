@@ -1,0 +1,50 @@
+{
+  "workflow_id": "WF-1c535b37",
+  "goal": "Cancellation and pause test",
+  "started_at": "2026-11-17T15:48:59.916796",
+  "completed_at": "2026-11-17T15:48:59.961416",
+  "duration_seconds": 0.045,
+  "estimated_cost_usd": 0.0,
+  "active_subtask": null,
+  "timeline": [
+    {
+      "event_id": "EVT-e6cb98",
+      "timestamp": "2026-11-17T15:48:59.923276",
+      "elapsed_seconds": 0.006,
+      "event_type": "PLAN_APPROVED",
+      "message": "Plan 'PLAN-2d80feba' approved for workflow 'WF-1c535b37'.",
+      "agent_id": null,
+      "subtask_id": null,
+      "details": {}
+    },
+    {
+      "event_id": "EVT-d2e38a",
+      "timestamp": "2026-11-17T15:48:59.957912",
+      "elapsed_seconds": 0.041,
+      "event_type": "WORKFLOW_CANCELLED",
+      "message": "Workflow cancelled: User test cancellation",
+      "agent_id": null,
+      "subtask_id": null,
+      "details": {}
+    },
+    {
+      "event_id": "EVT-89049e",
+      "timestamp": "2026-11-17T15:48:59.961437",
+      "elapsed_seconds": 0.045,
+      "event_type": "WORKFLOW_CANCELLED",
+      "message": "Workflow trace marked as CANCELLED.",
+      "agent_id": null,
+      "subtask_id": null,
+      "details": {}
+    }
+  ],
+  "metrics": {
+    "total_events": 3,
+    "tool_calls": 0,
+    "model_calls": 0,
+    "retries": 0,
+    "errors": 0,
+    "approvals_requested": 0
+  },
+  "status": "CANCELLED"
+}

@@ -1,0 +1,111 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-11-17",
+  "assignments": [
+    {
+      "agent_slug": "coding_agent",
+      "preferred_model_id": "offline-mock-deterministic",
+      "backup_model_id": "qwen2.5:1.5b",
+      "temperature": 0.15,
+      "top_p": 0.95,
+      "max_output_tokens": 4096,
+      "capability_requirements": [
+        "code_generation",
+        "streaming"
+      ],
+      "task_specific_overrides": {
+        "refactoring": "offline-mock-deterministic",
+        "bugfix": "offline-mock-deterministic",
+        "unit_testing": "offline-mock-deterministic"
+      },
+      "notes": "Strict low temperature for reproducible code output."
+    },
+    {
+      "agent_slug": "research_agent",
+      "preferred_model_id": "offline-mock-deterministic",
+      "backup_model_id": "qwen2.5:1.5b",
+      "temperature": 0.5,
+      "top_p": 0.95,
+      "max_output_tokens": 3072,
+      "capability_requirements": [
+        "reasoning",
+        "streaming"
+      ],
+      "task_specific_overrides": {
+        "literature_survey": "offline-mock-deterministic"
+      },
+      "notes": "Balanced temperature for comprehensive synthesis."
+    },
+    {
+      "agent_slug": "software_architect",
+      "preferred_model_id": "offline-mock-deterministic",
+      "backup_model_id": "llama-3.1-8b-instruct-local",
+      "temperature": 0.3,
+      "top_p": 0.95,
+      "max_output_tokens": 4096,
+      "capability_requirements": [
+        "structured_json",
+        "reasoning"
+      ],
+      "task_specific_overrides": {
+        "adr_design": "offline-mock-deterministic"
+      },
+      "notes": "High precision for architectural schemas and ADR generation."
+    },
+    {
+      "agent_slug": "testing_agent",
+      "preferred_model_id": "offline-mock-deterministic",
+      "backup_model_id": "qwen2.5:1.5b",
+      "temperature": 0.2,
+      "top_p": 0.95,
+      "max_output_tokens": 2048,
+      "capability_requirements": [
+        "code_generation"
+      ],
+      "task_specific_overrides": {
+        "negative_testing": "offline-mock-deterministic"
+      },
+      "notes": "Low temperature for test assertions and coverage."
+    },
+    {
+      "agent_slug": "documentation_agent",
+      "preferred_model_id": "offline-mock-deterministic",
+      "backup_model_id": "qwen2.5:1.5b",
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "max_output_tokens": 3072,
+      "capability_requirements": [
+        "streaming"
+      ],
+      "task_specific_overrides": {},
+      "notes": "Clarity and readability formatting."
+    },
+    {
+      "agent_slug": "security_auditor",
+      "preferred_model_id": "offline-mock-deterministic",
+      "backup_model_id": "llama-3.1-8b-instruct-local",
+      "temperature": 0.1,
+      "top_p": 0.95,
+      "max_output_tokens": 2048,
+      "capability_requirements": [
+        "reasoning",
+        "structured_json"
+      ],
+      "task_specific_overrides": {},
+      "notes": "Ultra-low temperature for adversarial compliance checking."
+    },
+    {
+      "agent_slug": "capability_discovery_agent",
+      "preferred_model_id": "offline-mock-deterministic",
+      "backup_model_id": "qwen2.5:1.5b",
+      "temperature": 0.4,
+      "top_p": 0.95,
+      "max_output_tokens": 2048,
+      "capability_requirements": [
+        "structured_json"
+      ],
+      "task_specific_overrides": {},
+      "notes": "Catalog inspection and capability classification."
+    }
+  ]
+}

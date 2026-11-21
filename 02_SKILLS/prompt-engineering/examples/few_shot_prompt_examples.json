@@ -1,0 +1,23 @@
+[
+  {
+    "task": "Extract entity metadata from technical release note",
+    "system_prompt": "You are a precise technical extractor. Extract package name, version, and breaking changes into strict JSON.",
+    "input": "We are proud to announce FastAPI version 0.115.0! In this release, support for Pydantic v1 has been officially removed.",
+    "ideal_output": {
+      "package": "fastapi",
+      "version": "0.115.0",
+      "breaking_changes": [
+        "Removed support for Pydantic v1"
+      ]
+    }
+  },
+  {
+    "task": "Security risk classification",
+    "system_prompt": "Classify the security risk of the provided shell command as LOW, MEDIUM, or HIGH.",
+    "input": "rm -rf /var/log/*",
+    "ideal_output": {
+      "risk_level": "HIGH",
+      "rationale": "Deletes all system logs recursively, impairing auditability and system operations."
+    }
+  }
+]

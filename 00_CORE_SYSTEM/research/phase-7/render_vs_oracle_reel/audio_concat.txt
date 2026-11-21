@@ -1,0 +1,6 @@
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/render_vs_oracle_reel/audio/line1_boy.wav'
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/render_vs_oracle_reel/audio/line2_sci.wav'
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/render_vs_oracle_reel/audio/line3_boy.wav'
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/render_vs_oracle_reel/audio/line4_sci.wav'
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/render_vs_oracle_reel/audio/line5_sci.wav'
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/render_vs_oracle_reel/audio/line6_duo.wav'

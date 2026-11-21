@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MasterAIFailureReportSchema",
+  "type": "object",
+  "required": [
+    "failure_id",
+    "task_id",
+    "agent_id",
+    "error_code",
+    "error_message",
+    "triage_recommendation",
+    "rollback_triggered",
+    "timestamp"
+  ],
+  "properties": {
+    "failure_id": {
+      "type": "string"
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "agent_id": {
+      "type": "string"
+    },
+    "subtask_id": {
+      "type": "string"
+    },
+    "error_code": {
+      "type": "string",
+      "enum": [
+        "VALIDATION_ERROR",
+        "PERMISSION_VIOLATION",
+        "TIMEOUT_EXCEEDED",
+        "TEST_FAILURE",
+        "SECURITY_SCAN_ALERT",
+        "SUBPROCESS_ERROR",
+        "UNAUTHORIZED_GLOBAL_ATTEMPT",
+        "ROLLBACK_FAILED"
+      ]
+    },
+    "error_message": {
+      "type": "string"
+    },
+    "stack_trace": {
+      "type": "string"
+    },
+    "triage_recommendation": {
+      "type": "string"
+    },
+    "rollback_triggered": {
+      "type": "boolean"
+    },
+    "timestamp": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,48 @@
+{
+  "file": "F:\\Master AI\\15_ASSETS\\reference_videos\\demo_reference.mp4",
+  "video_properties": {
+    "resolution": "1080x1920",
+    "aspect_ratio": "9:16 (Vertical)",
+    "codec": "hevc (H.265)",
+    "framerate": 30.0,
+    "framerate_mode": "CFR",
+    "bitrate_kbps": 7452,
+    "duration_sec": 108.2
+  },
+  "audio_properties": {
+    "true_peak_dbfs": 0.0,
+    "rms_dbfs": -17.49,
+    "duration_sec": 108.16,
+    "sample_rate": 44100,
+    "channels": 2,
+    "silence_percentage": 21.06
+  },
+  "editorial_statistics": {
+    "total_shots": 2,
+    "average_shot_length_sec": 54.1,
+    "median_shot_length_sec": 54.1,
+    "min_shot_length_sec": 4.07,
+    "max_shot_length_sec": 104.13,
+    "cuts_per_minute": 1.11
+  },
+  "shots": [
+    {
+      "shot_id": "shot_01",
+      "shot_index": 1,
+      "start_time": 0.0,
+      "end_time": 104.133,
+      "duration": 104.133,
+      "mid_time": 52.067,
+      "frame_image": "shot_01_52.07s.jpg"
+    },
+    {
+      "shot_id": "shot_02",
+      "shot_index": 2,
+      "start_time": 104.133,
+      "end_time": 108.2,
+      "duration": 4.067,
+      "mid_time": 106.167,
+      "frame_image": "shot_02_106.17s.jpg"
+    }
+  ]
+}

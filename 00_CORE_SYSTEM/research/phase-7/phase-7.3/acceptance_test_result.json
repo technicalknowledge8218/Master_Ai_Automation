@@ -1,0 +1,640 @@
+{
+  "workflow_id": "WF-d6cbbd32",
+  "plan_id": "PLAN-ea3c130f",
+  "goal": "Create a 60-second cinematic African lion documentary in Hindi for YouTube.",
+  "complexity": "FULL_LIFECYCLE_FEDERATION",
+  "status": "COMPLETED",
+  "created_at": "2026-11-18T02:46:33.313985",
+  "started_at": "2026-11-18T02:46:33.338401",
+  "completed_at": "2026-11-18T02:47:42.577710",
+  "current_wave_index": 10,
+  "waves": [
+    [
+      "PLAN-ea3c130f-ST-01"
+    ],
+    [
+      "PLAN-ea3c130f-ST-02",
+      "PLAN-ea3c130f-ST-03"
+    ],
+    [
+      "PLAN-ea3c130f-ST-04",
+      "PLAN-ea3c130f-ST-10"
+    ],
+    [
+      "PLAN-ea3c130f-ST-05"
+    ],
+    [
+      "PLAN-ea3c130f-ST-06",
+      "PLAN-ea3c130f-ST-08"
+    ],
+    [
+      "PLAN-ea3c130f-ST-07",
+      "PLAN-ea3c130f-ST-09"
+    ],
+    [
+      "PLAN-ea3c130f-ST-11"
+    ],
+    [
+      "PLAN-ea3c130f-ST-12"
+    ],
+    [
+      "PLAN-ea3c130f-ST-13"
+    ],
+    [
+      "PLAN-ea3c130f-ST-14"
+    ]
+  ],
+  "subtasks": {
+    "PLAN-ea3c130f-ST-01": {
+      "subtask_id": "PLAN-ea3c130f-ST-01",
+      "title": "Scientific & Habitat Research: African Lion",
+      "description": "Gather factual data, biological traits, pride behavior, ecological impact, and conservation status for African Lion.",
+      "assigned_agent": "AGT-001",
+      "priority": "HIGH",
+      "status": "COMPLETED",
+      "depends_on": [],
+      "inputs": {
+        "topic": "African Lion",
+        "scope": "comprehensive"
+      },
+      "expected_outputs": [
+        "research_dossier.json",
+        "factual_citations.md"
+      ],
+      "outputs": {
+        "summary": "Completed deep research dossier on African Lion.",
+        "facts_count": 14
+      },
+      "artifacts": [
+        "research_dossier.json"
+      ],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 2,
+      "started_at": "2026-11-18T02:46:33.353873",
+      "completed_at": "2026-11-18T02:46:33.372270",
+      "duration_seconds": 0.005
+    },
+    "PLAN-ea3c130f-ST-02": {
+      "subtask_id": "PLAN-ea3c130f-ST-02",
+      "title": "Documentary Narration Script (Hindi) & Pacing Calibration",
+      "description": "Author duration-calibrated Hindi voiceover script with sentence timestamps, Devanagari Hindi text, and Romanized guidance.",
+      "assigned_agent": "AGT-009",
+      "priority": "HIGH",
+      "status": "COMPLETED",
+      "depends_on": [
+        "PLAN-ea3c130f-ST-01"
+      ],
+      "inputs": {
+        "target_duration_sec": 60,
+        "language": "Hindi"
+      },
+      "expected_outputs": [
+        "narration_script_hindi.json"
+      ],
+      "outputs": {
+        "sentence_count": 8,
+        "language": "Hindi",
+        "calibrated_duration_sec": 60
+      },
+      "artifacts": [
+        "narration_script_hindi.json"
+      ],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 2,
+      "started_at": "2026-11-18T02:46:33.393593",
+      "completed_at": "2026-11-18T02:46:33.411208",
+      "duration_seconds": 0.005
+    },
+    "PLAN-ea3c130f-ST-03": {
+      "subtask_id": "PLAN-ea3c130f-ST-03",
+      "title": "Content Licensing & Educational Compliance Audit",
+      "description": "Pre-screen script, claims, and references for educational accuracy and copyright safety.",
+      "assigned_agent": "AGT-006",
+      "priority": "MEDIUM",
+      "status": "COMPLETED",
+      "depends_on": [
+        "PLAN-ea3c130f-ST-01"
+      ],
+      "inputs": {
+        "compliance_standard": "educational_fair_use"
+      },
+      "expected_outputs": [
+        "content_risk_audit.json"
+      ],
+      "outputs": {
+        "risk_rating": "LOW",
+        "compliance": "APPROVED"
+      },
+      "artifacts": [
+        "content_risk_audit.json"
+      ],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 1,
+      "started_at": "2026-11-18T02:46:33.428739",
+      "completed_at": "2026-11-18T02:46:33.449591",
+      "duration_seconds": 0.007
+    },
+    "PLAN-ea3c130f-ST-04": {
+      "subtask_id": "PLAN-ea3c130f-ST-04",
+      "title": "Visual Storyboard & Multi-Scene Timeline Breakdown",
+      "description": "Design 9-scene visual storyboard with exact durations and crossfade allocations summing to 60s.",
+      "assigned_agent": "AGT-010",
+      "priority": "HIGH",
+      "status": "COMPLETED",
+      "depends_on": [
+        "PLAN-ea3c130f-ST-02"
+      ],
+      "inputs": {
+        "target_duration_sec": 60
+      },
+      "expected_outputs": [
+        "documentary_storyboard.json"
+      ],
+      "outputs": {
+        "scene_count": 9,
+        "planned_scenes": [
+          "SC-01",
+          "SC-02",
+          "SC-03",
+          "SC-04",
+          "SC-05",
+          "SC-06",
+          "SC-07",
+          "SC-08",
+          "SC-09"
+        ]
+      },
+      "artifacts": [
+        "documentary_storyboard.json"
+      ],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 2,
+      "started_at": "2026-11-18T02:46:33.474653",
+      "completed_at": "2026-11-18T02:46:33.495215",
+      "duration_seconds": 0.005
+    },
+    "PLAN-ea3c130f-ST-05": {
+      "subtask_id": "PLAN-ea3c130f-ST-05",
+      "title": "Visual Medium Planning (2D, 3D, Real Footage)",
+      "description": "Intelligently classify each scene into 2D Motion Graphics, 3D CGI, or Real Footage based on narrative intent.",
+      "assigned_agent": "AGT-008",
+      "priority": "HIGH",
+      "status": "COMPLETED",
+      "depends_on": [
+        "PLAN-ea3c130f-ST-04"
+      ],
+      "inputs": {},
+      "expected_outputs": [
+        "scene_medium_plan.json"
+      ],
+      "outputs": {
+        "classified_scenes": 9,
+        "medium_distribution": {
+          "2D": 0,
+          "3D": 0,
+          "Real": 0
+        }
+      },
+      "artifacts": [
+        "scene_medium_plan.json"
+      ],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 2,
+      "started_at": "2026-11-18T02:46:35.959727",
+      "completed_at": "2026-11-18T02:46:35.977653",
+      "duration_seconds": 0.005
+    },
+    "PLAN-ea3c130f-ST-06": {
+      "subtask_id": "PLAN-ea3c130f-ST-06",
+      "title": "Open-Source CC0 Asset Discovery & Provenance Clearance",
+      "description": "Query local library and remote sources for CC0 HDRI, PBR textures, and authentic wildlife clips.",
+      "assigned_agent": "AGT-011",
+      "priority": "HIGH",
+      "status": "COMPLETED",
+      "depends_on": [
+        "PLAN-ea3c130f-ST-05"
+      ],
+      "inputs": {
+        "license_filter": "CC0_PUBLIC_DOMAIN"
+      },
+      "expected_outputs": [
+        "asset_clearance_manifest.json"
+      ],
+      "outputs": {
+        "approved_count": 4,
+        "license_standard": "CC0 / Public Domain"
+      },
+      "artifacts": [
+        "asset_clearance_manifest.json"
+      ],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 2,
+      "started_at": "2026-11-18T02:46:35.995754",
+      "completed_at": "2026-11-18T02:46:36.012533",
+      "duration_seconds": 0.005
+    },
+    "PLAN-ea3c130f-ST-07": {
+      "subtask_id": "PLAN-ea3c130f-ST-07",
+      "title": "3D CGI Scene Generation (Blender 5.2.4 LTS Rigged Character)",
+      "description": "Render 3D CGI hero character with skeletal armature, IK constraints, and savanna environment via Blender EEVEE.",
+      "assigned_agent": "AGT-003",
+      "priority": "HIGH",
+      "status": "COMPLETED",
+      "depends_on": [
+        "PLAN-ea3c130f-ST-05",
+        "PLAN-ea3c130f-ST-06"
+      ],
+      "inputs": {
+        "engine": "BLENDER_5_2_EEVEE",
+        "rig_required": true
+      },
+      "expected_outputs": [
+        "3d_scenes_manifest.json"
+      ],
+      "outputs": {
+        "scenes_rendered": 2,
+        "blender_engine": "EEVEE",
+        "has_skeletal_rig": true
+      },
+      "artifacts": [
+        "c3_3d_lion.mp4",
+        "c6_3d_savanna.mp4",
+        "3d_scenes_manifest.json"
+      ],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 2,
+      "started_at": "2026-11-18T02:46:58.890623",
+      "completed_at": "2026-11-18T02:46:59.109375",
+      "duration_seconds": 0.193
+    },
+    "PLAN-ea3c130f-ST-08": {
+      "subtask_id": "PLAN-ea3c130f-ST-08",
+      "title": "2D Vector Motion Graphics & Scientific Infographics",
+      "description": "Render broadcast 2D animated territory range map, apex biology infographic, and title cards.",
+      "assigned_agent": "AGT-003",
+      "priority": "HIGH",
+      "status": "COMPLETED",
+      "depends_on": [
+        "PLAN-ea3c130f-ST-05"
+      ],
+      "inputs": {
+        "resolution": "1280x720",
+        "fps": 24
+      },
+      "expected_outputs": [
+        "2d_scenes_manifest.json"
+      ],
+      "outputs": {
+        "scenes_rendered": 4,
+        "resolution": "1280x720"
+      },
+      "artifacts": [
+        "c1_title.mp4",
+        "c4_2d_biology.mp4",
+        "c5_2d_map.mp4",
+        "c9_outro.mp4",
+        "2d_scenes_manifest.json"
+      ],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 2,
+      "started_at": "2026-11-18T02:46:36.025295",
+      "completed_at": "2026-11-18T02:46:58.866820",
+      "duration_seconds": 22.828
+    },
+    "PLAN-ea3c130f-ST-09": {
+      "subtask_id": "PLAN-ea3c130f-ST-09",
+      "title": "Authentic Wildlife Real Footage Conforming & Provenance",
+      "description": "Conform genuine camera recordings with verified SHA256 sidecars (rejecting synthetic zoompan).",
+      "assigned_agent": "AGT-011",
+      "priority": "HIGH",
+      "status": "COMPLETED",
+      "depends_on": [
+        "PLAN-ea3c130f-ST-05",
+        "PLAN-ea3c130f-ST-06"
+      ],
+      "inputs": {
+        "reject_zoompan": true
+      },
+      "expected_outputs": [
+        "real_footage_manifest.json"
+      ],
+      "outputs": {
+        "scenes_conformed": 3,
+        "provenance_verified": true
+      },
+      "artifacts": [
+        "c2_real_dawn.mp4",
+        "c7_real_pride.mp4",
+        "c8_real_lookout.mp4",
+        "real_footage_manifest.json"
+      ],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 2,
+      "started_at": "2026-11-18T02:46:59.131400",
+      "completed_at": "2026-11-18T02:47:09.161858",
+      "duration_seconds": 10.001
+    },
+    "PLAN-ea3c130f-ST-10": {
+      "subtask_id": "PLAN-ea3c130f-ST-10",
+      "title": "Commercial-Safe Audio Soundscape & Voice Checkpoint",
+      "description": "Verify commercial audio clearance, synthesize procedural continuous soundscape, and stage user voice recording handbook.",
+      "assigned_agent": "AGT-012",
+      "priority": "HIGH",
+      "status": "COMPLETED",
+      "depends_on": [
+        "PLAN-ea3c130f-ST-02"
+      ],
+      "inputs": {
+        "quarantine_edge_tts": true
+      },
+      "expected_outputs": [
+        "audio_manifest.json",
+        "audio_checkpoint.json"
+      ],
+      "outputs": {
+        "soundscape": "F:\\Master AI\\03_AI_AGENTS\\sandbox\\tasks\\WF-d6cbbd32\\savanna_soundscape_continuous.wav",
+        "dead_silence_detected": false,
+        "status": "PENDING_USER_VOICE"
+      },
+      "artifacts": [
+        "savanna_soundscape_continuous.wav",
+        "audio_manifest.json",
+        "audio_checkpoint.json",
+        "narration_recording_script.txt"
+      ],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 2,
+      "started_at": "2026-11-18T02:46:33.512801",
+      "completed_at": "2026-11-18T02:46:35.938518",
+      "duration_seconds": 2.408
+    },
+    "PLAN-ea3c130f-ST-11": {
+      "subtask_id": "PLAN-ea3c130f-ST-11",
+      "title": "Programmatic Multi-Scene Timeline Assembly & Crossfading",
+      "description": "Assemble 9-scene continuous master video with 1.0s crossfades, audio ducking, and 720p H.264 mastering.",
+      "assigned_agent": "AGT-013",
+      "priority": "HIGH",
+      "status": "COMPLETED",
+      "depends_on": [
+        "PLAN-ea3c130f-ST-07",
+        "PLAN-ea3c130f-ST-08",
+        "PLAN-ea3c130f-ST-09",
+        "PLAN-ea3c130f-ST-10"
+      ],
+      "inputs": {
+        "transition_duration_sec": 1.0,
+        "resolution": "1280x720"
+      },
+      "expected_outputs": [
+        "master_timeline_assembly.json"
+      ],
+      "outputs": {
+        "master_video": "F:\\Master AI\\03_AI_AGENTS\\sandbox\\tasks\\WF-d6cbbd32\\african_lion_life_in_the_wild_720p.mp4",
+        "duration_sec": 59.0
+      },
+      "artifacts": [
+        "african_lion_life_in_the_wild_720p.mp4",
+        "master_timeline_assembly.json"
+      ],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 2,
+      "started_at": "2026-11-18T02:47:09.197595",
+      "completed_at": "2026-11-18T02:47:30.090041",
+      "duration_seconds": 20.862
+    },
+    "PLAN-ea3c130f-ST-12": {
+      "subtask_id": "PLAN-ea3c130f-ST-12",
+      "title": "Synchronized Multilingual Subtitle Authoring",
+      "description": "Generate broadcast time-aligned SRT and ASS subtitle tracks from verified sentence timings.",
+      "assigned_agent": "AGT-014",
+      "priority": "MEDIUM",
+      "status": "COMPLETED",
+      "depends_on": [
+        "PLAN-ea3c130f-ST-02",
+        "PLAN-ea3c130f-ST-11"
+      ],
+      "inputs": {
+        "language": "Hindi"
+      },
+      "expected_outputs": [
+        "subtitles_manifest.json"
+      ],
+      "outputs": {
+        "subtitle_file": "F:\\Master AI\\03_AI_AGENTS\\sandbox\\tasks\\WF-d6cbbd32\\african_lion_subtitles_hindi.srt",
+        "cues": 8
+      },
+      "artifacts": [
+        "african_lion_subtitles_hindi.srt",
+        "subtitles_manifest.json"
+      ],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 2,
+      "started_at": "2026-11-18T02:47:30.116135",
+      "completed_at": "2026-11-18T02:47:30.149328",
+      "duration_seconds": 0.015
+    },
+    "PLAN-ea3c130f-ST-13": {
+      "subtask_id": "PLAN-ea3c130f-ST-13",
+      "title": "Comprehensive Media Quality Assurance & Provenance Audit",
+      "description": "Perform full frame-by-frame decode check, freeze/black frame detection, audio continuity check, and license validation.",
+      "assigned_agent": "AGT-015",
+      "priority": "HIGH",
+      "status": "COMPLETED",
+      "depends_on": [
+        "PLAN-ea3c130f-ST-11",
+        "PLAN-ea3c130f-ST-12"
+      ],
+      "inputs": {
+        "max_silence_gap_sec": 2.0
+      },
+      "expected_outputs": [
+        "final_media_qa_report.json"
+      ],
+      "outputs": {
+        "qa_valid": true,
+        "decoded_frames": 1415,
+        "black_ratio": 0.0
+      },
+      "artifacts": [
+        "final_media_qa_report.json"
+      ],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 1,
+      "started_at": "2026-11-18T02:47:30.202165",
+      "completed_at": "2026-11-18T02:47:42.032294",
+      "duration_seconds": 11.812
+    },
+    "PLAN-ea3c130f-ST-14": {
+      "subtask_id": "PLAN-ea3c130f-ST-14",
+      "title": "Production Dossier & Final Deliverable Packaging",
+      "description": "Compile verified master video package, production handbook, contact sheet, and publication metadata.",
+      "assigned_agent": "AGT-008",
+      "priority": "HIGH",
+      "status": "COMPLETED",
+      "depends_on": [
+        "PLAN-ea3c130f-ST-13"
+      ],
+      "inputs": {},
+      "expected_outputs": [
+        "PRODUCTION_DOSSIER.json",
+        "PUBLICATION_METADATA.json"
+      ],
+      "outputs": {
+        "final_video": "F:\\Master AI\\09_CONTENT_STUDIO\\renders\\autonomous_jobs\\PLAN-ea3c130f\\african_lion_life_in_the_wild_720p.mp4",
+        "dossier": "F:\\Master AI\\09_CONTENT_STUDIO\\renders\\autonomous_jobs\\PLAN-ea3c130f\\PRODUCTION_DOSSIER.json",
+        "status": "DELIVERY_COMPLETE"
+      },
+      "artifacts": [
+        "PRODUCTION_DOSSIER.json",
+        "PUBLICATION_METADATA.json"
+      ],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 1,
+      "started_at": "2026-11-18T02:47:42.062295",
+      "completed_at": "2026-11-18T02:47:42.499272",
+      "duration_seconds": 0.41
+    }
+  },
+  "artifacts": [
+    "research_dossier.json",
+    "narration_script_hindi.json",
+    "content_risk_audit.json",
+    "documentary_storyboard.json",
+    "savanna_soundscape_continuous.wav",
+    "audio_manifest.json",
+    "audio_checkpoint.json",
+    "narration_recording_script.txt",
+    "scene_medium_plan.json",
+    "asset_clearance_manifest.json",
+    "c1_title.mp4",
+    "c4_2d_biology.mp4",
+    "c5_2d_map.mp4",
+    "c9_outro.mp4",
+    "2d_scenes_manifest.json",
+    "c3_3d_lion.mp4",
+    "c6_3d_savanna.mp4",
+    "3d_scenes_manifest.json",
+    "c2_real_dawn.mp4",
+    "c7_real_pride.mp4",
+    "c8_real_lookout.mp4",
+    "real_footage_manifest.json",
+    "african_lion_life_in_the_wild_720p.mp4",
+    "master_timeline_assembly.json",
+    "african_lion_subtitles_hindi.srt",
+    "subtitles_manifest.json",
+    "final_media_qa_report.json",
+    "PRODUCTION_DOSSIER.json",
+    "PUBLICATION_METADATA.json"
+  ],
+  "checkpoint_history": [
+    {
+      "timestamp": "2026-11-18T02:46:33.313985",
+      "status": "PLANNED",
+      "tag": "WORKFLOW_INITIALIZED"
+    },
+    {
+      "timestamp": "2026-11-18T02:46:33.327327",
+      "status": "APPROVED",
+      "tag": "Plan approved"
+    },
+    {
+      "timestamp": "2026-11-18T02:46:33.332874",
+      "status": "QUEUED",
+      "tag": "Ready for execution"
+    },
+    {
+      "timestamp": "2026-11-18T02:46:33.338401",
+      "status": "RUNNING",
+      "tag": "Starting execution run"
+    },
+    {
+      "timestamp": "2026-11-18T02:47:42.545564",
+      "status": "VALIDATING",
+      "tag": "Validating deliverable outputs"
+    },
+    {
+      "timestamp": "2026-11-18T02:47:42.577710",
+      "status": "COMPLETED",
+      "tag": "All subtasks verified"
+    }
+  ],
+  "final_deliverable": {
+    "workflow_id": "WF-d6cbbd32",
+    "goal": "Create a 60-second cinematic African lion documentary in Hindi for YouTube.",
+    "status": "SUCCESS",
+    "completed_subtasks": 14,
+    "artifacts_produced": [
+      "2d_scenes_manifest.json",
+      "3d_scenes_manifest.json",
+      "african_lion_life_in_the_wild_720p.mp4",
+      "african_lion_subtitles_hindi.srt",
+      "asset_clearance_manifest.json",
+      "audio_checkpoint.json",
+      "audio_manifest.json",
+      "c1_title.mp4",
+      "c2_real_dawn.mp4",
+      "c2_real_dawn.mp4.provenance.json",
+      "c3_3d_lion.mp4",
+      "c4_2d_biology.mp4",
+      "c5_2d_map.mp4",
+      "c6_3d_savanna.mp4",
+      "c7_real_pride.mp4",
+      "c7_real_pride.mp4.provenance.json",
+      "c8_real_lookout.mp4",
+      "c8_real_lookout.mp4.provenance.json",
+      "c9_outro.mp4",
+      "content_risk_audit.json",
+      "documentary_storyboard.json",
+      "final_media_qa_report.json",
+      "master_timeline_assembly.json",
+      "narration_script_hindi.json",
+      "PRODUCTION_DOSSIER.json",
+      "real_footage_manifest.json",
+      "research_dossier.json",
+      "savanna_soundscape_continuous.wav",
+      "scene_medium_plan.json",
+      "subtitles_manifest.json"
+    ],
+    "master_video_path": "F:\\Master AI\\09_CONTENT_STUDIO\\renders\\autonomous_jobs\\PLAN-ea3c130f\\african_lion_life_in_the_wild_720p.mp4",
+    "production_dossier": {
+      "workflow_id": "PLAN-ea3c130f",
+      "title": "The Sovereign Lion \u2014 African Lion Life in the Wild",
+      "final_video_path": "F:\\Master AI\\09_CONTENT_STUDIO\\renders\\autonomous_jobs\\PLAN-ea3c130f\\african_lion_life_in_the_wild_720p.mp4",
+      "subtitles_path": "F:\\Master AI\\09_CONTENT_STUDIO\\renders\\autonomous_jobs\\PLAN-ea3c130f\\african_lion_subtitles_hindi.srt",
+      "runtime_seconds": 58.958,
+      "resolution": "1280x720",
+      "fps": 24.0,
+      "audio_checkpoint": {
+        "checkpoint_id": "CHK_AUDIO_59S",
+        "language": "Hindi",
+        "status": "PENDING_USER_AUDIO",
+        "target_duration_sec": 59.0,
+        "sentence_count": 8,
+        "expected_audio_path": "F:\\Master AI\\03_AI_AGENTS\\sandbox\\tasks\\WF-d6cbbd32\\user_narration.wav",
+        "handbook_path": "F:\\Master AI\\03_AI_AGENTS\\sandbox\\tasks\\WF-d6cbbd32\\narration_recording_script.txt"
+      },
+      "commercial_clearance_status": "PENDING_USER_VOICE",
+      "quality_assurance_verdict": "BROADCAST_COMPLIANT",
+      "zero_budget_compliant": true,
+      "cost_usd": 0.0,
+      "packaged_at": "2026-11-18T02:47:42.463359"
+    },
+    "sandbox_path": "F:\\Master AI\\03_AI_AGENTS\\sandbox\\tasks\\WF-d6cbbd32",
+    "verified_by": "AGT-004_and_AGT-006_and_AGT-015",
+    "compiled_at": "2026-11-18T02:47:42.569856"
+  }
+}

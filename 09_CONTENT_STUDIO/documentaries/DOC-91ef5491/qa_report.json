@@ -1,0 +1,65 @@
+{
+  "overall_status": "PASS",
+  "passed": true,
+  "media_probe": {
+    "readable": true,
+    "duration_sec": 12.0,
+    "has_video": true,
+    "video_codec": "h264",
+    "resolution": "1920x1080",
+    "has_audio": true,
+    "audio_codec": "aac",
+    "sample_rate": "44100"
+  },
+  "checks_run": 9,
+  "critical_failures": [],
+  "warnings": [],
+  "checks": [
+    {
+      "name": "FileIntegrityCheck",
+      "passed": true,
+      "details": "File size: 809821 bytes"
+    },
+    {
+      "name": "VideoStreamCheck",
+      "passed": true,
+      "details": "Codec: h264"
+    },
+    {
+      "name": "ResolutionCheck",
+      "passed": true,
+      "details": "Resolution: 1920x1080"
+    },
+    {
+      "name": "AudioStreamCheck",
+      "passed": true,
+      "details": "Codec: aac, SampleRate: 44100"
+    },
+    {
+      "name": "DurationCheck",
+      "passed": true,
+      "details": "Duration: 12.0s"
+    },
+    {
+      "name": "BlackFrameScan",
+      "passed": true,
+      "details": "Black intervals detected: 0"
+    },
+    {
+      "name": "SilentAudioScan",
+      "passed": true,
+      "details": "Silence intervals detected: 0"
+    },
+    {
+      "name": "SubtitleFileCheck",
+      "passed": true,
+      "details": "Subtitle path: F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-91ef5491\\subtitles_hindi.srt"
+    },
+    {
+      "name": "LicenseAttributionCheck",
+      "passed": true,
+      "details": "License: CC-0 Public Domain"
+    }
+  ],
+  "audited_at": "2026-11-17T09:13:01Z"
+}

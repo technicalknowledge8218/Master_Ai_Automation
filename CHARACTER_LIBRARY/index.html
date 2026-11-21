@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master AI 2D Character Library</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            padding: 30px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-size: 32px;
+            color: #38bdf8;
+            margin-bottom: 8px;
+        }
+        .header p {
+            color: #94a3b8;
+            font-size: 16px;
+        }
+        .character-card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 20px;
+            padding: 24px;
+            margin-bottom: 40px;
+        }
+        .char-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 12px;
+        }
+        .char-title h2 { font-size: 24px; color: #f1f5f9; }
+        .badge {
+            background: #0284c7;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .poses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .pose-item {
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 14px;
+            padding: 16px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+        .pose-item:hover {
+            transform: translateY(-4px);
+            border-color: #38bdf8;
+        }
+        .pose-preview {
+            width: 100%;
+            height: 320px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(circle, #1e293b 20%, #0f172a 80%);
+            border-radius: 10px;
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+        .pose-preview img {
+            max-height: 290px;
+            max-width: 90%;
+            object-fit: contain;
+            filter: drop-shadow(0 8px 16px rgba(0,0,0,0.5));
+        }
+        .pose-name {
+            font-weight: 600;
+            font-size: 15px;
+            color: #38bdf8;
+            margin-bottom: 4px;
+        }
+        .pose-desc {
+            font-size: 13px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎨 Master 2D Cartoon Character Library</h1>
+        <p>Pre-Built Transparent Vector Characters for Tech Explainer & Social Media Reels</p>
+    </div>
+
+    <!-- 1. ARJUN -->
+    <div class="character-card">
+        <div class="char-title">
+            <h2>1. Arjun</h2>
+            <span class="badge" style="background: #f97316;">Junior Tech Student / Host</span>
+            <span style="color: #94a3b8; font-size: 14px;">Orange Hoodie, Expressive Anime/Comic Eyes, Blue Jeans</span>
+        </div>
+        <div class="poses-grid">
+            <div class="pose-item">
+                <div class="pose-preview"><img src="arjun_pointing.png" alt="Pointing"></div>
+                <div class="pose-name">arjun_pointing.png</div>
+                <div class="pose-desc">Pointing right / Highlighting features</div>
+            </div>
+            <div class="pose-item">
+                <div class="pose-preview"><img src="arjun_shocked.png" alt="Shocked"></div>
+                <div class="pose-name">arjun_shocked.png</div>
+                <div class="pose-desc">Hands on head / Warning / Alarm</div>
+            </div>
+            <div class="pose-item">
+                <div class="pose-preview"><img src="arjun_shrug.png" alt="Shrug"></div>
+                <div class="pose-name">arjun_shrug.png</div>
+                <div class="pose-desc">Hands open shrugging / Questioning</div>
+            </div>
+            <div class="pose-item">
+                <div class="pose-preview"><img src="arjun_thumbsup.png" alt="Thumbs Up"></div>
+                <div class="pose-name">arjun_thumbsup.png</div>
+                <div class="pose-desc">Confident smile / Outro / CTA</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. DR. KABIR -->
+    <div class="character-card">
+        <div class="char-title">
+            <h2>2. Dr. Kabir</h2>
+            <span class="badge" style="background: #2563eb;">Senior Architect / Mentor</span>
+            <span style="color: #94a3b8; font-size: 14px;">Rectangular Glasses, Trimmed Beard, Navy Blue Blazer</span>
+        </div>
+        <div class="poses-grid">
+            <div class="pose-item">
+                <div class="pose-preview"><img src="dr_kabir_explaining.png" alt="Explaining"></div>
+                <div class="pose-name">dr_kabir_explaining.png</div>
+                <div class="pose-desc">Finger pointing up / Wise explanation</div>
+            </div>
+            <div class="pose-item">
+                <div class="pose-preview"><img src="dr_kabir_tablet.png" alt="Tablet"></div>
+                <div class="pose-name">dr_kabir_tablet.png</div>
+                <div class="pose-desc">Holding tablet / Presenting live code</div>
+            </div>
+            <div class="pose-item">
+                <div class="pose-preview"><img src="dr_kabir_proud.png" alt="Proud"></div>
+                <div class="pose-name">dr_kabir_proud.png</div>
+                <div class="pose-desc">Arms crossed / Confident stance</div>
+            </div>
+            <div class="pose-item">
+                <div class="pose-preview"><img src="dr_kabir_warning.png" alt="Warning"></div>
+                <div class="pose-name">dr_kabir_warning.png</div>
+                <div class="pose-desc">Stop hand gesture / Serious advice</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. NEHA -->
+    <div class="character-card">
+        <div class="char-title">
+            <h2>3. Neha</h2>
+            <span class="badge" style="background: #10b981;">Software Engineer / Creator</span>
+            <span style="color: #94a3b8; font-size: 14px;">Mint Green Hoodie, Sleek Ponytail, Headset</span>
+        </div>
+        <div class="poses-grid">
+            <div class="pose-item">
+                <div class="pose-preview"><img src="neha_laptop.png" alt="Laptop"></div>
+                <div class="pose-name">neha_laptop.png</div>
+                <div class="pose-desc">Coding on laptop / Live demo</div>
+            </div>
+            <div class="pose-item">
+                <div class="pose-preview"><img src="neha_pointing.png" alt="Pointing"></div>
+                <div class="pose-name">neha_pointing.png</div>
+                <div class="pose-desc">Pointing right / Screen presenter</div>
+            </div>
+            <div class="pose-item">
+                <div class="pose-preview"><img src="neha_shocked.png" alt="Shocked"></div>
+                <div class="pose-name">neha_shocked.png</div>
+                <div class="pose-desc">Hands to cheeks / Mind blown</div>
+            </div>
+            <div class="pose-item">
+                <div class="pose-preview"><img src="neha_peace.png" alt="Peace"></div>
+                <div class="pose-name">neha_peace.png</div>
+                <div class="pose-desc">Thumbs up & peace / Outro</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

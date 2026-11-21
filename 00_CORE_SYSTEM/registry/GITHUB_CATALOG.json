@@ -1,0 +1,4320 @@
+{
+  "catalog_version": "1.0.0",
+  "last_updated": "2026-11-17",
+  "total_repositories": 144,
+  "target_range": "100-200",
+  "categories_covered": [
+    "agent_orchestration",
+    "audio_and_voice",
+    "cli_terminal",
+    "code_intelligence",
+    "computer_vision",
+    "data_engineering",
+    "database_engineering",
+    "devops_git",
+    "document_and_web",
+    "infrastructure_and_api",
+    "local_inference",
+    "machine_learning",
+    "media_ai",
+    "network_protocols",
+    "packaging_deployment",
+    "rag_and_vector",
+    "security_pki",
+    "software_engineering",
+    "system_monitoring",
+    "testing_and_eval",
+    "testing_benchmark",
+    "video_production",
+    "web_development",
+    "workflow_orchestration"
+  ],
+  "repositories": [
+    {
+      "full_name": "langchain-ai/langgraph",
+      "name": "langgraph",
+      "category": "agent_orchestration",
+      "domain_id": "DOM-01",
+      "description": "Build resilient language agents as cyclic graphs with state persistence.",
+      "html_url": "https://github.com/langchain-ai/langgraph",
+      "owner": "langchain-ai",
+      "primary_language": "Python",
+      "stars": 16500,
+      "forks": 2100,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "agents",
+        "cyclic-graphs",
+        "langchain",
+        "state-machine"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 94,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "crewAIInc/crewAI",
+      "name": "crewAI",
+      "category": "agent_orchestration",
+      "domain_id": "DOM-01",
+      "description": "Framework for orchestrating role-playing autonomous AI agents.",
+      "html_url": "https://github.com/crewAIInc/crewAI",
+      "owner": "crewAIInc",
+      "primary_language": "Python",
+      "stars": 24000,
+      "forks": 3200,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "multi-agent",
+        "crew",
+        "role-playing",
+        "orchestration"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 92,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "microsoft/autogen",
+      "name": "autogen",
+      "category": "agent_orchestration",
+      "domain_id": "DOM-01",
+      "description": "A programming framework for agentic AI by Microsoft Research.",
+      "html_url": "https://github.com/microsoft/autogen",
+      "owner": "microsoft",
+      "primary_language": "Python",
+      "stars": 35000,
+      "forks": 5100,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "autogen",
+        "multi-agent",
+        "conversational-ai"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 91,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "OpenBMB/ChatDev",
+      "name": "ChatDev",
+      "category": "agent_orchestration",
+      "domain_id": "DOM-01",
+      "description": "Communicative agents for software development.",
+      "html_url": "https://github.com/OpenBMB/ChatDev",
+      "owner": "OpenBMB",
+      "primary_language": "Python",
+      "stars": 25000,
+      "forks": 3200,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "software-development",
+        "communicative-agents",
+        "chatdev"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 88,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "geekan/MetaGPT",
+      "name": "MetaGPT",
+      "category": "agent_orchestration",
+      "domain_id": "DOM-01",
+      "description": "The Multi-Agent Framework: First AI Software Company.",
+      "html_url": "https://github.com/geekan/MetaGPT",
+      "owner": "geekan",
+      "primary_language": "Python",
+      "stars": 45000,
+      "forks": 5300,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "metagpt",
+        "multi-agent",
+        "software-company"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 89,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "agno-agi/agno",
+      "name": "agno",
+      "category": "agent_orchestration",
+      "domain_id": "DOM-01",
+      "description": "Lightweight, memory-first multi-modal agent framework.",
+      "html_url": "https://github.com/agno-agi/agno",
+      "owner": "agno-agi",
+      "primary_language": "Python",
+      "stars": 18000,
+      "forks": 2200,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "agents",
+        "memory",
+        "multimodal",
+        "fast"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 93,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "kyegomez/swarms",
+      "name": "swarms",
+      "category": "agent_orchestration",
+      "domain_id": "DOM-01",
+      "description": "Enterprise-grade multi-agent collaboration framework.",
+      "html_url": "https://github.com/kyegomez/swarms",
+      "owner": "kyegomez",
+      "primary_language": "Python",
+      "stars": 5200,
+      "forks": 650,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "swarms",
+        "multi-agent",
+        "production"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 84,
+      "evaluation_grade": "B"
+    },
+    {
+      "full_name": "modelcontextprotocol/python-sdk",
+      "name": "python-sdk",
+      "category": "agent_orchestration",
+      "domain_id": "DOM-01",
+      "description": "Official Python SDK for Model Context Protocol (MCP).",
+      "html_url": "https://github.com/modelcontextprotocol/python-sdk",
+      "owner": "modelcontextprotocol",
+      "primary_language": "Python",
+      "stars": 6800,
+      "forks": 620,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "mcp",
+        "protocol",
+        "sdk",
+        "context"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 256,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 96,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "Significant-Gravitas/AutoGPT",
+      "name": "AutoGPT",
+      "category": "agent_orchestration",
+      "domain_id": "DOM-01",
+      "description": "Autonomous agent platform for general purpose task execution.",
+      "html_url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "owner": "Significant-Gravitas",
+      "primary_language": "Python",
+      "stars": 168000,
+      "forks": 44000,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "autogpt",
+        "autonomous-agents",
+        "benchmarking"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 2048,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 85,
+      "evaluation_grade": "B"
+    },
+    {
+      "full_name": "run-llama/llama-agents",
+      "name": "llama-agents",
+      "category": "agent_orchestration",
+      "domain_id": "DOM-01",
+      "description": "Async multi-agent orchestration framework for production RAG.",
+      "html_url": "https://github.com/run-llama/llama-agents",
+      "owner": "run-llama",
+      "primary_language": "Python",
+      "stars": 3400,
+      "forks": 410,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "rag",
+        "multi-agent",
+        "services"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 87,
+      "evaluation_grade": "B"
+    },
+    {
+      "full_name": "ollama/ollama",
+      "name": "ollama",
+      "category": "local_inference",
+      "domain_id": "DOM-02",
+      "description": "Get up and running with Llama 3, Mistral, and other local models.",
+      "html_url": "https://github.com/ollama/ollama",
+      "owner": "ollama",
+      "primary_language": "Go",
+      "stars": 115000,
+      "forks": 9500,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "llm",
+        "local-inference",
+        "cpu",
+        "gpu"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 4096,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 95,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "ggerganov/llama.cpp",
+      "name": "llama.cpp",
+      "category": "local_inference",
+      "domain_id": "DOM-02",
+      "description": "LLM inference in C/C++ with AVX, AVX2, and CUDA optimizations.",
+      "html_url": "https://github.com/ggerganov/llama.cpp",
+      "owner": "ggerganov",
+      "primary_language": "C++",
+      "stars": 74000,
+      "forks": 10500,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "llama",
+        "c-plus-plus",
+        "gguf",
+        "cpu-inference"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 2048,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 96,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "BerriAI/litellm",
+      "name": "litellm",
+      "category": "local_inference",
+      "domain_id": "DOM-02",
+      "description": "Call 100+ LLMs using OpenAI format with fallbacks and load balancing.",
+      "html_url": "https://github.com/BerriAI/litellm",
+      "owner": "BerriAI",
+      "primary_language": "Python",
+      "stars": 21000,
+      "forks": 2400,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "proxy",
+        "gateway",
+        "fallbacks",
+        "openai-api"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 94,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "open-webui/open-webui",
+      "name": "open-webui",
+      "category": "local_inference",
+      "domain_id": "DOM-02",
+      "description": "User-friendly WebUI for Ollama, OpenAI-compatible APIs, and RAG.",
+      "html_url": "https://github.com/open-webui/open-webui",
+      "owner": "open-webui",
+      "primary_language": "Python",
+      "stars": 68000,
+      "forks": 8500,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "webui",
+        "chat",
+        "ollama",
+        "rag"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 93,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "vllm-project/vllm",
+      "name": "vllm",
+      "category": "local_inference",
+      "domain_id": "DOM-02",
+      "description": "A high-throughput and memory-efficient inference and serving engine.",
+      "html_url": "https://github.com/vllm-project/vllm",
+      "owner": "vllm-project",
+      "primary_language": "Python",
+      "stars": 38000,
+      "forks": 5800,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "serving",
+        "paged-attention",
+        "throughput"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": false,
+        "estimated_ram_mb": 16384,
+        "requires_gpu": true
+      },
+      "windows_supported": false,
+      "evaluation_score": 78,
+      "evaluation_grade": "C"
+    },
+    {
+      "full_name": "turboderp/exllamav2",
+      "name": "exllamav2",
+      "category": "local_inference",
+      "domain_id": "DOM-02",
+      "description": "Fast inference library for local quantized LLMs on modern GPUs.",
+      "html_url": "https://github.com/turboderp/exllamav2",
+      "owner": "turboderp",
+      "primary_language": "Python",
+      "stars": 5400,
+      "forks": 520,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "exl2",
+        "quantization",
+        "fast-inference"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": false,
+        "estimated_ram_mb": 8192,
+        "requires_gpu": true
+      },
+      "windows_supported": true,
+      "evaluation_score": 82,
+      "evaluation_grade": "B"
+    },
+    {
+      "full_name": "mlc-ai/mlc-llm",
+      "name": "mlc-llm",
+      "category": "local_inference",
+      "domain_id": "DOM-02",
+      "description": "Universal LLM deployment engine across mobile, web, and desktop.",
+      "html_url": "https://github.com/mlc-ai/mlc-llm",
+      "owner": "mlc-ai",
+      "primary_language": "C++",
+      "stars": 19000,
+      "forks": 1800,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "tvm",
+        "compilation",
+        "cross-platform"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 2048,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 85,
+      "evaluation_grade": "B"
+    },
+    {
+      "full_name": "abetlen/llama-cpp-python",
+      "name": "llama-cpp-python",
+      "category": "local_inference",
+      "domain_id": "DOM-02",
+      "description": "Python bindings for llama.cpp with OpenAI-compatible server.",
+      "html_url": "https://github.com/abetlen/llama-cpp-python",
+      "owner": "abetlen",
+      "primary_language": "Python",
+      "stars": 9200,
+      "forks": 1200,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "bindings",
+        "gguf",
+        "python",
+        "cpu"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 2048,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 90,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "oobabooga/text-generation-webui",
+      "name": "text-generation-webui",
+      "category": "local_inference",
+      "domain_id": "DOM-02",
+      "description": "A Gradio web UI for Large Language Models.",
+      "html_url": "https://github.com/oobabooga/text-generation-webui",
+      "owner": "oobabooga",
+      "primary_language": "Python",
+      "stars": 39000,
+      "forks": 5100,
+      "license": {
+        "spdx_id": "AGPL-3.0",
+        "is_permissive": false,
+        "commercial_usable": false
+      },
+      "topics": [
+        "gradio",
+        "webui",
+        "llm-loader"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 4096,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 72,
+      "evaluation_grade": "C"
+    },
+    {
+      "full_name": "sgl-project/sglang",
+      "name": "sglang",
+      "category": "local_inference",
+      "domain_id": "DOM-02",
+      "description": "Structured generation language for LLMs with RadixAttention.",
+      "html_url": "https://github.com/sgl-project/sglang",
+      "owner": "sgl-project",
+      "primary_language": "Python",
+      "stars": 9100,
+      "forks": 950,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "structured-generation",
+        "fast-decoding",
+        "radix-attention"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": false,
+        "estimated_ram_mb": 8192,
+        "requires_gpu": true
+      },
+      "windows_supported": false,
+      "evaluation_score": 76,
+      "evaluation_grade": "C"
+    },
+    {
+      "full_name": "qdrant/qdrant",
+      "name": "qdrant",
+      "category": "rag_and_vector",
+      "domain_id": "DOM-03",
+      "description": "Vector database & vector search engine with payload filtering.",
+      "html_url": "https://github.com/qdrant/qdrant",
+      "owner": "qdrant",
+      "primary_language": "Rust",
+      "stars": 23000,
+      "forks": 1700,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "vector-search",
+        "embeddings",
+        "payload-filter",
+        "rust"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 97,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "qdrant/qdrant-client",
+      "name": "qdrant-client",
+      "category": "rag_and_vector",
+      "domain_id": "DOM-03",
+      "description": "Python client library for Qdrant vector search engine.",
+      "html_url": "https://github.com/qdrant/qdrant-client",
+      "owner": "qdrant",
+      "primary_language": "Python",
+      "stars": 1600,
+      "forks": 280,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "python",
+        "sdk",
+        "qdrant",
+        "vector-database"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 256,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 96,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "run-llama/llama_index",
+      "name": "llama_index",
+      "category": "rag_and_vector",
+      "domain_id": "DOM-03",
+      "description": "Data framework for LLM applications to ingest, structure, and access private data.",
+      "html_url": "https://github.com/run-llama/llama_index",
+      "owner": "run-llama",
+      "primary_language": "Python",
+      "stars": 38000,
+      "forks": 5200,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "rag",
+        "llamaindex",
+        "data-connector",
+        "indexing"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 92,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "chroma-core/chroma",
+      "name": "chroma",
+      "category": "rag_and_vector",
+      "domain_id": "DOM-03",
+      "description": "The open-source AI application database with embeddings built-in.",
+      "html_url": "https://github.com/chroma-core/chroma",
+      "owner": "chroma-core",
+      "primary_language": "Python",
+      "stars": 17000,
+      "forks": 1500,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "vector-db",
+        "chromadb",
+        "sqlite",
+        "hnsw"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 88,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "deepset-ai/haystack",
+      "name": "haystack",
+      "category": "rag_and_vector",
+      "domain_id": "DOM-03",
+      "description": "End-to-end LLM orchestration framework to build production-ready RAG.",
+      "html_url": "https://github.com/deepset-ai/haystack",
+      "owner": "deepset-ai",
+      "primary_language": "Python",
+      "stars": 17500,
+      "forks": 1900,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "pipelines",
+        "haystack",
+        "nlp",
+        "rag"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 90,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "infiniflow/ragflow",
+      "name": "ragflow",
+      "category": "rag_and_vector",
+      "domain_id": "DOM-03",
+      "description": "Open-source RAG engine based on deep document understanding.",
+      "html_url": "https://github.com/infiniflow/ragflow",
+      "owner": "infiniflow",
+      "primary_language": "Python",
+      "stars": 24000,
+      "forks": 2500,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "document-understanding",
+        "rag",
+        "deep-learning"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 2048,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 89,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "weaviate/weaviate",
+      "name": "weaviate",
+      "category": "rag_and_vector",
+      "domain_id": "DOM-03",
+      "description": "Cloud-native, open source vector database that stores objects and vectors.",
+      "html_url": "https://github.com/weaviate/weaviate",
+      "owner": "weaviate",
+      "primary_language": "Go",
+      "stars": 11800,
+      "forks": 850,
+      "license": {
+        "spdx_id": "BSD-3-Clause",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "graphql",
+        "vector-search",
+        "hybrid-search"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 87,
+      "evaluation_grade": "B"
+    },
+    {
+      "full_name": "milvus-io/milvus",
+      "name": "milvus",
+      "category": "rag_and_vector",
+      "domain_id": "DOM-03",
+      "description": "Cloud-native vector database built for billion-scale similarity search.",
+      "html_url": "https://github.com/milvus-io/milvus",
+      "owner": "milvus-io",
+      "primary_language": "Go",
+      "stars": 32000,
+      "forks": 3100,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "billion-scale",
+        "vector-database",
+        "distributed"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": false,
+        "estimated_ram_mb": 8192,
+        "requires_gpu": false
+      },
+      "windows_supported": false,
+      "evaluation_score": 75,
+      "evaluation_grade": "C"
+    },
+    {
+      "full_name": "UKPLab/sentence-transformers",
+      "name": "sentence-transformers",
+      "category": "rag_and_vector",
+      "domain_id": "DOM-03",
+      "description": "Multilingual sentence, text and image embeddings using BERT / RoBERTa.",
+      "html_url": "https://github.com/UKPLab/sentence-transformers",
+      "owner": "UKPLab",
+      "primary_language": "Python",
+      "stars": 16000,
+      "forks": 2700,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "embeddings",
+        "bert",
+        "sentence-transformers"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 2048,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 93,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "facebookresearch/faiss",
+      "name": "faiss",
+      "category": "rag_and_vector",
+      "domain_id": "DOM-03",
+      "description": "A library for efficient similarity search and clustering of dense vectors.",
+      "html_url": "https://github.com/facebookresearch/faiss",
+      "owner": "facebookresearch",
+      "primary_language": "C++",
+      "stars": 31500,
+      "forks": 4100,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "faiss",
+        "vector-search",
+        "clustering",
+        "indexing"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 90,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "DS4SD/docling",
+      "name": "docling",
+      "category": "document_and_web",
+      "domain_id": "DOM-04",
+      "description": "Get your documents ready for gen AI with advanced PDF/Word parsing.",
+      "html_url": "https://github.com/DS4SD/docling",
+      "owner": "DS4SD",
+      "primary_language": "Python",
+      "stars": 16800,
+      "forks": 1100,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "pdf-parsing",
+        "docling",
+        "layout-analysis",
+        "ocr"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 2048,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 95,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "unclecode/crawl4ai",
+      "name": "crawl4ai",
+      "category": "document_and_web",
+      "domain_id": "DOM-04",
+      "description": "Open-source LLM-friendly web crawler & scraper for AI agents.",
+      "html_url": "https://github.com/unclecode/crawl4ai",
+      "owner": "unclecode",
+      "primary_language": "Python",
+      "stars": 24000,
+      "forks": 2200,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "crawler",
+        "scraper",
+        "playwright",
+        "markdown-extraction"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 94,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "VikParuchuri/marker",
+      "name": "marker",
+      "category": "document_and_web",
+      "domain_id": "DOM-04",
+      "description": "Convert PDF to markdown quickly with high accuracy.",
+      "html_url": "https://github.com/VikParuchuri/marker",
+      "owner": "VikParuchuri",
+      "primary_language": "Python",
+      "stars": 17000,
+      "forks": 1100,
+      "license": {
+        "spdx_id": "GPL-3.0",
+        "is_permissive": false,
+        "commercial_usable": false
+      },
+      "topics": [
+        "pdf",
+        "markdown",
+        "ocr",
+        "equations"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 2048,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 83,
+      "evaluation_grade": "B"
+    },
+    {
+      "full_name": "pymupdf/PyMuPDF",
+      "name": "PyMuPDF",
+      "category": "document_and_web",
+      "domain_id": "DOM-04",
+      "description": "High performance Python library for data extraction and PDF manipulation.",
+      "html_url": "https://github.com/pymupdf/PyMuPDF",
+      "owner": "pymupdf",
+      "primary_language": "Python",
+      "stars": 5400,
+      "forks": 650,
+      "license": {
+        "spdx_id": "AGPL-3.0",
+        "is_permissive": false,
+        "commercial_usable": false
+      },
+      "topics": [
+        "pdf",
+        "fitz",
+        "extraction",
+        "fast"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 256,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 79,
+      "evaluation_grade": "C"
+    },
+    {
+      "full_name": "Unstructured-IO/unstructured",
+      "name": "unstructured",
+      "category": "document_and_web",
+      "domain_id": "DOM-04",
+      "description": "Open source libraries and APIs to build custom preprocessing pipelines.",
+      "html_url": "https://github.com/Unstructured-IO/unstructured",
+      "owner": "Unstructured-IO",
+      "primary_language": "Python",
+      "stars": 10500,
+      "forks": 980,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "etl",
+        "unstructured-data",
+        "preprocessing"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 2048,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 89,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "adbar/trafilatura",
+      "name": "trafilatura",
+      "category": "document_and_web",
+      "domain_id": "DOM-04",
+      "description": "Python & CLI tool to gather text on the Web: web scraping, boilerplate removal.",
+      "html_url": "https://github.com/adbar/trafilatura",
+      "owner": "adbar",
+      "primary_language": "Python",
+      "stars": 4200,
+      "forks": 380,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "text-extraction",
+        "nlp",
+        "web-scraping"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 256,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 92,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "microsoft/playwright-python",
+      "name": "playwright-python",
+      "category": "document_and_web",
+      "domain_id": "DOM-04",
+      "description": "Python version of the Playwright testing and automation library.",
+      "html_url": "https://github.com/microsoft/playwright-python",
+      "owner": "microsoft",
+      "primary_language": "Python",
+      "stars": 14000,
+      "forks": 1300,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "browser-automation",
+        "testing",
+        "scraping"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 95,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "JaidedAI/EasyOCR",
+      "name": "EasyOCR",
+      "category": "document_and_web",
+      "domain_id": "DOM-04",
+      "description": "Ready-to-use OCR with 80+ supported languages including Hindi & English.",
+      "html_url": "https://github.com/JaidedAI/EasyOCR",
+      "owner": "JaidedAI",
+      "primary_language": "Python",
+      "stars": 24000,
+      "forks": 3400,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "ocr",
+        "computer-vision",
+        "hindi",
+        "multilingual"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 2048,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 91,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "ScrapingHub/dateparser",
+      "name": "dateparser",
+      "category": "document_and_web",
+      "domain_id": "DOM-04",
+      "description": "Python parser for human readable dates in almost any language.",
+      "html_url": "https://github.com/scrapinghub/dateparser",
+      "owner": "scrapinghub",
+      "primary_language": "Python",
+      "stars": 2800,
+      "forks": 390,
+      "license": {
+        "spdx_id": "BSD-3-Clause",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "date-parsing",
+        "multilingual"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 128,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 93,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "scrapy/scrapy",
+      "name": "scrapy",
+      "category": "document_and_web",
+      "domain_id": "DOM-04",
+      "description": "Fast high-level web crawling & scraping framework for Python.",
+      "html_url": "https://github.com/scrapy/scrapy",
+      "owner": "scrapy",
+      "primary_language": "Python",
+      "stars": 54000,
+      "forks": 10500,
+      "license": {
+        "spdx_id": "BSD-3-Clause",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "crawler",
+        "spider",
+        "scraping"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 92,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "paul-gauthier/aider",
+      "name": "aider",
+      "category": "code_intelligence",
+      "domain_id": "DOM-05",
+      "description": "AI pair programming in your terminal with Git auto-commit support.",
+      "html_url": "https://github.com/paul-gauthier/aider",
+      "owner": "paul-gauthier",
+      "primary_language": "Python",
+      "stars": 24000,
+      "forks": 2400,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "pair-programming",
+        "git",
+        "cli",
+        "refactoring"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 95,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "All-Hands-AI/OpenHands",
+      "name": "OpenHands",
+      "category": "code_intelligence",
+      "domain_id": "DOM-05",
+      "description": "OpenHands: Code Less, Make More - Autonomous Software Development Agent.",
+      "html_url": "https://github.com/All-Hands-AI/OpenHands",
+      "owner": "All-Hands-AI",
+      "primary_language": "Python",
+      "stars": 39000,
+      "forks": 4600,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "software-engineer",
+        "opendevin",
+        "autonomous"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 2048,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 90,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "continuedev/continue",
+      "name": "continue",
+      "category": "code_intelligence",
+      "domain_id": "DOM-05",
+      "description": "The open-source AI code assistant inside VS Code and JetBrains.",
+      "html_url": "https://github.com/continuedev/continue",
+      "owner": "continuedev",
+      "primary_language": "TypeScript",
+      "stars": 21000,
+      "forks": 1900,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "code-assistant",
+        "vscode",
+        "extension"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 91,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "sweepai/sweep",
+      "name": "sweep",
+      "category": "code_intelligence",
+      "domain_id": "DOM-05",
+      "description": "AI junior developer that turns GitHub issues into pull requests.",
+      "html_url": "https://github.com/sweepai/sweep",
+      "owner": "sweepai",
+      "primary_language": "Python",
+      "stars": 13000,
+      "forks": 1100,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "pull-requests",
+        "github-actions",
+        "code-generation"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 88,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "TabbyML/tabby",
+      "name": "tabby",
+      "category": "code_intelligence",
+      "domain_id": "DOM-05",
+      "description": "Self-hosted AI coding assistant with local models.",
+      "html_url": "https://github.com/TabbyML/tabby",
+      "owner": "TabbyML",
+      "primary_language": "Rust",
+      "stars": 24000,
+      "forks": 1400,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "self-hosted",
+        "copilot-alternative",
+        "rust"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 2048,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 92,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "astral-sh/ruff",
+      "name": "ruff",
+      "category": "code_intelligence",
+      "domain_id": "DOM-05",
+      "description": "An extremely fast Python linter and code formatter, written in Rust.",
+      "html_url": "https://github.com/astral-sh/ruff",
+      "owner": "astral-sh",
+      "primary_language": "Rust",
+      "stars": 36000,
+      "forks": 1400,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "linter",
+        "formatter",
+        "python",
+        "rust"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 128,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 98,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "psf/black",
+      "name": "black",
+      "category": "code_intelligence",
+      "domain_id": "DOM-05",
+      "description": "The uncompromising Python code formatter.",
+      "html_url": "https://github.com/psf/black",
+      "owner": "psf",
+      "primary_language": "Python",
+      "stars": 38000,
+      "forks": 2400,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "formatter",
+        "pep8",
+        "code-style"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 128,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 96,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "PyCQA/bandit",
+      "name": "bandit",
+      "category": "code_intelligence",
+      "domain_id": "DOM-05",
+      "description": "Security linter designed to find common security issues in Python code.",
+      "html_url": "https://github.com/PyCQA/bandit",
+      "owner": "PyCQA",
+      "primary_language": "Python",
+      "stars": 6200,
+      "forks": 650,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "security",
+        "linter",
+        "ast",
+        "vulnerabilities"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 128,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 94,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "semgrep/semgrep",
+      "name": "semgrep",
+      "category": "code_intelligence",
+      "domain_id": "DOM-05",
+      "description": "Lightweight static analysis for many languages. Find bugs and enforce standards.",
+      "html_url": "https://github.com/semgrep/semgrep",
+      "owner": "semgrep",
+      "primary_language": "OCaml",
+      "stars": 11000,
+      "forks": 720,
+      "license": {
+        "spdx_id": "LGPL-2.1",
+        "is_permissive": false,
+        "commercial_usable": true
+      },
+      "topics": [
+        "sast",
+        "security",
+        "static-analysis"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 86,
+      "evaluation_grade": "B"
+    },
+    {
+      "full_name": "tree-sitter/tree-sitter",
+      "name": "tree-sitter",
+      "category": "code_intelligence",
+      "domain_id": "DOM-05",
+      "description": "An incremental parsing system for programming tools.",
+      "html_url": "https://github.com/tree-sitter/tree-sitter",
+      "owner": "tree-sitter",
+      "primary_language": "Rust",
+      "stars": 19500,
+      "forks": 1600,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "parser",
+        "syntax-tree",
+        "ast",
+        "incremental"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 256,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 95,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "openai/whisper",
+      "name": "whisper",
+      "category": "audio_and_voice",
+      "domain_id": "DOM-06",
+      "description": "Robust Speech Recognition via Large-Scale Weak Supervision.",
+      "html_url": "https://github.com/openai/whisper",
+      "owner": "openai",
+      "primary_language": "Python",
+      "stars": 74000,
+      "forks": 9200,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "speech-recognition",
+        "whisper",
+        "asr",
+        "audio"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 2048,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 94,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "rhasspy/piper",
+      "name": "piper",
+      "category": "audio_and_voice",
+      "domain_id": "DOM-06",
+      "description": "A fast, local neural text to speech system that sounds great and works on Raspberry Pi.",
+      "html_url": "https://github.com/rhasspy/piper",
+      "owner": "rhasspy",
+      "primary_language": "C++",
+      "stars": 7800,
+      "forks": 650,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "tts",
+        "speech-synthesis",
+        "local",
+        "fast"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 95,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "m-bain/whisperX",
+      "name": "whisperX",
+      "category": "audio_and_voice",
+      "domain_id": "DOM-06",
+      "description": "Time-Accurate Speech Recognition of Long-Form Audio with Word-level Timestamps.",
+      "html_url": "https://github.com/m-bain/whisperX",
+      "owner": "m-bain",
+      "primary_language": "Python",
+      "stars": 14000,
+      "forks": 1400,
+      "license": {
+        "spdx_id": "BSD-2-Clause",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "diarization",
+        "timestamps",
+        "whisper",
+        "alignment"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 2048,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 91,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "suno-ai/bark",
+      "name": "bark",
+      "category": "audio_and_voice",
+      "domain_id": "DOM-06",
+      "description": "Transformer-based text-to-audio model by Suno with music, speech, and sound effects.",
+      "html_url": "https://github.com/suno-ai/bark",
+      "owner": "suno-ai",
+      "primary_language": "Python",
+      "stars": 36000,
+      "forks": 3800,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "generative-audio",
+        "tts",
+        "music",
+        "bark"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": false,
+        "estimated_ram_mb": 8192,
+        "requires_gpu": true
+      },
+      "windows_supported": true,
+      "evaluation_score": 83,
+      "evaluation_grade": "B"
+    },
+    {
+      "full_name": "coqui-ai/TTS",
+      "name": "TTS",
+      "category": "audio_and_voice",
+      "domain_id": "DOM-06",
+      "description": "Deep learning toolkit for Text-to-Speech in English and 20+ languages.",
+      "html_url": "https://github.com/coqui-ai/TTS",
+      "owner": "coqui-ai",
+      "primary_language": "Python",
+      "stars": 35000,
+      "forks": 4200,
+      "license": {
+        "spdx_id": "MPL-2.0",
+        "is_permissive": false,
+        "commercial_usable": true
+      },
+      "topics": [
+        "voice-cloning",
+        "xtts",
+        "neural-speech"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 4096,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 87,
+      "evaluation_grade": "B"
+    },
+    {
+      "full_name": "jiaaro/pydub",
+      "name": "pydub",
+      "category": "audio_and_voice",
+      "domain_id": "DOM-06",
+      "description": "Manipulate audio with a simple and easy high level interface with FFmpeg.",
+      "html_url": "https://github.com/jiaaro/pydub",
+      "owner": "jiaaro",
+      "primary_language": "Python",
+      "stars": 9100,
+      "forks": 1400,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "audio-editing",
+        "ffmpeg",
+        "wav",
+        "mp3"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 256,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 95,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "chatterbox-ai/chatterbox",
+      "name": "chatterbox",
+      "category": "audio_and_voice",
+      "domain_id": "DOM-06",
+      "description": "High performance streaming voice pipeline for AI agents.",
+      "html_url": "https://github.com/chatterbox-ai/chatterbox",
+      "owner": "chatterbox-ai",
+      "primary_language": "Python",
+      "stars": 2400,
+      "forks": 210,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "voice-pipeline",
+        "streaming-audio",
+        "webrtc"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 89,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "librosa/librosa",
+      "name": "librosa",
+      "category": "audio_and_voice",
+      "domain_id": "DOM-06",
+      "description": "Python package for music and audio analysis.",
+      "html_url": "https://github.com/librosa/librosa",
+      "owner": "librosa",
+      "primary_language": "Python",
+      "stars": 7500,
+      "forks": 1400,
+      "license": {
+        "spdx_id": "ISC",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "audio-analysis",
+        "dsp",
+        "spectrogram"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 93,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "Zulko/moviepy",
+      "name": "moviepy",
+      "category": "video_production",
+      "domain_id": "DOM-07",
+      "description": "Video editing with Python: cuts, concatenations, title insertions, video compositing.",
+      "html_url": "https://github.com/Zulko/moviepy",
+      "owner": "Zulko",
+      "primary_language": "Python",
+      "stars": 13500,
+      "forks": 1500,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "video-editing",
+        "ffmpeg",
+        "clips",
+        "compositing"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 2048,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 94,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "remotion-dev/remotion",
+      "name": "remotion",
+      "category": "video_production",
+      "domain_id": "DOM-07",
+      "description": "Make videos programmatically with React and Node.js.",
+      "html_url": "https://github.com/remotion-dev/remotion",
+      "owner": "remotion-dev",
+      "primary_language": "TypeScript",
+      "stars": 23000,
+      "forks": 1400,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "is_permissive": false,
+        "commercial_usable": false
+      },
+      "topics": [
+        "react",
+        "video-rendering",
+        "programmatic-video"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 2048,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 82,
+      "evaluation_grade": "B"
+    },
+    {
+      "full_name": "kkroening/ffmpeg-python",
+      "name": "ffmpeg-python",
+      "category": "video_production",
+      "domain_id": "DOM-07",
+      "description": "Python bindings for FFmpeg with complex filter-graph support.",
+      "html_url": "https://github.com/kkroening/ffmpeg-python",
+      "owner": "kkroening",
+      "primary_language": "Python",
+      "stars": 10500,
+      "forks": 1200,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "ffmpeg",
+        "python",
+        "transcoding",
+        "filters"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 93,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "3b1b/manim",
+      "name": "manim",
+      "category": "video_production",
+      "domain_id": "DOM-07",
+      "description": "Animation engine for explanatory math and technical educational videos.",
+      "html_url": "https://github.com/3b1b/manim",
+      "owner": "3b1b",
+      "primary_language": "Python",
+      "stars": 71000,
+      "forks": 6200,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "animation",
+        "educational-video",
+        "mathematics"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 2048,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 92,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "comfyanonymous/ComfyUI",
+      "name": "ComfyUI",
+      "category": "video_production",
+      "domain_id": "DOM-07",
+      "description": "The most powerful and modular stable diffusion GUI and backend.",
+      "html_url": "https://github.com/comfyanonymous/ComfyUI",
+      "owner": "comfyanonymous",
+      "primary_language": "Python",
+      "stars": 63000,
+      "forks": 6500,
+      "license": {
+        "spdx_id": "GPL-3.0",
+        "is_permissive": false,
+        "commercial_usable": true
+      },
+      "topics": [
+        "diffusion",
+        "generative-ai",
+        "node-graph"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": false,
+        "estimated_ram_mb": 8192,
+        "requires_gpu": true
+      },
+      "windows_supported": true,
+      "evaluation_score": 86,
+      "evaluation_grade": "B"
+    },
+    {
+      "full_name": "AUTOMATIC1111/stable-diffusion-webui",
+      "name": "stable-diffusion-webui",
+      "category": "video_production",
+      "domain_id": "DOM-07",
+      "description": "Stable Diffusion web UI for image and short video synthesis.",
+      "html_url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+      "owner": "AUTOMATIC1111",
+      "primary_language": "Python",
+      "stars": 145000,
+      "forks": 27000,
+      "license": {
+        "spdx_id": "AGPL-3.0",
+        "is_permissive": false,
+        "commercial_usable": false
+      },
+      "topics": [
+        "stable-diffusion",
+        "webui",
+        "gradio"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": false,
+        "estimated_ram_mb": 8192,
+        "requires_gpu": true
+      },
+      "windows_supported": true,
+      "evaluation_score": 75,
+      "evaluation_grade": "C"
+    },
+    {
+      "full_name": "AILab-CVC/VideoCrafter",
+      "name": "VideoCrafter",
+      "category": "video_production",
+      "domain_id": "DOM-07",
+      "description": "Open-source video generation and editing toolbox for high-quality video generation.",
+      "html_url": "https://github.com/AILab-CVC/VideoCrafter",
+      "owner": "AILab-CVC",
+      "primary_language": "Python",
+      "stars": 6100,
+      "forks": 610,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "text-to-video",
+        "generative-video"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": false,
+        "estimated_ram_mb": 16384,
+        "requires_gpu": true
+      },
+      "windows_supported": true,
+      "evaluation_score": 80,
+      "evaluation_grade": "B"
+    },
+    {
+      "full_name": "ultralytics/ultralytics",
+      "name": "ultralytics",
+      "category": "computer_vision",
+      "domain_id": "DOM-08",
+      "description": "NEW - YOLOv8, YOLOv9 and YOLO11 in PyTorch for real-time object detection.",
+      "html_url": "https://github.com/ultralytics/ultralytics",
+      "owner": "ultralytics",
+      "primary_language": "Python",
+      "stars": 34000,
+      "forks": 6800,
+      "license": {
+        "spdx_id": "AGPL-3.0",
+        "is_permissive": false,
+        "commercial_usable": false
+      },
+      "topics": [
+        "yolov8",
+        "object-detection",
+        "segmentation"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 2048,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 77,
+      "evaluation_grade": "C"
+    },
+    {
+      "full_name": "facebookresearch/segment-anything",
+      "name": "segment-anything",
+      "category": "computer_vision",
+      "domain_id": "DOM-08",
+      "description": "The Segment Anything Model (SAM) produces high quality object masks from input prompts.",
+      "html_url": "https://github.com/facebookresearch/segment-anything",
+      "owner": "facebookresearch",
+      "primary_language": "Python",
+      "stars": 47000,
+      "forks": 5100,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "sam",
+        "segmentation",
+        "vision-model"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 4096,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 89,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "opencv/opencv-python",
+      "name": "opencv-python",
+      "category": "computer_vision",
+      "domain_id": "DOM-08",
+      "description": "Automated OpenCV packages for Python with image processing algorithms.",
+      "html_url": "https://github.com/opencv/opencv-python",
+      "owner": "opencv",
+      "primary_language": "Python",
+      "stars": 11000,
+      "forks": 1800,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "image-processing",
+        "opencv",
+        "computer-vision"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 96,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "python-pillow/Pillow",
+      "name": "Pillow",
+      "category": "computer_vision",
+      "domain_id": "DOM-08",
+      "description": "The friendly PIL fork for Python image manipulation.",
+      "html_url": "https://github.com/python-pillow/Pillow",
+      "owner": "python-pillow",
+      "primary_language": "Python",
+      "stars": 12500,
+      "forks": 2200,
+      "license": {
+        "spdx_id": "HPND",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "imaging",
+        "pil",
+        "graphics"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 128,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 97,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "explodinggradients/ragas",
+      "name": "ragas",
+      "category": "testing_and_eval",
+      "domain_id": "DOM-09",
+      "description": "Evaluation framework for your Retrieval Augmented Generation (RAG) pipelines.",
+      "html_url": "https://github.com/explodinggradients/ragas",
+      "owner": "explodinggradients",
+      "primary_language": "Python",
+      "stars": 9800,
+      "forks": 980,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "eval",
+        "rag",
+        "faithfulness",
+        "answer-relevance"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 94,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "confident-ai/deepeval",
+      "name": "deepeval",
+      "category": "testing_and_eval",
+      "domain_id": "DOM-09",
+      "description": "The LLM Evaluation Framework: Unit testing for LLMs like Pytest.",
+      "html_url": "https://github.com/confident-ai/deepeval",
+      "owner": "confident-ai",
+      "primary_language": "Python",
+      "stars": 7100,
+      "forks": 650,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "unit-testing",
+        "llm-eval",
+        "hallucination-metric"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 93,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "truera/trulens",
+      "name": "trulens",
+      "category": "testing_and_eval",
+      "domain_id": "DOM-09",
+      "description": "Evaluation and tracking for LLM applications and RAG triad.",
+      "html_url": "https://github.com/truera/trulens",
+      "owner": "truera",
+      "primary_language": "Python",
+      "stars": 3200,
+      "forks": 310,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "rag-triad",
+        "observability",
+        "eval"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 90,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "leondz/garak",
+      "name": "garak",
+      "category": "testing_and_eval",
+      "domain_id": "DOM-09",
+      "description": "LLM vulnerability scanner for prompt injection, jailbreaks, data leakage.",
+      "html_url": "https://github.com/leondz/garak",
+      "owner": "leondz",
+      "primary_language": "Python",
+      "stars": 3600,
+      "forks": 380,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "jailbreak",
+        "security-scanner",
+        "red-teaming"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 92,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "pytest-dev/pytest",
+      "name": "pytest",
+      "category": "testing_and_eval",
+      "domain_id": "DOM-09",
+      "description": "The pytest framework makes it easy to write small, readable tests.",
+      "html_url": "https://github.com/pytest-dev/pytest",
+      "owner": "pytest-dev",
+      "primary_language": "Python",
+      "stars": 12000,
+      "forks": 2600,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "testing",
+        "unit-test",
+        "python"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 128,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 98,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "tiangolo/fastapi",
+      "name": "fastapi",
+      "category": "infrastructure_and_api",
+      "domain_id": "DOM-10",
+      "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production.",
+      "html_url": "https://github.com/tiangolo/fastapi",
+      "owner": "tiangolo",
+      "primary_language": "Python",
+      "stars": 78000,
+      "forks": 6500,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "api",
+        "asyncio",
+        "rest",
+        "swagger"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 256,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 98,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "encode/uvicorn",
+      "name": "uvicorn",
+      "category": "infrastructure_and_api",
+      "domain_id": "DOM-10",
+      "description": "An ASGI web server, for Python, with uvloop and httptools support.",
+      "html_url": "https://github.com/encode/uvicorn",
+      "owner": "encode",
+      "primary_language": "Python",
+      "stars": 8300,
+      "forks": 750,
+      "license": {
+        "spdx_id": "BSD-3-Clause",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "asgi",
+        "server",
+        "fast"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 128,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 96,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "redis/redis-py",
+      "name": "redis-py",
+      "category": "infrastructure_and_api",
+      "domain_id": "DOM-10",
+      "description": "The Python interface to the Redis in-memory data structure store.",
+      "html_url": "https://github.com/redis/redis-py",
+      "owner": "redis",
+      "primary_language": "Python",
+      "stars": 13000,
+      "forks": 2400,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "redis",
+        "cache",
+        "pubsub"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 256,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 95,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "minio/minio-py",
+      "name": "minio-py",
+      "category": "infrastructure_and_api",
+      "domain_id": "DOM-10",
+      "description": "MinIO Client SDK for Python with S3 compatible object storage.",
+      "html_url": "https://github.com/minio/minio-py",
+      "owner": "minio",
+      "primary_language": "Python",
+      "stars": 2400,
+      "forks": 650,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "s3",
+        "minio",
+        "object-storage"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 256,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 94,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "MagicStack/asyncpg",
+      "name": "asyncpg",
+      "category": "infrastructure_and_api",
+      "domain_id": "DOM-10",
+      "description": "A fast PostgreSQL Database Client Library for Python/asyncio.",
+      "html_url": "https://github.com/MagicStack/asyncpg",
+      "owner": "MagicStack",
+      "primary_language": "Python",
+      "stars": 6900,
+      "forks": 520,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "postgresql",
+        "asyncio",
+        "high-performance"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 256,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 93,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "pallets/click",
+      "name": "click",
+      "category": "cli_terminal",
+      "domain_id": "DOM-11",
+      "description": "Composable command line interface toolkit",
+      "html_url": "https://github.com/pallets/click",
+      "owner": "pallets",
+      "primary_language": "Python",
+      "stars": 15500,
+      "forks": 1860,
+      "license": {
+        "spdx_id": "BSD-3-Clause",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "click",
+        "cli & terminal"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 95,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "Textualize/rich",
+      "name": "rich",
+      "category": "cli_terminal",
+      "domain_id": "DOM-11",
+      "description": "Rich text and beautiful formatting in the terminal",
+      "html_url": "https://github.com/Textualize/rich",
+      "owner": "Textualize",
+      "primary_language": "Python",
+      "stars": 49000,
+      "forks": 5880,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "rich",
+        "cli & terminal"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 98,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "Textualize/textual",
+      "name": "textual",
+      "category": "cli_terminal",
+      "domain_id": "DOM-11",
+      "description": "Textual is a Rapid Application Development framework for Python TUI",
+      "html_url": "https://github.com/Textualize/textual",
+      "owner": "Textualize",
+      "primary_language": "Python",
+      "stars": 25000,
+      "forks": 3000,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "textual",
+        "cli & terminal"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 96,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "prompt-toolkit/python-prompt-toolkit",
+      "name": "python-prompt-toolkit",
+      "category": "cli_terminal",
+      "domain_id": "DOM-11",
+      "description": "Library for building powerful interactive command line applications",
+      "html_url": "https://github.com/prompt-toolkit/python-prompt-toolkit",
+      "owner": "prompt-toolkit",
+      "primary_language": "Python",
+      "stars": 9200,
+      "forks": 1104,
+      "license": {
+        "spdx_id": "BSD-3-Clause",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "python-prompt-toolkit",
+        "cli & terminal"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 94,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "tiangolo/typer",
+      "name": "typer",
+      "category": "cli_terminal",
+      "domain_id": "DOM-11",
+      "description": "Typer, build great CLIs. Easy to code, based on Python type hints",
+      "html_url": "https://github.com/tiangolo/typer",
+      "owner": "tiangolo",
+      "primary_language": "Python",
+      "stars": 16000,
+      "forks": 1920,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "typer",
+        "cli & terminal"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 97,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "huggingface/transformers",
+      "name": "transformers",
+      "category": "machine_learning",
+      "domain_id": "DOM-12",
+      "description": "State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX",
+      "html_url": "https://github.com/huggingface/transformers",
+      "owner": "huggingface",
+      "primary_language": "Python",
+      "stars": 132000,
+      "forks": 15840,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "transformers",
+        "machine learning"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 94,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "huggingface/accelerate",
+      "name": "accelerate",
+      "category": "machine_learning",
+      "domain_id": "DOM-12",
+      "description": "A simple way to train and use PyTorch models with multi-GPU/TPU",
+      "html_url": "https://github.com/huggingface/accelerate",
+      "owner": "huggingface",
+      "primary_language": "Python",
+      "stars": 9200,
+      "forks": 1104,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "accelerate",
+        "machine learning"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 91,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "huggingface/peft",
+      "name": "peft",
+      "category": "machine_learning",
+      "domain_id": "DOM-12",
+      "description": "Parameter-Efficient Fine-Tuning (PEFT) methods (LoRA, QLoRA)",
+      "html_url": "https://github.com/huggingface/peft",
+      "owner": "huggingface",
+      "primary_language": "Python",
+      "stars": 16500,
+      "forks": 1980,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "peft",
+        "machine learning"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 92,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "bitsandbytes-foundation/bitsandbytes",
+      "name": "bitsandbytes",
+      "category": "machine_learning",
+      "domain_id": "DOM-12",
+      "description": "Accessible large language models via 8-bit and 4-bit quantization",
+      "html_url": "https://github.com/bitsandbytes-foundation/bitsandbytes",
+      "owner": "bitsandbytes-foundation",
+      "primary_language": "Python",
+      "stars": 6400,
+      "forks": 768,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "bitsandbytes",
+        "machine learning"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 86,
+      "evaluation_grade": "B"
+    },
+    {
+      "full_name": "vllm-project/ai-infra",
+      "name": "ai-infra",
+      "category": "machine_learning",
+      "domain_id": "DOM-12",
+      "description": "Infrastructure building blocks for modern AI compute clusters",
+      "html_url": "https://github.com/vllm-project/ai-infra",
+      "owner": "vllm-project",
+      "primary_language": "Python",
+      "stars": 2500,
+      "forks": 300,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "ai-infra",
+        "machine learning"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 87,
+      "evaluation_grade": "B"
+    },
+    {
+      "full_name": "google/jax",
+      "name": "jax",
+      "category": "machine_learning",
+      "domain_id": "DOM-12",
+      "description": "Composable transformations of Python+NumPy programs: differentiate, vectorize, JIT",
+      "html_url": "https://github.com/google/jax",
+      "owner": "google",
+      "primary_language": "Python",
+      "stars": 30000,
+      "forks": 3600,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "jax",
+        "machine learning"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 93,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "scikit-learn/scikit-learn",
+      "name": "scikit-learn",
+      "category": "machine_learning",
+      "domain_id": "DOM-13",
+      "description": "Machine Learning in Python with simple and efficient data tools",
+      "html_url": "https://github.com/scikit-learn/scikit-learn",
+      "owner": "scikit-learn",
+      "primary_language": "Python",
+      "stars": 60000,
+      "forks": 7200,
+      "license": {
+        "spdx_id": "BSD-3-Clause",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "scikit-learn",
+        "machine learning"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 96,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "pandas-dev/pandas",
+      "name": "pandas",
+      "category": "data_engineering",
+      "domain_id": "DOM-13",
+      "description": "Flexible and powerful data analysis / manipulation library for Python",
+      "html_url": "https://github.com/pandas-dev/pandas",
+      "owner": "pandas-dev",
+      "primary_language": "Python",
+      "stars": 44000,
+      "forks": 5280,
+      "license": {
+        "spdx_id": "BSD-3-Clause",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "pandas",
+        "data engineering"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 95,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "pola-rs/polars",
+      "name": "polars",
+      "category": "data_engineering",
+      "domain_id": "DOM-13",
+      "description": "Dataframes powered by a multithreaded, vectorized query engine in Rust",
+      "html_url": "https://github.com/pola-rs/polars",
+      "owner": "pola-rs",
+      "primary_language": "Rust",
+      "stars": 31000,
+      "forks": 3720,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "polars",
+        "data engineering"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 97,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "dbt-labs/dbt-core",
+      "name": "dbt-core",
+      "category": "data_engineering",
+      "domain_id": "DOM-13",
+      "description": "dbt enables data analysts and engineers to transform their data using SQL",
+      "html_url": "https://github.com/dbt-labs/dbt-core",
+      "owner": "dbt-labs",
+      "primary_language": "Python",
+      "stars": 9800,
+      "forks": 1176,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "dbt-core",
+        "data engineering"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 92,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "apache/airflow",
+      "name": "airflow",
+      "category": "workflow_orchestration",
+      "domain_id": "DOM-14",
+      "description": "Apache Airflow - A platform to programmatically author, schedule, and monitor workflows",
+      "html_url": "https://github.com/apache/airflow",
+      "owner": "apache",
+      "primary_language": "Python",
+      "stars": 37000,
+      "forks": 4440,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "airflow",
+        "workflow orchestration"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 89,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "PrefectHQ/prefect",
+      "name": "prefect",
+      "category": "workflow_orchestration",
+      "domain_id": "DOM-14",
+      "description": "Prefect is a workflow orchestration tool empowering developers to build data pipelines",
+      "html_url": "https://github.com/PrefectHQ/prefect",
+      "owner": "PrefectHQ",
+      "primary_language": "Python",
+      "stars": 17500,
+      "forks": 2100,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "prefect",
+        "workflow orchestration"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 92,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "dagster-io/dagster",
+      "name": "dagster",
+      "category": "workflow_orchestration",
+      "domain_id": "DOM-14",
+      "description": "An orchestration platform for the development, production, and observation of data assets",
+      "html_url": "https://github.com/dagster-io/dagster",
+      "owner": "dagster-io",
+      "primary_language": "Python",
+      "stars": 12000,
+      "forks": 1440,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "dagster",
+        "workflow orchestration"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 91,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "temporalio/sdk-python",
+      "name": "sdk-python",
+      "category": "workflow_orchestration",
+      "domain_id": "DOM-14",
+      "description": "Temporal Python SDK for resilient, distributed stateful workflows",
+      "html_url": "https://github.com/temporalio/sdk-python",
+      "owner": "temporalio",
+      "primary_language": "Python",
+      "stars": 1900,
+      "forks": 228,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "sdk-python",
+        "workflow orchestration"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 94,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "celery/celery",
+      "name": "celery",
+      "category": "workflow_orchestration",
+      "domain_id": "DOM-14",
+      "description": "Distributed Task Queue (development branch) with asynchronous messaging",
+      "html_url": "https://github.com/celery/celery",
+      "owner": "celery",
+      "primary_language": "Python",
+      "stars": 24500,
+      "forks": 2940,
+      "license": {
+        "spdx_id": "BSD-3-Clause",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "celery",
+        "workflow orchestration"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 90,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "gitpython-developers/GitPython",
+      "name": "GitPython",
+      "category": "devops_git",
+      "domain_id": "DOM-15",
+      "description": "GitPython is a python library used to interact with Git repositories",
+      "html_url": "https://github.com/gitpython-developers/GitPython",
+      "owner": "gitpython-developers",
+      "primary_language": "Python",
+      "stars": 5100,
+      "forks": 612,
+      "license": {
+        "spdx_id": "BSD-3-Clause",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "GitPython",
+        "devops & git"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 92,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "dulwich/dulwich",
+      "name": "dulwich",
+      "category": "devops_git",
+      "domain_id": "DOM-15",
+      "description": "Pure-Python implementation of the Git file formats and protocols",
+      "html_url": "https://github.com/dulwich/dulwich",
+      "owner": "dulwich",
+      "primary_language": "Python",
+      "stars": 1600,
+      "forks": 192,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "dulwich",
+        "devops & git"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 95,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "docker/docker-py",
+      "name": "docker-py",
+      "category": "devops_git",
+      "domain_id": "DOM-15",
+      "description": "A Python library for the Docker Engine API",
+      "html_url": "https://github.com/docker/docker-py",
+      "owner": "docker",
+      "primary_language": "Python",
+      "stars": 6500,
+      "forks": 780,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "docker-py",
+        "devops & git"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 88,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "ansible/ansible",
+      "name": "ansible",
+      "category": "devops_git",
+      "domain_id": "DOM-15",
+      "description": "Ansible is a radically simple IT automation platform",
+      "html_url": "https://github.com/ansible/ansible",
+      "owner": "ansible",
+      "primary_language": "Python",
+      "stars": 63000,
+      "forks": 7560,
+      "license": {
+        "spdx_id": "GPL-3.0",
+        "is_permissive": false,
+        "commercial_usable": false
+      },
+      "topics": [
+        "ansible",
+        "devops & git"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 82,
+      "evaluation_grade": "B"
+    },
+    {
+      "full_name": "hashicorp/terraform",
+      "name": "terraform",
+      "category": "devops_git",
+      "domain_id": "DOM-15",
+      "description": "Terraform enables you to safely and predictably create, change, and improve infrastructure",
+      "html_url": "https://github.com/hashicorp/terraform",
+      "owner": "hashicorp",
+      "primary_language": "Go",
+      "stars": 42000,
+      "forks": 5040,
+      "license": {
+        "spdx_id": "BUSL-1.1",
+        "is_permissive": false,
+        "commercial_usable": false
+      },
+      "topics": [
+        "terraform",
+        "devops & git"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 72,
+      "evaluation_grade": "C"
+    },
+    {
+      "full_name": "pydantic/pydantic",
+      "name": "pydantic",
+      "category": "software_engineering",
+      "domain_id": "DOM-16",
+      "description": "Data validation using Python type hints with compiled Rust core",
+      "html_url": "https://github.com/pydantic/pydantic",
+      "owner": "pydantic",
+      "primary_language": "Python",
+      "stars": 23000,
+      "forks": 2760,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "pydantic",
+        "software engineering"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 98,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "psutil/psutil",
+      "name": "psutil",
+      "category": "system_monitoring",
+      "domain_id": "DOM-17",
+      "description": "Cross-platform lib for process and system monitoring in Python",
+      "html_url": "https://github.com/psutil/psutil",
+      "owner": "psutil",
+      "primary_language": "Python",
+      "stars": 10800,
+      "forks": 1296,
+      "license": {
+        "spdx_id": "BSD-3-Clause",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "psutil",
+        "system monitoring"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 97,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "prometheus/client_python",
+      "name": "client_python",
+      "category": "system_monitoring",
+      "domain_id": "DOM-17",
+      "description": "The official Python client for Prometheus",
+      "html_url": "https://github.com/prometheus/client_python",
+      "owner": "prometheus",
+      "primary_language": "Python",
+      "stars": 4300,
+      "forks": 516,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "client_python",
+        "system monitoring"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 94,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "grafana/grafana",
+      "name": "grafana",
+      "category": "system_monitoring",
+      "domain_id": "DOM-17",
+      "description": "The open and composable observability and data visualization platform",
+      "html_url": "https://github.com/grafana/grafana",
+      "owner": "grafana",
+      "primary_language": "TypeScript",
+      "stars": 65000,
+      "forks": 7800,
+      "license": {
+        "spdx_id": "AGPL-3.0",
+        "is_permissive": false,
+        "commercial_usable": false
+      },
+      "topics": [
+        "grafana",
+        "system monitoring"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 76,
+      "evaluation_grade": "C"
+    },
+    {
+      "full_name": "open-telemetry/opentelemetry-python",
+      "name": "opentelemetry-python",
+      "category": "system_monitoring",
+      "domain_id": "DOM-17",
+      "description": "The OpenTelemetry Python SDK for distributed tracing and metrics",
+      "html_url": "https://github.com/open-telemetry/opentelemetry-python",
+      "owner": "open-telemetry",
+      "primary_language": "Python",
+      "stars": 2800,
+      "forks": 336,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "opentelemetry-python",
+        "system monitoring"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 93,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "sqlparse/sqlparse",
+      "name": "sqlparse",
+      "category": "database_engineering",
+      "domain_id": "DOM-18",
+      "description": "A non-validating SQL parser for Python",
+      "html_url": "https://github.com/sqlparse/sqlparse",
+      "owner": "sqlparse",
+      "primary_language": "Python",
+      "stars": 3600,
+      "forks": 432,
+      "license": {
+        "spdx_id": "BSD-3-Clause",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "sqlparse",
+        "database engineering"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 94,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "sqlalchemy/sqlalchemy",
+      "name": "sqlalchemy",
+      "category": "database_engineering",
+      "domain_id": "DOM-18",
+      "description": "The Python SQL Toolkit and Object Relational Mapper",
+      "html_url": "https://github.com/sqlalchemy/sqlalchemy",
+      "owner": "sqlalchemy",
+      "primary_language": "Python",
+      "stars": 30000,
+      "forks": 3600,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "sqlalchemy",
+        "database engineering"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 96,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "tortoise/tortoise-orm",
+      "name": "tortoise-orm",
+      "category": "database_engineering",
+      "domain_id": "DOM-18",
+      "description": "Familiar asyncio ORM for python, built with relations in mind",
+      "html_url": "https://github.com/tortoise/tortoise-orm",
+      "owner": "tortoise",
+      "primary_language": "Python",
+      "stars": 4600,
+      "forks": 552,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "tortoise-orm",
+        "database engineering"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 92,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "coleifer/peewee",
+      "name": "peewee",
+      "category": "database_engineering",
+      "domain_id": "DOM-18",
+      "description": "A small, expressive orm -- written in python, powering sqlite apps",
+      "html_url": "https://github.com/coleifer/peewee",
+      "owner": "coleifer",
+      "primary_language": "Python",
+      "stars": 11200,
+      "forks": 1344,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "peewee",
+        "database engineering"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 95,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "aerich/aerich",
+      "name": "aerich",
+      "category": "database_engineering",
+      "domain_id": "DOM-18",
+      "description": "An aerich is a database migrations tool for Tortoise-ORM",
+      "html_url": "https://github.com/aerich/aerich",
+      "owner": "aerich",
+      "primary_language": "Python",
+      "stars": 950,
+      "forks": 114,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "aerich",
+        "database engineering"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 88,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "encode/httpx",
+      "name": "httpx",
+      "category": "network_protocols",
+      "domain_id": "DOM-19",
+      "description": "A next-generation HTTP client for Python with async support",
+      "html_url": "https://github.com/encode/httpx",
+      "owner": "encode",
+      "primary_language": "Python",
+      "stars": 14000,
+      "forks": 1680,
+      "license": {
+        "spdx_id": "BSD-3-Clause",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "httpx",
+        "network & protocols"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 97,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "aio-libs/aiohttp",
+      "name": "aiohttp",
+      "category": "network_protocols",
+      "domain_id": "DOM-19",
+      "description": "Asynchronous HTTP client/server framework for asyncio and Python",
+      "html_url": "https://github.com/aio-libs/aiohttp",
+      "owner": "aio-libs",
+      "primary_language": "Python",
+      "stars": 15000,
+      "forks": 1800,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "aiohttp",
+        "network & protocols"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 93,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "urllib3/urllib3",
+      "name": "urllib3",
+      "category": "network_protocols",
+      "domain_id": "DOM-19",
+      "description": "Python HTTP library with thread-safe connection pooling, file post support",
+      "html_url": "https://github.com/urllib3/urllib3",
+      "owner": "urllib3",
+      "primary_language": "Python",
+      "stars": 4000,
+      "forks": 480,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "urllib3",
+        "network & protocols"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 98,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "grpc/grpc",
+      "name": "grpc",
+      "category": "network_protocols",
+      "domain_id": "DOM-19",
+      "description": "The C based gRPC (C++, Python, Ruby, Objective-C, PHP, C#)",
+      "html_url": "https://github.com/grpc/grpc",
+      "owner": "grpc",
+      "primary_language": "C++",
+      "stars": 41000,
+      "forks": 4920,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "grpc",
+        "network & protocols"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 87,
+      "evaluation_grade": "B"
+    },
+    {
+      "full_name": "websockets/websockets",
+      "name": "websockets",
+      "category": "network_protocols",
+      "domain_id": "DOM-19",
+      "description": "Library for building WebSocket servers and clients in Python",
+      "html_url": "https://github.com/websockets/websockets",
+      "owner": "websockets",
+      "primary_language": "Python",
+      "stars": 5400,
+      "forks": 648,
+      "license": {
+        "spdx_id": "BSD-3-Clause",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "websockets",
+        "network & protocols"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 95,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "pallets/flask",
+      "name": "flask",
+      "category": "web_development",
+      "domain_id": "DOM-20",
+      "description": "The Python micro framework for building web applications",
+      "html_url": "https://github.com/pallets/flask",
+      "owner": "pallets",
+      "primary_language": "Python",
+      "stars": 68000,
+      "forks": 8160,
+      "license": {
+        "spdx_id": "BSD-3-Clause",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "flask",
+        "web development"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 95,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "django/django",
+      "name": "django",
+      "category": "web_development",
+      "domain_id": "DOM-20",
+      "description": "The Web framework for perfectionists with deadlines",
+      "html_url": "https://github.com/django/django",
+      "owner": "django",
+      "primary_language": "Python",
+      "stars": 81000,
+      "forks": 9720,
+      "license": {
+        "spdx_id": "BSD-3-Clause",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "django",
+        "web development"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 94,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "facebook/react",
+      "name": "react",
+      "category": "web_development",
+      "domain_id": "DOM-20",
+      "description": "The library for web and native user interfaces",
+      "html_url": "https://github.com/facebook/react",
+      "owner": "facebook",
+      "primary_language": "JavaScript",
+      "stars": 230000,
+      "forks": 27600,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "react",
+        "web development"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 96,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "tailwindlabs/tailwindcss",
+      "name": "tailwindcss",
+      "category": "web_development",
+      "domain_id": "DOM-20",
+      "description": "A utility-first CSS framework for rapid UI development",
+      "html_url": "https://github.com/tailwindlabs/tailwindcss",
+      "owner": "tailwindlabs",
+      "primary_language": "JavaScript",
+      "stars": 83000,
+      "forks": 9960,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "tailwindcss",
+        "web development"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 97,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "vercel/next.js",
+      "name": "next.js",
+      "category": "web_development",
+      "domain_id": "DOM-20",
+      "description": "The React Framework for the Web with SSR and App Router",
+      "html_url": "https://github.com/vercel/next.js",
+      "owner": "vercel",
+      "primary_language": "JavaScript",
+      "stars": 128000,
+      "forks": 15360,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "next.js",
+        "web development"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 93,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "google/mediapipe",
+      "name": "mediapipe",
+      "category": "media_ai",
+      "domain_id": "DOM-21",
+      "description": "Cross-platform, customizable ML solutions for live and streaming media",
+      "html_url": "https://github.com/google/mediapipe",
+      "owner": "google",
+      "primary_language": "C++",
+      "stars": 27000,
+      "forks": 3240,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "mediapipe",
+        "media & ai"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 90,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "facebookresearch/detectron2",
+      "name": "detectron2",
+      "category": "media_ai",
+      "domain_id": "DOM-21",
+      "description": "Detectron2 is a platform for object detection and segmentation",
+      "html_url": "https://github.com/facebookresearch/detectron2",
+      "owner": "facebookresearch",
+      "primary_language": "Python",
+      "stars": 30000,
+      "forks": 3600,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "detectron2",
+        "media & ai"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 85,
+      "evaluation_grade": "B"
+    },
+    {
+      "full_name": "tesseract-ocr/tesseract",
+      "name": "tesseract",
+      "category": "media_ai",
+      "domain_id": "DOM-21",
+      "description": "Tesseract Open Source OCR Engine (main repository)",
+      "html_url": "https://github.com/tesseract-ocr/tesseract",
+      "owner": "tesseract-ocr",
+      "primary_language": "C++",
+      "stars": 63000,
+      "forks": 7560,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "tesseract",
+        "media & ai"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 92,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "madmaze/pytesseract",
+      "name": "pytesseract",
+      "category": "media_ai",
+      "domain_id": "DOM-21",
+      "description": "A Python wrapper for Google's Tesseract-OCR",
+      "html_url": "https://github.com/madmaze/pytesseract",
+      "owner": "madmaze",
+      "primary_language": "Python",
+      "stars": 6200,
+      "forks": 744,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "pytesseract",
+        "media & ai"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 93,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "PaddlePaddle/PaddleOCR",
+      "name": "PaddleOCR",
+      "category": "media_ai",
+      "domain_id": "DOM-21",
+      "description": "Awesome multilingual OCR toolkits based on PaddlePaddle",
+      "html_url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "owner": "PaddlePaddle",
+      "primary_language": "Python",
+      "stars": 44000,
+      "forks": 5280,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "PaddleOCR",
+        "media & ai"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 88,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "certbot/certbot",
+      "name": "certbot",
+      "category": "security_pki",
+      "domain_id": "DOM-22",
+      "description": "Certbot is EFF's tool to obtain certs from Let's Encrypt automatically",
+      "html_url": "https://github.com/certbot/certbot",
+      "owner": "certbot",
+      "primary_language": "Python",
+      "stars": 31000,
+      "forks": 3720,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "certbot",
+        "security & pki"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 93,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "pyca/cryptography",
+      "name": "cryptography",
+      "category": "security_pki",
+      "domain_id": "DOM-22",
+      "description": "cryptography is a package which provides cryptographic recipes and primitives",
+      "html_url": "https://github.com/pyca/cryptography",
+      "owner": "pyca",
+      "primary_language": "Python",
+      "stars": 6500,
+      "forks": 780,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "cryptography",
+        "security & pki"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 97,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "OWASP/CheatSheetSeries",
+      "name": "CheatSheetSeries",
+      "category": "security_pki",
+      "domain_id": "DOM-22",
+      "description": "The OWASP Cheat Sheet Series was created to provide a concise collection of high value security info",
+      "html_url": "https://github.com/OWASP/CheatSheetSeries",
+      "owner": "OWASP",
+      "primary_language": "Markdown",
+      "stars": 29000,
+      "forks": 3480,
+      "license": {
+        "spdx_id": "CC-BY-SA-4.0",
+        "is_permissive": false,
+        "commercial_usable": false
+      },
+      "topics": [
+        "CheatSheetSeries",
+        "security & pki"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 96,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "trufflesecurity/trufflehog",
+      "name": "trufflehog",
+      "category": "security_pki",
+      "domain_id": "DOM-22",
+      "description": "Find, verify, and analyze leaked credentials and secrets across git repos",
+      "html_url": "https://github.com/trufflesecurity/trufflehog",
+      "owner": "trufflesecurity",
+      "primary_language": "Go",
+      "stars": 18500,
+      "forks": 2220,
+      "license": {
+        "spdx_id": "AGPL-3.0",
+        "is_permissive": false,
+        "commercial_usable": false
+      },
+      "topics": [
+        "trufflehog",
+        "security & pki"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 79,
+      "evaluation_grade": "C"
+    },
+    {
+      "full_name": "gitleaks/gitleaks",
+      "name": "gitleaks",
+      "category": "security_pki",
+      "domain_id": "DOM-22",
+      "description": "Protect and discover secrets using Gitleaks in Git repos",
+      "html_url": "https://github.com/gitleaks/gitleaks",
+      "owner": "gitleaks",
+      "primary_language": "Go",
+      "stars": 17500,
+      "forks": 2100,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "gitleaks",
+        "security & pki"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 95,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "pytest-benchmark/pytest-benchmark",
+      "name": "pytest-benchmark",
+      "category": "testing_benchmark",
+      "domain_id": "DOM-23",
+      "description": "A pytest fixture for benchmarking code with statistical checks",
+      "html_url": "https://github.com/pytest-benchmark/pytest-benchmark",
+      "owner": "pytest-benchmark",
+      "primary_language": "Python",
+      "stars": 980,
+      "forks": 117,
+      "license": {
+        "spdx_id": "BSD-2-Clause",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "pytest-benchmark",
+        "testing & benchmark"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 93,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "locustio/locust",
+      "name": "locust",
+      "category": "testing_benchmark",
+      "domain_id": "DOM-23",
+      "description": "Write scalable load tests in plain Python with user swarm simulation",
+      "html_url": "https://github.com/locustio/locust",
+      "owner": "locustio",
+      "primary_language": "Python",
+      "stars": 25000,
+      "forks": 3000,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "locust",
+        "testing & benchmark"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 95,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "schemathesis/schemathesis",
+      "name": "schemathesis",
+      "category": "testing_benchmark",
+      "domain_id": "DOM-23",
+      "description": "Property-based testing tool for OpenAPI and GraphQL specifications",
+      "html_url": "https://github.com/schemathesis/schemathesis",
+      "owner": "schemathesis",
+      "primary_language": "Python",
+      "stars": 2400,
+      "forks": 288,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "schemathesis",
+        "testing & benchmark"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 94,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "tox-dev/tox",
+      "name": "tox",
+      "category": "testing_benchmark",
+      "domain_id": "DOM-23",
+      "description": "Command line driven CI frontend and test matrix runner",
+      "html_url": "https://github.com/tox-dev/tox",
+      "owner": "tox-dev",
+      "primary_language": "Python",
+      "stars": 3800,
+      "forks": 456,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "tox",
+        "testing & benchmark"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 93,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "hypothesisworks/hypothesis",
+      "name": "hypothesis",
+      "category": "testing_benchmark",
+      "domain_id": "DOM-23",
+      "description": "Hypothesis is a powerful, flexible, and easy to use library for property-based testing",
+      "html_url": "https://github.com/hypothesisworks/hypothesis",
+      "owner": "hypothesisworks",
+      "primary_language": "Python",
+      "stars": 7600,
+      "forks": 912,
+      "license": {
+        "spdx_id": "MPL-2.0",
+        "is_permissive": false,
+        "commercial_usable": false
+      },
+      "topics": [
+        "hypothesis",
+        "testing & benchmark"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 94,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "pyinstaller/pyinstaller",
+      "name": "pyinstaller",
+      "category": "packaging_deployment",
+      "domain_id": "DOM-24",
+      "description": "Freeze (package) Python programs into stand-alone executables",
+      "html_url": "https://github.com/pyinstaller/pyinstaller",
+      "owner": "pyinstaller",
+      "primary_language": "Python",
+      "stars": 12500,
+      "forks": 1500,
+      "license": {
+        "spdx_id": "GPL-2.0",
+        "is_permissive": false,
+        "commercial_usable": false
+      },
+      "topics": [
+        "pyinstaller",
+        "packaging & deployment"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 87,
+      "evaluation_grade": "B"
+    },
+    {
+      "full_name": "Nuitka/Nuitka",
+      "name": "Nuitka",
+      "category": "packaging_deployment",
+      "domain_id": "DOM-24",
+      "description": "Nuitka is the optimizing Python compiler. Python to C/binary translation",
+      "html_url": "https://github.com/Nuitka/Nuitka",
+      "owner": "Nuitka",
+      "primary_language": "Python",
+      "stars": 12000,
+      "forks": 1440,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "Nuitka",
+        "packaging & deployment"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 89,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "pypa/pip",
+      "name": "pip",
+      "category": "packaging_deployment",
+      "domain_id": "DOM-24",
+      "description": "The PyPA recommended tool for installing Python packages",
+      "html_url": "https://github.com/pypa/pip",
+      "owner": "pypa",
+      "primary_language": "Python",
+      "stars": 9500,
+      "forks": 1140,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "pip",
+        "packaging & deployment"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 96,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "astral-sh/uv",
+      "name": "uv",
+      "category": "packaging_deployment",
+      "domain_id": "DOM-24",
+      "description": "An extremely fast Python package and project manager, written in Rust",
+      "html_url": "https://github.com/astral-sh/uv",
+      "owner": "astral-sh",
+      "primary_language": "Rust",
+      "stars": 42000,
+      "forks": 5040,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "uv",
+        "packaging & deployment"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 98,
+      "evaluation_grade": "A"
+    },
+    {
+      "full_name": "python-poetry/poetry",
+      "name": "poetry",
+      "category": "packaging_deployment",
+      "domain_id": "DOM-24",
+      "description": "Python packaging and dependency management made easy",
+      "html_url": "https://github.com/python-poetry/poetry",
+      "owner": "python-poetry",
+      "primary_language": "Python",
+      "stars": 31000,
+      "forks": 3720,
+      "license": {
+        "spdx_id": "MIT",
+        "is_permissive": true,
+        "commercial_usable": true
+      },
+      "topics": [
+        "poetry",
+        "packaging & deployment"
+      ],
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 512,
+        "requires_gpu": false
+      },
+      "windows_supported": true,
+      "evaluation_score": 94,
+      "evaluation_grade": "A"
+    }
+  ]
+}

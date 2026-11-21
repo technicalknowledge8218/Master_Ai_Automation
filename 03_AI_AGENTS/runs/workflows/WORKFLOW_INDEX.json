@@ -1,0 +1,340 @@
+{
+  "workflows": {
+    "WF-60fce452": {
+      "workflow_id": "WF-60fce452",
+      "goal": "General task lifecycle test",
+      "status": "RUNNING",
+      "created_at": "2026-11-17T06:08:20.139700",
+      "subtask_count": 3,
+      "completed_count": 1
+    },
+    "WF-875f06a1": {
+      "workflow_id": "WF-875f06a1",
+      "goal": "Cancellation and pause test",
+      "status": "QUEUED",
+      "created_at": "2026-11-17T06:08:20.201923",
+      "subtask_count": 3,
+      "completed_count": 0
+    },
+    "WF-057b9f58": {
+      "workflow_id": "WF-057b9f58",
+      "goal": "Research lions and prepare a Hindi documentary production plan.",
+      "status": "RUNNING",
+      "created_at": "2026-11-17T06:08:20.238963",
+      "subtask_count": 5,
+      "completed_count": 0
+    },
+    "WF-890b5209": {
+      "workflow_id": "WF-890b5209",
+      "goal": "Build an API in Python",
+      "status": "QUEUED",
+      "created_at": "2026-11-17T06:08:22.635519",
+      "subtask_count": 5,
+      "completed_count": 0
+    },
+    "WF-c504fa92": {
+      "workflow_id": "WF-c504fa92",
+      "goal": "General task lifecycle test",
+      "status": "RUNNING",
+      "created_at": "2026-11-17T06:08:57.579626",
+      "subtask_count": 3,
+      "completed_count": 1
+    },
+    "WF-dcdee7e7": {
+      "workflow_id": "WF-dcdee7e7",
+      "goal": "Cancellation and pause test",
+      "status": "CANCELLED",
+      "created_at": "2026-11-17T06:08:57.617211",
+      "subtask_count": 3,
+      "completed_count": 0
+    },
+    "WF-0ebb4de2": {
+      "workflow_id": "WF-0ebb4de2",
+      "goal": "Research lions and prepare a Hindi documentary production plan.",
+      "status": "COMPLETED",
+      "created_at": "2026-11-17T06:08:57.677269",
+      "subtask_count": 5,
+      "completed_count": 0
+    },
+    "WF-27ed4241": {
+      "workflow_id": "WF-27ed4241",
+      "goal": "Build an API in Python",
+      "status": "QUEUED",
+      "created_at": "2026-11-17T06:09:00.107607",
+      "subtask_count": 5,
+      "completed_count": 0
+    },
+    "WF-b8597daa": {
+      "workflow_id": "WF-b8597daa",
+      "goal": "General task lifecycle test",
+      "status": "RUNNING",
+      "created_at": "2026-11-17T14:24:29.803413",
+      "subtask_count": 3,
+      "completed_count": 1
+    },
+    "WF-46a404b2": {
+      "workflow_id": "WF-46a404b2",
+      "goal": "Cancellation and pause test",
+      "status": "CANCELLED",
+      "created_at": "2026-11-17T14:24:29.834827",
+      "subtask_count": 3,
+      "completed_count": 0
+    },
+    "WF-8a283468": {
+      "workflow_id": "WF-8a283468",
+      "goal": "Research lions and prepare a Hindi documentary production plan.",
+      "status": "COMPLETED",
+      "created_at": "2026-11-17T14:24:29.883745",
+      "subtask_count": 5,
+      "completed_count": 5
+    },
+    "WF-b1f08f88": {
+      "workflow_id": "WF-b1f08f88",
+      "goal": "Build an API in Python",
+      "status": "QUEUED",
+      "created_at": "2026-11-17T14:24:35.978082",
+      "subtask_count": 5,
+      "completed_count": 0
+    },
+    "WF-380920ef": {
+      "workflow_id": "WF-380920ef",
+      "goal": "General task lifecycle test",
+      "status": "RUNNING",
+      "created_at": "2026-11-17T14:25:26.048651",
+      "subtask_count": 3,
+      "completed_count": 1
+    },
+    "WF-99d15b52": {
+      "workflow_id": "WF-99d15b52",
+      "goal": "Cancellation and pause test",
+      "status": "CANCELLED",
+      "created_at": "2026-11-17T14:25:26.078602",
+      "subtask_count": 3,
+      "completed_count": 0
+    },
+    "WF-be1325ca": {
+      "workflow_id": "WF-be1325ca",
+      "goal": "Research lions and prepare a Hindi documentary production plan.",
+      "status": "COMPLETED",
+      "created_at": "2026-11-17T14:25:26.134793",
+      "subtask_count": 5,
+      "completed_count": 5
+    },
+    "WF-403ade9e": {
+      "workflow_id": "WF-403ade9e",
+      "goal": "Build an API in Python",
+      "status": "QUEUED",
+      "created_at": "2026-11-17T14:25:28.798135",
+      "subtask_count": 5,
+      "completed_count": 0
+    },
+    "WF-210533fe": {
+      "workflow_id": "WF-210533fe",
+      "goal": "General task lifecycle test",
+      "status": "RUNNING",
+      "created_at": "2026-11-17T14:53:03.240428",
+      "subtask_count": 3,
+      "completed_count": 1
+    },
+    "WF-c420d60a": {
+      "workflow_id": "WF-c420d60a",
+      "goal": "Cancellation and pause test",
+      "status": "CANCELLED",
+      "created_at": "2026-11-17T14:53:03.278142",
+      "subtask_count": 3,
+      "completed_count": 0
+    },
+    "WF-61ea7ac2": {
+      "workflow_id": "WF-61ea7ac2",
+      "goal": "Research lions and prepare a Hindi documentary production plan.",
+      "status": "COMPLETED",
+      "created_at": "2026-11-17T14:53:03.335022",
+      "subtask_count": 5,
+      "completed_count": 5
+    },
+    "WF-7a0e6775": {
+      "workflow_id": "WF-7a0e6775",
+      "goal": "Build an API in Python",
+      "status": "QUEUED",
+      "created_at": "2026-11-17T14:53:05.807221",
+      "subtask_count": 5,
+      "completed_count": 0
+    },
+    "WF-0941ecc4": {
+      "workflow_id": "WF-0941ecc4",
+      "goal": "General task lifecycle test",
+      "status": "RUNNING",
+      "created_at": "2026-11-17T15:42:43.338585",
+      "subtask_count": 3,
+      "completed_count": 1
+    },
+    "WF-0212cd6f": {
+      "workflow_id": "WF-0212cd6f",
+      "goal": "Cancellation and pause test",
+      "status": "CANCELLED",
+      "created_at": "2026-11-17T15:42:43.374655",
+      "subtask_count": 3,
+      "completed_count": 0
+    },
+    "WF-665678dc": {
+      "workflow_id": "WF-665678dc",
+      "goal": "Research lions and prepare a Hindi documentary production plan.",
+      "status": "COMPLETED",
+      "created_at": "2026-11-17T15:42:43.427889",
+      "subtask_count": 5,
+      "completed_count": 5
+    },
+    "WF-e0f03597": {
+      "workflow_id": "WF-e0f03597",
+      "goal": "Build an API in Python",
+      "status": "QUEUED",
+      "created_at": "2026-11-17T15:42:46.022875",
+      "subtask_count": 5,
+      "completed_count": 0
+    },
+    "WF-09f04e25": {
+      "workflow_id": "WF-09f04e25",
+      "goal": "General task lifecycle test",
+      "status": "RUNNING",
+      "created_at": "2026-11-17T15:48:59.877052",
+      "subtask_count": 3,
+      "completed_count": 1
+    },
+    "WF-1c535b37": {
+      "workflow_id": "WF-1c535b37",
+      "goal": "Cancellation and pause test",
+      "status": "CANCELLED",
+      "created_at": "2026-11-17T15:48:59.910181",
+      "subtask_count": 3,
+      "completed_count": 0
+    },
+    "WF-d09d294c": {
+      "workflow_id": "WF-d09d294c",
+      "goal": "Research lions and prepare a Hindi documentary production plan.",
+      "status": "COMPLETED",
+      "created_at": "2026-11-17T15:48:59.972875",
+      "subtask_count": 5,
+      "completed_count": 5
+    },
+    "WF-7272eb5c": {
+      "workflow_id": "WF-7272eb5c",
+      "goal": "Build an API in Python",
+      "status": "QUEUED",
+      "created_at": "2026-11-17T15:49:01.600095",
+      "subtask_count": 5,
+      "completed_count": 0
+    },
+    "WF-34d24691": {
+      "workflow_id": "WF-34d24691",
+      "goal": "General task lifecycle test",
+      "status": "RUNNING",
+      "created_at": "2026-11-17T23:12:22.595409",
+      "subtask_count": 3,
+      "completed_count": 1
+    },
+    "WF-656fbe03": {
+      "workflow_id": "WF-656fbe03",
+      "goal": "Cancellation and pause test",
+      "status": "CANCELLED",
+      "created_at": "2026-11-17T23:12:22.650179",
+      "subtask_count": 3,
+      "completed_count": 0
+    },
+    "WF-04704b3a": {
+      "workflow_id": "WF-04704b3a",
+      "goal": "Research lions and prepare a Hindi documentary production plan.",
+      "status": "COMPLETED",
+      "created_at": "2026-11-17T23:12:22.722544",
+      "subtask_count": 5,
+      "completed_count": 5
+    },
+    "WF-a45177f4": {
+      "workflow_id": "WF-a45177f4",
+      "goal": "Build an API in Python",
+      "status": "QUEUED",
+      "created_at": "2026-11-17T23:12:26.873204",
+      "subtask_count": 5,
+      "completed_count": 0
+    },
+    "WF-e6bacfc8": {
+      "workflow_id": "WF-e6bacfc8",
+      "goal": "General task lifecycle test",
+      "status": "RUNNING",
+      "created_at": "2026-11-17T23:21:38.652352",
+      "subtask_count": 3,
+      "completed_count": 1
+    },
+    "WF-00717e1d": {
+      "workflow_id": "WF-00717e1d",
+      "goal": "Cancellation and pause test",
+      "status": "CANCELLED",
+      "created_at": "2026-11-17T23:21:38.701575",
+      "subtask_count": 3,
+      "completed_count": 0
+    },
+    "WF-ef445a99": {
+      "workflow_id": "WF-ef445a99",
+      "goal": "Research lions and prepare a Hindi documentary production plan.",
+      "status": "COMPLETED",
+      "created_at": "2026-11-17T23:21:38.763432",
+      "subtask_count": 5,
+      "completed_count": 5
+    },
+    "WF-937740e0": {
+      "workflow_id": "WF-937740e0",
+      "goal": "Build an API in Python",
+      "status": "QUEUED",
+      "created_at": "2026-11-17T23:21:42.308396",
+      "subtask_count": 5,
+      "completed_count": 0
+    },
+    "WF-f33ee5ae": {
+      "workflow_id": "WF-f33ee5ae",
+      "goal": "Create a 60-second cinematic African lion documentary in Hindi for YouTube.",
+      "status": "FAILED",
+      "created_at": "2026-11-18T02:43:34.876964",
+      "subtask_count": 14,
+      "completed_count": 7
+    },
+    "WF-6f92a443": {
+      "workflow_id": "WF-6f92a443",
+      "goal": "Create a 60-second cinematic African lion documentary in Hindi for YouTube.",
+      "status": "COMPLETED",
+      "created_at": "2026-11-18T02:44:32.045102",
+      "subtask_count": 14,
+      "completed_count": 14
+    },
+    "WF-d6cbbd32": {
+      "workflow_id": "WF-d6cbbd32",
+      "goal": "Create a 60-second cinematic African lion documentary in Hindi for YouTube.",
+      "status": "COMPLETED",
+      "created_at": "2026-11-18T02:46:33.313985",
+      "subtask_count": 14,
+      "completed_count": 14
+    },
+    "WF-ab77c30d": {
+      "workflow_id": "WF-ab77c30d",
+      "goal": "Create a 60-second cinematic Hindi emotional family drama video titled '\u0906\u0916\u093f\u0930\u0940 \u091a\u093f",
+      "status": "FAILED",
+      "created_at": "2026-11-18T03:34:01.816991",
+      "subtask_count": 14,
+      "completed_count": 8
+    },
+    "WF-a166ec53": {
+      "workflow_id": "WF-a166ec53",
+      "goal": "Create a 60-second cinematic Hindi emotional family drama video titled '\u0906\u0916\u093f\u0930\u0940 \u091a\u093f",
+      "status": "FAILED",
+      "created_at": "2026-11-18T03:35:35.237183",
+      "subtask_count": 14,
+      "completed_count": 13
+    },
+    "WF-77a4d400": {
+      "workflow_id": "WF-77a4d400",
+      "goal": "Create a 60-second cinematic Hindi emotional family drama video titled '\u0906\u0916\u093f\u0930\u0940 \u091a\u093f",
+      "status": "COMPLETED",
+      "created_at": "2026-11-18T03:39:34.666691",
+      "subtask_count": 14,
+      "completed_count": 14
+    }
+  }
+}

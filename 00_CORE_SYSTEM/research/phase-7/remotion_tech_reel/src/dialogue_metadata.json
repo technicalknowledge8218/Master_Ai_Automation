@@ -1,0 +1,49 @@
+{
+  "total_duration": 44.94800453514739,
+  "turns": [
+    {
+      "id": "turn1_arjun",
+      "speaker": "ARJUN",
+      "role": "JUNIOR DEV",
+      "char_img": "arjun_shocked.png",
+      "start": 0.5,
+      "duration": 8.951995464852608,
+      "end": 9.451995464852608,
+      "subtitle": "Bhai, mere AWS account mein $40 ka surprise bill aa gaya! Student project ke liye itna paisa kahan se laun?",
+      "badge_color": "#00E599"
+    },
+    {
+      "id": "turn2_kabir",
+      "speaker": "KABIR",
+      "role": "SENIOR ARCHITECT",
+      "char_img": "dr_kabir_explaining.png",
+      "start": 9.801995464852608,
+      "duration": 15.12,
+      "end": 24.921995464852607,
+      "subtitle": "Tension mat le! Junior dev ho kar AWS chhod! 2026 mein sab Cloudflare Pages aur Supabase use karte hain — $0 bill!",
+      "badge_color": "#FFD21E"
+    },
+    {
+      "id": "turn3_arjun",
+      "speaker": "ARJUN",
+      "role": "JUNIOR DEV",
+      "char_img": "arjun_pointing.png",
+      "start": 25.27199546485261,
+      "duration": 5.616009070294784,
+      "end": 30.88800453514739,
+      "subtitle": "Lekin backend API aur database 24 ghante kaise chalega bina soye?",
+      "badge_color": "#00E599"
+    },
+    {
+      "id": "turn4_kabir",
+      "speaker": "KABIR",
+      "role": "SENIOR ARCHITECT",
+      "char_img": "dr_kabir_proud.png",
+      "start": 31.238004535147393,
+      "duration": 12.36,
+      "end": 43.598004535147396,
+      "subtitle": "Cron-job.org se 10-minute automated ping laga de, server kabhi nahi soyega! Repo ke liye comment karo 'STACK'!",
+      "badge_color": "#FFD21E"
+    }
+  ]
+}

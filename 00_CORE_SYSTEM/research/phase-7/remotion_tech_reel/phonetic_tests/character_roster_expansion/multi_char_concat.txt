@@ -1,0 +1,4 @@
+file 'C:/Users/Sangam/.gemini/antigravity/brain/d97bdd64-3973-442c-a0dd-850f28dc3c0d/eleven_2_george_lalaji_boss_master.wav'
+file 'C:/Users/Sangam/.gemini/antigravity/brain/d97bdd64-3973-442c-a0dd-850f28dc3c0d/char_roster_1_chintu_fresher_master.wav'
+file 'C:/Users/Sangam/.gemini/antigravity/brain/d97bdd64-3973-442c-a0dd-850f28dc3c0d/char_roster_2_senior_dev_brian_master.wav'
+file 'C:/Users/Sangam/.gemini/antigravity/brain/d97bdd64-3973-442c-a0dd-850f28dc3c0d/char_roster_3_alice_hr_lead_master.wav'

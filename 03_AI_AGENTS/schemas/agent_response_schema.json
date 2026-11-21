@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MasterAIAgentResponseSchema",
+  "type": "object",
+  "required": [
+    "response_id",
+    "task_id",
+    "agent_id",
+    "subtask_id",
+    "status",
+    "work_performed",
+    "files_changed",
+    "evidence",
+    "tests_executed",
+    "remaining_limitations",
+    "artifacts",
+    "timestamp"
+  ],
+  "properties": {
+    "response_id": {
+      "type": "string"
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "agent_id": {
+      "type": "string"
+    },
+    "subtask_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["SUCCESS", "FAILURE", "BLOCKED", "PARTIAL"]
+    },
+    "work_performed": {
+      "type": "string",
+      "minLength": 5
+    },
+    "files_changed": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "description": "Concrete verifiable artifacts, output hashes, command logs, or test logs"
+    },
+    "tests_executed": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["test_name", "passed"],
+        "properties": {
+          "test_name": {"type": "string"},
+          "passed": {"type": "boolean"},
+          "output": {"type": "string"}
+        }
+      }
+    },
+    "remaining_limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["artifact_id", "artifact_type", "path"],
+        "properties": {
+          "artifact_id": {"type": "string"},
+          "artifact_type": {"type": "string"},
+          "path": {"type": "string"},
+          "sha256": {"type": "string"}
+        }
+      }
+    },
+    "timestamp": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,168 @@
+{
+  "workflow_id": "WF-7272eb5c",
+  "plan_id": "PLAN-7ae7bc1c",
+  "goal": "Build an API in Python",
+  "complexity": "COMPLEX_PIPELINE",
+  "status": "QUEUED",
+  "created_at": "2026-11-17T15:49:01.600095",
+  "started_at": null,
+  "completed_at": null,
+  "current_wave_index": 0,
+  "waves": [
+    [
+      "PLAN-7ae7bc1c-ST-01"
+    ],
+    [
+      "PLAN-7ae7bc1c-ST-02"
+    ],
+    [
+      "PLAN-7ae7bc1c-ST-03"
+    ],
+    [
+      "PLAN-7ae7bc1c-ST-04"
+    ],
+    [
+      "PLAN-7ae7bc1c-ST-05"
+    ]
+  ],
+  "subtasks": {
+    "PLAN-7ae7bc1c-ST-01": {
+      "subtask_id": "PLAN-7ae7bc1c-ST-01",
+      "title": "Architecture Specification & API Design",
+      "description": "Design modular specifications, data contracts, and architectural blueprint for General Topic.",
+      "assigned_agent": "AGT-002",
+      "priority": "HIGH",
+      "status": "QUEUED",
+      "depends_on": [],
+      "inputs": {
+        "topic": "General Topic"
+      },
+      "expected_outputs": [
+        "system_architecture_spec.json",
+        "ADR-001.md"
+      ],
+      "outputs": {},
+      "artifacts": [],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 2,
+      "started_at": null,
+      "completed_at": null,
+      "duration_seconds": 0.0
+    },
+    "PLAN-7ae7bc1c-ST-02": {
+      "subtask_id": "PLAN-7ae7bc1c-ST-02",
+      "title": "Implementation: General Topic",
+      "description": "Write pure-Python implementation code strictly adhering to architectural specification.",
+      "assigned_agent": "AGT-003",
+      "priority": "HIGH",
+      "status": "QUEUED",
+      "depends_on": [
+        "PLAN-7ae7bc1c-ST-01"
+      ],
+      "inputs": {},
+      "expected_outputs": [
+        "service.py"
+      ],
+      "outputs": {},
+      "artifacts": [],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 2,
+      "started_at": null,
+      "completed_at": null,
+      "duration_seconds": 0.0
+    },
+    "PLAN-7ae7bc1c-ST-03": {
+      "subtask_id": "PLAN-7ae7bc1c-ST-03",
+      "title": "Unit & Integration Test Suite",
+      "description": "Author exhaustive tests covering positive and negative edge cases.",
+      "assigned_agent": "AGT-004",
+      "priority": "HIGH",
+      "status": "QUEUED",
+      "depends_on": [
+        "PLAN-7ae7bc1c-ST-02"
+      ],
+      "inputs": {},
+      "expected_outputs": [
+        "test_service.py",
+        "test_report.json"
+      ],
+      "outputs": {},
+      "artifacts": [],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 2,
+      "started_at": null,
+      "completed_at": null,
+      "duration_seconds": 0.0
+    },
+    "PLAN-7ae7bc1c-ST-04": {
+      "subtask_id": "PLAN-7ae7bc1c-ST-04",
+      "title": "Security & Static Analysis Audit",
+      "description": "Audit implementation against secret leaks, AST risks, and unpinned dependencies.",
+      "assigned_agent": "AGT-006",
+      "priority": "HIGH",
+      "status": "QUEUED",
+      "depends_on": [
+        "PLAN-7ae7bc1c-ST-02",
+        "PLAN-7ae7bc1c-ST-03"
+      ],
+      "inputs": {},
+      "expected_outputs": [
+        "security_audit_report.json"
+      ],
+      "outputs": {},
+      "artifacts": [],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 1,
+      "started_at": null,
+      "completed_at": null,
+      "duration_seconds": 0.0
+    },
+    "PLAN-7ae7bc1c-ST-05": {
+      "subtask_id": "PLAN-7ae7bc1c-ST-05",
+      "title": "Technical Documentation & Runbook",
+      "description": "Author API reference, quick-start guide, and operational runbook.",
+      "assigned_agent": "AGT-005",
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "depends_on": [
+        "PLAN-7ae7bc1c-ST-04"
+      ],
+      "inputs": {},
+      "expected_outputs": [
+        "README.md",
+        "RUNBOOK.md"
+      ],
+      "outputs": {},
+      "artifacts": [],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 1,
+      "started_at": null,
+      "completed_at": null,
+      "duration_seconds": 0.0
+    }
+  },
+  "artifacts": [],
+  "checkpoint_history": [
+    {
+      "timestamp": "2026-11-17T15:49:01.600095",
+      "status": "PLANNED",
+      "tag": "WORKFLOW_INITIALIZED"
+    },
+    {
+      "timestamp": "2026-11-17T15:49:01.611659",
+      "status": "APPROVED",
+      "tag": "Plan approved"
+    },
+    {
+      "timestamp": "2026-11-17T15:49:01.616272",
+      "status": "QUEUED",
+      "tag": "Ready for execution"
+    }
+  ],
+  "final_deliverable": null
+}

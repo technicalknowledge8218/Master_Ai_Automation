@@ -1,0 +1,180 @@
+[
+  {
+    "id": "turn1_junior_panic",
+    "speaker": "Junior",
+    "dur": 10.824,
+    "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\oracle_cloud_reel\\dual_dialogue_v5\\turn1_junior_panic.wav",
+    "config": {
+      "id": "turn1_junior_panic",
+      "speaker": "Junior",
+      "voice": "hi-IN-MadhurNeural",
+      "rate": "+14%",
+      "pitch": "+3Hz",
+      "text": "भैया! मेरा Oracle Cloud का फ्री सर्वर सात दिन में डिलीट होने वाला है! मेल आ गया! अब मेरा सारा डेटा चला जाएगा क्या?!",
+      "subtitle": "Junior: भैया! मेरा Free Server 7 din mein DELETE ho jayega?!",
+      "char": "arjun_shocked.png",
+      "camera": "JUNIOR_CLOSEUP",
+      "bg": [
+        38,
+        16,
+        24,
+        255
+      ],
+      "tag": "CRITICAL ALARM",
+      "sfx": "alarm.wav"
+    }
+  },
+  {
+    "id": "turn2_senior_explain_rule",
+    "speaker": "Senior",
+    "dur": 15.384,
+    "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\oracle_cloud_reel\\dual_dialogue_v5\\turn2_senior_explain_rule.wav",
+    "config": {
+      "id": "turn2_senior_explain_rule",
+      "speaker": "Senior",
+      "voice": "en-IN-PrabhatNeural",
+      "rate": "+12%",
+      "pitch": "-2Hz",
+      "text": "Arjun, chill karo! Ye Oracle ki idle reclamation policy hai. Agar 7 din CPU 20 percent se kam raha, toh server terminate ho jata hai. Lekin isko lifetime safe rakhne ke do solid hacks hain!",
+      "subtitle": "Senior: OCI Rule: 7 din CPU < 20% raha toh delete! Par 2 hacks hain!",
+      "char": "dr_kabir_warning.png",
+      "camera": "SENIOR_EXPLAIN",
+      "bg": [
+        20,
+        24,
+        40,
+        255
+      ],
+      "tag": "IDLE RULE EXPLAINED",
+      "sfx": "pop.wav"
+    }
+  },
+  {
+    "id": "turn3_junior_ask_payg",
+    "speaker": "Junior",
+    "dur": 6.912,
+    "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\oracle_cloud_reel\\dual_dialogue_v5\\turn3_junior_ask_payg.wav",
+    "config": {
+      "id": "turn3_junior_ask_payg",
+      "speaker": "Junior",
+      "voice": "hi-IN-MadhurNeural",
+      "rate": "+14%",
+      "pitch": "+4Hz",
+      "text": "कौनसा हैक भैया? कोई पैसे लगेंगे क्या? कोई सब्सक्रिप्शन लेना पड़ेगा?!",
+      "subtitle": "Junior: Konsa hack bhaiya? Paise lagenge ya subscription?!",
+      "char": "arjun_shrug.png",
+      "camera": "JUNIOR_REACTION",
+      "bg": [
+        28,
+        20,
+        45,
+        255
+      ],
+      "tag": "THE QUESTION",
+      "sfx": "pop.wav"
+    }
+  },
+  {
+    "id": "turn4_senior_payg_fix",
+    "speaker": "Senior",
+    "dur": 14.496,
+    "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\oracle_cloud_reel\\dual_dialogue_v5\\turn4_senior_payg_fix.wav",
+    "config": {
+      "id": "turn4_senior_payg_fix",
+      "speaker": "Senior",
+      "voice": "en-IN-PrabhatNeural",
+      "rate": "+12%",
+      "pitch": "-2Hz",
+      "text": "Ek rupya bhi nahi! Pehla aur best tareeqa: Apne account ko Pay As You Go mein upgrade kar do. Always Free resources par zero rupee charge lagta hai, aur PAYG servers ko Oracle kabhi delete nahi karta!",
+      "subtitle": "Senior: Method 1: Upgrade to PAYG ($0 Bill Forever & Lifetime Safe!)",
+      "char": "dr_kabir_proud.png",
+      "camera": "SENIOR_PAYG",
+      "bg": [
+        10,
+        35,
+        26,
+        255
+      ],
+      "tag": "100% PERMANENT FIX",
+      "sfx": "chime.wav"
+    }
+  },
+  {
+    "id": "turn5_junior_ask_nocard",
+    "speaker": "Junior",
+    "dur": 4.032,
+    "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\oracle_cloud_reel\\dual_dialogue_v5\\turn5_junior_ask_nocard.wav",
+    "config": {
+      "id": "turn5_junior_ask_nocard",
+      "speaker": "Junior",
+      "voice": "hi-IN-MadhurNeural",
+      "rate": "+14%",
+      "pitch": "+3Hz",
+      "text": "और अगर किसी के पास क्रेडिट कार्ड ना हो, तब क्या करें?",
+      "subtitle": "Junior: Aur agar credit card na lagana ho toh?",
+      "char": "arjun_shrug.png",
+      "camera": "JUNIOR_REACTION",
+      "bg": [
+        25,
+        20,
+        35,
+        255
+      ],
+      "tag": "NO-CARD OPTION?",
+      "sfx": "pop.wav"
+    }
+  },
+  {
+    "id": "turn6_senior_terminal_fix",
+    "speaker": "Senior",
+    "dur": 10.608,
+    "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\oracle_cloud_reel\\dual_dialogue_v5\\turn6_senior_terminal_fix.wav",
+    "config": {
+      "id": "turn6_senior_terminal_fix",
+      "speaker": "Senior",
+      "voice": "en-IN-PrabhatNeural",
+      "rate": "+12%",
+      "pitch": "-2Hz",
+      "text": "Tab server ke terminal mein lookbusy daemon run karo! Ye CPU ko hamesha 22 percent par lock rakhega taaki Oracle ko lage server active hai!",
+      "subtitle": "Senior: Method 2: Terminal mein 'lookbusy' daemon run karo (CPU 22% Safe Lock!)",
+      "char": "dr_kabir_tablet.png",
+      "camera": "TERMINAL_ANIMATED",
+      "bg": [
+        13,
+        17,
+        23,
+        255
+      ],
+      "tag": "CLI AUTOMATION",
+      "sfx": "typing.wav"
+    }
+  },
+  {
+    "id": "turn7_outro_duo",
+    "speaker": "Duo",
+    "dur": 9.744,
+    "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\oracle_cloud_reel\\dual_dialogue_v5\\turn7_outro_duo.wav",
+    "config": {
+      "id": "turn7_outro_duo",
+      "speaker": "Duo",
+      "voice_j": "hi-IN-MadhurNeural",
+      "voice_s": "en-IN-PrabhatNeural",
+      "rate_j": "+14%",
+      "rate_s": "+12%",
+      "text_j": "वाह भैया, मज़ा आ गया! अभी रील सेव करता हूँ!",
+      "text_s": "Aur comment mein likho ORACLE, poori setup commands DM kar denge!",
+      "subtitle": "Save Reel & Comment 'ORACLE' for Full Setup Commands!",
+      "char_j": "arjun_thumbsup.png",
+      "char_s": "dr_kabir_explaining.png",
+      "camera": "DUO_OUTRO",
+      "bg": [
+        15,
+        23,
+        42,
+        255
+      ],
+      "tag": "SAVE & SHARE",
+      "sfx": "chime.wav"
+    }
+  }
+]

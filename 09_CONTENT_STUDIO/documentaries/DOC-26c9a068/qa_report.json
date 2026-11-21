@@ -1,0 +1,90 @@
+{
+  "overall_status": "PASS",
+  "passed": true,
+  "media_probe": {
+    "readable": true,
+    "duration_sec": 300.0,
+    "has_video": true,
+    "video_codec": "h264",
+    "resolution": "1920x1080",
+    "has_audio": true,
+    "audio_codec": "aac",
+    "sample_rate": "44100"
+  },
+  "checks_run": 14,
+  "critical_failures": [],
+  "warnings": [],
+  "checks": [
+    {
+      "name": "FileIntegrityCheck",
+      "passed": true,
+      "details": "File size: 35,876,546 bytes (min: 500,000 B)"
+    },
+    {
+      "name": "VideoStreamCheck",
+      "passed": true,
+      "details": "Codec: h264"
+    },
+    {
+      "name": "ResolutionCheck",
+      "passed": true,
+      "details": "Resolution: 1920x1080 (expected: 1920x1080)"
+    },
+    {
+      "name": "AudioStreamCheck",
+      "passed": true,
+      "details": "Codec: aac, SampleRate: 44100"
+    },
+    {
+      "name": "DurationCheck",
+      "passed": true,
+      "details": "Actual: 300.00s, Target: 300.00s, Delta: 0.00s (tolerance: +/-2.5s)"
+    },
+    {
+      "name": "AudioCoverageCheck",
+      "passed": true,
+      "details": "Video dur: 300.00s, Master audio dur: 300.00s (diff: 0.00s)"
+    },
+    {
+      "name": "VoiceAuthenticityCheck",
+      "passed": true,
+      "details": "Provider: edge_tts, HumanSpeech: True"
+    },
+    {
+      "name": "SceneContinuityCheck",
+      "passed": true,
+      "details": "Total scenes: 6, Missing: 0"
+    },
+    {
+      "name": "BlackFrameScan",
+      "passed": true,
+      "details": "Black intervals detected: 0"
+    },
+    {
+      "name": "SilentAudioScan",
+      "passed": true,
+      "details": "Silence intervals detected: 6"
+    },
+    {
+      "name": "SubtitleFileCheck",
+      "passed": true,
+      "details": "Subtitle path: F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-26c9a068\\subtitles_hindi.srt"
+    },
+    {
+      "name": "LicenseAttributionCheck",
+      "passed": true,
+      "details": "License: CC0-1.0 / Pexels License"
+    },
+    {
+      "name": "SpeechIntelligibilityASRCheck",
+      "passed": true,
+      "details": "Transcribed 347 words (language: hi, WER: 6.196)"
+    },
+    {
+      "name": "MediaProvenanceCheck",
+      "passed": true,
+      "details": "Verified 6 asset provenance records with valid source/license declarations."
+    }
+  ],
+  "audited_at": "2026-11-17T17:50:22Z"
+}

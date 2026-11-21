@@ -1,0 +1,41 @@
+{
+  "total_duration": 18.0,
+  "cues": [
+    {
+      "id": "cue_01",
+      "text": "\u092c\u093e\u0939\u0930 \u0924\u0942\u092b\u093c\u093e\u0928 \u0925\u093e, \u0914\u0930 \u092e\u0947\u0930\u0947 \u0938\u0930\u094d\u0935\u0930 \u092a\u0930 \u0936\u093e\u0902\u0924\u093f... \u092e\u0941\u091d\u0947 \u0932\u0917\u093e \u0938\u092c \u0915\u0902\u091f\u094d\u0930\u094b\u0932 \u092e\u0947\u0902 \u0939\u0948\u0964",
+      "hinglish": "Bahir toofan tha, aur mere server par shaanti... mujhe laga sab control mein hai.",
+      "start": 0.5,
+      "voice": "hi-IN-MadhurNeural",
+      "rate": "+4%",
+      "pitch": "-1Hz",
+      "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\phase-7.13\\production_test\\audio\\cue_01.wav",
+      "duration": 5.952925170068027,
+      "end": 6.452925170068027
+    },
+    {
+      "id": "cue_02",
+      "text": "\u0924\u092d\u0940 \u0938\u094d\u0915\u094d\u0930\u0940\u0928 \u092a\u0930 \u0930\u0947\u0921 \u0905\u0932\u0930\u094d\u091f \u091a\u092e\u0915\u093e\u2014\u0905\u0928\u0928\u094b\u0928 \u091f\u094d\u0930\u093e\u0902\u091c\u0947\u0915\u094d\u0936\u0928 \u0928\u093f\u0928\u094d\u092f\u093e\u0928\u0935\u0947 \u0939\u091c\u093c\u093e\u0930 \u0930\u0941\u092a\u092f\u0947?!",
+      "hinglish": "Tabhi screen par red alert chamka\u2014unknown transaction \u20b999,000?!",
+      "start": 5.6,
+      "voice": "hi-IN-MadhurNeural",
+      "rate": "+8%",
+      "pitch": "+2Hz",
+      "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\phase-7.13\\production_test\\audio\\cue_02.wav",
+      "duration": 4.469002267573696,
+      "end": 10.069002267573696
+    },
+    {
+      "id": "cue_03",
+      "text": "\u092e\u0948\u0902\u0928\u0947 \u0917\u094c\u0930 \u0938\u0947 \u0926\u0947\u0916\u093e... \u0905\u0930\u0947, \u092f\u0947 \u0924\u094b \u0915\u0902\u092a\u0928\u0940 \u0915\u093e \u091f\u0947\u0938\u094d\u091f \u0915\u094d\u0930\u0947\u0921\u093f\u091f \u0925\u093e! \u092c\u091a \u0917\u092f\u093e \u092d\u093e\u0908\u0964",
+      "hinglish": "Maine gaur se dekha... arrey, ye to company ka test credit tha! Bach gaya bhai.",
+      "start": 11.6,
+      "voice": "hi-IN-MadhurNeural",
+      "rate": "+5%",
+      "pitch": "+0Hz",
+      "wav": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\phase-7.13\\production_test\\audio\\cue_03.wav",
+      "duration": 6.474965986394558,
+      "end": 18.07496598639456
+    }
+  ]
+}

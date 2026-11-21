@@ -1,0 +1,27 @@
+{
+  "active_primary": "gemini",
+  "active_secondary": "elevenlabs",
+  "active_tertiary": "sarvam",
+  "gemini": [
+    {
+      "key": "YOUR_GEMINI_API_KEY_HERE",
+      "label": "Gemini Account 1",
+      "status": "active",
+      "last_used": null,
+      "requests_count": 0,
+      "quota_limit": 10
+    }
+  ],
+  "elevenlabs": [],
+  "sarvam": [
+    {
+      "key": "YOUR_SARVAM_API_KEY_HERE",
+      "label": "Sarvam AI Native",
+      "status": "active",
+      "model": "bulbul:v3",
+      "last_used": null,
+      "requests_count": 0,
+      "credits_total": 100
+    }
+  ]
+}

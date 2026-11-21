@@ -1,0 +1,129 @@
+{
+  "$schema": "https://master-ai.local/schemas/model-registry.v1.json",
+  "registry_name": "Master AI Model Registry",
+  "version": "1.1.0",
+  "last_updated": "2026-11-17",
+  "default_active_model": "offline-mock-deterministic",
+  "enforce_zero_paid_api": true,
+  "models": [
+    {
+      "model_id": "offline-mock-deterministic",
+      "display_name": "Deterministic Offline Mock LLM",
+      "provider": "OfflineMockProvider",
+      "context_window_tokens": 128000,
+      "max_output_tokens": 8192,
+      "pricing_per_1m_input_usd": 0.0,
+      "pricing_per_1m_output_usd": 0.0,
+      "tier": "mock",
+      "capabilities": [
+        "streaming",
+        "tool_calling",
+        "structured_json",
+        "code_generation",
+        "reasoning"
+      ],
+      "allowed_in_offline_sandbox": true,
+      "status": "ACTIVE_DEFAULT",
+      "description": ""
+    },
+    {
+      "model_id": "gemini-1.5-pro",
+      "display_name": "Google Gemini 1.5 Pro",
+      "provider": "Google",
+      "context_window_tokens": 2097152,
+      "max_output_tokens": 8192,
+      "pricing_per_1m_input_usd": 3.5,
+      "pricing_per_1m_output_usd": 10.5,
+      "tier": "tier_1_flagship",
+      "capabilities": [
+        "streaming",
+        "tool_calling",
+        "structured_json",
+        "vision",
+        "audio",
+        "video"
+      ],
+      "allowed_in_offline_sandbox": false,
+      "status": "GATED_REQUIRES_APPROVAL",
+      "description": ""
+    },
+    {
+      "model_id": "gemini-1.5-flash",
+      "display_name": "Google Gemini 1.5 Flash",
+      "provider": "Google",
+      "context_window_tokens": 1048576,
+      "max_output_tokens": 8192,
+      "pricing_per_1m_input_usd": 0.075,
+      "pricing_per_1m_output_usd": 0.3,
+      "tier": "tier_2_fast_efficient",
+      "capabilities": [
+        "streaming",
+        "tool_calling",
+        "structured_json",
+        "vision",
+        "audio"
+      ],
+      "allowed_in_offline_sandbox": false,
+      "status": "GATED_REQUIRES_APPROVAL",
+      "description": ""
+    },
+    {
+      "model_id": "claude-3-5-sonnet",
+      "display_name": "Anthropic Claude 3.5 Sonnet",
+      "provider": "Anthropic",
+      "context_window_tokens": 200000,
+      "max_output_tokens": 8192,
+      "pricing_per_1m_input_usd": 3.0,
+      "pricing_per_1m_output_usd": 15.0,
+      "tier": "tier_1_flagship",
+      "capabilities": [
+        "streaming",
+        "tool_calling",
+        "structured_json",
+        "vision"
+      ],
+      "allowed_in_offline_sandbox": false,
+      "status": "GATED_REQUIRES_APPROVAL",
+      "description": ""
+    },
+    {
+      "model_id": "gpt-4o",
+      "display_name": "OpenAI GPT-4o",
+      "provider": "OpenAI",
+      "context_window_tokens": 128000,
+      "max_output_tokens": 4096,
+      "pricing_per_1m_input_usd": 5.0,
+      "pricing_per_1m_output_usd": 15.0,
+      "tier": "tier_1_flagship",
+      "capabilities": [
+        "streaming",
+        "tool_calling",
+        "structured_json",
+        "vision"
+      ],
+      "allowed_in_offline_sandbox": false,
+      "status": "GATED_REQUIRES_APPROVAL",
+      "description": ""
+    },
+    {
+      "model_id": "llama-3.1-8b-instruct-local",
+      "display_name": "Meta LLaMA 3.1 8B Instruct (Local GGUF/vLLM)",
+      "provider": "LocalEngine",
+      "context_window_tokens": 131072,
+      "max_output_tokens": 4096,
+      "pricing_per_1m_input_usd": 0.0,
+      "pricing_per_1m_output_usd": 0.0,
+      "tier": "tier_3_edge_local",
+      "capabilities": [
+        "streaming",
+        "tool_calling",
+        "structured_json",
+        "code_generation",
+        "reasoning"
+      ],
+      "allowed_in_offline_sandbox": true,
+      "status": "STANDBY_OFFLINE_READY",
+      "description": ""
+    }
+  ]
+}

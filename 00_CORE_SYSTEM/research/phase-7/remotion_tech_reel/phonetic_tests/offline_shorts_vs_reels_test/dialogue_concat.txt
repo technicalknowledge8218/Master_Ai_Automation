@@ -1,0 +1,5 @@
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/remotion_tech_reel/phonetic_tests/offline_shorts_vs_reels_test/line1_kabir_proc.wav'
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/remotion_tech_reel/phonetic_tests/offline_shorts_vs_reels_test/line2_rohan_proc.wav'
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/remotion_tech_reel/phonetic_tests/offline_shorts_vs_reels_test/line3_kabir_proc.wav'
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/remotion_tech_reel/phonetic_tests/offline_shorts_vs_reels_test/line4_rohan_proc.wav'
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/remotion_tech_reel/phonetic_tests/offline_shorts_vs_reels_test/line5_suspense_question_proc.wav'

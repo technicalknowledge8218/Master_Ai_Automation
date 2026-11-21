@@ -1,0 +1,55 @@
+{
+  "title": "सवाना का सम्राट: शेर (The Sovereign Lion)",
+  "target_duration_sec": 300.0,
+  "resolution": "1920x1080",
+  "scenes": [
+    {
+      "scene_index": 1,
+      "title": "अंक 1: सवाना की भोर और सम्राट का जागरण (Act I: Dawn on the Savannah)",
+      "duration_sec": 50.0,
+      "visual_prompt": "Majestic adult male lion with golden mane standing on rocky kopje at sunrise, panoramic African savannah dawn",
+      "voiceover": "जब अफ्रीकी सवाना के विशाल मैदानों पर भोर की पहली सुनहरी किरणें बिखरती हैं, तब जागता है प्रकृति का सबसे भव्य और शक्तिशाली शासक — शेर। यह केवल एक शीर्ष शिकारी नहीं, बल्कि इस प्राचीन जंगल की धड़कन और संतुलन का प्रतीक है। उसकी गहरी आंखें दूर क्षितिज तक फैले अपने साम्राज्य की निगरानी करती हैं।",
+      "motion": "Ken Burns Cinematic Pan & Zoom"
+    },
+    {
+      "scene_index": 2,
+      "title": "अंक 2: प्राइड का अटूट सामाजिक ताना-बाना (Act II: The Pride & Family Bonds)",
+      "duration_sec": 50.0,
+      "visual_prompt": "Lion pride resting together in golden grass under acacia trees, lionesses nuzzling cubs, peaceful family interaction",
+      "voiceover": "शेर मार्जार कुल का एकमात्र ऐसा सदस्य है जो अकेले नहीं, बल्कि एक संगठित परिवार यानी 'प्राइड' में रहता है। इस प्राइड की असली रीढ़ शेरनियां होती हैं, जो पीढ़ियों से एक-दूसरे के साथ रहकर न केवल पूरे झुंड का पोषण करती हैं, बल्कि आपसी सहयोग और अटूट विश्वास की एक अद्भुत मिसाल पेश करती हैं।",
+      "motion": "Ken Burns Cinematic Pan & Zoom"
+    },
+    {
+      "scene_index": 3,
+      "title": "अंक 3: सवाना का सन्नाटा और रणनीति का शिकार (Act III: The Silent Stalk & The Hunt)",
+      "duration_sec": 50.0,
+      "visual_prompt": "Two lionesses stalking through tall dry grass at twilight, intense focused amber eyes, low camera angle",
+      "voiceover": "दोपहर की तपती धूप के बाद जब शाम की ठंडी हवाएं चलती हैं, तब शिकार की रणनीतियां शुरू होती हैं। शेरनियां बिना कोई आहट किए सूखी घास की आड़ में आगे बढ़ती हैं। हवा की दिशा का सटीक अनुमान और हर कदम पर पूर्ण अनुशासन ही इस दल को दुनिया की सबसे कुशल शिकारी टीम बनाता है।",
+      "motion": "Ken Burns Cinematic Pan & Zoom"
+    },
+    {
+      "scene_index": 4,
+      "title": "अंक 4: राजसी गर्जना और सीमा की रक्षा (Act IV: The Royal Roar & Territorial Defense)",
+      "duration_sec": 50.0,
+      "visual_prompt": "Full mane male lion roaring under dramatic purple dusk sky, acoustic chest expansion, cinematic rim lighting",
+      "voiceover": "रात के घने अंधेरे में गूंजने वाली एक शेर की शक्तिशाली दहाड़ आठ किलोमीटर दूर तक सवाना को कंपा देती है। यह आवाज केवल शक्ति का प्रदर्शन नहीं, बल्कि अपने क्षेत्र की संप्रभुता का एक औपचारिक ऐलान है। इस गर्जना के साथ ही हर प्रतिद्वंद्वी को यह संदेश मिल जाता है कि यह भूमि पहले से ही किसी सम्राट की है।",
+      "motion": "Ken Burns Cinematic Pan & Zoom"
+    },
+    {
+      "scene_index": 5,
+      "title": "अंक 5: शावकों का पालन और अगली पीढ़ी (Act V: Cubs & The Next Generation)",
+      "duration_sec": 50.0,
+      "visual_prompt": "Young lion cubs playfully wrestling on warm sandy ground beside watchful lioness, warm afternoon light",
+      "voiceover": "प्राइड का भविष्य इन नन्हे शावकों की चंचल शरारतों में सांस लेता है। मां के आंचल में सुरक्षित ये नन्हे शिकारी खेल-खेल में जीवन के कठोर नियम और शिकार की कलाएं सीखते हैं। माता-पिता का कड़ा पहरा इन्हें लकड़बग्घों और अन्य खतरों से महफूज रखता है ताकि जंगल का यह वंश आगे बढ़ सके।",
+      "motion": "Ken Burns Cinematic Pan & Zoom"
+    },
+    {
+      "scene_index": 6,
+      "title": "अंक 6: गिर से अफ्रीका: संरक्षण की अमर धरोहर (Act VI: Conservation Legacy & Twilight)",
+      "duration_sec": 50.0,
+      "visual_prompt": "Majestic silhouette of lion family resting peacefully under acacia tree at starry night horizon, conservation badge",
+      "voiceover": "आज दुनिया भर में शेरों का अस्तित्व मानवीय दबाव और आवास के संकुचन के कारण गंभीर संकट में है। भारत के गिर राष्ट्रीय उद्यान में एशियाई शेरों का सफल संरक्षण हमें यह उम्मीद देता है कि अगर हम संकल्प लें, तो जंगल के इस राजसी राजा की दहाड़ आने वाली सदियों तक हमारी धरती पर गूंजती रहेगी।",
+      "motion": "Ken Burns Cinematic Pan & Zoom"
+    }
+  ]
+}

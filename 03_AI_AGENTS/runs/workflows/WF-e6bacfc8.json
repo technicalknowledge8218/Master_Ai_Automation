@@ -1,0 +1,119 @@
+{
+  "workflow_id": "WF-e6bacfc8",
+  "plan_id": "PLAN-58b680c0",
+  "goal": "General task lifecycle test",
+  "complexity": "MODERATE_SEQUENTIAL",
+  "status": "RUNNING",
+  "created_at": "2026-11-17T23:21:38.652352",
+  "started_at": "2026-11-17T23:21:38.681528",
+  "completed_at": null,
+  "current_wave_index": 0,
+  "waves": [
+    [
+      "PLAN-58b680c0-ST-01"
+    ],
+    [
+      "PLAN-58b680c0-ST-02"
+    ],
+    [
+      "PLAN-58b680c0-ST-03"
+    ]
+  ],
+  "subtasks": {
+    "PLAN-58b680c0-ST-01": {
+      "subtask_id": "PLAN-58b680c0-ST-01",
+      "title": "Initial Research: General Topic",
+      "description": "Gather research data and relevant technical references for General Topic.",
+      "assigned_agent": "AGT-001",
+      "priority": "HIGH",
+      "status": "COMPLETED",
+      "depends_on": [],
+      "inputs": {
+        "topic": "General Topic"
+      },
+      "expected_outputs": [
+        "research_summary.md"
+      ],
+      "outputs": {
+        "res": "OK"
+      },
+      "artifacts": [],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 2,
+      "started_at": null,
+      "completed_at": "2026-11-17T23:21:38.692804",
+      "duration_seconds": 0.0
+    },
+    "PLAN-58b680c0-ST-02": {
+      "subtask_id": "PLAN-58b680c0-ST-02",
+      "title": "Execution & Solution Design",
+      "description": "Structure technical findings and formulate execution steps.",
+      "assigned_agent": "AGT-002",
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "depends_on": [
+        "PLAN-58b680c0-ST-01"
+      ],
+      "inputs": {},
+      "expected_outputs": [
+        "execution_blueprint.json"
+      ],
+      "outputs": {},
+      "artifacts": [],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 2,
+      "started_at": null,
+      "completed_at": null,
+      "duration_seconds": 0.0
+    },
+    "PLAN-58b680c0-ST-03": {
+      "subtask_id": "PLAN-58b680c0-ST-03",
+      "title": "Final Documentation & Verification",
+      "description": "Synthesize final deliverable document.",
+      "assigned_agent": "AGT-005",
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "depends_on": [
+        "PLAN-58b680c0-ST-02"
+      ],
+      "inputs": {},
+      "expected_outputs": [
+        "final_deliverable.md"
+      ],
+      "outputs": {},
+      "artifacts": [],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 1,
+      "started_at": null,
+      "completed_at": null,
+      "duration_seconds": 0.0
+    }
+  },
+  "artifacts": [],
+  "checkpoint_history": [
+    {
+      "timestamp": "2026-11-17T23:21:38.652352",
+      "status": "PLANNED",
+      "tag": "WORKFLOW_INITIALIZED"
+    },
+    {
+      "timestamp": "2026-11-17T23:21:38.662893",
+      "status": "APPROVED",
+      "tag": "TRANSITION_TO_APPROVED"
+    },
+    {
+      "timestamp": "2026-11-17T23:21:38.672535",
+      "status": "QUEUED",
+      "tag": "TRANSITION_TO_QUEUED"
+    },
+    {
+      "timestamp": "2026-11-17T23:21:38.681528",
+      "status": "RUNNING",
+      "tag": "TRANSITION_TO_RUNNING"
+    }
+  ],
+  "final_deliverable": null
+}

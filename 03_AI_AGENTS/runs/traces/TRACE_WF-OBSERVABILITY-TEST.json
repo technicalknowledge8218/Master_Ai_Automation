@@ -1,0 +1,29 @@
+{
+  "workflow_id": "WF-OBSERVABILITY-TEST",
+  "goal": "",
+  "started_at": "2026-11-17T23:21:38.643247",
+  "completed_at": null,
+  "duration_seconds": 0.004,
+  "estimated_cost_usd": 0.0,
+  "active_subtask": null,
+  "timeline": [
+    {
+      "event_id": "EVT-2bbf4c",
+      "timestamp": "2026-11-17T23:21:38.647022",
+      "elapsed_seconds": 0.004,
+      "event_type": "API_CALL",
+      "message": "Connecting to service with api_key: '[REDACTED_SECRET] and password: '[REDACTED_SECRET]",
+      "agent_id": null,
+      "subtask_id": null,
+      "details": {}
+    }
+  ],
+  "metrics": {
+    "total_events": 1,
+    "tool_calls": 0,
+    "model_calls": 0,
+    "retries": 0,
+    "errors": 0,
+    "approvals_requested": 0
+  }
+}

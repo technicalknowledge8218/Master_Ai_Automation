@@ -1,0 +1,307 @@
+{
+  "film_title": "कोड रेड: डिलीवरी (Code Red: 10-Minute Delivery)",
+  "target_runtime_sec": 60.0,
+  "target_fps": 24,
+  "scene_count": 8,
+  "scenes": [
+    {
+      "beat_number": 1,
+      "scene_id": "scene_01",
+      "title": "BEAT 1: THE 10-MINUTE COUNTDOWN",
+      "timing": {
+        "start_sec": 0.0,
+        "end_sec": 7.5,
+        "duration_sec": 7.5,
+        "frames_24fps": 180
+      },
+      "dramatic_intent": "URGENT_HOOK",
+      "cinematography": {
+        "shot_type": "EXTREME_CLOSE_UP",
+        "camera_movement": "DOLLY_IN_EASE_OUT",
+        "cut_transition": "START_OF_FILM",
+        "pacing_style": "FAST"
+      },
+      "motion_and_vfx": {
+        "character_action": "Smartphone vibrating on scooter mount: 09:59... ORDER #402. Aryan snaps helmet visor down with determination.",
+        "active_vfx": [
+          "IMPACT_VIBRATION",
+          "SCREEN_GLOW"
+        ],
+        "eyelid_behavior": "NATURAL_BLINKS",
+        "lip_sync_target": "Aryan"
+      },
+      "audio_design": {
+        "dialogue_text": "दस मिनट... और पूरा शहर ट्रैफ़िक में डूबा है! पर ये ऑर्डर कैंसल नहीं होगा!",
+        "speaker": "Aryan",
+        "music_movement": "Fast pulsing synth bass, ticking digital clock tempo",
+        "foley_cues": [
+          "Smartphone vibration buzz",
+          "Helmet visor snap",
+          "Rain drizzle"
+        ]
+      }
+    },
+    {
+      "beat_number": 2,
+      "scene_id": "scene_02",
+      "title": "BEAT 2: THE CHAOTIC CLOUD KITCHEN",
+      "timing": {
+        "start_sec": 7.5,
+        "end_sec": 15.0,
+        "duration_sec": 7.5,
+        "frames_24fps": 180
+      },
+      "dramatic_intent": "ACTION_PREP",
+      "cinematography": {
+        "shot_type": "MEDIUM_SHOT",
+        "camera_movement": "PAN_RIGHT_SMOOTH",
+        "cut_transition": "MATCH_CUT",
+        "pacing_style": "DYNAMIC"
+      },
+      "motion_and_vfx": {
+        "character_action": "Vikram Chef expertly tosses a fiery wok with flying embers, packaging hot insulated box and passing to Aryan.",
+        "active_vfx": [
+          "EMBER_PARTICLES",
+          "WOK_STEAM"
+        ],
+        "eyelid_behavior": "NATURAL_BLINKS",
+        "lip_sync_target": "Vikram Chef"
+      },
+      "audio_design": {
+        "dialogue_text": "आर्यन, गरम है! संभल के ले जाना, किसी का ख़ास ऑर्डर है!",
+        "speaker": "Vikram Chef",
+        "music_movement": "Industrial percussive funk groove, metallic clatter rhythm",
+        "foley_cues": [
+          "Flaming wok sizzle",
+          "Metal ladle clank",
+          "Paper box tape seal"
+        ]
+      }
+    },
+    {
+      "beat_number": 3,
+      "scene_id": "scene_03",
+      "title": "BEAT 3: RAIN & IGNITION",
+      "timing": {
+        "start_sec": 15.0,
+        "end_sec": 22.5,
+        "duration_sec": 7.5,
+        "frames_24fps": 180
+      },
+      "dramatic_intent": "KINETIC_LAUNCH",
+      "cinematography": {
+        "shot_type": "LOW_ANGLE_TRACKING",
+        "camera_movement": "TRACKING_PARALLAX_FAST",
+        "cut_transition": "WHIP_PAN",
+        "pacing_style": "HIGH_SPEED"
+      },
+      "motion_and_vfx": {
+        "character_action": "Low-angle tracking shot of electric scooter wheels accelerating through street puddles with water spray and neon parallax.",
+        "active_vfx": [
+          "RAIN_STREAKS",
+          "WHEEL_SPRAY",
+          "NEON_BLUR"
+        ],
+        "eyelid_behavior": "NATURAL_BLINKS",
+        "lip_sync_target": "Aryan"
+      },
+      "audio_design": {
+        "dialogue_text": "चिंता मत करो शेफ़! घड़ी टिक रही है, और मैं उड़ रहा हूँ!",
+        "speaker": "Aryan",
+        "music_movement": "Driving synthwave rhythm with electric guitar lead",
+        "foley_cues": [
+          "Electric motor whine",
+          "Puddle splash spray",
+          "Road tire whoosh"
+        ]
+      }
+    },
+    {
+      "beat_number": 4,
+      "scene_id": "scene_04",
+      "title": "BEAT 4: THE TRAFFIC GRIDLOCK",
+      "timing": {
+        "start_sec": 22.5,
+        "end_sec": 30.0,
+        "duration_sec": 7.5,
+        "frames_24fps": 180
+      },
+      "dramatic_intent": "FOCUSED_TENSION",
+      "cinematography": {
+        "shot_type": "POV",
+        "camera_movement": "CAMERA_SHAKE_SUBTLE",
+        "cut_transition": "HARD_CUT",
+        "pacing_style": "TENSE"
+      },
+      "motion_and_vfx": {
+        "character_action": "POV shot through water-streaked visor. Focused eyes darting as scooter swerves between bumper-to-bumper red tail lights.",
+        "active_vfx": [
+          "VISOR_WATER_DROPLETS",
+          "EYE_TRACKING",
+          "TRAFFIC_LIGHTS"
+        ],
+        "eyelid_behavior": "NATURAL_BLINKS",
+        "lip_sync_target": "Aryan"
+      },
+      "audio_design": {
+        "dialogue_text": "सिर्फ़ तीन मिनट बचे हैं... रास्ता निकालना ही पड़ेगा!",
+        "speaker": "Aryan",
+        "music_movement": "Tension riser with rising filtered saw synth",
+        "foley_cues": [
+          "Distant traffic horns",
+          "Visor wiper squeak",
+          "Motor rev"
+        ]
+      }
+    },
+    {
+      "beat_number": 5,
+      "scene_id": "scene_05",
+      "title": "BEAT 5: THE FINAL SECONDS",
+      "timing": {
+        "start_sec": 30.0,
+        "end_sec": 37.5,
+        "duration_sec": 7.5,
+        "frames_24fps": 180
+      },
+      "dramatic_intent": "COUNTDOWN_RACE",
+      "cinematography": {
+        "shot_type": "INSERT_DETAIL",
+        "camera_movement": "DOLLY_ZOOM_VERTIGO",
+        "cut_transition": "MATCH_CUT",
+        "pacing_style": "CLIMACTIC"
+      },
+      "motion_and_vfx": {
+        "character_action": "Insert on handlebar timer ticking down: 00:30... 00:15... 00:05... Scooter takes a sharp leaning turn.",
+        "active_vfx": [
+          "PUDDLE_REFLECTION_SPLASH",
+          "TIMER_PULSE"
+        ],
+        "eyelid_behavior": "NATURAL_BLINKS",
+        "lip_sync_target": "SFX_Pacing"
+      },
+      "audio_design": {
+        "dialogue_text": "[SFX: Rapid heartbeat + ticking countdown beeps + tyre water screech]",
+        "speaker": "SFX_Pacing",
+        "music_movement": "Intense cinematic riser crescendo, sub bass drops",
+        "foley_cues": [
+          "Digital timer rapid beeping",
+          "Tire water screech",
+          "Heartbeat pulse"
+        ]
+      }
+    },
+    {
+      "beat_number": 6,
+      "scene_id": "scene_06",
+      "title": "BEAT 6: ARRIVAL AT ST. MARTHA'S",
+      "timing": {
+        "start_sec": 37.5,
+        "end_sec": 45.0,
+        "duration_sec": 7.5,
+        "frames_24fps": 180
+      },
+      "dramatic_intent": "ARRIVAL_RELIEF",
+      "cinematography": {
+        "shot_type": "WIDE_ESTABLISHING",
+        "camera_movement": "DECELERATION_STOP",
+        "cut_transition": "HARD_CUT",
+        "pacing_style": "SUDDEN_CALM"
+      },
+      "motion_and_vfx": {
+        "character_action": "Scooter slides to a smooth stop at hospital emergency gate at 00:02s before cancel. Rain falling softly under warm lamppost.",
+        "active_vfx": [
+          "MIST_FOG",
+          "LAMPOST_HALO",
+          "ENGINE_STEAM"
+        ],
+        "eyelid_behavior": "NATURAL_BLINKS",
+        "lip_sync_target": "Aryan"
+      },
+      "audio_design": {
+        "dialogue_text": "पहुंच गया! ठीक दो सेकंड पहले... अस्पताल का गेट!",
+        "speaker": "Aryan",
+        "music_movement": "Sudden drop in music, gentle warm Rhodes chords enter",
+        "foley_cues": [
+          "Smooth regenerative brake whir",
+          "Kickstand drop",
+          "Rain on hood"
+        ]
+      }
+    },
+    {
+      "beat_number": 7,
+      "scene_id": "scene_07",
+      "title": "BEAT 7: THE BIRTHDAY SURPRISE",
+      "timing": {
+        "start_sec": 45.0,
+        "end_sec": 52.5,
+        "duration_sec": 7.5,
+        "frames_24fps": 180
+      },
+      "dramatic_intent": "EMOTIONAL_REVEAL",
+      "cinematography": {
+        "shot_type": "MEDIUM_CLOSE_UP",
+        "camera_movement": "SLOW_PUSH_IN_CUBIC",
+        "cut_transition": "HARD_CUT",
+        "pacing_style": "TENDER"
+      },
+      "motion_and_vfx": {
+        "character_action": "Dr. Ananya steps out in weary surgical scrubs. Aryan hands over parcel. She opens box: fresh strawberry pastry with candle and note from Mom.",
+        "active_vfx": [
+          "CANDLE_GLOW_WARMTH",
+          "EYE_BLINK_TEAR"
+        ],
+        "eyelid_behavior": "NATURAL_BLINKS",
+        "lip_sync_target": "Dr. Ananya"
+      },
+      "audio_design": {
+        "dialogue_text": "माँ... तुम्हें याद था? आज छत्तीस घंटे की ड्यूटी के बाद... ये सबसे खूबसूरत सरप्राइज़ है।",
+        "speaker": "Dr. Ananya",
+        "music_movement": "Emotional acoustic piano & warm cello melody",
+        "foley_cues": [
+          "Sliding hospital door",
+          "Box opening rustle",
+          "Tiny candle match strike"
+        ]
+      }
+    },
+    {
+      "beat_number": 8,
+      "scene_id": "scene_08",
+      "title": "BEAT 8: TRIUMPH & SMILE",
+      "timing": {
+        "start_sec": 52.5,
+        "end_sec": 60.0,
+        "duration_sec": 7.5,
+        "frames_24fps": 180
+      },
+      "dramatic_intent": "TRIUMPH_OUTRO",
+      "cinematography": {
+        "shot_type": "MEDIUM_SHOT",
+        "camera_movement": "PULL_BACK_EASE_OUT",
+        "cut_transition": "CROSSFADE",
+        "pacing_style": "WARM_CLOSING"
+      },
+      "motion_and_vfx": {
+        "character_action": "Dr. Ananya smiles through happy tears. Aryan gives a warm salute, smiling under his helmet, and turns into the night rain as title card dissolves.",
+        "active_vfx": [
+          "RAIN_GLISTEN",
+          "TITLE_CARD_DISSOLVE"
+        ],
+        "eyelid_behavior": "NATURAL_BLINKS",
+        "lip_sync_target": "Aryan"
+      },
+      "audio_design": {
+        "dialogue_text": "हैप्पी बर्थडे डॉक्टर साहिबा! आपकी मुस्कान ही हमारी मंज़िल थी।",
+        "speaker": "Aryan",
+        "music_movement": "Inspiring orchestral swell with gentle rain outro",
+        "foley_cues": [
+          "Ananya soft blowing of candle",
+          "Visor click",
+          "Electric scooter fade"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master AI — Autonomous Platform | JobRun Technologies</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            obsidian: {
+              bg: '#080a0f',
+              surface: '#0d111a',
+              card: '#121722',
+              cardHover: '#161d2b',
+              border: '#1e2638',
+              borderLight: '#2a354c'
+            },
+            tech: {
+              cyan: '#06b6d4',
+              cyanHover: '#0891b2',
+              gold: '#f59e0b',
+              emerald: '#10b981',
+              rose: '#f43f5e'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #080a0f;
+      color: #e2e8f0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    .carbon-card {
+      background: #0d111a;
+      border: 1px solid #1e2638;
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+    }
+    .glow-cyan {
+      box-shadow: 0 0 30px rgba(6, 182, 212, 0.08);
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #080a0f;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e2638;
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #2a354c;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-cyan-500/20 selection:text-cyan-300">
+
+  <!-- Top Navigation Bar -->
+  <header class="border-b border-obsidian-border bg-obsidian-surface/95 backdrop-blur-md sticky top-0 z-50 px-6 py-3.5">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-600 to-cyan-400 flex items-center justify-center shadow-lg shadow-cyan-500/20">
+          <svg class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <div>
+          <h1 class="font-bold text-lg tracking-wide flex items-center gap-2 text-white">
+            MASTER AI <span class="text-[10px] tracking-wider px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 font-mono">v2.0 SOVEREIGN</span>
+          </h1>
+          <p class="text-xs text-slate-400">Powered by <span class="text-slate-200 font-semibold">JobRun Technologies</span></p>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs (SVG Only - No Emojis) -->
+      <nav class="flex items-center gap-1.5 bg-obsidian-bg p-1.5 rounded-xl border border-obsidian-border">
+        <button onclick="switchTab('creator')" id="tab-creator" class="nav-btn px-4 py-2 rounded-lg text-xs font-semibold flex items-center gap-2 bg-tech-cyan text-black shadow-md transition-all">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+          Video Creator
+        </button>
+        <button onclick="switchTab('vault')" id="tab-vault" class="nav-btn px-4 py-2 rounded-lg text-xs font-semibold flex items-center gap-2 text-slate-400 hover:text-white transition-all">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/></svg>
+          Voice API Vault & Quotas
+        </button>
+        <button onclick="switchTab('coder')" id="tab-coder" class="nav-btn px-4 py-2 rounded-lg text-xs font-semibold flex items-center gap-2 text-slate-400 hover:text-white transition-all">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+          Web Coder
+        </button>
+        <button onclick="switchTab('automation')" id="tab-automation" class="nav-btn px-4 py-2 rounded-lg text-xs font-semibold flex items-center gap-2 text-slate-400 hover:text-white transition-all">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>
+          Jarvis & Automation
+        </button>
+      </nav>
+
+      <!-- Live Server Status Indicator -->
+      <div class="flex items-center gap-3">
+        <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>ONLINE</span>
+        </div>
+        <span class="text-xs font-mono text-slate-400">PORT: 8080</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="flex-1 max-w-7xl w-full mx-auto p-6">
+
+    <!-- ========================================================================= -->
+    <!-- TAB 1: VIDEO CREATOR -->
+    <!-- ========================================================================= -->
+    <div id="content-creator" class="space-y-6">
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-2xl font-black tracking-tight text-white flex items-center gap-2">
+            Autonomous 2D Character Reel Studio
+          </h2>
+          <p class="text-xs text-slate-400 mt-1">
+            Produce broadcast-grade 1080x1920 viral reels with locked character rigs, native Devanagari Hindi audio and zero-overflow subtitles.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Creation Form (7 cols) -->
+        <div class="lg:col-span-7 space-y-5">
+          <div class="carbon-card rounded-2xl p-6 glow-cyan">
+            <h3 class="text-xs font-bold text-tech-cyan uppercase tracking-wider mb-4 flex items-center gap-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+              Reel Configuration
+            </h3>
+
+            <!-- 1. Topic -->
+            <div class="space-y-1.5 mb-4">
+              <label class="text-xs font-semibold text-slate-300">Topic / Core Hook</label>
+              <input id="input-topic" type="text" value="Claude Code On Mobile Termux" 
+                     class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors" 
+                     placeholder="e.g. Claude Code on Mobile Termux">
+            </div>
+
+            <!-- 2. Custom Creator Branding (Name & Role) -->
+            <div class="grid grid-cols-2 gap-3 mb-4 p-3.5 rounded-xl bg-obsidian-bg border border-obsidian-border">
+              <div>
+                <label class="text-xs font-semibold text-slate-300 block mb-1">Creator Name / Handle</label>
+                <input id="input-creator-name" type="text" value="Dev" 
+                       class="w-full bg-obsidian-card border border-obsidian-border rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-cyan-500 font-mono" 
+                       placeholder="e.g. Rohit, Sangam, Dev">
+                <span class="text-[10px] text-slate-500 mt-1 block">Renders as: <code class="text-cyan-400 font-mono" id="preview-badge">$ dev run --task</code></span>
+              </div>
+              <div>
+                <label class="text-xs font-semibold text-slate-300 block mb-1">Creator Role / Title</label>
+                <input id="input-creator-role" type="text" value="Tech Solo" 
+                       class="w-full bg-obsidian-card border border-obsidian-border rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-cyan-500" 
+                       placeholder="e.g. Tech Founder, Solo Builder">
+                <span class="text-[10px] text-slate-500 mt-1 block">Role badge on terminal header card</span>
+              </div>
+            </div>
+
+            <!-- 3. Character Archetype Rig -->
+            <div class="space-y-2 mb-4">
+              <label class="text-xs font-semibold text-slate-300">Select Character Archetype</label>
+              <div class="grid grid-cols-4 gap-2.5">
+                <label class="cursor-pointer">
+                  <input type="radio" name="character" value="dev" checked class="peer sr-only" onchange="syncCharacterDefault('Dev', 'Tech Solo')">
+                  <div class="p-3 rounded-xl border border-obsidian-border bg-obsidian-bg peer-checked:border-cyan-500 peer-checked:bg-cyan-500/10 text-center transition-all">
+                    <svg class="w-6 h-6 mx-auto mb-1 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                    <span class="text-xs font-bold block text-slate-200">Dev</span>
+                    <span class="text-[10px] text-slate-400">Tech Solo</span>
+                  </div>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="radio" name="character" value="neha" class="peer sr-only" onchange="syncCharacterDefault('Neha', 'Host / Lead')">
+                  <div class="p-3 rounded-xl border border-obsidian-border bg-obsidian-bg peer-checked:border-cyan-500 peer-checked:bg-cyan-500/10 text-center transition-all">
+                    <svg class="w-6 h-6 mx-auto mb-1 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                    <span class="text-xs font-bold block text-slate-200">Neha</span>
+                    <span class="text-[10px] text-slate-400">Host / Lead</span>
+                  </div>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="radio" name="character" value="kabir" class="peer sr-only" onchange="syncCharacterDefault('Dr. Kabir', 'Mentor')">
+                  <div class="p-3 rounded-xl border border-obsidian-border bg-obsidian-bg peer-checked:border-cyan-500 peer-checked:bg-cyan-500/10 text-center transition-all">
+                    <svg class="w-6 h-6 mx-auto mb-1 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                    <span class="text-xs font-bold block text-slate-200">Dr. Kabir</span>
+                    <span class="text-[10px] text-slate-400">Mentor</span>
+                  </div>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="radio" name="character" value="arjun" class="peer sr-only" onchange="syncCharacterDefault('Arjun', 'Builder')">
+                  <div class="p-3 rounded-xl border border-obsidian-border bg-obsidian-bg peer-checked:border-cyan-500 peer-checked:bg-cyan-500/10 text-center transition-all">
+                    <svg class="w-6 h-6 mx-auto mb-1 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    <span class="text-xs font-bold block text-slate-200">Arjun</span>
+                    <span class="text-[10px] text-slate-400">Builder</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- 4. Voice Engine Selection & Inline Audition -->
+            <div class="space-y-2 mb-4">
+              <div class="flex items-center justify-between">
+                <label class="text-xs font-semibold text-slate-300">Voice Engine Selection</label>
+                <button type="button" onclick="playCurrentVoiceSample()" class="text-[11px] text-cyan-400 hover:text-cyan-300 flex items-center gap-1 font-medium">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  Audition Sample
+                </button>
+              </div>
+              <select id="select-speaker" class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors" onchange="updateVoiceSampleSrc()">
+                <option value="Puck">Google Gemini TTS (Puck - Energetic Male • Primary)</option>
+                <option value="Kore">Google Gemini TTS (Kore - Articulate Female • Primary)</option>
+                <option value="aditya" selected>Sarvam AI (Aditya - Male • Native Hindi)</option>
+                <option value="neha">Sarvam AI (Neha - Female • Native Hindi)</option>
+              </select>
+              <audio id="inline-voice-sample" preload="none" class="hidden"></audio>
+            </div>
+
+            <!-- 5. Devanagari Hindi Script -->
+            <div class="space-y-1.5 mb-4">
+              <div class="flex items-center justify-between">
+                <label class="text-xs font-semibold text-slate-300">Spoken Script (Pure Devanagari Hindi)</label>
+                <button onclick="insertSampleScript()" class="text-[11px] text-cyan-400 hover:underline">Insert Sample Script</button>
+              </div>
+              <textarea id="input-script" rows="3" 
+                        class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl p-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors leading-relaxed"
+                        placeholder="पहले टर्मक्स में नोड जेएस इन्स्टॉल करो, फिर क्लॉड कमांड रन करो और पूरा एआई मोबाइल में रेडी!">पहले टर्मक्स में नोड जेएस इन्स्टॉल करो, फिर क्लॉड कमांड रन करो और पूरा एआई मोबाइल में रेडी!</textarea>
+            </div>
+
+            <!-- 6. Output Save Folder Path (Dynamic + 1-Click Shortcuts) -->
+            <div class="space-y-2 mb-4">
+              <div class="flex items-center justify-between">
+                <label class="text-xs font-semibold text-slate-300">Save Video To Folder (Dynamic Path)</label>
+                <div class="flex items-center gap-1.5">
+                  <button type="button" onclick="setFastPath('Desktop')" class="px-2 py-0.5 rounded text-[10px] font-mono bg-obsidian-bg border border-obsidian-border hover:border-cyan-500/50 text-slate-300 hover:text-cyan-400">Desktop</button>
+                  <button type="button" onclick="setFastPath('Downloads')" class="px-2 py-0.5 rounded text-[10px] font-mono bg-obsidian-bg border border-obsidian-border hover:border-cyan-500/50 text-slate-300 hover:text-cyan-400">Downloads</button>
+                  <button type="button" onclick="setFastPath('Videos')" class="px-2 py-0.5 rounded text-[10px] font-mono bg-obsidian-bg border border-obsidian-border hover:border-cyan-500/50 text-slate-300 hover:text-cyan-400">Videos</button>
+                  <button type="button" onclick="setFastPath('Termux')" class="px-2 py-0.5 rounded text-[10px] font-mono bg-obsidian-bg border border-obsidian-border hover:border-cyan-500/50 text-slate-300 hover:text-cyan-400">Termux</button>
+                </div>
+              </div>
+              <input id="input-save-path" type="text" value="Desktop/Master_AI_Videos" 
+                     class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl px-4 py-2 text-xs text-white font-mono focus:outline-none focus:border-cyan-500 transition-colors">
+              <span class="text-[10px] text-slate-500">Auto-saved to selected destination folder on render completion.</span>
+            </div>
+
+            <!-- 7. Call to Action -->
+            <div class="space-y-1.5 mb-6">
+              <label class="text-xs font-semibold text-slate-300">Call To Action (CTA)</label>
+              <input id="input-cta" type="text" value="Comment TERMUX for Full Guide" 
+                     class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors">
+            </div>
+
+            <!-- Action Button -->
+            <button onclick="startVideoRender()" id="btn-render" 
+                    class="w-full py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-cyan-400 hover:from-cyan-400 hover:to-cyan-300 text-black font-bold text-sm tracking-wide shadow-lg shadow-cyan-500/20 flex items-center justify-center gap-2 transition-all">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              RENDER VIRAL 1080x1920 REEL
+            </button>
+
+            <!-- Render Status Box -->
+            <div id="render-status-box" class="hidden mt-4 p-3.5 rounded-xl bg-obsidian-bg border border-cyan-500/30 flex items-center gap-3">
+              <div class="w-4 h-4 border-2 border-cyan-400 border-t-transparent rounded-full animate-spin"></div>
+              <span id="render-status-text" class="text-xs text-cyan-300 font-mono">Synthesizing audio & streaming frames to FFmpeg...</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Column: Live Player & Library (5 cols) -->
+        <div class="lg:col-span-5 space-y-5">
+          
+          <!-- Live Video Player Card -->
+          <div class="carbon-card rounded-2xl p-5 glow-cyan">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-xs font-bold text-white uppercase tracking-wider flex items-center gap-2">
+                <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                Live Reel Preview & Player
+              </h3>
+              <span class="text-[10px] font-mono text-cyan-400 px-2 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/20">9:16 VERTICAL</span>
+            </div>
+
+            <div class="aspect-[9/16] max-h-[460px] mx-auto rounded-xl overflow-hidden bg-black border border-obsidian-border flex items-center justify-center relative shadow-inner">
+              <video id="main-video-player" controls class="w-full h-full object-contain" poster="">
+                <source src="" type="video/mp4">
+                Your browser does not support video playback.
+              </video>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-obsidian-border flex items-center justify-between text-xs">
+              <span id="player-video-title" class="text-slate-400 truncate max-w-[200px]">No video loaded</span>
+              <a id="player-download-btn" href="#" download class="text-cyan-400 hover:underline flex items-center gap-1 font-semibold">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                Download MP4
+              </a>
+            </div>
+          </div>
+
+          <!-- Library List -->
+          <div class="carbon-card rounded-2xl p-5">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-xs font-bold text-white uppercase tracking-wider">Your Rendered Library</h3>
+              <button onclick="refreshVideoList()" class="text-[10px] text-cyan-400 hover:underline flex items-center gap-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+                Refresh
+              </button>
+            </div>
+            <div id="video-list-container" class="space-y-2 max-h-56 overflow-y-auto pr-1">
+              <div class="text-xs text-slate-500 py-2">Loading library...</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 2: VOICE API VAULT & QUOTAS -->
+    <!-- ========================================================================= -->
+    <div id="content-vault" class="hidden space-y-6">
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-2xl font-black tracking-tight text-white flex items-center gap-2">
+            Multi-Account Voice API Vault & Quota Manager
+          </h2>
+          <p class="text-xs text-slate-400 mt-1">
+            Pooled API keys with automatic failover on quota limits (HTTP 429), live key validation ping, and priority switching.
+          </p>
+        </div>
+      </div>
+
+      <!-- Priority Pipeline Overview Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        
+        <!-- Gemini TTS Card -->
+        <div class="carbon-card rounded-2xl p-5 border-cyan-500/30">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-bold tracking-wider text-cyan-400 uppercase">Primary Engine</span>
+            <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">1ST PRIORITY</span>
+          </div>
+          <h3 class="text-lg font-black text-white">Google Gemini TTS</h3>
+          <p class="text-xs text-slate-400 mt-1">Multi-account key pool with instant failover on 429 quota exhaustion.</p>
+          <div class="mt-4 pt-3 border-t border-obsidian-border flex items-center justify-between text-xs">
+            <span class="text-slate-400">Active Keys: <strong id="gemini-key-count" class="text-white">--</strong></span>
+            <span class="text-cyan-400 font-mono">Auto-Failover</span>
+          </div>
+        </div>
+
+        <!-- ElevenLabs Card -->
+        <div class="carbon-card rounded-2xl p-5 border-slate-700">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-bold tracking-wider text-slate-400 uppercase">Secondary Backup</span>
+            <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-slate-800 text-slate-300 border border-slate-700">2ND PRIORITY</span>
+          </div>
+          <h3 class="text-lg font-black text-white">ElevenLabs TTS</h3>
+          <p class="text-xs text-slate-400 mt-1">High-end multilingual voice synthesis for commercial reels.</p>
+          <div class="mt-4 pt-3 border-t border-obsidian-border flex items-center justify-between text-xs">
+            <span class="text-slate-400">Status: <strong class="text-white">Ready for Key</strong></span>
+            <span class="text-slate-400 font-mono">Multi-Voice</span>
+          </div>
+        </div>
+
+        <!-- Sarvam AI Card -->
+        <div class="carbon-card rounded-2xl p-5 border-emerald-500/30">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-bold tracking-wider text-emerald-400 uppercase">Native Hindi</span>
+            <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">3RD PRIORITY</span>
+          </div>
+          <h3 class="text-lg font-black text-white">Sarvam AI (bulbul:v3)</h3>
+          <p class="text-xs text-slate-400 mt-1">100% Native Indian phonetic clarity. ₹100 non-expiring credit support.</p>
+          <div class="mt-4 pt-3 border-t border-obsidian-border flex items-center justify-between text-xs">
+            <span class="text-slate-400">Active Keys: <strong id="sarvam-key-count" class="text-white">--</strong></span>
+            <span class="text-emerald-400 font-mono">Aditya & Neha</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Real Voice Audition Grid (Clean Demos) -->
+      <div class="carbon-card rounded-2xl p-6 glow-cyan">
+        <h3 class="text-xs font-bold text-cyan-400 uppercase tracking-wider mb-2 flex items-center gap-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
+          Demo Voice Showcase (Audition Each AI Engine)
+        </h3>
+        <p class="text-xs text-slate-400 mb-4">Click Play to listen to how each AI engine sounds in Hindi before rendering your reel.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Voice 1: Gemini Puck -->
+          <div class="p-3.5 rounded-xl bg-obsidian-bg border border-obsidian-border">
+            <div class="flex items-center justify-between mb-1.5">
+              <span class="text-xs font-semibold text-white">Google Gemini — Puck (Male)</span>
+              <span class="text-[10px] font-mono text-cyan-400 px-1.5 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/20">High-Energy</span>
+            </div>
+            <audio controls class="w-full h-8" preload="none" src="/samples/gemini_puck_sample.wav"></audio>
+          </div>
+
+          <!-- Voice 2: Gemini Kore -->
+          <div class="p-3.5 rounded-xl bg-obsidian-bg border border-obsidian-border">
+            <div class="flex items-center justify-between mb-1.5">
+              <span class="text-xs font-semibold text-white">Google Gemini — Kore (Female)</span>
+              <span class="text-[10px] font-mono text-cyan-400 px-1.5 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/20">Professional</span>
+            </div>
+            <audio controls class="w-full h-8" preload="none" src="/samples/gemini_kore_sample.wav"></audio>
+          </div>
+
+          <!-- Voice 3: Sarvam Aditya -->
+          <div class="p-3.5 rounded-xl bg-obsidian-bg border border-obsidian-border">
+            <div class="flex items-center justify-between mb-1.5">
+              <span class="text-xs font-semibold text-white">Sarvam AI — Aditya (Male)</span>
+              <span class="text-[10px] font-mono text-emerald-400 px-1.5 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20">Native Hindi</span>
+            </div>
+            <audio controls class="w-full h-8" preload="none" src="/samples/sarvam_test_dev.wav"></audio>
+          </div>
+
+          <!-- Voice 4: Sarvam Neha -->
+          <div class="p-3.5 rounded-xl bg-obsidian-bg border border-obsidian-border">
+            <div class="flex items-center justify-between mb-1.5">
+              <span class="text-xs font-semibold text-white">Sarvam AI — Neha (Female)</span>
+              <span class="text-[10px] font-mono text-emerald-400 px-1.5 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20">Expressive Hindi</span>
+            </div>
+            <audio controls class="w-full h-8" preload="none" src="/samples/sarvam_test_neha.wav"></audio>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add Key & Quota Table Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Add Key Form (5 cols) -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="carbon-card rounded-2xl p-6">
+            <h3 class="text-xs font-bold text-white uppercase tracking-wider mb-4 flex items-center gap-2">
+              <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+              Register & Validate New API Key
+            </h3>
+            <div class="space-y-3">
+              <div>
+                <label class="text-xs text-slate-400 block mb-1">Provider Engine</label>
+                <select id="vault-add-provider" class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl px-3 py-2 text-xs text-white">
+                  <option value="gemini">Google Gemini TTS (generativelanguage.googleapis.com)</option>
+                  <option value="elevenlabs">ElevenLabs (api.elevenlabs.io)</option>
+                  <option value="sarvam">Sarvam AI (api.sarvam.ai)</option>
+                </select>
+              </div>
+              <div>
+                <label class="text-xs text-slate-400 block mb-1">Account Label</label>
+                <input id="vault-add-label" type="text" placeholder="e.g. Gemini Account 3" 
+                       class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl px-3 py-2 text-xs text-white">
+              </div>
+              <div>
+                <label class="text-xs text-slate-400 block mb-1">API Key / Secret Token</label>
+                <input id="vault-add-key" type="password" placeholder="Enter API Key to verify & register..." 
+                       class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl px-3 py-2 text-xs text-white font-mono">
+              </div>
+
+              <!-- Live Verification Alert -->
+              <div id="vault-verify-feedback" class="hidden p-2.5 rounded-lg text-xs font-mono"></div>
+
+              <button onclick="saveVaultKey()" id="btn-add-key" class="w-full py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-xs font-bold text-black flex items-center justify-center gap-2 transition-all shadow-md shadow-cyan-500/20">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                Verify & Add to Key Pool
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Key Health & Quota Table (7 cols) -->
+        <div class="lg:col-span-7 space-y-4">
+          <div class="carbon-card rounded-2xl p-6">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-xs font-bold text-white uppercase tracking-wider">Live Pooled Keys & Status</h3>
+              <button onclick="loadVaultStatus()" class="text-[10px] text-cyan-400 hover:underline">Refresh Status</button>
+            </div>
+            <div id="vault-keys-table" class="space-y-2.5 text-xs">
+              <div class="text-slate-500 py-3 text-center">Loading keys...</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 3: WEB CODER -->
+    <!-- ========================================================================= -->
+    <div id="content-coder" class="hidden space-y-6">
+      <div>
+        <h2 class="text-2xl font-black tracking-tight text-white flex items-center gap-2">
+          Web Coder & Full-Stack Scaffolder
+        </h2>
+        <p class="text-xs text-slate-400 mt-1">
+          Instant architecture scaffolding, boilerplate generation, and live dev servers.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="carbon-card rounded-2xl p-6 hover:border-cyan-500/50 transition-all cursor-pointer">
+          <div class="w-10 h-10 rounded-xl bg-black border border-obsidian-border flex items-center justify-center text-sm font-bold mb-4 font-mono text-cyan-400">NEXT</div>
+          <h3 class="text-base font-bold text-white">Next.js 15 App Router</h3>
+          <p class="text-xs text-slate-400 mt-1">Tailwind CSS, TypeScript, Server Actions and shadcn/ui components.</p>
+          <span class="mt-4 inline-block text-xs text-cyan-400 font-semibold">Scaffold Project &rarr;</span>
+        </div>
+        <div class="carbon-card rounded-2xl p-6 hover:border-cyan-500/50 transition-all cursor-pointer">
+          <div class="w-10 h-10 rounded-xl bg-emerald-950/60 border border-emerald-500/30 flex items-center justify-center text-sm font-bold text-emerald-400 mb-4 font-mono">FAST</div>
+          <h3 class="text-base font-bold text-white">FastAPI Microservice</h3>
+          <p class="text-xs text-slate-400 mt-1">Async endpoints, Pydantic v2 schemas, JWT authentication, and Swagger docs.</p>
+          <span class="mt-4 inline-block text-xs text-emerald-400 font-semibold">Scaffold Backend &rarr;</span>
+        </div>
+        <div class="carbon-card rounded-2xl p-6 hover:border-cyan-500/50 transition-all cursor-pointer">
+          <div class="w-10 h-10 rounded-xl bg-blue-950/60 border border-blue-500/30 flex items-center justify-center text-sm font-bold text-blue-400 mb-4 font-mono">FLUT</div>
+          <h3 class="text-base font-bold text-white">Flutter Mobile App</h3>
+          <p class="text-xs text-slate-400 mt-1">Cross-platform iOS and Android starter with state management and clean architecture.</p>
+          <span class="mt-4 inline-block text-xs text-blue-400 font-semibold">Scaffold Mobile App &rarr;</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 4: JARVIS & AUTOMATION -->
+    <!-- ========================================================================= -->
+    <div id="content-automation" class="hidden space-y-6">
+      <div>
+        <h2 class="text-2xl font-black tracking-tight text-white flex items-center gap-2">
+          Jarvis & Growth Automation
+        </h2>
+        <p class="text-xs text-slate-400 mt-1">
+          Autonomous social media funnel automation, keyword DM triggers, and scheduling.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div class="carbon-card rounded-2xl p-6">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-base font-bold text-white">Instagram Keyword Auto-DM</h3>
+            <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">ACTIVE</span>
+          </div>
+          <p class="text-xs text-slate-400 mb-4">When a user comments a keyword (e.g. "TERMUX"), instantly send full tutorial link in direct message.</p>
+          <div class="space-y-3">
+            <input type="text" value="TERMUX" class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl px-3 py-2 text-xs text-white font-mono" placeholder="Trigger keyword...">
+            <textarea rows="2" class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl p-3 text-xs text-white" placeholder="Auto-DM message...">यहाँ है आपका पूरा Termux सेटअप गाइड: https://jobrun.tech/termux-guide</textarea>
+            <button class="w-full py-2 rounded-xl bg-obsidian-card hover:bg-obsidian-cardHover border border-obsidian-border text-xs font-semibold text-white">Save Auto-DM Rule</button>
+          </div>
+        </div>
+
+        <div class="carbon-card rounded-2xl p-6">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-base font-bold text-white">YouTube Shorts Auto-Publisher</h3>
+            <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-slate-800 text-slate-400 border border-slate-700">READY</span>
+          </div>
+          <p class="text-xs text-slate-400 mb-4">Schedule rendered vertical reels directly to YouTube Shorts with optimized SEO tags and description.</p>
+          <div class="space-y-3">
+            <input type="text" placeholder="Default tags (e.g. #coding #termux #ai)..." class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl px-3 py-2 text-xs text-white">
+            <select class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl px-3 py-2 text-xs text-white">
+              <option>Publish Immediately on Render</option>
+              <option>Schedule at Peak Times (7:00 PM IST)</option>
+              <option>Draft Mode Only</option>
+            </select>
+            <button class="w-full py-2 rounded-xl bg-obsidian-card hover:bg-obsidian-cardHover border border-obsidian-border text-xs font-semibold text-white">Save Scheduler Config</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Client-side Logic Script -->
+  <script>
+    function switchTab(tab) {
+      ['creator', 'vault', 'coder', 'automation'].forEach(t => {
+        document.getElementById(`content-${t}`).classList.add('hidden');
+        const btn = document.getElementById(`tab-${t}`);
+        btn.classList.remove('bg-tech-cyan', 'text-black', 'shadow-md');
+        btn.classList.add('text-slate-400');
+      });
+      document.getElementById(`content-${tab}`).classList.remove('hidden');
+      const activeBtn = document.getElementById(`tab-${tab}`);
+      activeBtn.classList.remove('text-slate-400');
+      activeBtn.classList.add('bg-tech-cyan', 'text-black', 'shadow-md');
+
+      if (tab === 'vault') {
+        loadVaultStatus();
+      }
+    }
+
+    // Dynamic Creator Name and Badge Sync
+    const creatorNameInput = document.getElementById('input-creator-name');
+    const badgePreview = document.getElementById('preview-badge');
+    creatorNameInput.addEventListener('input', (e) => {
+      const val = e.target.value.trim() || 'dev';
+      badgePreview.textContent = `$ ${val.toLowerCase()} run --task`;
+    });
+
+    function syncCharacterDefault(name, role) {
+      document.getElementById('input-creator-name').value = name;
+      document.getElementById('input-creator-role').value = role;
+      badgePreview.textContent = `$ ${name.toLowerCase().replace(/[^a-z0-9]/g, '')} run --task`;
+    }
+
+    // 1-Click Fast Destination Path Setters
+    function setFastPath(type) {
+      const pathInput = document.getElementById('input-save-path');
+      if (type === 'Desktop') pathInput.value = 'Desktop/Master_AI_Videos';
+      if (type === 'Downloads') pathInput.value = 'Downloads/Master_AI_Videos';
+      if (type === 'Videos') pathInput.value = 'Videos/Master_AI_Videos';
+      if (type === 'Termux') pathInput.value = '/sdcard/Download/Master_AI_Videos';
+    }
+
+    // Inline Voice Audition
+    const voiceSampleMap = {
+      'Puck': '/samples/gemini_puck_sample.wav',
+      'Kore': '/samples/gemini_kore_sample.wav',
+      'aditya': '/samples/sarvam_test_dev.wav',
+      'neha': '/samples/sarvam_test_neha.wav'
+    };
+
+    function playCurrentVoiceSample() {
+      const spk = document.getElementById('select-speaker').value;
+      const audioEl = document.getElementById('inline-voice-sample');
+      audioEl.src = voiceSampleMap[spk] || voiceSampleMap['aditya'];
+      audioEl.play();
+    }
+
+    function updateVoiceSampleSrc() {
+      const spk = document.getElementById('select-speaker').value;
+      const audioEl = document.getElementById('inline-voice-sample');
+      audioEl.src = voiceSampleMap[spk] || voiceSampleMap['aditya'];
+    }
+
+    function insertSampleScript() {
+      document.getElementById('input-script').value = 
+        "पहले टर्मक्स में नोड जेएस इन्स्टॉल करो, फिर क्लॉड कमांड रन करो और पूरा एआई मोबाइल में रेडी!";
+    }
+
+    async function refreshVideoList() {
+      const container = document.getElementById('video-list-container');
+      try {
+        const res = await fetch('/api/videos');
+        const list = await res.json();
+        if (list.length === 0) {
+          container.innerHTML = `<div class="text-xs text-slate-500 text-center py-3">No videos found. Render one above!</div>`;
+          return;
+        }
+        container.innerHTML = list.map(v => `
+          <div class="p-2.5 rounded-xl bg-obsidian-bg border border-obsidian-border flex items-center justify-between hover:border-cyan-500/40 transition-colors">
+            <div class="truncate max-w-[200px]">
+              <span class="text-xs text-white font-medium block truncate">${v.name}</span>
+              <span class="text-[10px] text-slate-500 font-mono">${v.size_mb} MB • ${v.created}</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <button onclick="playVideo('${v.url}', '${v.name}')" class="px-2 py-1 rounded bg-cyan-500/10 text-cyan-400 text-xs hover:bg-cyan-500/20 font-medium">Play</button>
+              <a href="${v.url}" download class="px-2 py-1 rounded bg-obsidian-card text-slate-300 text-xs hover:text-white font-medium">Save</a>
+            </div>
+          </div>
+        `).join('');
+      } catch (e) {
+        container.innerHTML = `<div class="text-xs text-slate-500 py-2">Start server via start_dashboard.bat to view library</div>`;
+      }
+    }
+
+    function playVideo(url, name) {
+      const player = document.getElementById('main-video-player');
+      player.src = url;
+      player.play();
+      document.getElementById('player-video-title').textContent = name;
+      document.getElementById('player-download-btn').href = url;
+    }
+
+    async function startVideoRender() {
+      const topic = document.getElementById('input-topic').value;
+      const character = document.querySelector('input[name="character"]:checked').value;
+      const creator_name = document.getElementById('input-creator-name').value.trim() || 'Dev';
+      const creator_role = document.getElementById('input-creator-role').value.trim() || 'Tech Solo';
+      const speaker = document.getElementById('select-speaker').value;
+      const script = document.getElementById('input-script').value;
+      const cta = document.getElementById('input-cta').value;
+      const savePath = document.getElementById('input-save-path').value;
+
+      const btn = document.getElementById('btn-render');
+      const statusBox = document.getElementById('render-status-box');
+      const statusText = document.getElementById('render-status-text');
+
+      btn.disabled = true;
+      btn.classList.add('opacity-50');
+      statusBox.classList.remove('hidden');
+      statusText.textContent = `Synthesizing ${speaker} voice & streaming ${creator_name}'s 2D reel to FFmpeg...`;
+
+      try {
+        const res = await fetch('/api/video/render', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({ topic, character, creator_name, creator_role, speaker, script, cta, savePath })
+        });
+        const data = await res.json();
+        if (data.success) {
+          statusText.textContent = `Completed! Saved ${data.name}`;
+          playVideo(data.video_url, data.name);
+          refreshVideoList();
+        } else {
+          statusText.textContent = `Error: ${data.error}`;
+        }
+      } catch (err) {
+        statusText.textContent = `Server offline. Please run start_dashboard.bat (PC) or bash start.sh (Mobile).`;
+      } finally {
+        btn.disabled = false;
+        btn.classList.remove('opacity-50');
+      }
+    }
+
+    // Vault Functions: Load, Verify, Toggle, Delete, Primary
+    async function loadVaultStatus() {
+      try {
+        const res = await fetch('/api/vault/status');
+        const data = await res.json();
+
+        document.getElementById('sarvam-key-count').textContent = data.sarvam.active_keys;
+        document.getElementById('gemini-key-count').textContent = data.gemini.active_keys;
+
+        const table = document.getElementById('vault-keys-table');
+        let html = '';
+
+        // Render Gemini Keys
+        data.gemini.keys.forEach((k, idx) => {
+          const isPrimary = data.active_primary === 'gemini';
+          const pct = Math.min(100, Math.round((k.requests / (k.quota_limit || 10)) * 100));
+          html += `
+            <div class="p-3 rounded-xl bg-obsidian-bg border border-obsidian-border flex items-center justify-between">
+              <div class="space-y-1">
+                <div class="flex items-center gap-2">
+                  <span class="text-white font-semibold">${k.label}</span>
+                  <span class="text-slate-400 font-mono text-[10px]">${k.masked_key || 'AIza••••'}</span>
+                  ${isPrimary ? '<span class="px-1.5 py-0.2 rounded text-[9px] bg-cyan-500/20 text-cyan-400 border border-cyan-500/30">PRIMARY</span>' : ''}
+                </div>
+                <div class="flex items-center gap-2 text-[10px] text-slate-400">
+                  <span>Reqs: ${k.requests} / ${k.quota_limit || 10}</span>
+                  <div class="w-20 bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                    <div class="bg-cyan-500 h-full" style="width: ${pct}%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <button onclick="setPrimaryEngine('gemini')" class="px-2 py-1 rounded bg-obsidian-card hover:bg-obsidian-cardHover text-slate-300 hover:text-cyan-400 text-[10px]">Make Primary</button>
+                <button onclick="toggleKeyStatus('gemini', ${idx})" class="px-2 py-1 rounded ${k.status === 'active' ? 'bg-emerald-500/10 text-emerald-400' : 'bg-slate-800 text-slate-500'} text-[10px]">${k.status.toUpperCase()}</button>
+                <button onclick="deleteKey('gemini', ${idx})" class="px-1.5 py-1 rounded hover:bg-rose-500/10 text-slate-500 hover:text-rose-400 text-[10px]">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+                </button>
+              </div>
+            </div>
+          `;
+        });
+
+        // Render Sarvam Keys
+        data.sarvam.keys.forEach((k, idx) => {
+          const isPrimary = data.active_primary === 'sarvam';
+          html += `
+            <div class="p-3 rounded-xl bg-obsidian-bg border border-obsidian-border flex items-center justify-between">
+              <div class="space-y-1">
+                <div class="flex items-center gap-2">
+                  <span class="text-white font-semibold">${k.label}</span>
+                  <span class="text-slate-400 font-mono text-[10px]">${k.masked_key || 'sk_bep••••'}</span>
+                  ${isPrimary ? '<span class="px-1.5 py-0.2 rounded text-[9px] bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">PRIMARY</span>' : ''}
+                </div>
+                <div class="text-[10px] text-slate-400 font-mono">
+                  <span>Reqs: ${k.requests} • bulbul:v3 (~33k Chars)</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <button onclick="setPrimaryEngine('sarvam')" class="px-2 py-1 rounded bg-obsidian-card hover:bg-obsidian-cardHover text-slate-300 hover:text-emerald-400 text-[10px]">Make Primary</button>
+                <button onclick="toggleKeyStatus('sarvam', ${idx})" class="px-2 py-1 rounded ${k.status === 'active' ? 'bg-emerald-500/10 text-emerald-400' : 'bg-slate-800 text-slate-500'} text-[10px]">${k.status.toUpperCase()}</button>
+                <button onclick="deleteKey('sarvam', ${idx})" class="px-1.5 py-1 rounded hover:bg-rose-500/10 text-slate-500 hover:text-rose-400 text-[10px]">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+                </button>
+              </div>
+            </div>
+          `;
+        });
+
+        table.innerHTML = html || '<div class="text-slate-500 py-3 text-center">No keys registered yet. Register above!</div>';
+      } catch (err) {
+        document.getElementById('vault-keys-table').innerHTML = `<div class="text-slate-500 py-2">Start server to view live vault</div>`;
+      }
+    }
+
+    async function saveVaultKey() {
+      const provider = document.getElementById('vault-add-provider').value;
+      const label = document.getElementById('vault-add-label').value.trim() || `${provider} Account`;
+      const key = document.getElementById('vault-add-key').value.trim();
+      const feedback = document.getElementById('vault-verify-feedback');
+      const btn = document.getElementById('btn-add-key');
+
+      if (!key) return alert('Please enter an API key');
+
+      btn.disabled = true;
+      feedback.classList.remove('hidden', 'bg-emerald-500/10', 'text-emerald-400', 'bg-rose-500/10', 'text-rose-400');
+      feedback.classList.add('bg-slate-800', 'text-cyan-300');
+      feedback.textContent = `Validating key ping with ${provider} API endpoint...`;
+
+      try {
+        const res = await fetch('/api/vault/add_key', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({ provider, label, key })
+        });
+        const data = await res.json();
+        if (data.success) {
+          feedback.classList.remove('bg-slate-800', 'text-cyan-300');
+          feedback.classList.add('bg-emerald-500/10', 'text-emerald-400');
+          feedback.textContent = `Verified! Key status: ${data.verification ? data.verification.status : 'OK'}. Added to pool.`;
+          document.getElementById('vault-add-key').value = '';
+          document.getElementById('vault-add-label').value = '';
+          loadVaultStatus();
+        } else {
+          feedback.classList.remove('bg-slate-800', 'text-cyan-300');
+          feedback.classList.add('bg-rose-500/10', 'text-rose-400');
+          feedback.textContent = `Validation failed: ${data.error || 'Invalid API Key'}`;
+        }
+      } catch (e) {
+        feedback.textContent = 'Server offline. Run start_dashboard.bat';
+      } finally {
+        btn.disabled = false;
+      }
+    }
+
+    async function setPrimaryEngine(provider) {
+      try {
+        await fetch('/api/vault/set_primary', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({ provider })
+        });
+        loadVaultStatus();
+      } catch (e) {
+        alert('Server offline');
+      }
+    }
+
+    async function toggleKeyStatus(provider, key_id) {
+      try {
+        await fetch('/api/vault/toggle_key', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({ provider, key_id })
+        });
+        loadVaultStatus();
+      } catch (e) {
+        alert('Server offline');
+      }
+    }
+
+    async function deleteKey(provider, key_id) {
+      if (!confirm('Are you sure you want to remove this key from the pool?')) return;
+      try {
+        await fetch('/api/vault/delete_key', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({ provider, key_id })
+        });
+        loadVaultStatus();
+      } catch (e) {
+        alert('Server offline');
+      }
+    }
+
+    refreshVideoList();
+  </script>
+</body>
+</html>

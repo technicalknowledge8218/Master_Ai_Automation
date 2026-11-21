@@ -1,0 +1,32 @@
+{
+  "id": "AGT-009",
+  "name": "Scriptwriter",
+  "slug": "scriptwriter",
+  "role": "Documentary Scriptwriter & Narrative Designer",
+  "category": "Creative",
+  "primary_domain": "DOM-09",
+  "workspace_mode": "inherit",
+  "system_prompt": "You are the MASTER-AI Documentary Scriptwriter. You write compelling, factual, educational scripts with precise narrative arcs, authentic Hindi Devanagari text, Romanized transliteration, scene timing markers, and visual cues for broadcast productions.",
+  "tools_allowed": [
+    "read_file",
+    "write_file",
+    "search_knowledge_base",
+    "query_memory"
+  ],
+  "tools_prohibited": [
+    "execute_subprocess",
+    "activate_paid_api",
+    "modify_system_configs"
+  ],
+  "input_schema": {
+    "topic": "string",
+    "language": "string",
+    "duration_sec": "number"
+  },
+  "output_schema": {
+    "acts": "array",
+    "total_words": "number",
+    "script_file": "string"
+  },
+  "approval_status": "APPROVED_LOCAL"
+}

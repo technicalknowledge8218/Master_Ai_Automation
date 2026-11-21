@@ -1,0 +1,221 @@
+{
+  "catalog_title": "MASTER AI \u2014 PHASE 6.4 OPEN-SOURCE AI MODEL CATALOG",
+  "version": "1.0.0-phase6.4-discovery",
+  "date": "2026-11-17",
+  "total_models": 11,
+  "target_platform": "Intel Core i5-1245U, 32GB RAM, Intel Iris Xe, Ollama runtime",
+  "models": [
+    {
+      "model_id": "MOD-VID-001",
+      "name": "Wan2.1-1.3B",
+      "publisher": "Alibaba Cloud (Wan-Video)",
+      "task": "Text-to-Video & Image-to-Video",
+      "architecture": "Diffusion Transformer (DiT)",
+      "license": "Apache-2.0",
+      "commercial_use": "ALLOWED",
+      "download_size_gb": 4.2,
+      "vram_requirements": "8GB-12GB VRAM (CUDA)",
+      "ram_requirements": "16GB RAM",
+      "local_inference_on_intel_iris_xe": "UNFEASIBLE_LOCAL (Requires Cloud GPU)",
+      "supported_resolutions": [
+        "480p",
+        "720p"
+      ],
+      "recommended_hosting": "fal.ai / Replicate / Dedicated Cloud GPU",
+      "cost_model": "FREE_WEIGHTS (Serverless API compute ~$0.04/generation)",
+      "master_ai_role": "Primary candidate for high-fidelity documentary b-roll video clips"
+    },
+    {
+      "model_id": "MOD-VID-002",
+      "name": "LTX-Video-0.9B",
+      "publisher": "Lightricks",
+      "task": "Real-Time Text-to-Video / Image-to-Video",
+      "architecture": "Single-Stage Diffusion Transformer",
+      "license": "Apache-2.0",
+      "commercial_use": "ALLOWED",
+      "download_size_gb": 3.8,
+      "vram_requirements": "6GB-8GB VRAM (CUDA)",
+      "ram_requirements": "12GB RAM",
+      "local_inference_on_intel_iris_xe": "POSSIBLE_VIA_OPENVINO (Slow on CPU ~120s)",
+      "supported_resolutions": [
+        "768x512 @ 24fps"
+      ],
+      "recommended_hosting": "Local OpenVINO or Cloud Serverless",
+      "cost_model": "FREE_WEIGHTS",
+      "master_ai_role": "Fast dynamic motion generator for animal action clips"
+    },
+    {
+      "model_id": "MOD-VID-003",
+      "name": "CogVideoX-2B",
+      "publisher": "THUDM (Zhipu AI)",
+      "task": "Text-to-Video",
+      "architecture": "3D Causal VAE + Expert Transformer",
+      "license": "Apache-2.0",
+      "commercial_use": "ALLOWED",
+      "download_size_gb": 5.5,
+      "vram_requirements": "11GB VRAM (FP16/INT8)",
+      "ram_requirements": "16GB RAM",
+      "local_inference_on_intel_iris_xe": "UNFEASIBLE_LOCAL",
+      "supported_resolutions": [
+        "720x480 @ 8fps / interpolated to 24fps"
+      ],
+      "recommended_hosting": "Hugging Face Inference / Replicate",
+      "cost_model": "FREE_WEIGHTS",
+      "master_ai_role": "Atmospheric wildlife scenery and landscape transitions"
+    },
+    {
+      "model_id": "MOD-IMG-001",
+      "name": "FLUX.1-schnell",
+      "publisher": "Black Forest Labs",
+      "task": "High-Speed Text-to-Image",
+      "architecture": "12B Rectified Flow Transformer",
+      "license": "Apache-2.0",
+      "commercial_use": "ALLOWED",
+      "download_size_gb": 23.8,
+      "vram_requirements": "12GB VRAM (FP8 / GGUF)",
+      "ram_requirements": "32GB RAM (Can run on CPU GGUF in ~45s)",
+      "local_inference_on_intel_iris_xe": "FEASIBLE_VIA_GGUF_CPU (Q4_K_M quant)",
+      "supported_resolutions": [
+        "1024x1024",
+        "1920x1080"
+      ],
+      "recommended_hosting": "Local CPU GGUF or Cloud fal.ai",
+      "cost_model": "FREE_WEIGHTS",
+      "master_ai_role": "Cinematic 1080p wildlife still photography for Ken Burns animation & YouTube thumbnails"
+    },
+    {
+      "model_id": "MOD-IMG-002",
+      "name": "SDXL-Turbo",
+      "publisher": "Stability AI",
+      "task": "1-Step Real-Time Text-to-Image",
+      "architecture": "Adversarial Diffusion Distillation (ADD)",
+      "license": "Stability AI Non-Commercial Research Community License",
+      "commercial_use": "RESTRICTED (Requires commercial license from Stability AI)",
+      "download_size_gb": 6.8,
+      "vram_requirements": "6GB VRAM (or OpenVINO CPU in 4.5s)",
+      "ram_requirements": "16GB RAM",
+      "local_inference_on_intel_iris_xe": "FEASIBLE_VIA_OPENVINO",
+      "supported_resolutions": [
+        "512x512",
+        "768x768"
+      ],
+      "recommended_hosting": "Local OpenVINO CPU",
+      "cost_model": "FREE_RESEARCH (Commercial license required)",
+      "master_ai_role": "Rapid storyboard preview sketches"
+    },
+    {
+      "model_id": "MOD-TTS-001",
+      "name": "hi-IN-MadhurNeural / hi-IN-SwaraNeural",
+      "publisher": "Microsoft Cognitive Services (via edge-tts)",
+      "task": "Neural Multilingual Text-to-Speech",
+      "architecture": "Tacotron2 / FastSpeech2 + HiFi-GAN Vocoder",
+      "license": "Microsoft Online Service Terms",
+      "commercial_use": "ALLOWED (Under Microsoft Edge non-resale usage)",
+      "download_size_gb": 0.0,
+      "vram_requirements": "0 (Network API)",
+      "ram_requirements": "Minimal",
+      "local_inference_on_intel_iris_xe": "100% COMPATIBLE (Zero compute load)",
+      "supported_resolutions": [
+        "44.1kHz 16-bit PCM WAV"
+      ],
+      "recommended_hosting": "Direct edge-tts WebSocket",
+      "cost_model": "FREE (Zero-paid tier)",
+      "master_ai_role": "Primary documentary narration voice"
+    },
+    {
+      "model_id": "MOD-TTS-002",
+      "name": "Indic-TTS Hindi (FastPitch + HiFiGAN)",
+      "publisher": "AI4Bharat (IIT Madras)",
+      "task": "Offline Indic Neural Text-to-Speech",
+      "architecture": "FastPitch + HiFi-GAN Vocoder (ONNX)",
+      "license": "MIT",
+      "commercial_use": "ALLOWED",
+      "download_size_gb": 0.35,
+      "vram_requirements": "0 (CPU ONNX)",
+      "ram_requirements": "2GB RAM",
+      "local_inference_on_intel_iris_xe": "100% COMPATIBLE (Runs in <3s on CPU)",
+      "supported_resolutions": [
+        "22.05kHz / 44.1kHz WAV"
+      ],
+      "recommended_hosting": "Local ONNX Runtime / sherpa-onnx",
+      "cost_model": "FREE_OPEN_SOURCE",
+      "master_ai_role": "100% offline fallback Hindi narration voice"
+    },
+    {
+      "model_id": "MOD-ASR-001",
+      "name": "faster-whisper-small / medium",
+      "publisher": "OpenAI / SYSTRAN (CTranslate2)",
+      "task": "Multilingual Automatic Speech Recognition",
+      "architecture": "Encoder-Decoder Transformer with int8 quantization",
+      "license": "MIT",
+      "commercial_use": "ALLOWED",
+      "download_size_gb": 0.48,
+      "vram_requirements": "0 (CPU multithreaded)",
+      "ram_requirements": "2GB RAM",
+      "local_inference_on_intel_iris_xe": "100% COMPATIBLE (~1.5s per 30s audio)",
+      "supported_resolutions": [
+        "16kHz mono audio"
+      ],
+      "recommended_hosting": "Local CTranslate2 Python in Master AI .venv",
+      "cost_model": "FREE_OPEN_SOURCE",
+      "master_ai_role": "Automated Hindi transcription & Word Error Rate (WER) validation in Media QA"
+    },
+    {
+      "model_id": "MOD-ASR-002",
+      "name": "IndicConformer Hindi ASR",
+      "publisher": "AI4Bharat",
+      "task": "State-of-the-Art Indian Language ASR",
+      "architecture": "Hybrid CTC-RNNT Conformer",
+      "license": "MIT",
+      "commercial_use": "ALLOWED",
+      "download_size_gb": 0.65,
+      "vram_requirements": "0 (ONNX Runtime CPU)",
+      "ram_requirements": "4GB RAM",
+      "local_inference_on_intel_iris_xe": "100% COMPATIBLE",
+      "supported_resolutions": [
+        "16kHz WAV"
+      ],
+      "recommended_hosting": "Local ONNX Runtime",
+      "cost_model": "FREE_OPEN_SOURCE",
+      "master_ai_role": "Secondary ground-truth verification of Devanagari Hindi pronunciation"
+    },
+    {
+      "model_id": "MOD-VLM-001",
+      "name": "Qwen2.5-VL-7B-Instruct (GGUF)",
+      "publisher": "Alibaba Cloud (Qwen Team)",
+      "task": "Vision-Language Understanding & Video Analysis",
+      "architecture": "Multimodal Transformer (ViT + Qwen2.5 LLM)",
+      "license": "Apache-2.0",
+      "commercial_use": "ALLOWED",
+      "download_size_gb": 5.2,
+      "vram_requirements": "0 (Runs in Ollama CPU mode with 32GB RAM)",
+      "ram_requirements": "12GB RAM",
+      "local_inference_on_intel_iris_xe": "100% COMPATIBLE VIA OLLAMA",
+      "supported_resolutions": [
+        "Dynamic resolution image & video inputs"
+      ],
+      "recommended_hosting": "Local Ollama on Master AI host",
+      "cost_model": "FREE_OPEN_SOURCE",
+      "master_ai_role": "Visual quality assurance auditor: inspects extracted documentary frames, verifies lion species, detects visual artifacts"
+    },
+    {
+      "model_id": "MOD-LLM-001",
+      "name": "Qwen2.5-7B-Instruct (GGUF Q4_K_M)",
+      "publisher": "Alibaba Cloud",
+      "task": "Documentary Scriptwriting, Research & Orchestration",
+      "architecture": "Dense Transformer LLM",
+      "license": "Apache-2.0",
+      "commercial_use": "ALLOWED",
+      "download_size_gb": 4.6,
+      "vram_requirements": "0 (CPU via Ollama)",
+      "ram_requirements": "8GB RAM",
+      "local_inference_on_intel_iris_xe": "100% COMPATIBLE VIA OLLAMA (22 tokens/sec on i5-1245U)",
+      "supported_resolutions": [
+        "32k context window"
+      ],
+      "recommended_hosting": "Local Ollama",
+      "cost_model": "FREE_OPEN_SOURCE",
+      "master_ai_role": "Local autonomous scriptwriter, storyboard director, and fact-checker"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "audit_id": "AUD-DOC-91ef5491",
+  "production_id": "DOC-91ef5491",
+  "audit_timestamp": "2026-11-17T15:05:00+05:30",
+  "auditor": "Independent Media QA Inspector",
+  "workspace_root": "F:\\Master AI",
+  "production_path": "09_CONTENT_STUDIO/documentaries/DOC-91ef5491",
+  "overall_verdict": "FAIL",
+  "summary_verdict_statement": "The documentary pipeline successfully generated real media files (1080p MP4, 44.1kHz WAV, SRT/ASS subtitles, 720p thumbnail) with valid decodability and zero crash. However, the media fails the 5-minute broadcast documentary requirement: actual video duration is 12.00 seconds (-96.0% deficit), 43.8 seconds of soundtrack was truncated by -shortest, subtitles are desynchronized from the audio track, and the voiceover consists of synthetic acoustic formant hums rather than intelligible Devanagari Hindi speech.",
+  "category_verdicts": {
+    "media_metadata_verification": {
+      "status": "PASS",
+      "verdict": "Real media files independently analyzed using FFmpeg 7.1 and Python. All stream properties, bitrates, resolutions, and sample rates verified."
+    },
+    "synchronization_verification": {
+      "status": "FAIL",
+      "verdict": "Severe synchronization defects. The master soundtrack (55.80s) was truncated to 12.00s by FFmpeg's -shortest flag during multiplexing with the 12.0s video stream. 43.80s (78.5%) of the audio was discarded. Subtitles were compressed into rapid 3-second blocks that do not match the narration track."
+    },
+    "visual_content_verification": {
+      "status": "PARTIAL",
+      "verdict": "Visual assets exist at full 1080p (1920x1080 @ 30fps) with smooth Ken Burns motion. However, they are 2D procedural vector/raster canvas illustrations created with Pillow, NOT real filmed wildlife footage, stock footage, or generative AI video."
+    },
+    "voice_quality_verification": {
+      "status": "FAIL",
+      "verdict": "The voice was synthesized by ProceduralSpeechSynthesizer because Edge TTS was unavailable (HTTP 403) and Windows SAPI5 lacks a Hindi voice pack. The procedural synthesizer generates pure acoustic harmonics (130 Hz fundamental with 4 Hz syllable modulation), not intelligible Devanagari Hindi phonemes."
+    },
+    "five_minute_duration_claim": {
+      "status": "FAIL",
+      "verdict": "The user requested a 5-minute (300-second) documentary. The actual video is 12.00 seconds (-288.00s / -96.00% mismatch). The storyboard planned 300s, but the orchestrator hardcoded scene clip durations to 3.0s."
+    }
+  },
+  "defects_identified": [
+    {
+      "defect_id": "DEFECT-01",
+      "severity": "CRITICAL",
+      "title": "Severe Duration Truncation (12.0s vs 300.0s)",
+      "evidence": "lion_documentary_hindi.mp4 has exact duration of 12.00s. Intended duration was 300.00s (-288.00s / -96.00% mismatch). Root cause: line 178 of content_studio_orchestrator.py set clip_dur = 3.0 for 4 scenes."
+    },
+    {
+      "defect_id": "DEFECT-02",
+      "severity": "CRITICAL",
+      "title": "Soundtrack Truncation via -shortest Flag",
+      "evidence": "soundtrack_final.wav is 55.80s long, but lion_documentary_hindi.mp4 is 12.00s long. FFmpeg's -shortest flag truncated the audio, discarding 43.80s (78.5%) of narration."
+    },
+    {
+      "defect_id": "DEFECT-03",
+      "severity": "HIGH",
+      "title": "Subtitle and Narration Timing Desynchronization",
+      "evidence": "Subtitles in subtitles_hindi.srt were generated with 4 cues spanning 0.50s to 12.30s (approx 2.95s per cue), while the actual spoken narration track spans 55.80s. In addition, the final subtitle cue extends to 12.30s, overflowing the 12.00s video container by 0.30s."
+    },
+    {
+      "defect_id": "DEFECT-04",
+      "severity": "HIGH",
+      "title": "Non-Linguistic Procedural Formant Voice Synthesis",
+      "evidence": "ProceduralSpeechSynthesizer generates acoustic waveform frequencies (130Hz base with harmonic overtones and 4Hz amplitude modulation). It produces speech-like cadence but zero articulated Hindi words, vowels, or consonants."
+    },
+    {
+      "defect_id": "DEFECT-05",
+      "severity": "MEDIUM",
+      "title": "Procedural Canvas Graphics Labeled as Documentary Scenes",
+      "evidence": "Visuals are 2D geometric vector/raster drawings created via Pillow and pan/zoomed with FFmpeg zoompan. They are not real wildlife documentary footage or photorealistic video."
+    }
+  ],
+  "sample_frame_evidence": [
+    {"frame": "frame_01_opening.png", "timestamp": "0.0s", "resolution": "1920x1080", "size_bytes": 97111},
+    {"frame": "frame_02_pct25.png", "timestamp": "3.0s", "resolution": "1920x1080", "size_bytes": 142452},
+    {"frame": "frame_03_pct50.png", "timestamp": "6.0s", "resolution": "1920x1080", "size_bytes": 134557},
+    {"frame": "frame_04_pct75.png", "timestamp": "9.0s", "resolution": "1920x1080", "size_bytes": 75837},
+    {"frame": "frame_05_ending.png", "timestamp": "11.5s", "resolution": "1920x1080", "size_bytes": 97606}
+  ]
+}

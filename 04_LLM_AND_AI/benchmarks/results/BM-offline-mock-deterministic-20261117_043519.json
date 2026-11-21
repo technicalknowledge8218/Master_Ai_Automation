@@ -1,0 +1,91 @@
+{
+  "benchmark_id": "BM-offline-mock-deterministic-20261117_043519",
+  "timestamp": "2026-11-17T04:35:19.299129",
+  "model_id": "offline-mock-deterministic",
+  "provider": "OfflineMockProvider",
+  "total_tasks": 7,
+  "tasks_passed": 7,
+  "pass_rate_percent": 100.0,
+  "average_latency_ms": 0.02,
+  "total_cost_usd": 0.0,
+  "overall_rating": "EXCELLENT",
+  "results": [
+    {
+      "task_id": "BM-01-REASONING",
+      "category": "general_reasoning",
+      "prompt_tokens": 60,
+      "completion_tokens": 50,
+      "latency_ms": 0.02,
+      "passed_validation": true,
+      "estimated_cost_usd": 0.0,
+      "output_snippet": "Analysis: 1. The statement specifies: 'All but 9 die'. 2. This literally means exactly 9 sheep survive. 3. Conclusion: The farmer has 9 sheep left.",
+      "error": null
+    },
+    {
+      "task_id": "BM-02-RESEARCH",
+      "category": "research_synthesis",
+      "prompt_tokens": 42,
+      "completion_tokens": 28,
+      "latency_ms": 0.01,
+      "passed_validation": true,
+      "estimated_cost_usd": 0.0,
+      "output_snippet": "Master AI Deterministic Response to: Summarize the key differences between monolithic architectures and microservices",
+      "error": null
+    },
+    {
+      "task_id": "BM-03-CODING",
+      "category": "coding_generation",
+      "prompt_tokens": 52,
+      "completion_tokens": 122,
+      "latency_ms": 0.01,
+      "passed_validation": true,
+      "estimated_cost_usd": 0.0,
+      "output_snippet": "```python def find_primes(n: int) -> list[int]:     \"\"\"Sieve of Eratosthenes prime generator with type hints.\"\"\"     if n < 2:         return []     sieve = [Tr",
+      "error": null
+    },
+    {
+      "task_id": "BM-04-STRUCTURED-JSON",
+      "category": "structured_output",
+      "prompt_tokens": 68,
+      "completion_tokens": 18,
+      "latency_ms": 0.02,
+      "passed_validation": true,
+      "estimated_cost_usd": 0.0,
+      "output_snippet": "{   \"project\": \"Master AI\",   \"version\": \"2.0.0\",   \"status\": \"active\" }",
+      "error": null
+    },
+    {
+      "task_id": "BM-05-INSTRUCTION-FOLLOWING",
+      "category": "instruction_following",
+      "prompt_tokens": 54,
+      "completion_tokens": 36,
+      "latency_ms": 0.01,
+      "passed_validation": true,
+      "estimated_cost_usd": 0.0,
+      "output_snippet": "- VERIFIED: System architectural constraints confirmed. - VERIFIED: Model router evaluated successfully. - VERIFIED: Zero-cost security boundaries operational.",
+      "error": null
+    },
+    {
+      "task_id": "BM-06-BILINGUAL-HINDI",
+      "category": "bilingual_hindi_english",
+      "prompt_tokens": 56,
+      "completion_tokens": 52,
+      "latency_ms": 0.01,
+      "passed_validation": true,
+      "estimated_cost_usd": 0.0,
+      "output_snippet": "\u0928\u092e\u0938\u094d\u0924\u0947! \u092e\u0936\u0940\u0928 \u0932\u0930\u094d\u0928\u093f\u0902\u0917 (Machine Learning) \u0915\u0943\u0924\u094d\u0930\u093f\u092e \u092c\u0941\u0926\u094d\u0927\u093f\u092e\u0924\u094d\u0924\u093e (AI) \u0915\u0940 \u090f\u0915 \u092e\u0939\u0924\u094d\u0935\u092a\u0942\u0930\u094d\u0923 \u0936\u093e\u0916\u093e \u0939\u0948 \u091c\u094b \u0915\u0902\u092a\u094d\u092f\u0942\u091f\u0930 \u0915\u094b \u0921\u0947\u091f\u093e \u0938\u0947 \u0938\u0940\u0916\u0928\u0947 \u0914\u0930 \u092d\u0935\u093f\u0937\u094d\u092f\u0935\u093e\u0923\u093f\u092f\u093e\u0902 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0938\u0915\u094d\u0937\u092e \u092c\u0928\u093e\u0924\u0940 \u0939\u0948\u0964",
+      "error": null
+    },
+    {
+      "task_id": "BM-07-LONG-CONTEXT",
+      "category": "long_context_retrieval",
+      "prompt_tokens": 648,
+      "completion_tokens": 22,
+      "latency_ms": 0.03,
+      "passed_validation": true,
+      "estimated_cost_usd": 0.0,
+      "output_snippet": "The secret code word retrieved from the long-context document is PHOENIX-992.",
+      "error": null
+    }
+  ]
+}

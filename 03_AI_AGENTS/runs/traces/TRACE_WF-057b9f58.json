@@ -1,0 +1,49 @@
+{
+  "workflow_id": "WF-057b9f58",
+  "goal": "Research lions and prepare a Hindi documentary production plan.",
+  "started_at": "2026-11-17T06:08:20.248267",
+  "completed_at": null,
+  "duration_seconds": 0.039,
+  "estimated_cost_usd": 0.0,
+  "active_subtask": null,
+  "timeline": [
+    {
+      "event_id": "EVT-79f6c3",
+      "timestamp": "2026-11-17T06:08:20.255108",
+      "elapsed_seconds": 0.007,
+      "event_type": "PLAN_APPROVED",
+      "message": "Plan 'PLAN-9662842c' approved for workflow 'WF-057b9f58'.",
+      "agent_id": null,
+      "subtask_id": null,
+      "details": {}
+    },
+    {
+      "event_id": "EVT-517478",
+      "timestamp": "2026-11-17T06:08:20.282608",
+      "elapsed_seconds": 0.034,
+      "event_type": "WORKFLOW_RUNNING",
+      "message": "Execution started for workflow 'WF-057b9f58'.",
+      "agent_id": null,
+      "subtask_id": null,
+      "details": {}
+    },
+    {
+      "event_id": "EVT-eda96d",
+      "timestamp": "2026-11-17T06:08:20.287496",
+      "elapsed_seconds": 0.039,
+      "event_type": "WAVE_STARTED",
+      "message": "Executing Wave 1/4 (1 subtasks).",
+      "agent_id": null,
+      "subtask_id": null,
+      "details": {}
+    }
+  ],
+  "metrics": {
+    "total_events": 3,
+    "tool_calls": 0,
+    "model_calls": 0,
+    "retries": 0,
+    "errors": 0,
+    "approvals_requested": 0
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "AGT-012",
+  "name": "Voice Director",
+  "slug": "voice_director",
+  "role": "Voiceover Director & Speech Synthesis Supervisor",
+  "category": "Audio",
+  "primary_domain": "DOM-09",
+  "workspace_mode": "inherit",
+  "system_prompt": "You are the MASTER-AI Voice Director. You manage text-to-speech synthesis routing, voice timbre selection, pronunciation validation in Hindi and English, speech rate pacing, and high-quality WAV audio generation with word-level timestamps.",
+  "tools_allowed": [
+    "read_file",
+    "write_file",
+    "query_memory",
+    "sandbox_eval"
+  ],
+  "tools_prohibited": [
+    "activate_paid_api",
+    "execute_arbitrary_shell",
+    "modify_system_configs"
+  ],
+  "input_schema": {
+    "text": "string",
+    "language": "string",
+    "voice_style": "string"
+  },
+  "output_schema": {
+    "audio_path": "string",
+    "duration_sec": "number",
+    "provider_used": "string"
+  },
+  "approval_status": "APPROVED_LOCAL"
+}

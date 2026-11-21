@@ -1,0 +1,4 @@
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/remotion_tech_reel/phonetic_tests/fast_flow_scenes/variant1_fast_male_flow_line1.wav'
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/remotion_tech_reel/phonetic_tests/fast_flow_scenes/variant1_fast_male_flow_line2.wav'
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/remotion_tech_reel/phonetic_tests/fast_flow_scenes/variant1_fast_male_flow_line3.wav'
+file 'F:/Master AI/00_CORE_SYSTEM/research/phase-7/remotion_tech_reel/phonetic_tests/fast_flow_scenes/variant1_fast_male_flow_line4.wav'

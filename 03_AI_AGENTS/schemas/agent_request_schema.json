@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MasterAIAgentRequestSchema",
+  "type": "object",
+  "required": [
+    "request_id",
+    "task_id",
+    "agent_id",
+    "subtask_id",
+    "parameters",
+    "sandbox_dir",
+    "allowed_tools",
+    "auth_token"
+  ],
+  "properties": {
+    "request_id": {
+      "type": "string"
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "agent_id": {
+      "type": "string"
+    },
+    "subtask_id": {
+      "type": "string"
+    },
+    "parameters": {
+      "type": "object"
+    },
+    "input_artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["artifact_id", "artifact_type", "path"],
+        "properties": {
+          "artifact_id": {"type": "string"},
+          "artifact_type": {"type": "string"},
+          "path": {"type": "string"}
+        }
+      },
+      "default": []
+    },
+    "sandbox_dir": {
+      "type": "string"
+    },
+    "allowed_tools": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "auth_token": {
+      "type": "string",
+      "minLength": 10
+    },
+    "timeout_seconds": {
+      "type": "integer",
+      "default": 30
+    }
+  },
+  "additionalProperties": false
+}

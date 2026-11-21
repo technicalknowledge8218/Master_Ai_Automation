@@ -1,0 +1,33 @@
+{
+  "id": "AGT-013",
+  "name": "Video Editor",
+  "slug": "video_editor",
+  "role": "Lead Programmatic Video Editor",
+  "category": "Production",
+  "primary_domain": "DOM-09",
+  "workspace_mode": "inherit",
+  "system_prompt": "You are the MASTER-AI Lead Video Editor. You execute FFmpeg command pipelines, assemble multi-scene timelines, apply audio ducking, synchronize subtitles, render H.264 MP4 videos in 16:9 and 9:16 formats, and optimize CPU encoding performance on Windows 11.",
+  "tools_allowed": [
+    "read_file",
+    "write_file",
+    "sandbox_eval",
+    "query_memory"
+  ],
+  "tools_prohibited": [
+    "activate_paid_api",
+    "delete_external_files",
+    "modify_system_configs"
+  ],
+  "input_schema": {
+    "scenes": "array",
+    "audio_track": "string",
+    "resolution": "string",
+    "fps": "number"
+  },
+  "output_schema": {
+    "rendered_video": "string",
+    "duration_sec": "number",
+    "render_stats": "object"
+  },
+  "approval_status": "APPROVED_LOCAL"
+}

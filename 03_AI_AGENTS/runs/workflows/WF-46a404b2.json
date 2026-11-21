@@ -1,0 +1,122 @@
+{
+  "workflow_id": "WF-46a404b2",
+  "plan_id": "PLAN-f8432b39",
+  "goal": "Cancellation and pause test",
+  "complexity": "FULL_LIFECYCLE_FEDERATION",
+  "status": "CANCELLED",
+  "created_at": "2026-11-17T14:24:29.834827",
+  "started_at": null,
+  "completed_at": "2026-11-17T14:24:29.867776",
+  "current_wave_index": 0,
+  "waves": [
+    [
+      "PLAN-f8432b39-ST-01"
+    ],
+    [
+      "PLAN-f8432b39-ST-02"
+    ],
+    [
+      "PLAN-f8432b39-ST-03"
+    ]
+  ],
+  "subtasks": {
+    "PLAN-f8432b39-ST-01": {
+      "subtask_id": "PLAN-f8432b39-ST-01",
+      "title": "Initial Research: General Topic",
+      "description": "Gather research data and relevant technical references for General Topic.",
+      "assigned_agent": "AGT-001",
+      "priority": "HIGH",
+      "status": "QUEUED",
+      "depends_on": [],
+      "inputs": {
+        "topic": "General Topic"
+      },
+      "expected_outputs": [
+        "research_summary.md"
+      ],
+      "outputs": {},
+      "artifacts": [],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 2,
+      "started_at": null,
+      "completed_at": null,
+      "duration_seconds": 0.0
+    },
+    "PLAN-f8432b39-ST-02": {
+      "subtask_id": "PLAN-f8432b39-ST-02",
+      "title": "Execution & Solution Design",
+      "description": "Structure technical findings and formulate execution steps.",
+      "assigned_agent": "AGT-002",
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "depends_on": [
+        "PLAN-f8432b39-ST-01"
+      ],
+      "inputs": {},
+      "expected_outputs": [
+        "execution_blueprint.json"
+      ],
+      "outputs": {},
+      "artifacts": [],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 2,
+      "started_at": null,
+      "completed_at": null,
+      "duration_seconds": 0.0
+    },
+    "PLAN-f8432b39-ST-03": {
+      "subtask_id": "PLAN-f8432b39-ST-03",
+      "title": "Final Documentation & Verification",
+      "description": "Synthesize final deliverable document.",
+      "assigned_agent": "AGT-005",
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "depends_on": [
+        "PLAN-f8432b39-ST-02"
+      ],
+      "inputs": {},
+      "expected_outputs": [
+        "final_deliverable.md"
+      ],
+      "outputs": {},
+      "artifacts": [],
+      "error": null,
+      "retry_count": 0,
+      "max_retries": 1,
+      "started_at": null,
+      "completed_at": null,
+      "duration_seconds": 0.0
+    }
+  },
+  "artifacts": [],
+  "checkpoint_history": [
+    {
+      "timestamp": "2026-11-17T14:24:29.834827",
+      "status": "PLANNED",
+      "tag": "WORKFLOW_INITIALIZED"
+    },
+    {
+      "timestamp": "2026-11-17T14:24:29.849081",
+      "status": "APPROVED",
+      "tag": "Plan approved"
+    },
+    {
+      "timestamp": "2026-11-17T14:24:29.855680",
+      "status": "QUEUED",
+      "tag": "Ready for execution"
+    },
+    {
+      "timestamp": "2026-11-17T14:24:29.862160",
+      "status": "PAUSED",
+      "tag": "User paused execution"
+    },
+    {
+      "timestamp": "2026-11-17T14:24:29.867776",
+      "status": "CANCELLED",
+      "tag": "User test cancellation"
+    }
+  ],
+  "final_deliverable": null
+}

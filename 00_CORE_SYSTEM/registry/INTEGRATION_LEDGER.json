@@ -1,0 +1,1360 @@
+{
+  "cand-1794874810-langchain-ai-langgraph": {
+    "candidate_id": "cand-1794874810-langchain-ai-langgraph",
+    "repo_full_name": "langchain-ai/langgraph",
+    "current_stage": "USER_APPROVAL",
+    "stage_history": [
+      {
+        "stage": "DISCOVER",
+        "timestamp": 1794874812.194106,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "EVALUATE",
+        "score": 91,
+        "grade": "A",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SECURITY_REVIEW",
+        "passed": true,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SANDBOX_TEST",
+        "sandbox_status": "PASSED",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "REPORT",
+        "summary": "Evaluated langchain-ai/langgraph -> Score 91 (A)",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "USER_APPROVAL",
+        "action": "HALTED_FOR_HUMAN_OPERATOR",
+        "requires_token": true,
+        "status": "PENDING"
+      }
+    ],
+    "scorecard": {
+      "full_name": "langchain-ai/langgraph",
+      "total_score": 91,
+      "grade": "A",
+      "scores": {
+        "functionality": 13,
+        "maintenance": 15,
+        "security": 15,
+        "license": 15,
+        "documentation": 3,
+        "community": 10,
+        "resources": 10,
+        "integration": 10
+      },
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "compatibility_status": "COMPATIBLE",
+      "commercial_suitability": "COMMERCIAL_APPROVED",
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false,
+        "requires_paid_api": false,
+        "windows_supported": true,
+        "python_version_support": ">=3.10"
+      },
+      "recommendation": "RECOMMENDED: High quality, permissive license, ready for sandbox evaluation.",
+      "timestamp": "2026-11-17T05:50:12.194231"
+    },
+    "security_audit": {
+      "license_permitted": true,
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "security_score": 15,
+      "passed": true
+    },
+    "sandbox_result": {
+      "eval_id": "cand-1794874810-langchain-ai-langgraph",
+      "status": "PASSED",
+      "exit_code": 0,
+      "duration_seconds": 0.11,
+      "stdout": "Sandbox environment verification: PASS\n",
+      "stderr": "",
+      "inspection": {
+        "is_safe_to_evaluate": true,
+        "security_alerts": [],
+        "suspicious_patterns_found": [],
+        "dependencies_found": [],
+        "files_scanned": 1
+      }
+    },
+    "approval_token": null,
+    "is_approved": false,
+    "is_integrated": false,
+    "status": "WAITING_FOR_APPROVAL",
+    "created_at": 1794874810.6766827
+  },
+  "cand-1794874919-tiangolo-fastapi": {
+    "candidate_id": "cand-1794874919-tiangolo-fastapi",
+    "repo_full_name": "tiangolo/fastapi",
+    "current_stage": "USER_APPROVAL",
+    "stage_history": [
+      {
+        "stage": "DISCOVER",
+        "timestamp": 1794874919.3320248,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "EVALUATE",
+        "score": 93,
+        "grade": "A",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SECURITY_REVIEW",
+        "passed": true,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SANDBOX_TEST",
+        "sandbox_status": "PASSED",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "REPORT",
+        "summary": "Evaluated tiangolo/fastapi -> Score 93 (A)",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "USER_APPROVAL",
+        "action": "HALTED_FOR_HUMAN_OPERATOR",
+        "requires_token": true,
+        "status": "PENDING"
+      }
+    ],
+    "scorecard": {
+      "full_name": "fastapi/fastapi",
+      "total_score": 93,
+      "grade": "A",
+      "scores": {
+        "functionality": 15,
+        "maintenance": 15,
+        "security": 15,
+        "license": 15,
+        "documentation": 3,
+        "community": 10,
+        "resources": 10,
+        "integration": 10
+      },
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "compatibility_status": "COMPATIBLE",
+      "commercial_suitability": "COMMERCIAL_APPROVED",
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false,
+        "requires_paid_api": false,
+        "windows_supported": true,
+        "python_version_support": ">=3.10"
+      },
+      "recommendation": "RECOMMENDED: High quality, permissive license, ready for sandbox evaluation.",
+      "timestamp": "2026-11-17T05:51:59.332067"
+    },
+    "security_audit": {
+      "license_permitted": true,
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "security_score": 15,
+      "passed": true
+    },
+    "sandbox_result": {
+      "eval_id": "cand-1794874919-tiangolo-fastapi",
+      "status": "PASSED",
+      "exit_code": 0,
+      "duration_seconds": 0.09,
+      "stdout": "Sandbox environment verification: PASS\n",
+      "stderr": "",
+      "inspection": {
+        "is_safe_to_evaluate": true,
+        "security_alerts": [],
+        "suspicious_patterns_found": [],
+        "dependencies_found": [],
+        "files_scanned": 1
+      }
+    },
+    "approval_token": null,
+    "is_approved": false,
+    "is_integrated": false,
+    "status": "WAITING_FOR_APPROVAL",
+    "created_at": 1794874919.3316767
+  },
+  "cand-1794875007-tiangolo-fastapi": {
+    "candidate_id": "cand-1794875007-tiangolo-fastapi",
+    "repo_full_name": "tiangolo/fastapi",
+    "current_stage": "USER_APPROVAL",
+    "stage_history": [
+      {
+        "stage": "DISCOVER",
+        "timestamp": 1794875007.5959244,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "EVALUATE",
+        "score": 93,
+        "grade": "A",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SECURITY_REVIEW",
+        "passed": true,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SANDBOX_TEST",
+        "sandbox_status": "PASSED",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "REPORT",
+        "summary": "Evaluated tiangolo/fastapi -> Score 93 (A)",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "USER_APPROVAL",
+        "action": "HALTED_FOR_HUMAN_OPERATOR",
+        "requires_token": true,
+        "status": "PENDING"
+      }
+    ],
+    "scorecard": {
+      "full_name": "fastapi/fastapi",
+      "total_score": 93,
+      "grade": "A",
+      "scores": {
+        "functionality": 15,
+        "maintenance": 15,
+        "security": 15,
+        "license": 15,
+        "documentation": 3,
+        "community": 10,
+        "resources": 10,
+        "integration": 10
+      },
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "compatibility_status": "COMPATIBLE",
+      "commercial_suitability": "COMMERCIAL_APPROVED",
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false,
+        "requires_paid_api": false,
+        "windows_supported": true,
+        "python_version_support": ">=3.10"
+      },
+      "recommendation": "RECOMMENDED: High quality, permissive license, ready for sandbox evaluation.",
+      "timestamp": "2026-11-17T05:53:27.595982"
+    },
+    "security_audit": {
+      "license_permitted": true,
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "security_score": 15,
+      "passed": true
+    },
+    "sandbox_result": {
+      "eval_id": "cand-1794875007-tiangolo-fastapi",
+      "status": "PASSED",
+      "exit_code": 0,
+      "duration_seconds": 0.096,
+      "stdout": "Sandbox environment verification: PASS\n",
+      "stderr": "",
+      "inspection": {
+        "is_safe_to_evaluate": true,
+        "security_alerts": [],
+        "suspicious_patterns_found": [],
+        "dependencies_found": [],
+        "files_scanned": 1
+      }
+    },
+    "approval_token": null,
+    "is_approved": false,
+    "is_integrated": false,
+    "status": "WAITING_FOR_APPROVAL",
+    "created_at": 1794875007.5953863
+  },
+  "cand-1794875046-tiangolo-fastapi": {
+    "candidate_id": "cand-1794875046-tiangolo-fastapi",
+    "repo_full_name": "tiangolo/fastapi",
+    "current_stage": "USER_APPROVAL",
+    "stage_history": [
+      {
+        "stage": "DISCOVER",
+        "timestamp": 1794875046.141074,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "EVALUATE",
+        "score": 93,
+        "grade": "A",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SECURITY_REVIEW",
+        "passed": true,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SANDBOX_TEST",
+        "sandbox_status": "PASSED",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "REPORT",
+        "summary": "Evaluated tiangolo/fastapi -> Score 93 (A)",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "USER_APPROVAL",
+        "action": "HALTED_FOR_HUMAN_OPERATOR",
+        "requires_token": true,
+        "status": "PENDING"
+      }
+    ],
+    "scorecard": {
+      "full_name": "fastapi/fastapi",
+      "total_score": 93,
+      "grade": "A",
+      "scores": {
+        "functionality": 15,
+        "maintenance": 15,
+        "security": 15,
+        "license": 15,
+        "documentation": 3,
+        "community": 10,
+        "resources": 10,
+        "integration": 10
+      },
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "compatibility_status": "COMPATIBLE",
+      "commercial_suitability": "COMMERCIAL_APPROVED",
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false,
+        "requires_paid_api": false,
+        "windows_supported": true,
+        "python_version_support": ">=3.10"
+      },
+      "recommendation": "RECOMMENDED: High quality, permissive license, ready for sandbox evaluation.",
+      "timestamp": "2026-11-17T05:54:06.141099"
+    },
+    "security_audit": {
+      "license_permitted": true,
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "security_score": 15,
+      "passed": true
+    },
+    "sandbox_result": {
+      "eval_id": "cand-1794875046-tiangolo-fastapi",
+      "status": "PASSED",
+      "exit_code": 0,
+      "duration_seconds": 0.064,
+      "stdout": "Sandbox environment verification: PASS\n",
+      "stderr": "",
+      "inspection": {
+        "is_safe_to_evaluate": true,
+        "security_alerts": [],
+        "suspicious_patterns_found": [],
+        "dependencies_found": [],
+        "files_scanned": 1
+      }
+    },
+    "approval_token": null,
+    "is_approved": false,
+    "is_integrated": false,
+    "status": "WAITING_FOR_APPROVAL",
+    "created_at": 1794875046.1408498
+  },
+  "cand-1794875452-tiangolo-fastapi": {
+    "candidate_id": "cand-1794875452-tiangolo-fastapi",
+    "repo_full_name": "tiangolo/fastapi",
+    "current_stage": "USER_APPROVAL",
+    "stage_history": [
+      {
+        "stage": "DISCOVER",
+        "timestamp": 1794875452.5210001,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "EVALUATE",
+        "score": 93,
+        "grade": "A",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SECURITY_REVIEW",
+        "passed": true,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SANDBOX_TEST",
+        "sandbox_status": "PASSED",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "REPORT",
+        "summary": "Evaluated tiangolo/fastapi -> Score 93 (A)",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "USER_APPROVAL",
+        "action": "HALTED_FOR_HUMAN_OPERATOR",
+        "requires_token": true,
+        "status": "PENDING"
+      }
+    ],
+    "scorecard": {
+      "full_name": "fastapi/fastapi",
+      "total_score": 93,
+      "grade": "A",
+      "scores": {
+        "functionality": 15,
+        "maintenance": 15,
+        "security": 15,
+        "license": 15,
+        "documentation": 3,
+        "community": 10,
+        "resources": 10,
+        "integration": 10
+      },
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "compatibility_status": "COMPATIBLE",
+      "commercial_suitability": "COMMERCIAL_APPROVED",
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false,
+        "requires_paid_api": false,
+        "windows_supported": true,
+        "python_version_support": ">=3.10"
+      },
+      "recommendation": "RECOMMENDED: High quality, permissive license, ready for sandbox evaluation.",
+      "timestamp": "2026-11-17T06:00:52.521087"
+    },
+    "security_audit": {
+      "license_permitted": true,
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "security_score": 15,
+      "passed": true
+    },
+    "sandbox_result": {
+      "eval_id": "cand-1794875452-tiangolo-fastapi",
+      "status": "PASSED",
+      "exit_code": 0,
+      "duration_seconds": 0.093,
+      "stdout": "Sandbox environment verification: PASS\n",
+      "stderr": "",
+      "inspection": {
+        "is_safe_to_evaluate": true,
+        "security_alerts": [],
+        "suspicious_patterns_found": [],
+        "dependencies_found": [],
+        "files_scanned": 1
+      }
+    },
+    "approval_token": null,
+    "is_approved": false,
+    "is_integrated": false,
+    "status": "WAITING_FOR_APPROVAL",
+    "created_at": 1794875452.520169
+  },
+  "cand-1794905725-tiangolo-fastapi": {
+    "candidate_id": "cand-1794905725-tiangolo-fastapi",
+    "repo_full_name": "tiangolo/fastapi",
+    "current_stage": "USER_APPROVAL",
+    "stage_history": [
+      {
+        "stage": "DISCOVER",
+        "timestamp": 1794905725.256606,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "EVALUATE",
+        "score": 93,
+        "grade": "A",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SECURITY_REVIEW",
+        "passed": true,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SANDBOX_TEST",
+        "sandbox_status": "PASSED",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "REPORT",
+        "summary": "Evaluated tiangolo/fastapi -> Score 93 (A)",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "USER_APPROVAL",
+        "action": "HALTED_FOR_HUMAN_OPERATOR",
+        "requires_token": true,
+        "status": "PENDING"
+      }
+    ],
+    "scorecard": {
+      "full_name": "fastapi/fastapi",
+      "total_score": 93,
+      "grade": "A",
+      "scores": {
+        "functionality": 15,
+        "maintenance": 15,
+        "security": 15,
+        "license": 15,
+        "documentation": 3,
+        "community": 10,
+        "resources": 10,
+        "integration": 10
+      },
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "compatibility_status": "COMPATIBLE",
+      "commercial_suitability": "COMMERCIAL_APPROVED",
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false,
+        "requires_paid_api": false,
+        "windows_supported": true,
+        "python_version_support": ">=3.10"
+      },
+      "recommendation": "RECOMMENDED: High quality, permissive license, ready for sandbox evaluation.",
+      "timestamp": "2026-11-17T14:25:25.256658"
+    },
+    "security_audit": {
+      "license_permitted": true,
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "security_score": 15,
+      "passed": true
+    },
+    "sandbox_result": {
+      "eval_id": "cand-1794905725-tiangolo-fastapi",
+      "status": "PASSED",
+      "exit_code": 0,
+      "duration_seconds": 0.082,
+      "stdout": "Sandbox environment verification: PASS\n",
+      "stderr": "",
+      "inspection": {
+        "is_safe_to_evaluate": true,
+        "security_alerts": [],
+        "suspicious_patterns_found": [],
+        "dependencies_found": [],
+        "files_scanned": 1
+      }
+    },
+    "approval_token": null,
+    "is_approved": false,
+    "is_integrated": false,
+    "status": "WAITING_FOR_APPROVAL",
+    "created_at": 1794905725.2562146
+  },
+  "cand-1794907382-tiangolo-fastapi": {
+    "candidate_id": "cand-1794907382-tiangolo-fastapi",
+    "repo_full_name": "tiangolo/fastapi",
+    "current_stage": "USER_APPROVAL",
+    "stage_history": [
+      {
+        "stage": "DISCOVER",
+        "timestamp": 1794907382.5407798,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "EVALUATE",
+        "score": 93,
+        "grade": "A",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SECURITY_REVIEW",
+        "passed": true,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SANDBOX_TEST",
+        "sandbox_status": "PASSED",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "REPORT",
+        "summary": "Evaluated tiangolo/fastapi -> Score 93 (A)",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "USER_APPROVAL",
+        "action": "HALTED_FOR_HUMAN_OPERATOR",
+        "requires_token": true,
+        "status": "PENDING"
+      }
+    ],
+    "scorecard": {
+      "full_name": "fastapi/fastapi",
+      "total_score": 93,
+      "grade": "A",
+      "scores": {
+        "functionality": 15,
+        "maintenance": 15,
+        "security": 15,
+        "license": 15,
+        "documentation": 3,
+        "community": 10,
+        "resources": 10,
+        "integration": 10
+      },
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "compatibility_status": "COMPATIBLE",
+      "commercial_suitability": "COMMERCIAL_APPROVED",
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false,
+        "requires_paid_api": false,
+        "windows_supported": true,
+        "python_version_support": ">=3.10"
+      },
+      "recommendation": "RECOMMENDED: High quality, permissive license, ready for sandbox evaluation.",
+      "timestamp": "2026-11-17T14:53:02.540821"
+    },
+    "security_audit": {
+      "license_permitted": true,
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "security_score": 15,
+      "passed": true
+    },
+    "sandbox_result": {
+      "eval_id": "cand-1794907382-tiangolo-fastapi",
+      "status": "PASSED",
+      "exit_code": 0,
+      "duration_seconds": 0.061,
+      "stdout": "Sandbox environment verification: PASS\n",
+      "stderr": "",
+      "inspection": {
+        "is_safe_to_evaluate": true,
+        "security_alerts": [],
+        "suspicious_patterns_found": [],
+        "dependencies_found": [],
+        "files_scanned": 1
+      }
+    },
+    "approval_token": null,
+    "is_approved": false,
+    "is_integrated": false,
+    "status": "WAITING_FOR_APPROVAL",
+    "created_at": 1794907382.5404048
+  },
+  "cand-1794910362-tiangolo-fastapi": {
+    "candidate_id": "cand-1794910362-tiangolo-fastapi",
+    "repo_full_name": "tiangolo/fastapi",
+    "current_stage": "USER_APPROVAL",
+    "stage_history": [
+      {
+        "stage": "DISCOVER",
+        "timestamp": 1794910362.6391745,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "EVALUATE",
+        "score": 93,
+        "grade": "A",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SECURITY_REVIEW",
+        "passed": true,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SANDBOX_TEST",
+        "sandbox_status": "PASSED",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "REPORT",
+        "summary": "Evaluated tiangolo/fastapi -> Score 93 (A)",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "USER_APPROVAL",
+        "action": "HALTED_FOR_HUMAN_OPERATOR",
+        "requires_token": true,
+        "status": "PENDING"
+      }
+    ],
+    "scorecard": {
+      "full_name": "fastapi/fastapi",
+      "total_score": 93,
+      "grade": "A",
+      "scores": {
+        "functionality": 15,
+        "maintenance": 15,
+        "security": 15,
+        "license": 15,
+        "documentation": 3,
+        "community": 10,
+        "resources": 10,
+        "integration": 10
+      },
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "compatibility_status": "COMPATIBLE",
+      "commercial_suitability": "COMMERCIAL_APPROVED",
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false,
+        "requires_paid_api": false,
+        "windows_supported": true,
+        "python_version_support": ">=3.10"
+      },
+      "recommendation": "RECOMMENDED: High quality, permissive license, ready for sandbox evaluation.",
+      "timestamp": "2026-11-17T15:42:42.639229"
+    },
+    "security_audit": {
+      "license_permitted": true,
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "security_score": 15,
+      "passed": true
+    },
+    "sandbox_result": {
+      "eval_id": "cand-1794910362-tiangolo-fastapi",
+      "status": "PASSED",
+      "exit_code": 0,
+      "duration_seconds": 0.068,
+      "stdout": "Sandbox environment verification: PASS\n",
+      "stderr": "",
+      "inspection": {
+        "is_safe_to_evaluate": true,
+        "security_alerts": [],
+        "suspicious_patterns_found": [],
+        "dependencies_found": [],
+        "files_scanned": 1
+      }
+    },
+    "approval_token": null,
+    "is_approved": false,
+    "is_integrated": false,
+    "status": "WAITING_FOR_APPROVAL",
+    "created_at": 1794910362.6387997
+  },
+  "cand-1794910535-tiangolo-fastapi": {
+    "candidate_id": "cand-1794910535-tiangolo-fastapi",
+    "repo_full_name": "tiangolo/fastapi",
+    "current_stage": "USER_APPROVAL",
+    "stage_history": [
+      {
+        "stage": "DISCOVER",
+        "timestamp": 1794910535.3901494,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "EVALUATE",
+        "score": 93,
+        "grade": "A",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SECURITY_REVIEW",
+        "passed": true,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SANDBOX_TEST",
+        "sandbox_status": "PASSED",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "REPORT",
+        "summary": "Evaluated tiangolo/fastapi -> Score 93 (A)",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "USER_APPROVAL",
+        "action": "HALTED_FOR_HUMAN_OPERATOR",
+        "requires_token": true,
+        "status": "PENDING"
+      }
+    ],
+    "scorecard": {
+      "full_name": "fastapi/fastapi",
+      "total_score": 93,
+      "grade": "A",
+      "scores": {
+        "functionality": 15,
+        "maintenance": 15,
+        "security": 15,
+        "license": 15,
+        "documentation": 3,
+        "community": 10,
+        "resources": 10,
+        "integration": 10
+      },
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "compatibility_status": "COMPATIBLE",
+      "commercial_suitability": "COMMERCIAL_APPROVED",
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false,
+        "requires_paid_api": false,
+        "windows_supported": true,
+        "python_version_support": ">=3.10"
+      },
+      "recommendation": "RECOMMENDED: High quality, permissive license, ready for sandbox evaluation.",
+      "timestamp": "2026-11-17T15:45:35.390191"
+    },
+    "security_audit": {
+      "license_permitted": true,
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "security_score": 15,
+      "passed": true
+    },
+    "sandbox_result": {
+      "eval_id": "cand-1794910535-tiangolo-fastapi",
+      "status": "PASSED",
+      "exit_code": 0,
+      "duration_seconds": 0.074,
+      "stdout": "Sandbox environment verification: PASS\n",
+      "stderr": "",
+      "inspection": {
+        "is_safe_to_evaluate": true,
+        "security_alerts": [],
+        "suspicious_patterns_found": [],
+        "dependencies_found": [],
+        "files_scanned": 1
+      }
+    },
+    "approval_token": null,
+    "is_approved": false,
+    "is_integrated": false,
+    "status": "WAITING_FOR_APPROVAL",
+    "created_at": 1794910535.389782
+  },
+  "cand-1794910547-tiangolo-fastapi": {
+    "candidate_id": "cand-1794910547-tiangolo-fastapi",
+    "repo_full_name": "tiangolo/fastapi",
+    "current_stage": "USER_APPROVAL",
+    "stage_history": [
+      {
+        "stage": "DISCOVER",
+        "timestamp": 1794910547.4126716,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "EVALUATE",
+        "score": 93,
+        "grade": "A",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SECURITY_REVIEW",
+        "passed": true,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SANDBOX_TEST",
+        "sandbox_status": "PASSED",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "REPORT",
+        "summary": "Evaluated tiangolo/fastapi -> Score 93 (A)",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "USER_APPROVAL",
+        "action": "HALTED_FOR_HUMAN_OPERATOR",
+        "requires_token": true,
+        "status": "PENDING"
+      }
+    ],
+    "scorecard": {
+      "full_name": "fastapi/fastapi",
+      "total_score": 93,
+      "grade": "A",
+      "scores": {
+        "functionality": 15,
+        "maintenance": 15,
+        "security": 15,
+        "license": 15,
+        "documentation": 3,
+        "community": 10,
+        "resources": 10,
+        "integration": 10
+      },
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "compatibility_status": "COMPATIBLE",
+      "commercial_suitability": "COMMERCIAL_APPROVED",
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false,
+        "requires_paid_api": false,
+        "windows_supported": true,
+        "python_version_support": ">=3.10"
+      },
+      "recommendation": "RECOMMENDED: High quality, permissive license, ready for sandbox evaluation.",
+      "timestamp": "2026-11-17T15:45:47.412725"
+    },
+    "security_audit": {
+      "license_permitted": true,
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "security_score": 15,
+      "passed": true
+    },
+    "sandbox_result": {
+      "eval_id": "cand-1794910547-tiangolo-fastapi",
+      "status": "PASSED",
+      "exit_code": 0,
+      "duration_seconds": 0.073,
+      "stdout": "Sandbox environment verification: PASS\n",
+      "stderr": "",
+      "inspection": {
+        "is_safe_to_evaluate": true,
+        "security_alerts": [],
+        "suspicious_patterns_found": [],
+        "dependencies_found": [],
+        "files_scanned": 1
+      }
+    },
+    "approval_token": null,
+    "is_approved": false,
+    "is_integrated": false,
+    "status": "WAITING_FOR_APPROVAL",
+    "created_at": 1794910547.4122248
+  },
+  "cand-1794910568-tiangolo-fastapi": {
+    "candidate_id": "cand-1794910568-tiangolo-fastapi",
+    "repo_full_name": "tiangolo/fastapi",
+    "current_stage": "USER_APPROVAL",
+    "stage_history": [
+      {
+        "stage": "DISCOVER",
+        "timestamp": 1794910568.26793,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "EVALUATE",
+        "score": 93,
+        "grade": "A",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SECURITY_REVIEW",
+        "passed": true,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SANDBOX_TEST",
+        "sandbox_status": "PASSED",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "REPORT",
+        "summary": "Evaluated tiangolo/fastapi -> Score 93 (A)",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "USER_APPROVAL",
+        "action": "HALTED_FOR_HUMAN_OPERATOR",
+        "requires_token": true,
+        "status": "PENDING"
+      }
+    ],
+    "scorecard": {
+      "full_name": "fastapi/fastapi",
+      "total_score": 93,
+      "grade": "A",
+      "scores": {
+        "functionality": 15,
+        "maintenance": 15,
+        "security": 15,
+        "license": 15,
+        "documentation": 3,
+        "community": 10,
+        "resources": 10,
+        "integration": 10
+      },
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "compatibility_status": "COMPATIBLE",
+      "commercial_suitability": "COMMERCIAL_APPROVED",
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false,
+        "requires_paid_api": false,
+        "windows_supported": true,
+        "python_version_support": ">=3.10"
+      },
+      "recommendation": "RECOMMENDED: High quality, permissive license, ready for sandbox evaluation.",
+      "timestamp": "2026-11-17T15:46:08.267973"
+    },
+    "security_audit": {
+      "license_permitted": true,
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "security_score": 15,
+      "passed": true
+    },
+    "sandbox_result": {
+      "eval_id": "cand-1794910568-tiangolo-fastapi",
+      "status": "PASSED",
+      "exit_code": 0,
+      "duration_seconds": 0.072,
+      "stdout": "Sandbox environment verification: PASS\n",
+      "stderr": "",
+      "inspection": {
+        "is_safe_to_evaluate": true,
+        "security_alerts": [],
+        "suspicious_patterns_found": [],
+        "dependencies_found": [],
+        "files_scanned": 1
+      }
+    },
+    "approval_token": null,
+    "is_approved": false,
+    "is_integrated": false,
+    "status": "WAITING_FOR_APPROVAL",
+    "created_at": 1794910568.2675014
+  },
+  "cand-1794910739-tiangolo-fastapi": {
+    "candidate_id": "cand-1794910739-tiangolo-fastapi",
+    "repo_full_name": "tiangolo/fastapi",
+    "current_stage": "USER_APPROVAL",
+    "stage_history": [
+      {
+        "stage": "DISCOVER",
+        "timestamp": 1794910739.3928077,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "EVALUATE",
+        "score": 93,
+        "grade": "A",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SECURITY_REVIEW",
+        "passed": true,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SANDBOX_TEST",
+        "sandbox_status": "PASSED",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "REPORT",
+        "summary": "Evaluated tiangolo/fastapi -> Score 93 (A)",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "USER_APPROVAL",
+        "action": "HALTED_FOR_HUMAN_OPERATOR",
+        "requires_token": true,
+        "status": "PENDING"
+      }
+    ],
+    "scorecard": {
+      "full_name": "fastapi/fastapi",
+      "total_score": 93,
+      "grade": "A",
+      "scores": {
+        "functionality": 15,
+        "maintenance": 15,
+        "security": 15,
+        "license": 15,
+        "documentation": 3,
+        "community": 10,
+        "resources": 10,
+        "integration": 10
+      },
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "compatibility_status": "COMPATIBLE",
+      "commercial_suitability": "COMMERCIAL_APPROVED",
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false,
+        "requires_paid_api": false,
+        "windows_supported": true,
+        "python_version_support": ">=3.10"
+      },
+      "recommendation": "RECOMMENDED: High quality, permissive license, ready for sandbox evaluation.",
+      "timestamp": "2026-11-17T15:48:59.392841"
+    },
+    "security_audit": {
+      "license_permitted": true,
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "security_score": 15,
+      "passed": true
+    },
+    "sandbox_result": {
+      "eval_id": "cand-1794910739-tiangolo-fastapi",
+      "status": "PASSED",
+      "exit_code": 0,
+      "duration_seconds": 0.073,
+      "stdout": "Sandbox environment verification: PASS\n",
+      "stderr": "",
+      "inspection": {
+        "is_safe_to_evaluate": true,
+        "security_alerts": [],
+        "suspicious_patterns_found": [],
+        "dependencies_found": [],
+        "files_scanned": 1
+      }
+    },
+    "approval_token": null,
+    "is_approved": false,
+    "is_integrated": false,
+    "status": "WAITING_FOR_APPROVAL",
+    "created_at": 1794910739.3925078
+  },
+  "cand-1794937341-tiangolo-fastapi": {
+    "candidate_id": "cand-1794937341-tiangolo-fastapi",
+    "repo_full_name": "tiangolo/fastapi",
+    "current_stage": "USER_APPROVAL",
+    "stage_history": [
+      {
+        "stage": "DISCOVER",
+        "timestamp": 1794937341.7124836,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "EVALUATE",
+        "score": 93,
+        "grade": "A",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SECURITY_REVIEW",
+        "passed": true,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SANDBOX_TEST",
+        "sandbox_status": "PASSED",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "REPORT",
+        "summary": "Evaluated tiangolo/fastapi -> Score 93 (A)",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "USER_APPROVAL",
+        "action": "HALTED_FOR_HUMAN_OPERATOR",
+        "requires_token": true,
+        "status": "PENDING"
+      }
+    ],
+    "scorecard": {
+      "full_name": "fastapi/fastapi",
+      "total_score": 93,
+      "grade": "A",
+      "scores": {
+        "functionality": 15,
+        "maintenance": 15,
+        "security": 15,
+        "license": 15,
+        "documentation": 3,
+        "community": 10,
+        "resources": 10,
+        "integration": 10
+      },
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "compatibility_status": "COMPATIBLE",
+      "commercial_suitability": "COMMERCIAL_APPROVED",
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false,
+        "requires_paid_api": false,
+        "windows_supported": true,
+        "python_version_support": ">=3.10"
+      },
+      "recommendation": "RECOMMENDED: High quality, permissive license, ready for sandbox evaluation.",
+      "timestamp": "2026-11-17T23:12:21.712526"
+    },
+    "security_audit": {
+      "license_permitted": true,
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "security_score": 15,
+      "passed": true
+    },
+    "sandbox_result": {
+      "eval_id": "cand-1794937341-tiangolo-fastapi",
+      "status": "PASSED",
+      "exit_code": 0,
+      "duration_seconds": 0.125,
+      "stdout": "Sandbox environment verification: PASS\n",
+      "stderr": "",
+      "inspection": {
+        "is_safe_to_evaluate": true,
+        "security_alerts": [],
+        "suspicious_patterns_found": [],
+        "dependencies_found": [],
+        "files_scanned": 1
+      }
+    },
+    "approval_token": null,
+    "is_approved": false,
+    "is_integrated": false,
+    "status": "WAITING_FOR_APPROVAL",
+    "created_at": 1794937341.7120218
+  },
+  "cand-1794937897-tiangolo-fastapi": {
+    "candidate_id": "cand-1794937897-tiangolo-fastapi",
+    "repo_full_name": "tiangolo/fastapi",
+    "current_stage": "USER_APPROVAL",
+    "stage_history": [
+      {
+        "stage": "DISCOVER",
+        "timestamp": 1794937897.4493914,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "EVALUATE",
+        "score": 93,
+        "grade": "A",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SECURITY_REVIEW",
+        "passed": true,
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "SANDBOX_TEST",
+        "sandbox_status": "PASSED",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "REPORT",
+        "summary": "Evaluated tiangolo/fastapi -> Score 93 (A)",
+        "status": "COMPLETED"
+      },
+      {
+        "stage": "USER_APPROVAL",
+        "action": "HALTED_FOR_HUMAN_OPERATOR",
+        "requires_token": true,
+        "status": "PENDING"
+      }
+    ],
+    "scorecard": {
+      "full_name": "fastapi/fastapi",
+      "total_score": 93,
+      "grade": "A",
+      "scores": {
+        "functionality": 15,
+        "maintenance": 15,
+        "security": 15,
+        "license": 15,
+        "documentation": 3,
+        "community": 10,
+        "resources": 10,
+        "integration": 10
+      },
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "compatibility_status": "COMPATIBLE",
+      "commercial_suitability": "COMMERCIAL_APPROVED",
+      "hardware_profile": {
+        "cpu_friendly": true,
+        "estimated_ram_mb": 1024,
+        "requires_gpu": false,
+        "requires_paid_api": false,
+        "windows_supported": true,
+        "python_version_support": ">=3.10"
+      },
+      "recommendation": "RECOMMENDED: High quality, permissive license, ready for sandbox evaluation.",
+      "timestamp": "2026-11-17T23:21:37.449488"
+    },
+    "security_audit": {
+      "license_permitted": true,
+      "risk_flags": [
+        "POOR_DOCUMENTATION"
+      ],
+      "security_score": 15,
+      "passed": true
+    },
+    "sandbox_result": {
+      "eval_id": "cand-1794937897-tiangolo-fastapi",
+      "status": "PASSED",
+      "exit_code": 0,
+      "duration_seconds": 0.112,
+      "stdout": "Sandbox environment verification: PASS\n",
+      "stderr": "",
+      "inspection": {
+        "is_safe_to_evaluate": true,
+        "security_alerts": [],
+        "suspicious_patterns_found": [],
+        "dependencies_found": [],
+        "files_scanned": 1
+      }
+    },
+    "approval_token": null,
+    "is_approved": false,
+    "is_integrated": false,
+    "status": "WAITING_FOR_APPROVAL",
+    "created_at": 1794937897.4481227
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "workflow_id": "WF-61ea7ac2",
+  "goal": "Research lions and prepare a Hindi documentary production plan.",
+  "started_at": "2026-11-17T14:53:03.342271",
+  "completed_at": "2026-11-17T14:53:03.606917",
+  "duration_seconds": 0.265,
+  "estimated_cost_usd": 0.0,
+  "active_subtask": "PLAN-b468d00b-ST-05",
+  "timeline": [
+    {
+      "event_id": "EVT-229b1c",
+      "timestamp": "2026-11-17T14:53:03.348118",
+      "elapsed_seconds": 0.006,
+      "event_type": "PLAN_APPROVED",
+      "message": "Plan 'PLAN-b468d00b' approved for workflow 'WF-61ea7ac2'.",
+      "agent_id": null,
+      "subtask_id": null,
+      "details": {}
+    },
+    {
+      "event_id": "EVT-ae7b4b",
+      "timestamp": "2026-11-17T14:53:03.372739",
+      "elapsed_seconds": 0.03,
+      "event_type": "WORKFLOW_RUNNING",
+      "message": "Execution started for workflow 'WF-61ea7ac2'.",
+      "agent_id": null,
+      "subtask_id": null,
+      "details": {}
+    },
+    {
+      "event_id": "EVT-689df2",
+      "timestamp": "2026-11-17T14:53:03.376828",
+      "elapsed_seconds": 0.035,
+      "event_type": "WAVE_STARTED",
+      "message": "Executing Wave 1/4 (1 subtasks).",
+      "agent_id": null,
+      "subtask_id": null,
+      "details": {}
+    },
+    {
+      "event_id": "EVT-f5bff0",
+      "timestamp": "2026-11-17T14:53:03.380414",
+      "elapsed_seconds": 0.038,
+      "event_type": "TASK_STARTED",
+      "message": "Subtask '01' started: Scientific & Habitat Research: lions",
+      "agent_id": "AGT-001",
+      "subtask_id": "PLAN-b468d00b-ST-01",
+      "details": {}
+    },
+    {
+      "event_id": "EVT-3f270b",
+      "timestamp": "2026-11-17T14:53:03.393231",
+      "elapsed_seconds": 0.051,
+      "event_type": "MODEL_SELECTED",
+      "message": "Model 'ollama/qwen2.5:7b' (local, zero-cost) selected for research synthesis.",
+      "agent_id": null,
+      "subtask_id": null,
+      "details": {}
+    },
+    {
+      "event_id": "EVT-5c7c8d",
+      "timestamp": "2026-11-17T14:53:03.409799",
+      "elapsed_seconds": 0.068,
+      "event_type": "TASK_COMPLETED",
+      "message": "Subtask '01' completed successfully.",
+      "agent_id": "AGT-001",
+      "subtask_id": "PLAN-b468d00b-ST-01",
+      "details": {
+        "outputs": {
+          "summary": "Completed deep research dossier on lions.",
+          "facts_count": 14
+        },
+        "artifacts": [
+          "research_dossier.json"
+        ]
+      }
+    },
+    {
+      "event_id": "EVT-c57896",
+      "timestamp": "2026-11-17T14:53:03.417011",
+      "elapsed_seconds": 0.075,
+      "event_type": "WAVE_STARTED",
+      "message": "Executing Wave 2/4 (1 subtasks).",
+      "agent_id": null,
+      "subtask_id": null,
+      "details": {}
+    },
+    {
+      "event_id": "EVT-205df8",
+      "timestamp": "2026-11-17T14:53:03.421085",
+      "elapsed_seconds": 0.079,
+      "event_type": "TASK_STARTED",
+      "message": "Subtask '02' started: Documentary Architecture & 5-Minute Storyboard",
+      "agent_id": "AGT-002",
+      "subtask_id": "PLAN-b468d00b-ST-02",
+      "details": {}
+    },
+    {
+      "event_id": "EVT-4940d9",
+      "timestamp": "2026-11-17T14:53:03.434681",
+      "elapsed_seconds": 0.092,
+      "event_type": "MODEL_SELECTED",
+      "message": "Model 'ollama/qwen2.5:7b' selected for structural storytelling.",
+      "agent_id": null,
+      "subtask_id": null,
+      "details": {}
+    },
+    {
+      "event_id": "EVT-102a68",
+      "timestamp": "2026-11-17T14:53:03.451340",
+      "elapsed_seconds": 0.109,
+      "event_type": "TASK_COMPLETED",
+      "message": "Subtask '02' completed successfully.",
+      "agent_id": "AGT-002",
+      "subtask_id": "PLAN-b468d00b-ST-02",
+      "details": {
+        "outputs": {
+          "acts": 4,
+          "total_duration_sec": 300,
+          "status": "STRUCTURE_DESIGNED"
+        },
+        "artifacts": [
+          "documentary_storyboard.json"
+        ]
+      }
+    },
+    {
+      "event_id": "EVT-ff281f",
+      "timestamp": "2026-11-17T14:53:03.458516",
+      "elapsed_seconds": 0.116,
+      "event_type": "WAVE_STARTED",
+      "message": "Executing Wave 3/4 (2 subtasks).",
+      "agent_id": null,
+      "subtask_id": null,
+      "details": {}
+    },
+    {
+      "event_id": "EVT-06216c",
+      "timestamp": "2026-11-17T14:53:03.461979",
+      "elapsed_seconds": 0.12,
+      "event_type": "TASK_STARTED",
+      "message": "Subtask '03' started: Storyboard Timing & Factual Verification",
+      "agent_id": "AGT-004",
+      "subtask_id": "PLAN-b468d00b-ST-03",
+      "details": {}
+    },
+    {
+      "event_id": "EVT-c20323",
+      "timestamp": "2026-11-17T14:53:03.478261",
+      "elapsed_seconds": 0.136,
+      "event_type": "TOOL_CALLED",
+      "message": "Executed validation test suite on timing constraints.",
+      "agent_id": null,
+      "subtask_id": null,
+      "details": {}
+    },
+    {
+      "event_id": "EVT-f7de26",
+      "timestamp": "2026-11-17T14:53:03.494742",
+      "elapsed_seconds": 0.152,
+      "event_type": "TASK_COMPLETED",
+      "message": "Subtask '03' completed successfully.",
+      "agent_id": "AGT-004",
+      "subtask_id": "PLAN-b468d00b-ST-03",
+      "details": {
+        "outputs": {
+          "timing_verified": true,
+          "total_seconds": 300
+        },
+        "artifacts": [
+          "timing_validation_report.json"
+        ]
+      }
+    },
+    {
+      "event_id": "EVT-b5e1cb",
+      "timestamp": "2026-11-17T14:53:03.498050",
+      "elapsed_seconds": 0.156,
+      "event_type": "TASK_STARTED",
+      "message": "Subtask '04' started: Content Compliance & Licensing Audit",
+      "agent_id": "AGT-006",
+      "subtask_id": "PLAN-b468d00b-ST-04",
+      "details": {}
+    },
+    {
+      "event_id": "EVT-16de17",
+      "timestamp": "2026-11-17T14:53:03.529650",
+      "elapsed_seconds": 0.187,
+      "event_type": "TASK_COMPLETED",
+      "message": "Subtask '04' completed successfully.",
+      "agent_id": "AGT-006",
+      "subtask_id": "PLAN-b468d00b-ST-04",
+      "details": {
+        "outputs": {
+          "risk_rating": "LOW",
+          "compliance": "APPROVED"
+        },
+        "artifacts": [
+          "content_risk_audit.json"
+        ]
+      }
+    },
+    {
+      "event_id": "EVT-b209dd",
+      "timestamp": "2026-11-17T14:53:03.538073",
+      "elapsed_seconds": 0.196,
+      "event_type": "WAVE_STARTED",
+      "message": "Executing Wave 4/4 (1 subtasks).",
+      "agent_id": null,
+      "subtask_id": null,
+      "details": {}
+    },
+    {
+      "event_id": "EVT-85eb19",
+      "timestamp": "2026-11-17T14:53:03.542145",
+      "elapsed_seconds": 0.2,
+      "event_type": "TASK_STARTED",
+      "message": "Subtask '05' started: Production Plan & Hindi Narration Script",
+      "agent_id": "AGT-005",
+      "subtask_id": "PLAN-b468d00b-ST-05",
+      "details": {}
+    },
+    {
+      "event_id": "EVT-ba10e0",
+      "timestamp": "2026-11-17T14:53:03.569429",
+      "elapsed_seconds": 0.227,
+      "event_type": "TASK_COMPLETED",
+      "message": "Subtask '05' completed successfully.",
+      "agent_id": "AGT-005",
+      "subtask_id": "PLAN-b468d00b-ST-05",
+      "details": {
+        "outputs": {
+          "language": "Hindi",
+          "script_lines": 4,
+          "format": "Markdown & Script"
+        },
+        "artifacts": [
+          "documentary_production_plan_hindi.md"
+        ]
+      }
+    },
+    {
+      "event_id": "EVT-5f3b02",
+      "timestamp": "2026-11-17T14:53:03.588240",
+      "elapsed_seconds": 0.246,
+      "event_type": "WORKFLOW_VALIDATING",
+      "message": "Validating final consolidated deliverable.",
+      "agent_id": null,
+      "subtask_id": null,
+      "details": {}
+    },
+    {
+      "event_id": "EVT-225598",
+      "timestamp": "2026-11-17T14:53:03.606949",
+      "elapsed_seconds": 0.265,
+      "event_type": "WORKFLOW_COMPLETED",
+      "message": "Workflow trace marked as COMPLETED.",
+      "agent_id": null,
+      "subtask_id": null,
+      "details": {}
+    }
+  ],
+  "metrics": {
+    "total_events": 21,
+    "tool_calls": 1,
+    "model_calls": 2,
+    "retries": 0,
+    "errors": 0,
+    "approvals_requested": 0
+  },
+  "status": "COMPLETED"
+}

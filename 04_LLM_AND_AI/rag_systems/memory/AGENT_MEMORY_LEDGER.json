@@ -1,0 +1,169 @@
+{
+  "mem-d4582d92fd1d": {
+    "memory_id": "mem-d4582d92fd1d",
+    "category": "technical_decisions",
+    "title": "ADR-002: Dynamic Path Resolution",
+    "content": "Centralized path_config module for absolute project paths.",
+    "agent_id": "software_architect",
+    "tags": [
+      "architecture",
+      "adr"
+    ],
+    "timestamp": 1794871196.8166804,
+    "metadata": {},
+    "content_hash": "6577980410bf6b55f85ac481c6bfeb846143d9800e0f7ee6fd21fdf5cf443f7d"
+  },
+  "mem-6cf7100ba967": {
+    "memory_id": "mem-6cf7100ba967",
+    "category": "reusable_solutions",
+    "title": "Fix Python 3.14 Package Digits",
+    "content": "Use importlib.import_module for directories starting with digits.",
+    "agent_id": "coding_agent",
+    "tags": [
+      "code_fix",
+      "solution"
+    ],
+    "timestamp": 1794871196.8211927,
+    "metadata": {},
+    "content_hash": "469ee57eb9e300571a4bd88f3fe7d1b3609b5b7f68423c2d46cb1f75c929054e"
+  },
+  "mem-e573c9db9a11": {
+    "memory_id": "mem-e573c9db9a11",
+    "category": "project_memory",
+    "title": "Master AI Workspace & Environment Specification",
+    "content": "Master AI official root is relocated to F:\\Master AI. Environment: Windows 11, Intel Core i5 13th Gen, 32 GB RAM, Python 3.14.5 virtual environment. Docker and WSL2 are disabled by default. Strict fail-closed zero-paid budget enforced.",
+    "agent_id": "orchestrator",
+    "tags": [
+      "root",
+      "environment",
+      "budget",
+      "windows11"
+    ],
+    "timestamp": 1794871253.2638087,
+    "metadata": {},
+    "content_hash": "7439b87840d90125ef133621b7f86893972aff562c2aa9cb64b5c8b31e75a50d"
+  },
+  "mem-b7722a64d1dd": {
+    "memory_id": "mem-b7722a64d1dd",
+    "category": "task_history",
+    "title": "Phase 1 & Phase 2 Completion Milestones",
+    "content": "Phase 1 (Infrastructure) verified with 7/7 smoke tests. Phase 1.1 (Path Correction) created dynamic path_config.py. Phase 2 (Intelligence Layer) delivered Model Registry, Provider Adapters, Router, and Benchmarks with 11/11 tests passing.",
+    "agent_id": "testing_agent",
+    "tags": [
+      "milestone",
+      "phase1",
+      "phase2",
+      "qa"
+    ],
+    "timestamp": 1794871253.277546,
+    "metadata": {},
+    "content_hash": "0f9254250e8ab808b1e565649b585b8f2e664fd38b058746dbce0e1c9e1daa81"
+  },
+  "mem-518ef04bceb6": {
+    "memory_id": "mem-518ef04bceb6",
+    "category": "technical_decisions",
+    "title": "ADR-001: Centralized Dynamic Path Configuration",
+    "content": "Context: Relocation from C: to F: broke hardcoded absolute paths. Decision: Implement 00_CORE_SYSTEM/config/path_config.py with dynamic anchor search and MASTER_AI_ROOT override. Forbids hardcoded absolute paths in scripts.",
+    "agent_id": "software_architect",
+    "tags": [
+      "adr",
+      "paths",
+      "architecture"
+    ],
+    "timestamp": 1794871253.2893336,
+    "metadata": {},
+    "content_hash": "7256495a15187d2cf9e7f61882ee15fb6a608c7e5a932058cb4936cfd447f814"
+  },
+  "mem-9822c5bc1244": {
+    "memory_id": "mem-9822c5bc1244",
+    "category": "technical_decisions",
+    "title": "ADR-002: Dual-Model Hierarchy and Fail-Closed Security Boundary",
+    "content": "Context: Prevent unauthorized API charges while enabling agent workflows. Decision: Default to offline-mock-deterministic and local Ollama. Cloud models are strictly gated by SecurityBoundary requiring explicit user approval.",
+    "agent_id": "software_architect",
+    "tags": [
+      "adr",
+      "security",
+      "llm"
+    ],
+    "timestamp": 1794871253.3006053,
+    "metadata": {},
+    "content_hash": "b43e150172c0cc99bf49fd2afa45468101fa3cfc11207836f24757c90bc94c76"
+  },
+  "mem-0ccf25b5f0b1": {
+    "memory_id": "mem-0ccf25b5f0b1",
+    "category": "technical_decisions",
+    "title": "ADR-003: Pure-Python BM25 and Embedded Qdrant Vector Storage",
+    "content": "Context: Windows 11 WDAC blocks untrusted C extensions. Decision: Use pure-Python Okapi BM25 for sparse keyword search combined with embedded Qdrant for dense semantic vectors via Reciprocal Rank Fusion (RRF).",
+    "agent_id": "software_architect",
+    "tags": [
+      "adr",
+      "rag",
+      "bm25",
+      "qdrant"
+    ],
+    "timestamp": 1794871253.311108,
+    "metadata": {},
+    "content_hash": "6d15a5f21a6752c26a594b707e1d0cb6621463dbde0ffcfba53646677b127343"
+  },
+  "mem-c9728be6109c": {
+    "memory_id": "mem-c9728be6109c",
+    "category": "reusable_solutions",
+    "title": "Dynamic Module Import for Leading Digit Directories",
+    "content": "Problem: Python grammar syntax forbids 'import 00_CORE_SYSTEM'. Solution: Use importlib.import_module('00_CORE_SYSTEM.config.path_config') to cleanly load modules with numeric folder prefixes.",
+    "agent_id": "coding_agent",
+    "tags": [
+      "python",
+      "importlib",
+      "solution"
+    ],
+    "timestamp": 1794871253.3213077,
+    "metadata": {},
+    "content_hash": "fda48a771bd753877fe966f1cb309efa891ac8f1a9b97173de013e635e13b0da"
+  },
+  "mem-5fb22d26faa1": {
+    "memory_id": "mem-5fb22d26faa1",
+    "category": "reusable_solutions",
+    "title": "Deterministic Offline Mock Embeddings",
+    "content": "Problem: Tests must run offline without downloading multi-gigabyte models. Solution: Use SHA-256 token projection with L2 normalization to generate reproducible 128-dim vectors preserving semantic similarity.",
+    "agent_id": "coding_agent",
+    "tags": [
+      "embeddings",
+      "offline",
+      "testing"
+    ],
+    "timestamp": 1794871253.3293023,
+    "metadata": {},
+    "content_hash": "56a64b0bcc587b90a4fe1fff7e0875ccaef540acc42e9f7eb01f2a0270f04cff"
+  },
+  "mem-f609ea247f52": {
+    "memory_id": "mem-f609ea247f52",
+    "category": "user_preferences",
+    "title": "User Operating Preferences and Constraints",
+    "content": "User demands strict zero-hallucination answers with explicit citations. Hindi and English multi-lingual support must be maintained. Nothing goes global without explicit user approval. All test results must be factual.",
+    "agent_id": "documentation_agent",
+    "tags": [
+      "preferences",
+      "governance",
+      "hindi",
+      "citations"
+    ],
+    "timestamp": 1794871253.3402767,
+    "metadata": {},
+    "content_hash": "e1c04de9407c033bea2587e5b670c1921689a0090df1f07d8549421ffe299722"
+  },
+  "mem-eb223b90581e": {
+    "memory_id": "mem-eb223b90581e",
+    "category": "agent_knowledge",
+    "title": "Specialist Agent Capabilities & Security Tokens",
+    "content": "Master AI operates 7 specialist agents: software_architect (ADRs, design), coding_agent (implementation), testing_agent (QA, benchmarks), documentation_agent (guides, dashboard), security_auditor (policy gates), capability_discovery_agent (domain tracking), research_agent (deep research).",
+    "agent_id": "capability_discovery_agent",
+    "tags": [
+      "agents",
+      "specialists",
+      "capabilities"
+    ],
+    "timestamp": 1794871253.3502362,
+    "metadata": {},
+    "content_hash": "5f885783e2df445f2b3dd4b49b2a6fa0d353a6685e31a56fb2005db92a282174"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "suite_name": "Phase 4.2 Security Hardening Test Suite",
+  "total_tests": 16,
+  "passed_tests": 16,
+  "failed_tests": 0,
+  "all_passed": true,
+  "execution_time_seconds": 4.653,
+  "timestamp": "2026-11-17 02:36:46",
+  "results": [
+    {
+      "test_id": "SEC-001",
+      "title": "Direct Execution Without Auth Token",
+      "passed": true,
+      "expected": "Status FAILURE with auth_token validation or AUTHORIZATION_DENIED",
+      "actual": "Agent Coding Agent encountered an error: Agent request validation failed: ['root.auth_token: length 0 is less than minimum 10']"
+    },
+    {
+      "test_id": "SEC-002",
+      "title": "Direct Execution With Forged Auth Token",
+      "passed": true,
+      "expected": "Status FAILURE with AUTHORIZATION_DENIED",
+      "actual": "Agent Coding Agent encountered an error: AUTHORIZATION_DENIED: Execution rejected. Task-bound approval token missing, invalid, expired, or mismatched for 'TSK-SEC-002'."
+    },
+    {
+      "test_id": "SEC-003",
+      "title": "Cross-Task Token Reuse Attack",
+      "passed": true,
+      "expected": "Task A token rejected for Task B with AUTHORIZATION_DENIED",
+      "actual": "Agent Coding Agent encountered an error: AUTHORIZATION_DENIED: Execution rejected. Task-bound approval token missing, invalid, expired, or mismatched for 'TSK-TASK-B'."
+    },
+    {
+      "test_id": "SEC-004",
+      "title": "Expired Token Rejection",
+      "passed": true,
+      "expected": "Expired token rejected with AUTHORIZATION_DENIED",
+      "actual": "Agent Research Agent encountered an error: AUTHORIZATION_DENIED: Execution rejected. Task-bound approval token missing, invalid, expired, or mismatched for 'TSK-SEC-004-EXPIRED'."
+    },
+    {
+      "test_id": "SEC-005",
+      "title": "Agent Self-Approval Prevention",
+      "passed": true,
+      "expected": "Throws ApprovalViolation when agent attempts self-approval",
+      "actual": "Caught expected ApprovalViolation: Agent self-approval is forbidden. Only human operators or orchestrator may authorize tasks."
+    },
+    {
+      "test_id": "SEC-006",
+      "title": "Concurrent Ledger Atomic Updates",
+      "passed": true,
+      "expected": "20 concurrent tasks registered without corruption",
+      "actual": "20 recorded; Errors: []"
+    },
+    {
+      "test_id": "SEC-007",
+      "title": "Interrupted Atomic Write Recovery",
+      "passed": true,
+      "expected": "Orphan .tmp cleaned up; primary ledger uncorrupted",
+      "actual": "Primary valid: True; Orphan still exists: False"
+    },
+    {
+      "test_id": "SEC-008",
+      "title": "Corrupt Ledger Backup Auto-Recovery",
+      "passed": true,
+      "expected": "Auto-recovered from .bak upon detecting primary corruption",
+      "actual": "Recovered records: ['TSK-RECOVER-001']"
+    },
+    {
+      "test_id": "SEC-009",
+      "title": "Relative Path Traversal Rejection",
+      "passed": true,
+      "expected": "Throws SandboxSecurityViolation on ../../",
+      "actual": "Blocked"
+    },
+    {
+      "test_id": "SEC-010",
+      "title": "Windows Absolute Path Escape Rejection",
+      "passed": true,
+      "expected": "Throws SandboxSecurityViolation on C:\\Windows\\...",
+      "actual": "Blocked"
+    },
+    {
+      "test_id": "SEC-011",
+      "title": "Subprocess Sanitized Environment",
+      "passed": true,
+      "expected": "Sensitive keys (USERPROFILE, APPDATA, tokens) stripped",
+      "actual": "Leaked keys: []; Preserved safe keys: ['COMSPEC', 'NUMBER_OF_PROCESSORS', 'OS', 'PATH', 'PATHEXT', 'PROCESSOR_ARCHITECTURE', 'SYSTEMROOT', 'TEMP', 'TMP']"
+    },
+    {
+      "test_id": "SEC-012",
+      "title": "Subprocess Mandatory Timeout Enforcement",
+      "passed": true,
+      "expected": "Exit code 124 with timed out message",
+      "actual": "Exit code 124: Command timed out after 1 seconds."
+    },
+    {
+      "test_id": "SEC-013",
+      "title": "Subprocess Process Tree Termination",
+      "passed": true,
+      "expected": "Process tree terminated cleanly on timeout (exit code 124)",
+      "actual": "Exit code 124: Command timed out after 1 seconds."
+    },
+    {
+      "test_id": "SEC-014",
+      "title": "Shell Injection Argument Sanitization",
+      "passed": true,
+      "expected": "All 5 injection attempts blocked",
+      "actual": "5/5 blocked"
+    },
+    {
+      "test_id": "SEC-015",
+      "title": "Subprocess Execution Audit Logging",
+      "passed": true,
+      "expected": "Execution appended to SUBPROCESS_AUDIT.jsonl",
+      "actual": "Logged command: ['python', '-c', \"print('audit_test')\"]"
+    },
+    {
+      "test_id": "SEC-016",
+      "title": "Global Config (.gemini) Directory Write Block",
+      "passed": true,
+      "expected": "Throws SandboxSecurityViolation on .gemini path write",
+      "actual": "Blocked"
+    }
+  ]
+}

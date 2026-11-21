@@ -1,0 +1,129 @@
+{
+  "$schema": "https://master-ai.local/schemas/design-system-registry.v1.json",
+  "registry_name": "Master AI Universal Design System Registry",
+  "version": "1.0.0",
+  "last_updated": "2026-11-17",
+  "specification_file": "06_UI_UX_DESIGN/design_systems/UNIVERSAL_DESIGN_SYSTEM.md",
+  "token_file": "06_UI_UX_DESIGN/tokens/DESIGN_TOKENS.json",
+  "compliance_standards": [
+    "WCAG 2.2 AAA",
+    "WAI-ARIA 1.2",
+    "Section 508",
+    "Mobile-First Responsive"
+  ],
+  "components": [
+    {
+      "id": "COMP-001",
+      "name": "Button",
+      "category": "actions",
+      "variants": ["primary", "secondary", "destructive", "ghost"],
+      "sizes": ["sm", "md", "lg"],
+      "states": ["idle", "hover", "focus-visible", "active", "loading", "disabled"],
+      "min_touch_target_px": 44,
+      "aria_requirements": [
+        "aria-busy on loading",
+        "aria-disabled or disabled attribute",
+        "aria-haspopup if trigger for menu"
+      ]
+    },
+    {
+      "id": "COMP-002",
+      "name": "TextInput",
+      "category": "forms",
+      "variants": ["standard", "filled"],
+      "sizes": ["sm", "md", "lg"],
+      "states": ["idle", "focus", "error", "success", "disabled"],
+      "min_touch_target_px": 44,
+      "aria_requirements": [
+        "aria-invalid when error present",
+        "aria-describedby pointing to error or helper text id",
+        "explicit label htmlFor binding"
+      ]
+    },
+    {
+      "id": "COMP-003",
+      "name": "Card",
+      "category": "containers",
+      "variants": ["elevated", "outlined", "flat"],
+      "sizes": ["compact", "standard", "spacious"],
+      "states": ["idle", "hover", "selected"],
+      "min_touch_target_px": 44,
+      "aria_requirements": [
+        "semantic section or article tag",
+        "aria-labelledby header heading"
+      ]
+    },
+    {
+      "id": "COMP-004",
+      "name": "ModalDialog",
+      "category": "overlays",
+      "variants": ["dialog", "alertdialog", "drawer"],
+      "sizes": ["sm", "md", "lg", "fullscreen"],
+      "states": ["opening", "open", "closing", "closed"],
+      "min_touch_target_px": 44,
+      "aria_requirements": [
+        "role='dialog' or 'alertdialog'",
+        "aria-modal='true'",
+        "aria-labelledby title id",
+        "aria-describedby desc id",
+        "keyboard focus trap and Escape key listener"
+      ]
+    },
+    {
+      "id": "COMP-005",
+      "name": "ToastNotification",
+      "category": "feedback",
+      "variants": ["info", "success", "warning", "error"],
+      "sizes": ["standard"],
+      "states": ["entering", "visible", "exiting", "dismissed"],
+      "min_touch_target_px": 44,
+      "aria_requirements": [
+        "role='status' and aria-live='polite' for info/success",
+        "role='alert' and aria-live='assertive' for errors",
+        "visible dismiss button with aria-label"
+      ]
+    },
+    {
+      "id": "COMP-006",
+      "name": "DataTable",
+      "category": "data-display",
+      "variants": ["compact", "bordered", "striped"],
+      "sizes": ["sm", "md"],
+      "states": ["loading", "empty", "populated", "sorting"],
+      "min_touch_target_px": 44,
+      "aria_requirements": [
+        "role='table' or native <table>",
+        "th scope='col' or scope='row'",
+        "aria-sort on sortable headers",
+        "accessible caption or aria-label"
+      ]
+    },
+    {
+      "id": "COMP-007",
+      "name": "SkeletonLoader",
+      "category": "feedback",
+      "variants": ["text", "circular", "rectangular"],
+      "sizes": ["auto"],
+      "states": ["animating"],
+      "min_touch_target_px": 0,
+      "aria_requirements": [
+        "aria-hidden='true'",
+        "parent container aria-busy='true'"
+      ]
+    },
+    {
+      "id": "COMP-008",
+      "name": "NavigationHeader",
+      "category": "navigation",
+      "variants": ["fixed", "sticky", "fluid"],
+      "sizes": ["standard"],
+      "states": ["expanded", "collapsed"],
+      "min_touch_target_px": 44,
+      "aria_requirements": [
+        "role='navigation' or <nav>",
+        "aria-label='Main Navigation'",
+        "aria-expanded on mobile menu toggle"
+      ]
+    }
+  ]
+}

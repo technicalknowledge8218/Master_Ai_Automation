@@ -1,0 +1,140 @@
+{
+  "audit_timestamp": "2026-11-17T15:00:00+05:30",
+  "project_id": "DOC-91ef5491",
+  "video_file": {
+    "path": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-91ef5491\\lion_documentary_hindi.mp4",
+    "file_size_bytes": 809821,
+    "duration_seconds": 12.0,
+    "resolution": "1920x1080",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "total_frames": 360,
+    "video_codec": "h264 (High) (avc1 / 0x31637661)",
+    "video_bitrate_kbps": 539,
+    "audio_codec": "aac (LC) (mp4a / 0x6134706D)",
+    "audio_sample_rate_hz": 44100,
+    "audio_channels": "mono",
+    "audio_bitrate_kbps": 150
+  },
+  "soundtrack_file": {
+    "path": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-91ef5491\\soundtrack_final.wav",
+    "file_size_bytes": 4921638,
+    "duration_seconds": 55.8,
+    "sample_rate_hz": 44100,
+    "channels": 1,
+    "bit_depth": 16,
+    "total_sample_frames": 2460780,
+    "bitrate_kbps": 705
+  },
+  "narration_file": {
+    "path": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-91ef5491\\narration_raw.wav",
+    "file_size_bytes": 4921604,
+    "duration_seconds": 55.8,
+    "sample_rate_hz": 44100,
+    "channels": 1,
+    "bit_depth": 16
+  },
+  "ambient_soundscape_file": {
+    "path": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-91ef5491\\ambient_soundscape.wav",
+    "file_size_bytes": 1234878,
+    "duration_seconds": 14.0,
+    "sample_rate_hz": 44100,
+    "channels": 1,
+    "bit_depth": 16
+  },
+  "subtitles": {
+    "srt_path": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-91ef5491\\subtitles_hindi.srt",
+    "srt_size_bytes": 1759,
+    "ass_path": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-91ef5491\\subtitles_hindi.ass",
+    "ass_size_bytes": 2641,
+    "cue_count": 4,
+    "earliest_start_sec": 0.5,
+    "latest_end_sec": 12.3,
+    "total_coverage_sec": 11.8,
+    "cues": [
+      {
+        "cue": 1,
+        "start": "00:00:00,500",
+        "end": "00:00:03,300",
+        "start_sec": 0.5,
+        "end_sec": 3.3,
+        "duration_sec": 2.8,
+        "text": "जब अफ्रीकी सवाना पर भोर की पहली किरण पड़ती है, तब जागता है प्रकृति का सबसे भव्य शासक — शेर। यह केवल एक शिकारी नहीं, बल्कि इस प्राचीन जंगल की धड़कन है।"
+      },
+      {
+        "cue": 2,
+        "start": "00:00:03,500",
+        "end": "00:00:06,300",
+        "start_sec": 3.5,
+        "end_sec": 6.3,
+        "duration_sec": 2.8,
+        "text": "शेर की ताकत उसकी एकांत शक्ति में नहीं, बल्कि उसके परिवार यानी 'प्राइड' के अटूट बंधन में है। शिकार की रणनीति में कुशल शेरनियों का तालमेल अद्वितीय होता है।"
+      },
+      {
+        "cue": 3,
+        "start": "00:00:06,500",
+        "end": "00:00:09,300",
+        "start_sec": 6.5,
+        "end_sec": 9.3,
+        "duration_sec": 2.8,
+        "text": "शेर की शक्तिशाली दहाड़ आठ किलोमीटर दूर तक सवाना को कंपा देती है। यह केवल एक चेतावनी नहीं, बल्कि सवाना के हर कोने में उसकी सम्प्रभुता का ऐलान है।"
+      },
+      {
+        "cue": 4,
+        "start": "00:00:09,500",
+        "end": "00:00:12,300",
+        "start_sec": 9.5,
+        "end_sec": 12.3,
+        "duration_sec": 2.8,
+        "text": "आज शेर विलुप्ति के खतरे का सामना कर रहे हैं। भारत के गिर राष्ट्रीय उद्यान से लेकर अफ्रीका के जंगलों तक, इनकी रक्षा करना हमारा कर्तव्य है ताकि यह राजसी गर्जना सदैव गूंजती रहे।"
+      }
+    ]
+  },
+  "thumbnail": {
+    "path": "F:\\Master AI\\09_CONTENT_STUDIO\\documentaries\\DOC-91ef5491\\thumbnail_youtube.png",
+    "file_size_bytes": 40007,
+    "width": 1280,
+    "height": 720,
+    "dimensions": "1280x720",
+    "color_mode": "RGB",
+    "format": "PNG"
+  },
+  "extracted_frame_samples": [
+    {
+      "filename": "frame_01_opening.png",
+      "timestamp_sec": 0.0,
+      "path": "F:\\Master AI\\09_CONTENT_STUDIO\\audits\\DOC-91ef5491\\frame_samples\\frame_01_opening.png",
+      "size_bytes": 97111,
+      "dimensions": "1920x1080"
+    },
+    {
+      "filename": "frame_02_pct25.png",
+      "timestamp_sec": 3.0,
+      "path": "F:\\Master AI\\09_CONTENT_STUDIO\\audits\\DOC-91ef5491\\frame_samples\\frame_02_pct25.png",
+      "size_bytes": 142452,
+      "dimensions": "1920x1080"
+    },
+    {
+      "filename": "frame_03_pct50.png",
+      "timestamp_sec": 6.0,
+      "path": "F:\\Master AI\\09_CONTENT_STUDIO\\audits\\DOC-91ef5491\\frame_samples\\frame_03_pct50.png",
+      "size_bytes": 134557,
+      "dimensions": "1920x1080"
+    },
+    {
+      "filename": "frame_04_pct75.png",
+      "timestamp_sec": 9.0,
+      "path": "F:\\Master AI\\09_CONTENT_STUDIO\\audits\\DOC-91ef5491\\frame_samples\\frame_04_pct75.png",
+      "size_bytes": 75837,
+      "dimensions": "1920x1080"
+    },
+    {
+      "filename": "frame_05_ending.png",
+      "timestamp_sec": 11.5,
+      "path": "F:\\Master AI\\09_CONTENT_STUDIO\\audits\\DOC-91ef5491\\frame_samples\\frame_05_ending.png",
+      "size_bytes": 97606,
+      "dimensions": "1920x1080"
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "status": "SUCCESS",
+  "language": "Hindi",
+  "voice_name": "hi-IN-MadhurNeural",
+  "target_duration_sec": 30.0,
+  "actual_duration_sec": 30.0,
+  "cue_count": 5,
+  "cues": [
+    {
+      "text": "दस साल बाद, रोहित अपने वीरान पैतृक घर लौटा।",
+      "voice": "hi-IN-MadhurNeural",
+      "language": "Hindi",
+      "duration_sec": 4.8,
+      "output_path": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\phase-7.6.1\\voice_chunks\\chunk_00.wav",
+      "file_size": 423438,
+      "start_sec": 0.5,
+      "end_sec": 5.3
+    },
+    {
+      "text": "हवेली के हर कोने में सिर्फ गहरा सन्नाटा था।",
+      "voice": "hi-IN-MadhurNeural",
+      "language": "Hindi",
+      "duration_sec": 4.128,
+      "output_path": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\phase-7.6.1\\voice_chunks\\chunk_01.wav",
+      "file_size": 364168,
+      "start_sec": 6.0,
+      "end_sec": 10.128
+    },
+    {
+      "text": "पुराने कमरे की मेज में एक गुप्त दराज मिली।",
+      "voice": "hi-IN-MadhurNeural",
+      "language": "Hindi",
+      "duration_sec": 4.128,
+      "output_path": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\phase-7.6.1\\voice_chunks\\chunk_02.wav",
+      "file_size": 364168,
+      "start_sec": 12.0,
+      "end_sec": 16.128
+    },
+    {
+      "text": "कांपते हाथों से माँ का वो आख़िरी ख़त खोला।",
+      "voice": "hi-IN-MadhurNeural",
+      "language": "Hindi",
+      "duration_sec": 4.128,
+      "output_path": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\phase-7.6.1\\voice_chunks\\chunk_03.wav",
+      "file_size": 364168,
+      "start_sec": 18.0,
+      "end_sec": 22.128
+    },
+    {
+      "text": "आंसुओं के बीच माँ का अमर प्यार झलक उठा।",
+      "voice": "hi-IN-MadhurNeural",
+      "language": "Hindi",
+      "duration_sec": 4.104,
+      "output_path": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\phase-7.6.1\\voice_chunks\\chunk_04.wav",
+      "file_size": 362052,
+      "start_sec": 24.0,
+      "end_sec": 28.104
+    }
+  ],
+  "speech_coverage": {
+    "active_seconds": 21,
+    "coverage_pct": 70.0,
+    "per_second_telemetry": [
+      {
+        "second": 0,
+        "rms_dbfs": -20.7,
+        "peak_dbfs": -1.7,
+        "is_active": true
+      },
+      {
+        "second": 1,
+        "rms_dbfs": -14.9,
+        "peak_dbfs": -1.5,
+        "is_active": true
+      },
+      {
+        "second": 2,
+        "rms_dbfs": -14.9,
+        "peak_dbfs": -1.5,
+        "is_active": true
+      },
+      {
+        "second": 3,
+        "rms_dbfs": -16.8,
+        "peak_dbfs": -1.6,
+        "is_active": true
+      },
+      {
+        "second": 4,
+        "rms_dbfs": -24.8,
+        "peak_dbfs": -3.5,
+        "is_active": true
+      },
+      {
+        "second": 5,
+        "rms_dbfs": -180.0,
+        "peak_dbfs": -180.0,
+        "is_active": false
+      },
+      {
+        "second": 6,
+        "rms_dbfs": -14.6,
+        "peak_dbfs": -2.7,
+        "is_active": true
+      },
+      {
+        "second": 7,
+        "rms_dbfs": -14.5,
+        "peak_dbfs": -2.9,
+        "is_active": true
+      },
+      {
+        "second": 8,
+        "rms_dbfs": -17.2,
+        "peak_dbfs": -2.3,
+        "is_active": true
+      },
+      {
+        "second": 9,
+        "rms_dbfs": -28.6,
+        "peak_dbfs": -2.7,
+        "is_active": true
+      },
+      {
+        "second": 10,
+        "rms_dbfs": -180.0,
+        "peak_dbfs": -180.0,
+        "is_active": false
+      },
+      {
+        "second": 11,
+        "rms_dbfs": -180.0,
+        "peak_dbfs": -180.0,
+        "is_active": false
+      },
+      {
+        "second": 12,
+        "rms_dbfs": -14.0,
+        "peak_dbfs": -3.2,
+        "is_active": true
+      },
+      {
+        "second": 13,
+        "rms_dbfs": -14.8,
+        "peak_dbfs": -2.5,
+        "is_active": true
+      },
+      {
+        "second": 14,
+        "rms_dbfs": -17.6,
+        "peak_dbfs": -3.7,
+        "is_active": true
+      },
+      {
+        "second": 15,
+        "rms_dbfs": -29.5,
+        "peak_dbfs": -8.1,
+        "is_active": true
+      },
+      {
+        "second": 16,
+        "rms_dbfs": -180.0,
+        "peak_dbfs": -180.0,
+        "is_active": false
+      },
+      {
+        "second": 17,
+        "rms_dbfs": -180.0,
+        "peak_dbfs": -180.0,
+        "is_active": false
+      },
+      {
+        "second": 18,
+        "rms_dbfs": -15.2,
+        "peak_dbfs": -1.5,
+        "is_active": true
+      },
+      {
+        "second": 19,
+        "rms_dbfs": -14.6,
+        "peak_dbfs": -1.5,
+        "is_active": true
+      },
+      {
+        "second": 20,
+        "rms_dbfs": -16.3,
+        "peak_dbfs": -1.5,
+        "is_active": true
+      },
+      {
+        "second": 21,
+        "rms_dbfs": -27.5,
+        "peak_dbfs": -3.5,
+        "is_active": true
+      },
+      {
+        "second": 22,
+        "rms_dbfs": -180.0,
+        "peak_dbfs": -180.0,
+        "is_active": false
+      },
+      {
+        "second": 23,
+        "rms_dbfs": -180.0,
+        "peak_dbfs": -180.0,
+        "is_active": false
+      },
+      {
+        "second": 24,
+        "rms_dbfs": -14.5,
+        "peak_dbfs": -2.0,
+        "is_active": true
+      },
+      {
+        "second": 25,
+        "rms_dbfs": -15.0,
+        "peak_dbfs": -1.9,
+        "is_active": true
+      },
+      {
+        "second": 26,
+        "rms_dbfs": -16.9,
+        "peak_dbfs": -1.5,
+        "is_active": true
+      },
+      {
+        "second": 27,
+        "rms_dbfs": -31.4,
+        "peak_dbfs": -2.9,
+        "is_active": true
+      },
+      {
+        "second": 28,
+        "rms_dbfs": -180.0,
+        "peak_dbfs": -180.0,
+        "is_active": false
+      },
+      {
+        "second": 29,
+        "rms_dbfs": -180.0,
+        "peak_dbfs": -180.0,
+        "is_active": false
+      }
+    ]
+  },
+  "waveform_telemetry": {
+    "rms_dbfs": -18.17,
+    "peak_dbfs": -1.5,
+    "clipped_samples": 0
+  },
+  "output_path": "F:\\Master AI\\00_CORE_SYSTEM\\research\\phase-7\\phase-7.6.1\\test_fixed_narration.wav"
+}
