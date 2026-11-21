@@ -45,7 +45,10 @@ def run_setup():
     print("   1. हिन्दी (Pure Devanagari Hindi)")
     print("   2. Hinglish (Romanized Hindi - Recommended for Termux) [Default]")
     print("   3. English (International Standard)")
-    lang_choice = input("Select / चुनें [1-3] (Default: 2) > ").strip()
+    try:
+        lang_choice = input("Select / चुनें [1-3] (Default: 2) > ").strip()
+    except (EOFError, KeyboardInterrupt):
+        lang_choice = "2"
 
     lang_map = {"1": "hindi", "2": "hinglish", "3": "english"}
     selected_lang = lang_map.get(lang_choice, "hinglish")
@@ -76,7 +79,10 @@ def run_setup():
         print("   2. ⚡ Automation & Workflow Engine (~35 MB)")
         print("   3. 🖥️ Full Workstation Suite (PC Workstation - 250 MB+)")
 
-    prof_choice = input("Select Profile [1-3] (Default: 1) > ").strip()
+    try:
+        prof_choice = input("Select Profile [1-3] (Default: 1) > ").strip()
+    except (EOFError, KeyboardInterrupt):
+        prof_choice = "1"
     prof_map = {
         "1": ("video", "requirements-video.txt"),
         "2": ("automation", "requirements-automation.txt"),

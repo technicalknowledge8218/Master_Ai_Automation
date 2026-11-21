@@ -50,4 +50,8 @@ fi
 
 echo ""
 echo "[+] Launching Master AI Setup Wizard..."
-$PYTHON_CMD setup.py
+if [ -e /dev/tty ]; then
+    $PYTHON_CMD setup.py < /dev/tty
+else
+    $PYTHON_CMD setup.py
+fi
