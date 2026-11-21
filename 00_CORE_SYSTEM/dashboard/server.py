@@ -17,6 +17,7 @@ try:
 except ImportError:
     from http.server import HTTPServer as ServerClass, SimpleHTTPRequestHandler
 import urllib.parse
+import urllib.request
 
 # Dynamic Workspace Discovery
 WORKSPACE_ROOT = Path(__file__).resolve().parents[2]
@@ -302,7 +303,6 @@ class MasterAIDashboardHandler(SimpleHTTPRequestHandler):
             script_res = None
             if gemini_key:
                 try:
-                    import urllib.request
                     prompt = (
                         f"You are the viral reel creative director for Master AI (Zovron Technologies).\n"
                         f"Write a high-retention 15-second 2D character social reel script in pure Devanagari Hindi for:\n"
