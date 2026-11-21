@@ -16,7 +16,7 @@ You do **NOT** need a computer or laptop! Master AI runs directly inside your An
 ### Step 1: Open Termux & Update Packages
 Open the Termux app on your phone and paste this single command:
 ```bash
-pkg update && pkg install git python ffmpeg -y
+pkg update && pkg install git python ffmpeg python-pillow python-numpy -y
 ```
 
 ### Step 2: Grant Phone Storage Permission

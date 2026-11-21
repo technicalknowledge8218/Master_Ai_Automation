@@ -20,19 +20,25 @@ sys.path.insert(0, str(WORKSPACE_ROOT))
 
 # Detect default save directory based on OS
 def get_default_output_dir() -> Path:
-    system = platform.system().lower()
     # Check if running inside Android Termux
-    if "com.termux" in os.environ.get("PREFIX", "") or Path("/sdcard/Download").exists():
-        default_dir = Path("/sdcard/Download/Master_AI_Videos")
+    if "com.termux" in os.environ.get("PREFIX", ""):
+        termux_download = Path.home() / "storage" / "downloads"
+        termux_shared = Path.home() / "storage" / "shared" / "Download"
+        if termux_download.exists():
+            return termux_download / "Master_AI_Videos"
+        elif termux_shared.exists():
+            return termux_shared / "Master_AI_Videos"
+        elif Path("/sdcard/Download").exists():
+            return Path("/sdcard/Download/Master_AI_Videos")
+        else:
+            return WORKSPACE_ROOT / "output_videos"
     else:
         # Standard Desktop directory
         desktop_dir = Path.home() / "Desktop"
         if desktop_dir.exists():
-            default_dir = desktop_dir / "Master_AI_Videos"
+            return desktop_dir / "Master_AI_Videos"
         else:
-            default_dir = WORKSPACE_ROOT / "16_VIDEO_LIBRARY"
-    
-    return default_dir
+            return WORKSPACE_ROOT / "16_VIDEO_LIBRARY"
 
 
 def generate_devanagari_script_via_gemini(topic: str, character: str, cta: str, api_key: str) -> str:
@@ -103,7 +109,17 @@ def interactive_wizard():
     else:
         out_dir = default_save
         
-    out_dir.mkdir(parents=True, exist_ok=True)
+    try:
+        out_dir.mkdir(parents=True, exist_ok=True)
+    except PermissionError:
+        # Graceful fallback to local workspace if storage permission isn't granted yet
+        fallback_dir = WORKSPACE_ROOT / "output_videos"
+        fallback_dir.mkdir(parents=True, exist_ok=True)
+        print(f"\n   ⚠️ Storage Permission नहीं मिली: {out_dir}")
+        print(f"   📁 फॉलबैक: वीडियो ऐप फोल्डर में सेव होगी: {fallback_dir}")
+        print(f"   💡 (टिप: फोन गैलरी में सेव करने के लिए Termux में 'termux-setup-storage' रन करके Allow दबाएं)")
+        out_dir = fallback_dir
+        
     print(f"   ✔ वीडियो सेव होगी: {out_dir}")
     
     # 4. Call to Action (CTA)

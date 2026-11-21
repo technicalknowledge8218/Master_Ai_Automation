@@ -1,7 +1,7 @@
-# Master AI Core Engine Dependencies
+# Master AI Core Engine Dependencies (Universal Windows / macOS / Linux / Android Termux)
 pillow>=10.0.0
 numpy>=1.24.0
 soundfile>=0.12.0
 scipy>=1.11.0
-faster-whisper>=1.0.0
 imageio-ffmpeg>=0.4.9
+# faster-whisper>=1.0.0 (Optional on Desktop, auto-fallback on Mobile Termux)
