@@ -12,19 +12,19 @@
         extend: {
           colors: {
             obsidian: {
-              bg: '#080a0f',
-              surface: '#0d111a',
-              card: '#121722',
-              cardHover: '#161d2b',
-              border: '#1e2638',
-              borderLight: '#2a354c'
+              bg: '#0a0e17',
+              surface: '#111827',
+              card: '#162032',
+              cardHover: '#1e293b',
+              border: '#223249',
+              borderLight: '#334866'
             },
             tech: {
-              cyan: '#06b6d4',
-              cyanHover: '#0891b2',
-              gold: '#f59e0b',
-              emerald: '#10b981',
-              rose: '#f43f5e'
+              cyan: '#38bdf8',
+              cyanHover: '#0ea5e9',
+              gold: '#fbbf24',
+              emerald: '#34d399',
+              rose: '#fb7185'
             }
           }
         }
@@ -33,31 +33,35 @@
   </script>
   <style>
     body {
-      background-color: #080a0f;
-      color: #e2e8f0;
+      background: radial-gradient(circle at 50% 0%, #172338 0%, #0a0e17 85%);
+      background-attachment: fixed;
+      color: #f1f5f9;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     }
     .carbon-card {
-      background: #0d111a;
-      border: 1px solid #1e2638;
-      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+      background: linear-gradient(180deg, #131c2c 0%, #0e1522 100%);
+      border: 1px solid #223249;
+      box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.6), 0 1px 1px 0 rgba(255, 255, 255, 0.04) inset;
+    }
+    .carbon-card:hover {
+      border-color: #334866;
     }
     .glow-cyan {
-      box-shadow: 0 0 30px rgba(6, 182, 212, 0.08);
+      box-shadow: 0 0 35px rgba(56, 189, 248, 0.12), 0 8px 24px -4px rgba(0, 0, 0, 0.6);
     }
     ::-webkit-scrollbar {
       width: 6px;
       height: 6px;
     }
     ::-webkit-scrollbar-track {
-      background: #080a0f;
+      background: #0a0e17;
     }
     ::-webkit-scrollbar-thumb {
-      background: #1e2638;
+      background: #223249;
       border-radius: 3px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: #2a354c;
+      background: #334866;
     }
   </style>
   <script src="/i18n.js"></script>
@@ -65,17 +69,17 @@
 <body class="min-h-screen flex flex-col selection:bg-cyan-500/20 selection:text-cyan-300">
 
   <!-- Top Navigation Bar -->
-  <header class="border-b border-obsidian-border bg-obsidian-surface/95 backdrop-blur-md sticky top-0 z-50 px-6 py-3.5">
+  <header class="border-b border-obsidian-border bg-obsidian-surface/95 backdrop-blur-md sticky top-0 z-50 px-3.5 sm:px-6 py-2.5 sm:py-3.5">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-600 to-cyan-400 flex items-center justify-center shadow-lg shadow-cyan-500/20">
+      <div class="flex items-center gap-2.5 sm:gap-3">
+        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-cyan-600 to-cyan-400 flex items-center justify-center shadow-lg shadow-cyan-500/20">
           <svg class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
         </div>
         <div>
-          <h1 class="font-bold text-lg tracking-wide flex items-center gap-2 text-white">
-            MASTER AI <span class="text-[10px] tracking-wider px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 font-mono">v2.0 SOVEREIGN</span>
+          <h1 class="font-bold text-base sm:text-lg tracking-wide flex items-center gap-1.5 sm:gap-2 text-white">
+            MASTER AI <span class="text-[9px] sm:text-[10px] tracking-wider px-1.5 sm:px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 font-mono">v2.0 SOVEREIGN</span>
           </h1>
-          <p class="text-xs text-slate-400">Powered by <span class="text-slate-200 font-semibold">Zovron Technologies</span></p>
+          <p class="text-[11px] sm:text-xs text-slate-400">Powered by <span class="text-slate-200 font-semibold">Zovron Technologies</span></p>
         </div>
       </div>
 
@@ -121,7 +125,7 @@
   </header>
 
   <!-- Main Content Area -->
-  <main class="flex-1 max-w-7xl w-full mx-auto p-6">
+  <main class="flex-1 max-w-7xl w-full mx-auto p-3.5 sm:p-5 md:p-6 pb-20 md:pb-6">
 
     <!-- ========================================================================= -->
     <!-- TAB 1: VIDEO CREATOR -->
@@ -129,20 +133,20 @@
     <div id="content-creator" class="space-y-6">
       <div class="flex items-center justify-between">
         <div>
-          <h2 class="text-2xl font-black tracking-tight text-white flex items-center gap-2">
+          <h2 class="text-xl sm:text-2xl font-black tracking-tight text-white flex items-center gap-2">
             Autonomous 2D Character Reel Studio
           </h2>
-          <p class="text-xs text-slate-400 mt-1">
+          <p class="text-[11px] sm:text-xs text-slate-400 mt-1">
             Produce broadcast-grade 1080x1920 viral reels with locked character rigs, native Devanagari Hindi audio and zero-overflow subtitles.
           </p>
         </div>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6">
         
         <!-- Creation Form (7 cols) -->
         <div class="lg:col-span-7 space-y-5">
-          <div class="carbon-card rounded-2xl p-6 glow-cyan">
+          <div class="carbon-card rounded-2xl p-4 sm:p-6 glow-cyan">
             <h3 class="text-xs font-bold text-tech-cyan uppercase tracking-wider mb-4 flex items-center gap-2">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
               Reel Configuration
