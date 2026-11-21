@@ -28,8 +28,8 @@ termux-setup-storage
 
 ### Step 3: Clone Master AI Repository
 ```bash
-git clone https://github.com/your-username/master-ai.git
-cd master-ai
+git clone https://github.com/technicalknowledge8218/Master_Ai_Automation.git
+cd Master_Ai_Automation
 ```
 
 ### Step 4: Install Dependencies

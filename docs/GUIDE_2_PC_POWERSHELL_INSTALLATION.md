@@ -18,8 +18,8 @@ Press `Win + X` and select **Terminal** or **PowerShell**.
 
 ### Step 2: Clone the Master AI Repository
 ```powershell
-git clone https://github.com/your-username/master-ai.git
-cd master-ai
+git clone https://github.com/technicalknowledge8218/Master_Ai_Automation.git
+cd Master_Ai_Automation
 ```
 
 ### Step 3: Install Required Dependencies

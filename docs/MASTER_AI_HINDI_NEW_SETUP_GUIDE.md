@@ -12,8 +12,8 @@
 1. **तरीका A (Git Clone - 1 सेकंड में):**  
    टर्मिनल या कमांड प्रॉम्प्ट में सिर्फ यह कमांड चलाए:  
    ```bash
-   git clone https://github.com/<your-username>/master-ai.git
-   cd master-ai
+   git clone https://github.com/technicalknowledge8218/Master_Ai_Automation.git
+   cd Master_Ai_Automation
    ```
 2. **तरीका B (बिना Git के - डायरेक्ट ZIP डाउनलोड):**  
    अगर यूजर को Git चलाना नहीं आता, तो वह सीधे GitHub वेबपेज पर जाएगा $\to$ **`Code`** बटन $\to$ **`Download ZIP`** पर क्लिक करेगा, और अनजिप करके फोल्डर खोल लेगा।  
@@ -58,7 +58,7 @@
 कमांड प्रॉम्प्ट (CMD) या PowerShell में:
 ```powershell
 # 1. रिपॉजिटरी फोल्डर में जाएं
-cd master-ai
+cd Master_Ai_Automation
 
 # 2. आवश्यक लाइब्रेरी इंस्टॉल करें
 pip install -r requirements.txt
@@ -88,8 +88,8 @@ termux-setup-storage
 
 ### स्टेप 2: क्लोन और रन
 ```bash
-git clone https://github.com/<your-username>/master-ai.git
-cd master-ai
+git clone https://github.com/technicalknowledge8218/Master_Ai_Automation.git
+cd Master_Ai_Automation
 pip install -r requirements.txt
 bash start.sh
 ```

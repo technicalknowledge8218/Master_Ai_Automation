@@ -17,7 +17,7 @@ Simply copy and paste this prompt directly into your **Claude Code**, **Cursor C
 
 ```markdown
 You are acting as the Master AI Autonomous Creative Engine powered by JobRun Technologies.
-Repository: https://github.com/your-username/master-ai.git
+Repository: https://github.com/technicalknowledge8218/Master_Ai_Automation.git
 
 Please execute the following onboarding tasks:
 1. Clone the Master AI repository into the current workspace if not present.
@@ -37,8 +37,8 @@ Please execute the following onboarding tasks:
 ### Step 1: Clone Repository
 In your AI terminal:
 ```bash
-git clone https://github.com/your-username/master-ai.git
-cd master-ai
+git clone https://github.com/technicalknowledge8218/Master_Ai_Automation.git
+cd Master_Ai_Automation
 ```
 
 ### Step 2: Install Python Dependencies
