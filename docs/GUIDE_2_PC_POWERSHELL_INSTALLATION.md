@@ -1,5 +1,5 @@
 # 💻 Master AI — Guide 2: Windows PC & PowerShell Installation Guide
-**Platform**: Master AI powered by JobRun Technologies  
+**Platform**: Master AI powered by Zovron Technologies  
 **Target Audience**: Windows PC Users, Content Creators & Developers  
 **Prerequisites**: Windows 10/11, Python 3.10+, Git (No AI software needed!)  
 
@@ -43,7 +43,7 @@ The interactive terminal wizard will immediately guide you step-by-step:
 ```text
 ==============================================================
  ⚡ MASTER AI — INTERACTIVE REEL STUDIO (GRILL-ME PROTOCOL)
- Powered by JobRun Technologies | Universal Windows/Termux
+ Powered by Zovron Technologies | Universal Windows/Termux
 ==============================================================
 
 [1/4] वीडियो का टॉपिक / टेक हुक क्या है?

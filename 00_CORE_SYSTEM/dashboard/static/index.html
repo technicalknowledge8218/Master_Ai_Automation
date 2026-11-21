@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Master AI — Autonomous Platform | JobRun Technologies</title>
+  <title>Master AI — Autonomous Platform | Zovron Technologies</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -60,6 +60,7 @@
       background: #2a354c;
     }
   </style>
+  <script src="/i18n.js"></script>
 </head>
 <body class="min-h-screen flex flex-col selection:bg-cyan-500/20 selection:text-cyan-300">
 
@@ -74,37 +75,47 @@
           <h1 class="font-bold text-lg tracking-wide flex items-center gap-2 text-white">
             MASTER AI <span class="text-[10px] tracking-wider px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 font-mono">v2.0 SOVEREIGN</span>
           </h1>
-          <p class="text-xs text-slate-400">Powered by <span class="text-slate-200 font-semibold">JobRun Technologies</span></p>
+          <p class="text-xs text-slate-400">Powered by <span class="text-slate-200 font-semibold">Zovron Technologies</span></p>
         </div>
       </div>
 
-      <!-- Navigation Tabs (SVG Only - No Emojis) -->
-      <nav class="flex items-center gap-1.5 bg-obsidian-bg p-1.5 rounded-xl border border-obsidian-border">
-        <button onclick="switchTab('creator')" id="tab-creator" class="nav-btn px-4 py-2 rounded-lg text-xs font-semibold flex items-center gap-2 bg-tech-cyan text-black shadow-md transition-all">
+      <!-- Navigation Tabs (Desktop) -->
+      <nav class="hidden md:flex items-center gap-1.5 bg-obsidian-bg p-1.5 rounded-xl border border-obsidian-border">
+        <button onclick="switchTab('creator')" id="tab-creator" class="nav-btn px-3.5 py-2 rounded-lg text-xs font-semibold flex items-center gap-2 bg-tech-cyan text-black shadow-md transition-all">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-          Video Creator
+          <span data-i18n="nav_studio">Reel Studio</span>
+          <span class="px-1.5 py-0.2 rounded text-[9px] font-bold bg-black/20 text-black border border-black/30">LIVE</span>
         </button>
-        <button onclick="switchTab('vault')" id="tab-vault" class="nav-btn px-4 py-2 rounded-lg text-xs font-semibold flex items-center gap-2 text-slate-400 hover:text-white transition-all">
+        <button onclick="switchTab('vault')" id="tab-vault" class="nav-btn px-3.5 py-2 rounded-lg text-xs font-semibold flex items-center gap-2 text-slate-400 hover:text-white transition-all">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/></svg>
-          Voice API Vault & Quotas
+          <span data-i18n="nav_vault">Voice Vault</span>
+          <span class="px-1.5 py-0.2 rounded text-[9px] font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">LIVE</span>
         </button>
-        <button onclick="switchTab('coder')" id="tab-coder" class="nav-btn px-4 py-2 rounded-lg text-xs font-semibold flex items-center gap-2 text-slate-400 hover:text-white transition-all">
+        <button onclick="switchTab('coder')" id="tab-coder" class="nav-btn px-3.5 py-2 rounded-lg text-xs font-semibold flex items-center gap-2 text-slate-400 hover:text-white transition-all">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-          Web Coder
+          <span data-i18n="nav_coder">Web Coder</span>
+          <span class="px-1.5 py-0.2 rounded text-[9px] font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30">v2.5</span>
         </button>
-        <button onclick="switchTab('automation')" id="tab-automation" class="nav-btn px-4 py-2 rounded-lg text-xs font-semibold flex items-center gap-2 text-slate-400 hover:text-white transition-all">
+        <button onclick="switchTab('automation')" id="tab-automation" class="nav-btn px-3.5 py-2 rounded-lg text-xs font-semibold flex items-center gap-2 text-slate-400 hover:text-white transition-all">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>
-          Jarvis & Automation
+          <span data-i18n="nav_automation">Automation</span>
+          <span class="px-1.5 py-0.2 rounded text-[9px] font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30">v2.5</span>
         </button>
       </nav>
 
-      <!-- Live Server Status Indicator -->
-      <div class="flex items-center gap-3">
-        <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono">
+      <!-- Right Controls: Language Selector & Status -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- Tri-Lingual Language Selector Pill -->
+        <div class="flex items-center bg-obsidian-bg p-1 rounded-xl border border-obsidian-border text-xs">
+          <button id="lang-btn-hindi" onclick="setLanguage('hindi')" class="px-2 py-1 rounded-lg text-[10px] font-medium text-slate-400 hover:text-white transition-all">हिन्दी</button>
+          <button id="lang-btn-hinglish" onclick="setLanguage('hinglish')" class="px-2 py-1 rounded-lg text-[10px] font-bold bg-tech-cyan text-black shadow-sm transition-all">Hinglish</button>
+          <button id="lang-btn-english" onclick="setLanguage('english')" class="px-2 py-1 rounded-lg text-[10px] font-medium text-slate-400 hover:text-white transition-all">English</button>
+        </div>
+
+        <div class="hidden sm:flex items-center gap-2 px-2.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono">
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
           <span>ONLINE</span>
         </div>
-        <span class="text-xs font-mono text-slate-400">PORT: 8080</span>
       </div>
     </div>
   </header>
@@ -140,7 +151,7 @@
             <!-- 1. Topic -->
             <div class="space-y-1.5 mb-4">
               <label class="text-xs font-semibold text-slate-300">Topic / Core Hook</label>
-              <input id="input-topic" type="text" value="Claude Code On Mobile Termux" 
+              <input id="input-topic" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-lpignore="true" data-i18n="placeholder_topic" value="Claude Code On Mobile Termux" 
                      class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors" 
                      placeholder="e.g. Claude Code on Mobile Termux">
             </div>
@@ -149,14 +160,14 @@
             <div class="grid grid-cols-2 gap-3 mb-4 p-3.5 rounded-xl bg-obsidian-bg border border-obsidian-border">
               <div>
                 <label class="text-xs font-semibold text-slate-300 block mb-1">Creator Name / Handle</label>
-                <input id="input-creator-name" type="text" value="Dev" 
+                <input id="input-creator-name" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-lpignore="true" value="Dev" 
                        class="w-full bg-obsidian-card border border-obsidian-border rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-cyan-500 font-mono" 
                        placeholder="e.g. Rohit, Aryan, Dev">
                 <span class="text-[10px] text-slate-500 mt-1 block">Renders as: <code class="text-cyan-400 font-mono" id="preview-badge">$ dev run --task</code></span>
               </div>
               <div>
                 <label class="text-xs font-semibold text-slate-300 block mb-1">Creator Role / Title</label>
-                <input id="input-creator-role" type="text" value="Tech Solo" 
+                <input id="input-creator-role" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-lpignore="true" value="Tech Solo" 
                        class="w-full bg-obsidian-card border border-obsidian-border rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-cyan-500" 
                        placeholder="e.g. Tech Founder, Solo Builder">
                 <span class="text-[10px] text-slate-500 mt-1 block">Role badge on terminal header card</span>
@@ -166,7 +177,7 @@
             <!-- 3. Character Archetype Rig -->
             <div class="space-y-2 mb-4">
               <label class="text-xs font-semibold text-slate-300">Select Character Archetype</label>
-              <div class="grid grid-cols-4 gap-2.5">
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 <label class="cursor-pointer">
                   <input type="radio" name="character" value="dev" checked class="peer sr-only" onchange="syncCharacterDefault('Dev', 'Tech Solo')">
                   <div class="p-3 rounded-xl border border-obsidian-border bg-obsidian-bg peer-checked:border-cyan-500 peer-checked:bg-cyan-500/10 text-center transition-all">
@@ -242,7 +253,7 @@
                   <button type="button" onclick="setFastPath('Termux')" class="px-2 py-0.5 rounded text-[10px] font-mono bg-obsidian-bg border border-obsidian-border hover:border-cyan-500/50 text-slate-300 hover:text-cyan-400">Termux</button>
                 </div>
               </div>
-              <input id="input-save-path" type="text" value="Desktop/Master_AI_Videos" 
+              <input id="input-save-path" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-lpignore="true" value="Desktop/Master_AI_Videos" 
                      class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl px-4 py-2 text-xs text-white font-mono focus:outline-none focus:border-cyan-500 transition-colors">
               <span class="text-[10px] text-slate-500">Auto-saved to selected destination folder on render completion.</span>
             </div>
@@ -250,7 +261,7 @@
             <!-- 7. Call to Action -->
             <div class="space-y-1.5 mb-6">
               <label class="text-xs font-semibold text-slate-300">Call To Action (CTA)</label>
-              <input id="input-cta" type="text" value="Comment TERMUX for Full Guide" 
+              <input id="input-cta" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-lpignore="true" data-i18n="placeholder_cta" value="Comment TERMUX for Full Guide" 
                      class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors">
             </div>
 
@@ -485,79 +496,80 @@
     </div>
 
     <!-- ========================================================================= -->
-    <!-- TAB 3: WEB CODER -->
+    <!-- TAB 3: WEB CODER (COMING SOON) -->
     <!-- ========================================================================= -->
     <div id="content-coder" class="hidden space-y-6">
-      <div>
-        <h2 class="text-2xl font-black tracking-tight text-white flex items-center gap-2">
-          Web Coder & Full-Stack Scaffolder
-        </h2>
-        <p class="text-xs text-slate-400 mt-1">
-          Instant architecture scaffolding, boilerplate generation, and live dev servers.
-        </p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-        <div class="carbon-card rounded-2xl p-6 hover:border-cyan-500/50 transition-all cursor-pointer">
-          <div class="w-10 h-10 rounded-xl bg-black border border-obsidian-border flex items-center justify-center text-sm font-bold mb-4 font-mono text-cyan-400">NEXT</div>
-          <h3 class="text-base font-bold text-white">Next.js 15 App Router</h3>
-          <p class="text-xs text-slate-400 mt-1">Tailwind CSS, TypeScript, Server Actions and shadcn/ui components.</p>
-          <span class="mt-4 inline-block text-xs text-cyan-400 font-semibold">Scaffold Project &rarr;</span>
+      <div class="carbon-card rounded-2xl p-8 border-amber-500/20 bg-gradient-to-br from-obsidian-surface to-amber-950/10 glow-cyan">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-6 border-b border-obsidian-border">
+          <div>
+            <div class="flex items-center gap-2 mb-1.5">
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30 font-mono tracking-wider" data-i18n="coder_badge">🚀 IN DEVELOPMENT — RELEASE IN v2.5</span>
+            </div>
+            <h2 class="text-2xl font-black tracking-tight text-white" data-i18n="coder_title">Autonomous Web Coder & Scaffolder</h2>
+            <p class="text-xs text-slate-400 mt-1 max-w-xl" data-i18n="coder_notice">
+              This specialist agent module is currently under active engineering. It will provide autonomous full-stack repo scaffolding in version 2.5.
+            </p>
+          </div>
+          <button onclick="alert('Thank you for your interest! Version 2.5 roadmap is on schedule for Q1 2027.')" class="px-4 py-2 rounded-xl bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 text-xs font-bold text-amber-300 transition-all self-start sm:self-auto flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+            <span data-i18n="btn_notify">Early Access Roadmap</span>
+          </button>
         </div>
-        <div class="carbon-card rounded-2xl p-6 hover:border-cyan-500/50 transition-all cursor-pointer">
-          <div class="w-10 h-10 rounded-xl bg-emerald-950/60 border border-emerald-500/30 flex items-center justify-center text-sm font-bold text-emerald-400 mb-4 font-mono">FAST</div>
-          <h3 class="text-base font-bold text-white">FastAPI Microservice</h3>
-          <p class="text-xs text-slate-400 mt-1">Async endpoints, Pydantic v2 schemas, JWT authentication, and Swagger docs.</p>
-          <span class="mt-4 inline-block text-xs text-emerald-400 font-semibold">Scaffold Backend &rarr;</span>
-        </div>
-        <div class="carbon-card rounded-2xl p-6 hover:border-cyan-500/50 transition-all cursor-pointer">
-          <div class="w-10 h-10 rounded-xl bg-blue-950/60 border border-blue-500/30 flex items-center justify-center text-sm font-bold text-blue-400 mb-4 font-mono">FLUT</div>
-          <h3 class="text-base font-bold text-white">Flutter Mobile App</h3>
-          <p class="text-xs text-slate-400 mt-1">Cross-platform iOS and Android starter with state management and clean architecture.</p>
-          <span class="mt-4 inline-block text-xs text-blue-400 font-semibold">Scaffold Mobile App &rarr;</span>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 opacity-75">
+          <div class="p-5 rounded-xl bg-obsidian-bg/80 border border-obsidian-border">
+            <div class="w-9 h-9 rounded-lg bg-black border border-obsidian-border flex items-center justify-center text-xs font-mono font-bold text-cyan-400 mb-3">NEXT</div>
+            <h3 class="text-sm font-bold text-white">Next.js 15 Full-Stack</h3>
+            <p class="text-[11px] text-slate-400 mt-1">App router, Server Actions, Tailwind CSS and interactive UI widgets.</p>
+            <span class="mt-3 inline-block text-[10px] text-amber-400 font-semibold font-mono">ROADMAP: v2.5</span>
+          </div>
+          <div class="p-5 rounded-xl bg-obsidian-bg/80 border border-obsidian-border">
+            <div class="w-9 h-9 rounded-lg bg-emerald-950/60 border border-emerald-500/30 flex items-center justify-center text-xs font-mono font-bold text-emerald-400 mb-3">FAST</div>
+            <h3 class="text-sm font-bold text-white">FastAPI Microservice</h3>
+            <p class="text-[11px] text-slate-400 mt-1">Pydantic v2 schemas, JWT authentication, and automated Swagger API docs.</p>
+            <span class="mt-3 inline-block text-[10px] text-amber-400 font-semibold font-mono">ROADMAP: v2.5</span>
+          </div>
+          <div class="p-5 rounded-xl bg-obsidian-bg/80 border border-obsidian-border">
+            <div class="w-9 h-9 rounded-lg bg-blue-950/60 border border-blue-500/30 flex items-center justify-center text-xs font-mono font-bold text-blue-400 mb-3">FLUT</div>
+            <h3 class="text-sm font-bold text-white">Flutter Mobile App</h3>
+            <p class="text-[11px] text-slate-400 mt-1">Clean architecture cross-platform starter for Android and iOS.</p>
+            <span class="mt-3 inline-block text-[10px] text-amber-400 font-semibold font-mono">ROADMAP: v2.5</span>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- ========================================================================= -->
-    <!-- TAB 4: JARVIS & AUTOMATION -->
+    <!-- TAB 4: JARVIS & AUTOMATION (COMING SOON) -->
     <!-- ========================================================================= -->
     <div id="content-automation" class="hidden space-y-6">
-      <div>
-        <h2 class="text-2xl font-black tracking-tight text-white flex items-center gap-2">
-          Jarvis & Growth Automation
-        </h2>
-        <p class="text-xs text-slate-400 mt-1">
-          Autonomous social media funnel automation, keyword DM triggers, and scheduling.
-        </p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-        <div class="carbon-card rounded-2xl p-6">
-          <div class="flex items-center justify-between mb-4">
-            <h3 class="text-base font-bold text-white">Instagram Keyword Auto-DM</h3>
-            <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">ACTIVE</span>
+      <div class="carbon-card rounded-2xl p-8 border-amber-500/20 bg-gradient-to-br from-obsidian-surface to-amber-950/10 glow-cyan">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-6 border-b border-obsidian-border">
+          <div>
+            <div class="flex items-center gap-2 mb-1.5">
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30 font-mono tracking-wider" data-i18n="automation_badge">⚡ IN DEVELOPMENT — RELEASE IN v2.5</span>
+            </div>
+            <h2 class="text-2xl font-black tracking-tight text-white" data-i18n="automation_title">Multi-Agent Workflow & Growth Automation</h2>
+            <p class="text-xs text-slate-400 mt-1 max-w-xl" data-i18n="automation_notice">
+              This automation module will go live in the upcoming release. You will be able to orchestrate viral distribution workflows automatically.
+            </p>
           </div>
-          <p class="text-xs text-slate-400 mb-4">When a user comments a keyword (e.g. "TERMUX"), instantly send full tutorial link in direct message.</p>
-          <div class="space-y-3">
-            <input type="text" value="TERMUX" class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl px-3 py-2 text-xs text-white font-mono" placeholder="Trigger keyword...">
-            <textarea rows="2" class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl p-3 text-xs text-white" placeholder="Auto-DM message...">यहाँ है आपका पूरा Termux सेटअप गाइड: https://jobrun.tech/termux-guide</textarea>
-            <button class="w-full py-2 rounded-xl bg-obsidian-card hover:bg-obsidian-cardHover border border-obsidian-border text-xs font-semibold text-white">Save Auto-DM Rule</button>
-          </div>
+          <button onclick="alert('Notification registered! You will receive priority access when v2.5 drops.')" class="px-4 py-2 rounded-xl bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 text-xs font-bold text-amber-300 transition-all self-start sm:self-auto flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            <span data-i18n="btn_notify">View Roadmap / Early Access</span>
+          </button>
         </div>
 
-        <div class="carbon-card rounded-2xl p-6">
-          <div class="flex items-center justify-between mb-4">
-            <h3 class="text-base font-bold text-white">YouTube Shorts Auto-Publisher</h3>
-            <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-slate-800 text-slate-400 border border-slate-700">READY</span>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 opacity-75">
+          <div class="p-5 rounded-xl bg-obsidian-bg/80 border border-obsidian-border">
+            <h3 class="text-sm font-bold text-white mb-1">Instagram Auto-DM Dispatch</h3>
+            <p class="text-[11px] text-slate-400">Trigger automatic direct messages containing resource links when users comment specified keywords.</p>
+            <span class="mt-3 inline-block text-[10px] text-amber-400 font-semibold font-mono">STATUS: ARCHITECTURE READY (v2.5)</span>
           </div>
-          <p class="text-xs text-slate-400 mb-4">Schedule rendered vertical reels directly to YouTube Shorts with optimized SEO tags and description.</p>
-          <div class="space-y-3">
-            <input type="text" placeholder="Default tags (e.g. #coding #termux #ai)..." class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl px-3 py-2 text-xs text-white">
-            <select class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl px-3 py-2 text-xs text-white">
-              <option>Publish Immediately on Render</option>
-              <option>Schedule at Peak Times (7:00 PM IST)</option>
-              <option>Draft Mode Only</option>
-            </select>
-            <button class="w-full py-2 rounded-xl bg-obsidian-card hover:bg-obsidian-cardHover border border-obsidian-border text-xs font-semibold text-white">Save Scheduler Config</button>
+          <div class="p-5 rounded-xl bg-obsidian-bg/80 border border-obsidian-border">
+            <h3 class="text-sm font-bold text-white mb-1">YouTube Shorts & TikTok Scheduler</h3>
+            <p class="text-[11px] text-slate-400">Direct background upload of rendered 1080x1920 reels at peak audience retention time slots.</p>
+            <span class="mt-3 inline-block text-[10px] text-amber-400 font-semibold font-mono">STATUS: API CONNECTOR PENDING (v2.5)</span>
           </div>
         </div>
       </div>
@@ -569,15 +581,36 @@
   <script>
     function switchTab(tab) {
       ['creator', 'vault', 'coder', 'automation'].forEach(t => {
-        document.getElementById(`content-${t}`).classList.add('hidden');
+        const contentEl = document.getElementById(`content-${t}`);
+        if (contentEl) contentEl.classList.add('hidden');
+        
         const btn = document.getElementById(`tab-${t}`);
-        btn.classList.remove('bg-tech-cyan', 'text-black', 'shadow-md');
-        btn.classList.add('text-slate-400');
+        if (btn) {
+          btn.classList.remove('bg-tech-cyan', 'text-black', 'shadow-md');
+          btn.classList.add('text-slate-400');
+        }
+
+        const mobBtn = document.getElementById(`mob-tab-${t}`);
+        if (mobBtn) {
+          mobBtn.classList.remove('text-cyan-400');
+          mobBtn.classList.add('text-slate-400');
+        }
       });
-      document.getElementById(`content-${tab}`).classList.remove('hidden');
+
+      const activeContent = document.getElementById(`content-${tab}`);
+      if (activeContent) activeContent.classList.remove('hidden');
+
       const activeBtn = document.getElementById(`tab-${tab}`);
-      activeBtn.classList.remove('text-slate-400');
-      activeBtn.classList.add('bg-tech-cyan', 'text-black', 'shadow-md');
+      if (activeBtn) {
+        activeBtn.classList.remove('text-slate-400');
+        activeBtn.classList.add('bg-tech-cyan', 'text-black', 'shadow-md');
+      }
+
+      const activeMobBtn = document.getElementById(`mob-tab-${tab}`);
+      if (activeMobBtn) {
+        activeMobBtn.classList.remove('text-slate-400');
+        activeMobBtn.classList.add('text-cyan-400');
+      }
 
       if (tab === 'vault') {
         loadVaultStatus();
@@ -864,5 +897,29 @@
 
     refreshVideoList();
   </script>
+  <!-- Mobile Bottom Navigation Bar (Visible on mobile screens) -->
+  <nav class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-obsidian-surface/95 backdrop-blur-lg border-t border-obsidian-border px-3 py-2 flex justify-around items-center">
+    <button onclick="switchTab('creator')" id="mob-tab-creator" class="flex flex-col items-center gap-1 text-cyan-400">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+      <span class="text-[10px] font-semibold" data-i18n="nav_studio">Studio</span>
+    </button>
+    <button onclick="switchTab('vault')" id="mob-tab-vault" class="flex flex-col items-center gap-1 text-slate-400 hover:text-white">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/></svg>
+      <span class="text-[10px] font-semibold" data-i18n="nav_vault">Vault</span>
+    </button>
+    <button onclick="switchTab('coder')" id="mob-tab-coder" class="flex flex-col items-center gap-1 text-slate-400 hover:text-white relative">
+      <span class="absolute -top-0.5 right-2 w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+      <span class="text-[10px] font-semibold" data-i18n="nav_coder">Coder</span>
+    </button>
+    <button onclick="switchTab('automation')" id="mob-tab-automation" class="flex flex-col items-center gap-1 text-slate-400 hover:text-white relative">
+      <span class="absolute -top-0.5 right-2 w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>
+      <span class="text-[10px] font-semibold" data-i18n="nav_automation">Auto</span>
+    </button>
+  </nav>
+
+  <!-- Padding on mobile so bottom bar does not overlap content -->
+  <div class="h-16 md:hidden"></div>
 </body>
 </html>

@@ -1,5 +1,5 @@
 # 🤖 Master AI — Guide 1: AI Agents Setup (Claude Code, Cursor & Antigravity)
-**Platform**: Master AI powered by JobRun Technologies  
+**Platform**: Master AI powered by Zovron Technologies  
 **Target Audience**: Developers, Tech Creators & Builders using AI IDEs  
 **Supported Platforms**: Google Antigravity, Claude Code (CLI & Desktop), Cursor AI, GitHub Copilot  
 
@@ -16,7 +16,7 @@ This guide explains how to install and run Master AI inside autonomous AI enviro
 Simply copy and paste this prompt directly into your **Claude Code**, **Cursor Composer**, or **Antigravity** chat window:
 
 ```markdown
-You are acting as the Master AI Autonomous Creative Engine powered by JobRun Technologies.
+You are acting as the Master AI Autonomous Creative Engine powered by Zovron Technologies.
 Repository: https://github.com/technicalknowledge8218/Master_Ai_Automation.git
 
 Please execute the following onboarding tasks:

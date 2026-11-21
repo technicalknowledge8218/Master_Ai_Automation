@@ -1,5 +1,5 @@
 # 📱 Master AI — Guide 3: Android Termux Installation Guide
-**Platform**: Master AI powered by JobRun Technologies  
+**Platform**: Master AI powered by Zovron Technologies  
 **Target Audience**: Smartphone Creators & Mobile Developers  
 **Prerequisites**: Any Android Phone (No PC/Laptop required!), Termux App from F-Droid  
 
@@ -52,7 +52,7 @@ Termux will immediately launch the interactive **Grill-Me Protocol**:
 ```text
 ==============================================================
  ⚡ MASTER AI — INTERACTIVE REEL STUDIO (GRILL-ME PROTOCOL)
- Powered by JobRun Technologies | Universal Windows/Termux
+ Powered by Zovron Technologies | Universal Windows/Termux
 ==============================================================
 
 [1/4] वीडियो का टॉपिक / टेक हुक क्या है?

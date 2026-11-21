@@ -58,6 +58,49 @@ class MasterAIDashboardHandler(SimpleHTTPRequestHandler):
                     self.wfile.write(f.read())
                 return
 
+        # Serve static i18n script
+        if path == "/i18n.js" or path == "/static/i18n.js":
+            i18n_file = STATIC_DIR / "i18n.js"
+            if i18n_file.exists():
+                self.send_response(200)
+                self.send_header("Content-Type", "application/javascript; charset=utf-8")
+                self.end_headers()
+                with open(i18n_file, "rb") as f:
+                    self.wfile.write(f.read())
+                return
+
+        # Serve static audio voice samples
+        if path.startswith("/samples/"):
+            sample_name = path.replace("/samples/", "")
+            sample_path = STATIC_DIR / "samples" / sample_name
+            if sample_path.exists():
+                self.send_response(200)
+                self.send_header("Content-Type", "audio/wav")
+                self.send_header("Content-Length", str(sample_path.stat().st_size))
+                self.end_headers()
+                with open(sample_path, "rb") as f:
+                    shutil.copyfileobj(f, self.wfile)
+                return
+            else:
+                self.send_error(404, "Sample Not Found")
+                return
+
+        # Serve bundled demo video
+        if path.startswith("/demo/"):
+            demo_name = path.replace("/demo/", "")
+            demo_path = STATIC_DIR / "demo" / demo_name
+            if demo_path.exists():
+                self.send_response(200)
+                self.send_header("Content-Type", "video/mp4")
+                self.send_header("Content-Length", str(demo_path.stat().st_size))
+                self.end_headers()
+                with open(demo_path, "rb") as f:
+                    shutil.copyfileobj(f, self.wfile)
+                return
+            else:
+                self.send_error(404, "Demo Video Not Found")
+                return
+
         # Serve generated videos
         if path.startswith("/videos/"):
             vid_name = path.replace("/videos/", "")
@@ -71,8 +114,34 @@ class MasterAIDashboardHandler(SimpleHTTPRequestHandler):
                     shutil.copyfileobj(f, self.wfile)
                 return
             else:
+                # If requested demo video in videos folder, fallback to static demo
+                demo_fallback = STATIC_DIR / "demo" / "master_ai_demo_reel.mp4"
+                if demo_fallback.exists():
+                    self.send_response(200)
+                    self.send_header("Content-Type", "video/mp4")
+                    self.send_header("Content-Length", str(demo_fallback.stat().st_size))
+                    self.end_headers()
+                    with open(demo_fallback, "rb") as f:
+                        shutil.copyfileobj(f, self.wfile)
+                    return
                 self.send_error(404, "Video Not Found")
                 return
+
+        # API: User Preferences (Language & Profile)
+        if path == "/api/preferences":
+            pref_file = WORKSPACE_ROOT / "00_CORE_SYSTEM" / "config" / "user_preferences.json"
+            pref_data = {"language": "hinglish", "profile": "video"}
+            if pref_file.exists():
+                try:
+                    with open(pref_file, "r", encoding="utf-8") as f:
+                        pref_data = json.load(f)
+                except Exception:
+                    pass
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.end_headers()
+            self.wfile.write(json.dumps(pref_data).encode("utf-8"))
+            return
 
         # API: System status
         if path == "/api/status":
@@ -81,7 +150,7 @@ class MasterAIDashboardHandler(SimpleHTTPRequestHandler):
             self.end_headers()
             status_data = {
                 "status": "online",
-                "platform": "Master AI by JobRun Technologies",
+                "platform": "Master AI by Zovron Technologies",
                 "version": "2.0.0-sovereign",
                 "uptime": time.strftime("%Y-%m-%d %H:%M:%S")
             }
@@ -250,17 +319,52 @@ class MasterAIDashboardHandler(SimpleHTTPRequestHandler):
                 self.wfile.write(json.dumps({"success": False, "error": str(e)}).encode("utf-8"))
             return
 
+        # API: Update user preferences (Language / Profile)
+        if path == "/api/preferences":
+            pref_file = WORKSPACE_ROOT / "00_CORE_SYSTEM" / "config" / "user_preferences.json"
+            pref_file.parent.mkdir(parents=True, exist_ok=True)
+            pref_data = {"language": "hinglish", "profile": "video"}
+            if pref_file.exists():
+                try:
+                    with open(pref_file, "r", encoding="utf-8") as f:
+                        pref_data = json.load(f)
+                except Exception:
+                    pass
+            pref_data.update(body)
+            with open(pref_file, "w", encoding="utf-8") as f:
+                json.dump(pref_data, f, indent=2, ensure_ascii=False)
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.end_headers()
+            self.wfile.write(json.dumps({"success": True, "preferences": pref_data}).encode("utf-8"))
+            return
+
         self.send_error(404, "Not Found")
 
 
-def run_server(port=PORT):
-    server_address = ("", port)
+def find_available_port(start_port=PORT, max_attempts=10):
+    """Finds available port starting from 8080 to prevent Address already in use errors."""
+    import socket
+    for p in range(start_port, start_port + max_attempts):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex(('127.0.0.1', p)) != 0:
+                return p
+    return start_port
+
+
+def run_server(port=None):
+    active_port = find_available_port(PORT) if port is None else port
+    server_address = ("", active_port)
     httpd = HTTPServer(server_address, MasterAIDashboardHandler)
     print(f"============================================================")
     print(f" MASTER AI AUTONOMOUS DASHBOARD ONLINE")
-    print(f" URL: http://localhost:{port}")
+    print(f" Powered by Zovron Technologies")
+    print(f" URL: http://localhost:{active_port}")
     print(f"============================================================")
-    httpd.serve_forever()
+    try:
+        httpd.serve_forever()
+    except KeyboardInterrupt:
+        print("\n[!] Dashboard server shut down gracefully.")
 
 
 if __name__ == "__main__":

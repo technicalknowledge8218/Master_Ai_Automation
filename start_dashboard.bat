@@ -1,7 +1,7 @@
 @echo off
 title Master AI Dashboard Server
 echo ============================================================
-echo   MASTER AI AUTONOMOUS DASHBOARD (Powered by JobRun)
+echo   MASTER AI AUTONOMOUS DASHBOARD (Powered by Zovron)
 echo   Localhost URL: http://localhost:8080
 echo ============================================================
 echo.

@@ -1,7 +1,7 @@
 #!/bin/bash
 # ==============================================================
 # Master AI — 1-Click Startup for Android Termux & Linux
-# Powered by JobRun Technologies
+# Powered by Zovron Technologies
 # ==============================================================
 
 echo "=============================================================="

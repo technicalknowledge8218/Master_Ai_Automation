@@ -21,7 +21,7 @@ When the user triggers `/video-editing` or asks to produce a video, do **NOT** i
    - **Dr. Kabir** (Senior Tech Mentor / Serious analysis)
    - **Arjun** (Young energetic builder)
 3. **Call to Action (CTA)**:
-   - What is the final hook? (e.g., "Comment TERMUX for the setup guide", "Follow JobRun Technologies for daily AI workflows", "Link in bio")
+   - What is the final hook? (e.g., "Comment TERMUX for the setup guide", "Follow Zovron Technologies for daily AI workflows", "Link in bio")
 
 Once answered, execute the end-to-end autonomous pipeline without interrupting the user.
 

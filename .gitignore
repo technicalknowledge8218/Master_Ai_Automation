@@ -44,6 +44,9 @@ vault_config.json
 *.ogg
 *.webm
 *.part
+# Whitelist bundled dashboard preview assets
+!00_CORE_SYSTEM/dashboard/static/samples/*.wav
+!00_CORE_SYSTEM/dashboard/static/demo/*.mp4
 
 # 3D CGI & Blender Binaries (3+ GB)
 07_3D_CGI/engine/
@@ -124,3 +127,5 @@ storage/
 00_CORE_SYSTEM/engine/tts/vault_config.json
 00_CORE_SYSTEM/engine/tts/tts_config.json
 !00_CORE_SYSTEM/engine/tts/vault_config.example.json
+00_CORE_SYSTEM/config/user_preferences.json
+!00_CORE_SYSTEM/config/user_preferences.example.json

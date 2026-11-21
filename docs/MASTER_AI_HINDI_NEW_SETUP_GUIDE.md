@@ -1,5 +1,5 @@
 # 🚀 मास्टर एआई (Master AI) — नए एनवायरनमेंट में इंस्टॉलेशन व गिटहब गाइड (हिंदी संस्करण)
-**प्रोजेक्ट:** मास्टर एआई पावर्ड बाय जॉब-रन टेक्नोलॉजीज (JobRun Technologies)  
+**प्रोजेक्ट:** मास्टर एआई पावर्ड बाय ज़ोवरॉन टेक्नोलॉजीज (Zovron Technologies) (Zovron Technologies)  
 **लोकेशन:** `docs/MASTER_AI_HINDI_NEW_SETUP_GUIDE.md`  
 
 ---
