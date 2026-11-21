@@ -17,8 +17,18 @@ import json
 import argparse
 import subprocess
 from pathlib import Path
-import numpy as np
-import soundfile as sf
+
+# Resilient imports (Graceful fallback if C-extensions fail on Android Termux)
+try:
+    import numpy as np
+except Exception:
+    np = None
+
+try:
+    import soundfile as sf
+except Exception:
+    sf = None
+
 from PIL import Image, ImageDraw, ImageFont
 
 # Path discovery - 100% dynamic and cross-platform
@@ -131,8 +141,13 @@ def align_audio_words(audio_path: str, script_text: str = ""):
 
     # Fallback linear alignment using audio duration and script words (Essential for Termux/ARM without CTranslate2)
     try:
-        voice_data, sr = sf.read(audio_path)
-        total_dur = len(voice_data) / sr
+        if sf is not None:
+            voice_data, sr = sf.read(audio_path)
+            total_dur = len(voice_data) / sr
+        else:
+            import wave
+            with wave.open(audio_path, 'rb') as w:
+                total_dur = w.getnframes() / w.getframerate()
     except Exception:
         total_dur = 15.0
 
@@ -152,38 +167,79 @@ def align_audio_words(audio_path: str, script_text: str = ""):
 
 
 def create_audio_mix(voice_path: str, out_mix_path: str):
-    """Mix voice with subtle BGM and normalize."""
-    voice_data, sr = sf.read(voice_path)
-    if len(voice_data.shape) > 1:
-        voice_data = np.mean(voice_data, axis=1)
+    """Mix voice with subtle BGM and normalize, with pure Python/wave fallback."""
+    if sf is not None and np is not None:
+        try:
+            voice_data, sr = sf.read(voice_path)
+            if len(voice_data.shape) > 1:
+                voice_data = np.mean(voice_data, axis=1)
 
-    duration = len(voice_data) / sr
+            duration = len(voice_data) / sr
 
-    # Load BGM if exists
-    if BGM_WAV.exists():
-        bgm_data, bgm_sr = sf.read(str(BGM_WAV))
-        if len(bgm_data.shape) > 1:
-            bgm_data = np.mean(bgm_data, axis=1)
-        if bgm_sr != sr:
-            import scipy.signal
-            bgm_data = scipy.signal.resample(bgm_data, int(len(bgm_data) * sr / bgm_sr))
-        
-        # Tile or trim BGM
-        if len(bgm_data) < len(voice_data):
-            repeats = int(np.ceil(len(voice_data) / len(bgm_data)))
-            bgm_data = np.tile(bgm_data, repeats)
-        bgm_data = bgm_data[:len(voice_data)] * 0.12  # Duck BGM to 12%
-        mixed = voice_data * 0.95 + bgm_data
-    else:
-        mixed = voice_data
+            # Load BGM if exists
+            if BGM_WAV.exists():
+                bgm_data, bgm_sr = sf.read(str(BGM_WAV))
+                if len(bgm_data.shape) > 1:
+                    bgm_data = np.mean(bgm_data, axis=1)
+                if bgm_sr != sr:
+                    try:
+                        import scipy.signal
+                        bgm_data = scipy.signal.resample(bgm_data, int(len(bgm_data) * sr / bgm_sr))
+                    except Exception:
+                        pass
+                
+                # Tile or trim BGM
+                if len(bgm_data) < len(voice_data):
+                    repeats = int(np.ceil(len(voice_data) / len(bgm_data)))
+                    bgm_data = np.tile(bgm_data, repeats)
+                bgm_data = bgm_data[:len(voice_data)] * 0.12  # Duck BGM to 12%
+                mixed = voice_data * 0.95 + bgm_data
+            else:
+                mixed = voice_data
 
-    # Normalize to -1.0 dB
-    peak = np.max(np.abs(mixed))
-    if peak > 0:
-        mixed = mixed / peak * 0.92
+            # Normalize to -1.0 dB
+            peak = np.max(np.abs(mixed))
+            if peak > 0:
+                mixed = mixed / peak * 0.92
 
-    sf.write(out_mix_path, mixed, sr)
-    return duration, sr, mixed
+            sf.write(out_mix_path, mixed, sr)
+            return duration, sr, mixed
+        except Exception as e:
+            print(f"      [Audio Mix] NumPy/SoundFile processing fallback: {e}")
+
+    # Pure Python & standard library fallback (Zero external C/NDK dependencies)
+    import wave
+    import struct
+    import shutil
+
+    sr = 24000
+    samples = []
+    duration = 15.0
+
+    try:
+        with wave.open(voice_path, 'rb') as w:
+            sr = w.getframerate()
+            n_frames = w.getnframes()
+            duration = n_frames / sr
+            raw = w.readframes(n_frames)
+            fmt = f"<{n_frames * w.getnchannels()}h" if w.getsampwidth() == 2 else None
+            if fmt:
+                unpacked = struct.unpack(fmt, raw)
+                ch = w.getnchannels()
+                if ch > 1:
+                    samples = [unpacked[i] / 32768.0 for i in range(0, len(unpacked), ch)]
+                else:
+                    samples = [s / 32768.0 for s in unpacked]
+    except Exception:
+        samples = [0.1] * int(sr * 15)
+        duration = 15.0
+
+    try:
+        shutil.copy2(voice_path, out_mix_path)
+    except Exception:
+        pass
+
+    return duration, sr, samples
 
 
 def render_video(topic: str, character: str, voice_speaker: str, script_text: str, cta: str, output_name: str = None, creator_name: str = "Dev", creator_role: str = "Tech Builder"):
@@ -218,14 +274,28 @@ def render_video(topic: str, character: str, voice_speaker: str, script_text: st
         end_idx = min(start_idx + samples_per_frame, len(mixed_audio))
         if start_idx < len(mixed_audio):
             chunk = mixed_audio[start_idx:end_idx]
-            rms = np.sqrt(np.mean(chunk**2)) if len(chunk) > 0 else 0
+            if np is not None and hasattr(chunk, '__array__'):
+                rms = float(np.sqrt(np.mean(chunk**2))) if len(chunk) > 0 else 0
+            else:
+                rms = math.sqrt(sum(x*x for x in chunk) / len(chunk)) if len(chunk) > 0 else 0
         else:
             rms = 0
         rms_values.append(rms)
 
-    # Smooth RMS
-    smoothed_rms = np.convolve(rms_values, np.ones(3)/3, mode='same')
-    max_rms = max(np.max(smoothed_rms), 0.01)
+    # Smooth RMS (With pure Python fallback)
+    if np is not None:
+        try:
+            smoothed_rms = np.convolve(rms_values, np.ones(3)/3, mode='same')
+            max_rms = max(float(np.max(smoothed_rms)), 0.01)
+        except Exception:
+            smoothed_rms = rms_values
+            max_rms = max(max(rms_values) if rms_values else 0.01, 0.01)
+    else:
+        smoothed_rms = []
+        for i in range(len(rms_values)):
+            sub = rms_values[max(0, i-1):min(len(rms_values), i+2)]
+            smoothed_rms.append(sum(sub) / len(sub))
+        max_rms = max(max(smoothed_rms) if smoothed_rms else 0.01, 0.01)
 
     print(f"[3/5] Loading character sprites for '{character}'...")
     sprites = get_character_sprites(character)
