@@ -84,21 +84,29 @@ FONT_CODE = get_font(32, bold=False)
 FONT_CARD = get_font(38, bold=True)
 
 
-def get_character_sprites(char_name: str):
-    """Load base, mouth open, and expression sprites for selected character."""
+def get_single_character_sprites(char_name: str, target_height: int = 1100):
+    """Load base, mouth open, and expression sprites for an individual character."""
     char_name = char_name.lower()
-    if char_name == "neha":
+    if char_name in ["neha"]:
         base_p = CHAR_LIB / "neha_laptop.png"
         speak_p = CHAR_LIB / "neha_pointing.png"
         shock_p = CHAR_LIB / "neha_shocked.png"
-    elif char_name == "kabir":
+    elif char_name in ["kabir", "dr_kabir"]:
         base_p = CHAR_LIB / "dr_kabir_tablet.png"
         speak_p = CHAR_LIB / "dr_kabir_explaining.png"
         shock_p = CHAR_LIB / "dr_kabir_warning.png"
-    elif char_name == "arjun":
+    elif char_name in ["arjun"]:
         base_p = CHAR_LIB / "arjun_thumbsup.png"
         speak_p = CHAR_LIB / "arjun_pointing.png"
         shock_p = CHAR_LIB / "arjun_shocked.png"
+    elif char_name in ["boy", "aman"]:
+        base_p = CHAR_LIB / "boy_listen.png"
+        speak_p = CHAR_LIB / "boy_handsup.png"
+        shock_p = CHAR_LIB / "boy_shocked.png"
+        if not base_p.exists():
+            base_p = CHAR_LIB / "sprites" / "boy_listen.png"
+            speak_p = CHAR_LIB / "sprites" / "boy_handsup.png"
+            shock_p = CHAR_LIB / "sprites" / "boy_shocked.png"
     else:  # dev (default)
         dev_dir = CHAR_LIB / "dev_creator"
         base_p = dev_dir / "dev_resting.png"
@@ -109,14 +117,43 @@ def get_character_sprites(char_name: str):
         if not p.exists():
             return None
         im = Image.open(str(p)).convert("RGBA")
-        ratio = 1100 / im.height
-        return im.resize((int(im.width * ratio), 1100), Image.Resampling.LANCZOS)
+        ratio = target_height / im.height
+        return im.resize((int(im.width * ratio), target_height), Image.Resampling.LANCZOS)
 
     return {
         "rest": _load(base_p),
         "speak": _load(speak_p),
         "shock": _load(shock_p)
     }
+
+
+def get_character_sprites(char_name: str):
+    """Load sprites for solo, duo (2 persons), or group (3 persons) cast."""
+    char_name = char_name.lower()
+    if "duo" in char_name or "dev_neha" in char_name:
+        return {
+            "mode": "duo",
+            "c1": get_single_character_sprites("dev", target_height=880),
+            "c2": get_single_character_sprites("neha", target_height=880)
+        }
+    elif "aman_kabir" in char_name or ("kabir" in char_name and "boy" in char_name):
+        return {
+            "mode": "duo",
+            "c1": get_single_character_sprites("boy", target_height=880),
+            "c2": get_single_character_sprites("kabir", target_height=880)
+        }
+    elif "group" in char_name or "trio" in char_name:
+        return {
+            "mode": "group",
+            "c1": get_single_character_sprites("dev", target_height=760),
+            "c2": get_single_character_sprites("neha", target_height=760),
+            "c3": get_single_character_sprites("kabir", target_height=760)
+        }
+    else:
+        return {
+            "mode": "solo",
+            "c": get_single_character_sprites(char_name, target_height=1100)
+        }
 
 
 def align_audio_words(audio_path: str, script_text: str = ""):
@@ -373,19 +410,46 @@ def render_video(topic: str, character: str, voice_speaker: str, script_text: st
         # Natural eye blink every 4.0s for 100ms
         is_blinking = (t % 4.0) < 0.12
 
-        # Select sprite
-        if is_speaking:
-            sprite = sprites["speak"] if sprites["speak"] else sprites["rest"]
-        elif is_blinking and sprites["shock"]:
-            sprite = sprites["shock"]
-        else:
-            sprite = sprites["rest"]
+        # Select and paste sprite(s) based on cast mode
+        cast_mode = sprites.get("mode", "solo")
+        if cast_mode == "duo":
+            s1_dict = sprites["c1"]
+            s2_dict = sprites["c2"]
+            speak_c1 = is_speaking and (int(t / 2.5) % 2 == 0)
+            speak_c2 = is_speaking and (int(t / 2.5) % 2 == 1)
+            
+            s1 = s1_dict["speak"] if (speak_c1 and s1_dict["speak"]) else (s1_dict["shock"] if is_blinking and s1_dict["shock"] else s1_dict["rest"])
+            s2 = s2_dict["speak"] if (speak_c2 and s2_dict["speak"]) else (s2_dict["shock"] if is_blinking and s2_dict["shock"] else s2_dict["rest"])
+            
+            if s1:
+                sway1 = int(math.sin(t * 3.0) * 6)
+                frame.paste(s1, (20, HEIGHT - s1.height - 210 + sway1), s1)
+            if s2:
+                sway2 = int(math.cos(t * 3.0) * 6)
+                frame.paste(s2, (WIDTH - s2.width - 20, HEIGHT - s2.height - 210 + sway2), s2)
 
-        # Natural breathing sway
-        sway_y = int(math.sin(t * 3.0) * 8)
-        char_x = (WIDTH - sprite.width) // 2
-        char_y = HEIGHT - sprite.height - 220 + sway_y
-        frame.paste(sprite, (char_x, char_y), sprite)
+        elif cast_mode == "group":
+            s1 = sprites["c1"]["rest"]
+            s2 = sprites["c2"]["speak"] if (is_speaking and sprites["c2"]["speak"]) else sprites["c2"]["rest"]
+            s3 = sprites["c3"]["rest"]
+            if s1: frame.paste(s1, (10, HEIGHT - s1.height - 220), s1)
+            if s2: frame.paste(s2, ((WIDTH - s2.width)//2, HEIGHT - s2.height - 220), s2)
+            if s3: frame.paste(s3, (WIDTH - s3.width - 10, HEIGHT - s3.height - 220), s3)
+
+        else:  # Solo
+            s_dict = sprites.get("c", sprites)
+            if is_speaking and s_dict.get("speak"):
+                sprite = s_dict["speak"]
+            elif is_blinking and s_dict.get("shock"):
+                sprite = s_dict["shock"]
+            else:
+                sprite = s_dict.get("rest")
+
+            if sprite:
+                sway_y = int(math.sin(t * 3.0) * 8)
+                char_x = (WIDTH - sprite.width) // 2
+                char_y = HEIGHT - sprite.height - 220 + sway_y
+                frame.paste(sprite, (char_x, char_y), sprite)
 
         # Subtitle rendering with dual-line dynamic wrapping
         active_word_idx = -1

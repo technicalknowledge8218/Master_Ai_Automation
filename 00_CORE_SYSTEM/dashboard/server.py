@@ -278,6 +278,84 @@ class MasterAIDashboardHandler(SimpleHTTPRequestHandler):
                 self.wfile.write(json.dumps({"success": False, "error": str(e)}).encode("utf-8"))
             return
 
+        # API: Grill-Me AI Script Director & Interview
+        if path == "/api/ai/grill_me":
+            topic_hint = req_data.get("topic_hint", "").strip() or "AI Automation on Mobile"
+            tone = req_data.get("tone", "tutorial")
+            cast_mode = req_data.get("cast_mode", "solo")
+            
+            gemini_key = ""
+            import importlib
+            try:
+                vv = importlib.import_module("00_CORE_SYSTEM.engine.tts.voice_vault")
+                g_keys = [k.get("key") for k in vv.vault.config.get("gemini", []) if k.get("status") == "active" and not k.get("key", "").startswith("YOUR_")]
+                if g_keys:
+                    gemini_key = g_keys[0]
+            except Exception:
+                pass
+            if not gemini_key:
+                gemini_key = os.environ.get("GEMINI_API_KEY", "").strip()
+
+            script_res = None
+            if gemini_key:
+                try:
+                    import urllib.request
+                    prompt = (
+                        f"You are the viral reel creative director for Master AI (Zovron Technologies).\n"
+                        f"Write a high-retention 15-second 2D character social reel script in pure Devanagari Hindi for:\n"
+                        f"Topic: {topic_hint}\nTone: {tone}\nCast: {cast_mode} (Solo, Duo banter, or Group)\n"
+                        f"Rules:\n"
+                        f"1. Spoken script must be pure Devanagari Hindi phonetics (e.g., 'टर्मक्स', 'क्लॉड कोड', 'पायथन', 'इन्स्टॉल', 'कमांड', 'एआई').\n"
+                        f"2. Structure:\n"
+                        f"   - 0-3s Hook: Punchy question or shocking claim.\n"
+                        f"   - 3-12s Meat: 2 concise action steps (or dialogue if Duo).\n"
+                        f"   - 12-15s CTA: Direct instruction (Comment/Follow).\n"
+                        f"Respond ONLY in valid JSON without backticks:\n"
+                        f'{{"topic": "{topic_hint[:30]}", "script": "Devanagari script text here", "cta": "Comment GUIDE for link", "character": "dev", "speaker": "aditya", "creator_name": "Dev", "creator_role": "Tech Solo"}}'
+                    )
+                    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={gemini_key}"
+                    payload = {"contents": [{"parts": [{"text": prompt}]}], "generationConfig": {"responseMimeType": "application/json"}}
+                    req = urllib.request.Request(url, data=json.dumps(payload).encode("utf-8"), headers={"Content-Type": "application/json"}, method="POST")
+                    with urllib.request.urlopen(req, timeout=12) as resp:
+                        res_json = json.loads(resp.read().decode("utf-8"))
+                        text_out = res_json["candidates"][0]["content"]["parts"][0]["text"]
+                        script_res = json.loads(text_out)
+                except Exception as e:
+                    print(f"Gemini Grill-Me API Notice: {e}")
+
+            if not script_res:
+                if cast_mode == "duo":
+                    char_choice = "dev_neha"
+                    spk_choice = "aditya"
+                    script_text = f"अमन: अरे कबीर भाई, क्या सच में {topic_hint} मोबाइल से हो सकता है? कबीर: बिल्कुल! पहले टर्मक्स में पायथन और मास्टर एआई रन करो, फिर एक क्लिक में पूरा काम तैयार!"
+                    cta_text = "Comment DUO for Project Files"
+                elif cast_mode == "group":
+                    char_choice = "group"
+                    spk_choice = "aditya"
+                    script_text = f"पूरी टेक टीम ने टेस्ट किया: {topic_hint} अब हर कोई बिना लैपटॉप के अपने फोन से कर सकता है! बस कमांड डालो और जादू देखो!"
+                    cta_text = "Comment TEAM for Setup"
+                else:
+                    char_choice = "dev"
+                    spk_choice = "aditya"
+                    script_text = f"क्या आपको पता है कि {topic_hint} अब बिना किसी पीसी के सीधे मोबाइल पर संभव है? बस एक कमांड से सेटअप करो और पूरा एआई तैयार!"
+                    cta_text = "Comment TERMUX for Full Guide"
+
+                script_res = {
+                    "topic": topic_hint,
+                    "script": script_text,
+                    "cta": cta_text,
+                    "character": char_choice,
+                    "speaker": spk_choice,
+                    "creator_name": "Dev",
+                    "creator_role": "Tech Solo"
+                }
+
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.end_headers()
+            self.wfile.write(json.dumps({"success": True, "data": script_res}).encode("utf-8"))
+            return
+
         # API: Render Video
         if path == "/api/video/render":
             topic = req_data.get("topic", "Claude Code On Mobile")
