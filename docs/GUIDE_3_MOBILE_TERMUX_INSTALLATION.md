@@ -11,7 +11,18 @@ You do **NOT** need a computer or laptop! Master AI runs directly inside your An
 
 ---
 
-## 2. Step-by-Step Copy-Paste Installation
+## 2. ⚡ 1-Click Super Fast Install (Recommended)
+
+Just open the **Termux** app on your phone, paste this single line, and hit Enter:
+
+```bash
+curl -sSL https://raw.githubusercontent.com/technicalknowledge8218/Master_Ai_Automation/main/install.sh | bash
+```
+*(This automatically installs packages, asks for your language, installs the lightweight 10MB video profile, and launches the wizard!)*
+
+---
+
+## 3. Manual Step-by-Step Installation (Alternative)
 
 ### Step 1: Open Termux & Update Packages
 Open the Termux app on your phone and paste this single command:
