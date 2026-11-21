@@ -131,9 +131,17 @@ def interactive_wizard():
     vv = importlib.import_module("00_CORE_SYSTEM.engine.tts.voice_vault")
     vault = vv.vault
     
-    # Check for Gemini API key to draft script
-    gemini_keys = [k["key"] for k in vault.config.get("gemini", []) if k.get("status") == "active" and k.get("key")]
+    # Check for Gemini API key to draft script & synthesize speech
+    gemini_keys = [k["key"] for k in vault.config.get("gemini", []) if k.get("status") == "active" and k.get("key") and not k.get("key", "").startswith("YOUR_") and "DEMO" not in k.get("label", "").upper()]
     primary_key = gemini_keys[0] if gemini_keys else os.getenv("GEMINI_API_KEY", "")
+    
+    if not primary_key:
+        print("\n🔑 [Voice Vault Setup] वॉइस जनरेशन के लिए कोई एक्टिव Gemini Key नहीं मिली।")
+        key_input = input("अपनी Google Gemini API Key यहाँ पेस्ट करें (या Enter दबाएं): ").strip()
+        if key_input:
+            primary_key = key_input
+            vault.add_key("gemini", primary_key, label="User Mobile Key")
+            print("   ✔ Gemini API Key वॉइस वॉल्ट में सफलतापूर्वक सेव हो गई!")
     
     print("\n" + "-"*60)
     print("🧠 [चरण 1/4] एआई से शुद्ध देवनागरी स्क्रिप्ट लिखवाई जा रही है...")
