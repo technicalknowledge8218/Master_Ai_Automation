@@ -178,6 +178,16 @@ class MasterAIDashboardHandler(SimpleHTTPRequestHandler):
                     "created": time.strftime("%Y-%m-%d %H:%M", time.localtime(f.stat().st_mtime)),
                     "url": f"/videos/{f.name}"
                 })
+            # Always ensure the pre-bundled official demo reel is in the library
+            demo_file = STATIC_DIR / "demo" / "master_ai_demo_reel.mp4"
+            if demo_file.exists():
+                videos.append({
+                    "name": "🎬 Master AI Demo Reel (2D Showcase)",
+                    "size_mb": round(demo_file.stat().st_size / (1024 * 1024), 2),
+                    "created": "Pre-bundled Sample",
+                    "url": "/demo/master_ai_demo_reel.mp4",
+                    "is_demo": True
+                })
             self.send_response(200)
             self.send_header("Content-Type", "application/json")
             self.end_headers()

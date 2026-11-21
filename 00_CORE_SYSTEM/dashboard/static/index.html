@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang="en" class="light overflow-x-hidden">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Master AI — Autonomous Platform | Zovron Technologies</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -32,6 +32,12 @@
     }
   </script>
   <style>
+    html, body {
+      overflow-x: hidden !important;
+      max-width: 100vw;
+      width: 100%;
+      position: relative;
+    }
     body {
       background: radial-gradient(circle at 50% 0%, #172338 0%, #0a0e17 85%);
       background-attachment: fixed;
@@ -141,64 +147,65 @@
   </style>
   <script src="/i18n.js"></script>
 </head>
-<body class="min-h-screen flex flex-col selection:bg-cyan-500/20 selection:text-cyan-300">
+<body class="min-h-screen flex flex-col selection:bg-cyan-500/20 selection:text-cyan-700 overflow-x-hidden w-full max-w-full">
 
-  <!-- Top Navigation Bar -->
-  <header class="border-b border-obsidian-border bg-obsidian-surface/95 backdrop-blur-md sticky top-0 z-50 px-3.5 sm:px-6 py-2.5 sm:py-3.5">
-    <div class="max-w-7xl mx-auto flex items-center justify-between">
-      <div class="flex items-center gap-2.5 sm:gap-3">
-        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-cyan-600 to-cyan-400 flex items-center justify-center shadow-lg shadow-cyan-500/20">
-          <svg class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+  <!-- Top Navigation Bar (Sleek 1-Line on Mobile & Desktop) -->
+  <header class="border-b border-obsidian-border bg-obsidian-surface/95 backdrop-blur-md sticky top-0 z-50 px-2.5 sm:px-6 py-2 sm:py-2.5">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      
+      <!-- Left: Logo & Brand in 1 line -->
+      <div class="flex items-center gap-1.5 sm:gap-2.5 min-w-0 shrink-0">
+        <div class="w-7 h-7 sm:w-9 sm:h-9 rounded-lg bg-gradient-to-tr from-cyan-600 to-cyan-400 flex items-center justify-center shadow-md shadow-cyan-500/20 shrink-0">
+          <svg class="w-4 h-4 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
         </div>
-        <div>
-          <h1 class="font-bold text-base sm:text-lg tracking-wide flex items-center gap-1.5 sm:gap-2 text-white">
-            MASTER AI <span class="text-[9px] sm:text-[10px] tracking-wider px-1.5 sm:px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 font-mono">v2.0 SOVEREIGN</span>
-          </h1>
-          <p class="text-[11px] sm:text-xs text-slate-400">Powered by <span class="text-slate-200 font-semibold">Zovron Technologies</span></p>
+        <div class="min-w-0 flex items-center gap-1.5">
+          <span class="font-black text-xs sm:text-base tracking-wide text-white whitespace-nowrap">MASTER AI</span>
+          <span class="text-[8px] sm:text-[9px] px-1.5 py-0.2 rounded-full bg-cyan-500/10 text-cyan-500 border border-cyan-500/30 font-mono font-bold whitespace-nowrap">v2.0</span>
+          <span class="hidden md:inline text-[10px] text-slate-400 whitespace-nowrap">• Powered by <strong class="text-slate-200">Zovron Technologies</strong></span>
         </div>
       </div>
 
-      <!-- Navigation Tabs (Desktop) -->
-      <nav class="hidden md:flex items-center gap-1.5 bg-obsidian-bg p-1.5 rounded-xl border border-obsidian-border">
-        <button onclick="switchTab('creator')" id="tab-creator" class="nav-btn px-3.5 py-2 rounded-lg text-xs font-semibold flex items-center gap-2 bg-tech-cyan text-black shadow-md transition-all">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+      <!-- Navigation Tabs (Desktop Only) -->
+      <nav class="hidden md:flex items-center gap-1.5 bg-obsidian-bg p-1 rounded-xl border border-obsidian-border">
+        <button onclick="switchTab('creator')" id="tab-creator" class="nav-btn px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 bg-tech-cyan text-black shadow-sm transition-all">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
           <span data-i18n="nav_studio">Reel Studio</span>
-          <span class="px-1.5 py-0.2 rounded text-[9px] font-bold bg-black/20 text-black border border-black/30">LIVE</span>
+          <span class="px-1 py-0.2 rounded text-[8px] font-bold bg-black/20 text-black border border-black/30">LIVE</span>
         </button>
-        <button onclick="switchTab('vault')" id="tab-vault" class="nav-btn px-3.5 py-2 rounded-lg text-xs font-semibold flex items-center gap-2 text-slate-400 hover:text-white transition-all">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/></svg>
+        <button onclick="switchTab('vault')" id="tab-vault" class="nav-btn px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 text-slate-400 hover:text-white transition-all">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/></svg>
           <span data-i18n="nav_vault">Voice Vault</span>
-          <span class="px-1.5 py-0.2 rounded text-[9px] font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">LIVE</span>
+          <span class="px-1 py-0.2 rounded text-[8px] font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">LIVE</span>
         </button>
-        <button onclick="switchTab('coder')" id="tab-coder" class="nav-btn px-3.5 py-2 rounded-lg text-xs font-semibold flex items-center gap-2 text-slate-400 hover:text-white transition-all">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+        <button onclick="switchTab('coder')" id="tab-coder" class="nav-btn px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 text-slate-400 hover:text-white transition-all">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
           <span data-i18n="nav_coder">Web Coder</span>
-          <span class="px-1.5 py-0.2 rounded text-[9px] font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30">v2.5</span>
+          <span class="px-1 py-0.2 rounded text-[8px] font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30">v2.5</span>
         </button>
-        <button onclick="switchTab('automation')" id="tab-automation" class="nav-btn px-3.5 py-2 rounded-lg text-xs font-semibold flex items-center gap-2 text-slate-400 hover:text-white transition-all">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>
+        <button onclick="switchTab('automation')" id="tab-automation" class="nav-btn px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 text-slate-400 hover:text-white transition-all">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>
           <span data-i18n="nav_automation">Automation</span>
-          <span class="px-1.5 py-0.2 rounded text-[9px] font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30">v2.5</span>
+          <span class="px-1 py-0.2 rounded text-[8px] font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30">v2.5</span>
         </button>
       </nav>
 
-      <!-- Right Controls: Language Selector & Status -->
-      <div class="flex items-center gap-2 sm:gap-3">
+      <!-- Right Controls: Language Selector & Theme in 1 line -->
+      <div class="flex items-center gap-1 sm:gap-2 shrink-0">
         <!-- Tri-Lingual Language Selector Pill -->
-        <div class="flex items-center bg-obsidian-bg p-1 rounded-xl border border-obsidian-border text-xs">
-          <button id="lang-btn-hindi" onclick="setLanguage('hindi')" class="px-2 py-1 rounded-lg text-[10px] font-medium text-slate-400 hover:text-white transition-all">हिन्दी</button>
-          <button id="lang-btn-hinglish" onclick="setLanguage('hinglish')" class="px-2 py-1 rounded-lg text-[10px] font-bold bg-tech-cyan text-black shadow-sm transition-all">Hinglish</button>
-          <button id="lang-btn-english" onclick="setLanguage('english')" class="px-2 py-1 rounded-lg text-[10px] font-medium text-slate-400 hover:text-white transition-all">English</button>
+        <div class="flex items-center bg-obsidian-bg p-0.5 sm:p-1 rounded-lg border border-obsidian-border text-xs">
+          <button id="lang-btn-hindi" onclick="setLanguage('hindi')" class="px-1.5 sm:px-2 py-0.5 sm:py-1 rounded text-[10px] font-medium text-slate-400 hover:text-white transition-all">हिन्दी</button>
+          <button id="lang-btn-hinglish" onclick="setLanguage('hinglish')" class="px-1.5 sm:px-2 py-0.5 sm:py-1 rounded text-[10px] font-bold bg-tech-cyan text-black shadow-sm transition-all">Hing</button>
+          <button id="lang-btn-english" onclick="setLanguage('english')" class="px-1.5 sm:px-2 py-0.5 sm:py-1 rounded text-[10px] font-medium text-slate-400 hover:text-white transition-all">EN</button>
         </div>
 
         <!-- Theme Toggle Button (Light / Dark) -->
-        <button id="theme-toggle-btn" onclick="toggleTheme()" class="px-2.5 py-1.5 rounded-xl bg-obsidian-bg border border-obsidian-border text-xs flex items-center gap-1.5 text-slate-400 hover:text-white transition-all shadow-sm" title="Toggle Light / Dark Mode">
-          <span id="theme-icon">🌙</span>
-          <span id="theme-text" class="hidden sm:inline text-[11px] font-semibold">Dark Mode</span>
+        <button id="theme-toggle-btn" onclick="toggleTheme()" class="px-2 py-1 rounded-lg bg-obsidian-bg border border-obsidian-border text-xs flex items-center gap-1 text-slate-400 hover:text-white transition-all shadow-sm shrink-0" title="Toggle Light / Dark Mode">
+          <span id="theme-icon" class="text-xs">🌙</span>
+          <span id="theme-text" class="hidden sm:inline text-[10px] font-semibold">Dark</span>
         </button>
 
-        <div class="hidden sm:flex items-center gap-2 px-2.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono">
-          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <div class="hidden lg:flex items-center gap-1.5 px-2 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-mono">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
           <span>ONLINE</span>
         </div>
       </div>
@@ -206,28 +213,28 @@
   </header>
 
   <!-- Main Content Area -->
-  <main class="flex-1 max-w-7xl w-full mx-auto p-3.5 sm:p-5 md:p-6 pb-20 md:pb-6">
+  <main class="flex-1 max-w-7xl w-full mx-auto p-2.5 sm:p-5 md:p-6 pb-20 md:pb-6 overflow-x-hidden">
 
     <!-- ========================================================================= -->
     <!-- TAB 1: VIDEO CREATOR -->
     <!-- ========================================================================= -->
-    <div id="content-creator" class="space-y-6">
-      <div class="flex items-center justify-between">
+    <div id="content-creator" class="space-y-4 sm:space-y-6">
+      <div class="flex items-center justify-between mb-1">
         <div>
-          <h2 class="text-xl sm:text-2xl font-black tracking-tight text-white flex items-center gap-2">
-            Autonomous 2D Character Reel Studio
+          <h2 class="text-base sm:text-xl font-black tracking-tight text-white flex items-center gap-1.5">
+            🎬 Autonomous 2D Character Studio
           </h2>
-          <p class="text-[11px] sm:text-xs text-slate-400 mt-1">
+          <p class="hidden sm:block text-xs text-slate-400 mt-0.5">
             Produce broadcast-grade 1080x1920 viral reels with locked character rigs, native Devanagari Hindi audio and zero-overflow subtitles.
           </p>
         </div>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6">
         
         <!-- Creation Form (7 cols) -->
-        <div class="lg:col-span-7 space-y-5">
-          <div class="carbon-card rounded-2xl p-4 sm:p-6 glow-cyan">
+        <div class="lg:col-span-7 space-y-4 sm:space-y-5">
+          <div class="carbon-card rounded-2xl p-3.5 sm:p-6 glow-cyan">
             <h3 class="text-xs font-bold text-tech-cyan uppercase tracking-wider mb-4 flex items-center gap-2">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
               Reel Configuration
@@ -328,26 +335,26 @@
             </div>
 
             <!-- 6. Output Save Folder Path (Dynamic + 1-Click Shortcuts) -->
-            <div class="space-y-2 mb-4">
-              <div class="flex items-center justify-between">
-                <label class="text-xs font-semibold text-slate-300">Save Video To Folder (Dynamic Path)</label>
-                <div class="flex items-center gap-1.5">
-                  <button type="button" onclick="setFastPath('Desktop')" class="px-2 py-0.5 rounded text-[10px] font-mono bg-obsidian-bg border border-obsidian-border hover:border-cyan-500/50 text-slate-300 hover:text-cyan-400">Desktop</button>
-                  <button type="button" onclick="setFastPath('Downloads')" class="px-2 py-0.5 rounded text-[10px] font-mono bg-obsidian-bg border border-obsidian-border hover:border-cyan-500/50 text-slate-300 hover:text-cyan-400">Downloads</button>
-                  <button type="button" onclick="setFastPath('Videos')" class="px-2 py-0.5 rounded text-[10px] font-mono bg-obsidian-bg border border-obsidian-border hover:border-cyan-500/50 text-slate-300 hover:text-cyan-400">Videos</button>
-                  <button type="button" onclick="setFastPath('Termux')" class="px-2 py-0.5 rounded text-[10px] font-mono bg-obsidian-bg border border-obsidian-border hover:border-cyan-500/50 text-slate-300 hover:text-cyan-400">Termux</button>
+            <div class="space-y-1.5 mb-4">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                <label class="text-xs font-semibold text-slate-700 dark:text-slate-300">Save Video To Folder</label>
+                <div class="flex items-center gap-1 overflow-x-auto pb-0.5">
+                  <button type="button" onclick="setFastPath('Desktop')" class="px-2 py-0.5 rounded text-[10px] font-mono bg-obsidian-bg border border-obsidian-border hover:border-cyan-500/50 text-slate-700 dark:text-slate-300">Desktop</button>
+                  <button type="button" onclick="setFastPath('Downloads')" class="px-2 py-0.5 rounded text-[10px] font-mono bg-obsidian-bg border border-obsidian-border hover:border-cyan-500/50 text-slate-700 dark:text-slate-300">Downloads</button>
+                  <button type="button" onclick="setFastPath('Videos')" class="px-2 py-0.5 rounded text-[10px] font-mono bg-obsidian-bg border border-obsidian-border hover:border-cyan-500/50 text-slate-700 dark:text-slate-300">Videos</button>
+                  <button type="button" onclick="setFastPath('Termux')" class="px-2 py-0.5 rounded text-[10px] font-mono bg-obsidian-bg border border-obsidian-border hover:border-cyan-500/50 text-slate-700 dark:text-slate-300">Termux</button>
                 </div>
               </div>
               <input id="input-save-path" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-lpignore="true" value="Desktop/Master_AI_Videos" 
-                     class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl px-4 py-2 text-xs text-white font-mono focus:outline-none focus:border-cyan-500 transition-colors">
-              <span class="text-[10px] text-slate-500">Auto-saved to selected destination folder on render completion.</span>
+                     class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl px-3.5 py-2 text-xs text-slate-900 dark:text-white font-mono focus:outline-none focus:border-cyan-500 transition-colors">
+              <span class="text-[10px] text-slate-500">Auto-saved to destination folder on completion.</span>
             </div>
 
             <!-- 7. Call to Action -->
             <div class="space-y-1.5 mb-6">
-              <label class="text-xs font-semibold text-slate-300">Call To Action (CTA)</label>
+              <label class="text-xs font-semibold text-slate-700 dark:text-slate-300">Call To Action (CTA)</label>
               <input id="input-cta" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-lpignore="true" data-i18n="placeholder_cta" value="Comment TERMUX for Full Guide" 
-                     class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                     class="w-full bg-obsidian-bg border border-obsidian-border rounded-xl px-4 py-2.5 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-cyan-500 transition-colors">
             </div>
 
             <!-- Action Button -->
@@ -360,35 +367,35 @@
             <!-- Render Status Box -->
             <div id="render-status-box" class="hidden mt-4 p-3.5 rounded-xl bg-obsidian-bg border border-cyan-500/30 flex items-center gap-3">
               <div class="w-4 h-4 border-2 border-cyan-400 border-t-transparent rounded-full animate-spin"></div>
-              <span id="render-status-text" class="text-xs text-cyan-300 font-mono">Synthesizing audio & streaming frames to FFmpeg...</span>
+              <span id="render-status-text" class="text-xs text-cyan-500 font-mono">Synthesizing audio & streaming frames to FFmpeg...</span>
             </div>
 
           </div>
         </div>
 
         <!-- Right Column: Live Player & Library (5 cols) -->
-        <div class="lg:col-span-5 space-y-5">
+        <div class="lg:col-span-5 space-y-4 sm:space-y-5">
           
           <!-- Live Video Player Card -->
-          <div class="carbon-card rounded-2xl p-5 glow-cyan">
+          <div class="carbon-card rounded-2xl p-4 sm:p-5 glow-cyan">
             <div class="flex items-center justify-between mb-3">
-              <h3 class="text-xs font-bold text-white uppercase tracking-wider flex items-center gap-2">
-                <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <h3 class="text-xs font-bold text-slate-900 dark:text-white uppercase tracking-wider flex items-center gap-2">
+                <svg class="w-4 h-4 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 Live Reel Preview & Player
               </h3>
-              <span class="text-[10px] font-mono text-cyan-400 px-2 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/20">9:16 VERTICAL</span>
+              <span class="text-[10px] font-mono text-cyan-600 dark:text-cyan-400 px-2 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/20">9:16 VERTICAL</span>
             </div>
 
             <div class="aspect-[9/16] max-h-[460px] mx-auto rounded-xl overflow-hidden bg-black border border-obsidian-border flex items-center justify-center relative shadow-inner">
-              <video id="main-video-player" controls class="w-full h-full object-contain" poster="">
-                <source src="" type="video/mp4">
+              <video id="main-video-player" controls preload="metadata" class="w-full h-full object-contain" src="/demo/master_ai_demo_reel.mp4">
+                <source src="/demo/master_ai_demo_reel.mp4" type="video/mp4">
                 Your browser does not support video playback.
               </video>
             </div>
 
-            <div class="mt-4 pt-3 border-t border-obsidian-border flex items-center justify-between text-xs">
-              <span id="player-video-title" class="text-slate-400 truncate max-w-[200px]">No video loaded</span>
-              <a id="player-download-btn" href="#" download class="text-cyan-400 hover:underline flex items-center gap-1 font-semibold">
+            <div class="mt-3 pt-2.5 border-t border-obsidian-border flex items-center justify-between text-xs">
+              <span id="player-video-title" class="text-slate-700 dark:text-slate-300 truncate max-w-[180px] sm:max-w-[220px]">🎬 Master AI Demo Reel</span>
+              <a id="player-download-btn" href="/demo/master_ai_demo_reel.mp4" download class="text-cyan-600 dark:text-cyan-400 hover:underline flex items-center gap-1 font-semibold">
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
                 Download MP4
               </a>
@@ -396,10 +403,10 @@
           </div>
 
           <!-- Library List -->
-          <div class="carbon-card rounded-2xl p-5">
+          <div class="carbon-card rounded-2xl p-4 sm:p-5">
             <div class="flex items-center justify-between mb-3">
-              <h3 class="text-xs font-bold text-white uppercase tracking-wider">Your Rendered Library</h3>
-              <button onclick="refreshVideoList()" class="text-[10px] text-cyan-400 hover:underline flex items-center gap-1">
+              <h3 class="text-xs font-bold text-slate-900 dark:text-white uppercase tracking-wider">Your Rendered Library</h3>
+              <button onclick="refreshVideoList()" class="text-[10px] text-cyan-600 dark:text-cyan-400 hover:underline flex items-center gap-1 font-medium">
                 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
                 Refresh
               </button>
@@ -756,31 +763,42 @@
       try {
         const res = await fetch('/api/videos');
         const list = await res.json();
-        if (list.length === 0) {
+        if (!list || list.length === 0) {
           container.innerHTML = `<div class="text-xs text-slate-500 text-center py-3">No videos found. Render one above!</div>`;
           return;
         }
+
+        // Auto-load first video (or demo reel) into preview player if none loaded
+        const player = document.getElementById('main-video-player');
+        if (!player.getAttribute('src') || player.getAttribute('src') === '') {
+          player.src = list[0].url;
+          document.getElementById('player-video-title').textContent = list[0].name;
+          document.getElementById('player-download-btn').href = list[0].url;
+        }
+
         container.innerHTML = list.map(v => `
-          <div class="p-2.5 rounded-xl bg-obsidian-bg border border-obsidian-border flex items-center justify-between hover:border-cyan-500/40 transition-colors">
-            <div class="truncate max-w-[200px]">
-              <span class="text-xs text-white font-medium block truncate">${v.name}</span>
+          <div class="p-2 sm:p-2.5 rounded-xl bg-obsidian-bg border border-obsidian-border flex items-center justify-between hover:border-cyan-500/40 transition-colors">
+            <div class="truncate max-w-[160px] sm:max-w-[220px]">
+              <span class="text-xs text-slate-900 dark:text-white font-medium block truncate">${v.name}</span>
               <span class="text-[10px] text-slate-500 font-mono">${v.size_mb} MB • ${v.created}</span>
             </div>
-            <div class="flex items-center gap-1.5">
-              <button onclick="playVideo('${v.url}', '${v.name}')" class="px-2 py-1 rounded bg-cyan-500/10 text-cyan-400 text-xs hover:bg-cyan-500/20 font-medium">Play</button>
-              <a href="${v.url}" download class="px-2 py-1 rounded bg-obsidian-card text-slate-300 text-xs hover:text-white font-medium">Save</a>
+            <div class="flex items-center gap-1 shrink-0">
+              <button onclick="playVideo('${v.url}', '${v.name.replace(/'/g, "\\'")}', true)" class="px-2 py-1 rounded bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 text-xs hover:bg-cyan-500/20 font-semibold">Play</button>
+              <a href="${v.url}" download class="px-2 py-1 rounded bg-obsidian-card text-slate-700 dark:text-slate-300 text-xs hover:text-white font-medium">Save</a>
             </div>
           </div>
         `).join('');
       } catch (e) {
-        container.innerHTML = `<div class="text-xs text-slate-500 py-2">Start server via start_dashboard.bat to view library</div>`;
+        container.innerHTML = `<div class="text-xs text-slate-500 py-2">Start server via start.sh or start_dashboard.bat</div>`;
       }
     }
 
-    function playVideo(url, name) {
+    function playVideo(url, name, autoPlay = true) {
       const player = document.getElementById('main-video-player');
       player.src = url;
-      player.play();
+      if (autoPlay) {
+        player.play().catch(() => {});
+      }
       document.getElementById('player-video-title').textContent = name;
       document.getElementById('player-download-btn').href = url;
     }
