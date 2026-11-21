@@ -150,7 +150,7 @@
 <body class="min-h-screen flex flex-col selection:bg-cyan-500/20 selection:text-cyan-700 overflow-x-hidden w-full max-w-full">
 
   <!-- Top Navigation Bar (Sleek 1-Line on Mobile & Desktop) -->
-  <header class="border-b border-obsidian-border bg-obsidian-surface/95 backdrop-blur-md sticky top-0 z-50 px-2.5 sm:px-6 py-2 sm:py-2.5">
+  <header class="border-b border-obsidian-border bg-white dark:bg-obsidian-surface sticky top-0 z-50 px-2.5 sm:px-6 py-2 sm:py-2.5 shadow-sm">
     <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
       
       <!-- Left: Logo & Brand in 1 line -->
@@ -821,15 +821,6 @@
 
   <!-- Client-side Logic Script -->
   <script>
-    function setLanguage(l) {
-      localStorage.setItem('preferred_language', l);
-      if (window.I18N_DICTIONARY && typeof window.applyLanguageDict === 'function') {
-        window.applyLanguageDict(l);
-      } else {
-        location.reload();
-      }
-    }
-
     function switchTab(tab) {
       ['creator', 'vault', 'coder', 'automation'].forEach(t => {
         const contentEl = document.getElementById(`content-${t}`);
@@ -1393,7 +1384,7 @@
     refreshVideoList();
   </script>
   <!-- Mobile Bottom Navigation Bar (Visible on mobile screens) -->
-  <nav class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-obsidian-surface/95 backdrop-blur-lg border-t border-obsidian-border px-1 py-1.5 flex justify-between items-center shadow-lg">
+  <nav class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white dark:bg-obsidian-surface border-t border-obsidian-border px-1 py-1.5 flex justify-between items-center shadow-lg">
     <button onclick="switchTab('creator')" id="mob-tab-creator" class="flex flex-col items-center justify-center gap-0.5 text-cyan-500 flex-1 py-1">
       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
       <span class="text-[9px] font-bold tracking-tight">Studio</span>

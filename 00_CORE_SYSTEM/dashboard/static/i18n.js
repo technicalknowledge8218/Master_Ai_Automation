@@ -202,7 +202,10 @@ function setLanguage(lang) {
       }
     }
   });
+  window.setLanguage = setLanguage;
 }
+
+window.setLanguage = setLanguage;
 
 document.addEventListener('DOMContentLoaded', () => {
   setLanguage(currentLanguage);
