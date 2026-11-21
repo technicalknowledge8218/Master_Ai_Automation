@@ -26,7 +26,7 @@
 | **Git** | **READY** | git version 2.55.0.windows.4 (`C:\Program Files\Git\cmd\git.EXE`) | Local git version control fully functional. |
 | **Node.js** | **READY** | v24.16.0 (`C:\Program Files\nodejs\node.EXE`) | Active LTS runtime for frontend tooling, React, and Remotion. |
 | **npm** | **READY** | npm CLI (`C:\Program Files\nodejs\npm.CMD`) | Package manager available for React & Vite dependencies. |
-| **Ollama** | **READY** | v0.40.16 (`C:\Users\Sangam\AppData\Local\Programs\Ollama\ollama.EXE`) | Daemon installed and responsive. Currently 0 models pulled. |
+| **Ollama** | **READY** | v0.40.16 (`<USER_HOME>\AppData\Local\Programs\Ollama\ollama.EXE`) | Daemon installed and responsive. Currently 0 models pulled. |
 | **Docker** | **INSTALLED** | Docker CLI v29.8.1 | CLI installed; Docker Desktop daemon not running. |
 | **FFmpeg** | **NOT ON PATH** | Missing from system PATH | Required for video/audio pipeline; must be staged or packaged portably. |
 | **Rust / Cargo** | **NOT INSTALLED**| Missing | Native compilation requires pre-built wheels or binaries. |

@@ -64,5 +64,5 @@
 6. `AGT-006` **Security Auditor**: Zero-secret audit, AST safety scan (`eval`, `exec`), boundary audit.
 7. `AGT-007` **Capability Discovery Agent**: 30-domain horizon scanning and gap assessment.
 
-Execution Dashboard: [AGENT_DASHBOARD.md](file:///c:/Users/Sangam/Desktop/Master%20AI/03_AI_AGENTS/dashboard/AGENT_DASHBOARD.md)  
-Execution Standard: [AGENT_EXECUTION_STANDARD.md](file:///c:/Users/Sangam/Desktop/Master%20AI/AGENT_EXECUTION_STANDARD.md)
+Execution Dashboard: [AGENT_DASHBOARD.md](file:///<USER_HOME>/Desktop/Master%20AI/03_AI_AGENTS/dashboard/AGENT_DASHBOARD.md)  
+Execution Standard: [AGENT_EXECUTION_STANDARD.md](file:///<USER_HOME>/Desktop/Master%20AI/AGENT_EXECUTION_STANDARD.md)

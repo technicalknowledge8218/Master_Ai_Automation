@@ -8,7 +8,7 @@ import subprocess
 from PIL import Image, ImageDraw, ImageFont
 
 PROJECT_DIR = r"F:\Master AI\00_CORE_SYSTEM\engine\video_production\ai_voice_scam_reel"
-ARTIFACT_DIR = r"C:\Users\Sangam\.gemini\antigravity\brain\d97bdd64-3973-442c-a0dd-850f28dc3c0d"
+ARTIFACT_DIR = r"<ARTIFACT_DIR>"
 
 print(">>> [RE-RENDER] Assembling 100% PURE GEMINI TTS Audio Tracks...")
 

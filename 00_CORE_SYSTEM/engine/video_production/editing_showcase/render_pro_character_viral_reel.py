@@ -22,7 +22,7 @@ FFMPEG = r"F:\Master AI\.venv_py310\lib\site-packages\imageio_ffmpeg\binaries\ff
 DEV_LIB = r"F:\Master AI\CHARACTER_LIBRARY\dev_creator"
 AUDIO_DIR = r"F:\Master AI\00_CORE_SYSTEM\engine\video_production\editing_showcase\dev_story"
 OUT_DIR = r"F:\Master AI\00_CORE_SYSTEM\engine\video_production\editing_showcase"
-ARTIFACT_DIR = r"C:\Users\Sangam\.gemini\antigravity\brain\d97bdd64-3973-442c-a0dd-850f28dc3c0d"
+ARTIFACT_DIR = r"<ARTIFACT_DIR>"
 
 SFX_DIR = r"F:\Master AI\00_CORE_SYSTEM\research\phase-7\corporate_drama_reel\sfx"
 BGM_WAV = os.path.join(SFX_DIR, "lofi_bg_track.wav")

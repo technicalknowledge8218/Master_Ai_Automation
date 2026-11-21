@@ -19,7 +19,7 @@ if sys.platform == "win32":
 
 PROJECT_DIR = r"F:\Master AI\00_CORE_SYSTEM\engine\video_production\ai_voice_scam_reel"
 os.makedirs(PROJECT_DIR, exist_ok=True)
-ARTIFACT_DIR = r"C:\Users\Sangam\.gemini\antigravity\brain\d97bdd64-3973-442c-a0dd-850f28dc3c0d"
+ARTIFACT_DIR = r"<ARTIFACT_DIR>"
 
 GEMINI_KEY = os.environ.get("GEMINI_API_KEY", "")
 GEMINI_MODEL = "gemini-2.5-flash-preview-tts"

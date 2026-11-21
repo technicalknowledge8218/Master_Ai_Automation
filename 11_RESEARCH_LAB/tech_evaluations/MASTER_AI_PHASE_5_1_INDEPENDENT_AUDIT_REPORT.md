@@ -4,7 +4,7 @@
 - **Audit Target**: Phase 5 Implementation (`90cd9cf`, Tag: `v0.5.0-fullstack-standards`)
 - **Audit Branch**: `phase-5-1-independent-audit`
 - **Audit Timestamp**: 2026-11-17T02:57:00+05:30
-- **Pre-Audit Backup**: [master_ai_backup_pre_phase5_1_20261117_025250.zip](file:///C:/Users/Sangam/Desktop/Master%20AI/23_CHANGELOG_AND_BACKUP/snapshots/master_ai_backup_pre_phase5_1_20261117_025250.zip) (230 files, 404.30 KB, `testzip` verified OK)
+- **Pre-Audit Backup**: [master_ai_backup_pre_phase5_1_20261117_025250.zip](file:///<USER_HOME>/Desktop/Master%20AI/23_CHANGELOG_AND_BACKUP/snapshots/master_ai_backup_pre_phase5_1_20261117_025250.zip) (230 files, 404.30 KB, `testzip` verified OK)
 - **Audit Mode**: Independent, Empirical, Read-Verify with Low-Risk Precision Remediation
 
 ---
@@ -147,7 +147,7 @@ All 7 representative skills were tested against realistic engineering tasks usin
 
 ## 7. Agent Collaboration Audit (Empirical Evidence)
 
-Every one of the 7 Phase 5 agent invocations was independently audited by inspecting `C:\Users\Sangam\.gemini\antigravity\brain\<CID>\.system_generated\logs\transcript.jsonl`:
+Every one of the 7 Phase 5 agent invocations was independently audited by inspecting `<USER_HOME>\.gemini\antigravity\brain\<CID>\.system_generated\logs\transcript.jsonl`:
 
 | Agent ID | Role | Conversation ID | Transcript Size | Steps | Tools Used | Classification |
 |---|---|---|:---:|:---:|---|---|

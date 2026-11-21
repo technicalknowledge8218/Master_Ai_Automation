@@ -18,7 +18,7 @@ if sys.platform == "win32":
 
 OUT_DIR = r"F:\Master AI\00_CORE_SYSTEM\engine\voice_dna\offline_cloned_output\showcase"
 os.makedirs(OUT_DIR, exist_ok=True)
-ARTIFACT_DIR = r"C:\Users\Sangam\.gemini\antigravity\brain\d97bdd64-3973-442c-a0dd-850f28dc3c0d"
+ARTIFACT_DIR = r"<ARTIFACT_DIR>"
 
 # The Universal Test Line in Hindi
 HINDI_SCRIPT = "अगर आप सोचते हैं कि सिर्फ मेहनत करके आप अमीर बन सकते हैं, तो आप बहुत बड़ी गलतफहमी में हैं। असली खेल मेहनत का नहीं, सही जानकारी और स्मार्ट सिस्टम्स का है!"

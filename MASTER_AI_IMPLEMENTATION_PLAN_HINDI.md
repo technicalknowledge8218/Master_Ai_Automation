@@ -1,6 +1,6 @@
 # 🚀 मास्टर एआई (Master AI) — सम्पूर्ण तकनीकी क्रियान्वयन योजना (Implementation Plan)
 **प्लेटफ़ॉर्म:** मास्टर एआई पावर्ड बाय जॉब-रन टेक्नोलॉजीज (JobRun Technologies)  
-**फ़ाइल लोकेशन (डेस्कटॉप):** `C:\Users\Sangam\Desktop\MASTER_AI_IMPLEMENTATION_PLAN_HINDI.md`  
+**फ़ाइल लोकेशन (डेस्कटॉप):** `<USER_HOME>\Desktop\MASTER_AI_IMPLEMENTATION_PLAN_HINDI.md`  
 **स्थिति:** यूजर अप्रूवल हेतु पूर्ण हिंदी दस्तावेज़  
 
 ---
@@ -89,7 +89,7 @@
 1. **NO EMOJIS (100% SVG Only):** इंटरफेस में कोई यूनिकोड इमोजी नहीं है, केवल क्लीन वेक्टर SVGs लगाए गए हैं।
 2. **NO DEFAULT PURPLE THEME:** डिफ़ॉल्ट बैंगनी रंग हटाकर प्रोफेशनल मैट डार्क स्लेट (`#0a0d14`), टेक्निकल स्यान (`#00f2fe`) और गोल्ड एक्सेंट दिया गया है।
 3. **NO UNAUTHORIZED BACKGROUND DAEMONS:** कोई भी सर्वर बैकग्राउंड में बिना अनुमति नहीं चलेगा। यूजर जब चाहेगा, सिर्फ तभी चलेगा।
-4. **1-क्लिक स्टार्ट:** यूजर सिर्फ डेस्कटॉप पर मौजूद [start_dashboard.bat](file:///C:/Users/Sangam/Desktop/start_dashboard.bat) पर डबल-क्लिक करेगा और ब्राउज़र में `http://localhost:8080` खुल जाएगा।
+4. **1-क्लिक स्टार्ट:** यूजर सिर्फ डेस्कटॉप पर मौजूद [start_dashboard.bat](file:///<USER_HOME>/Desktop/start_dashboard.bat) पर डबल-क्लिक करेगा और ब्राउज़र में `http://localhost:8080` खुल जाएगा।
 
 ---
 

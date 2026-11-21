@@ -9,7 +9,7 @@
 ## 1. Component Identification
 - **Component Name**: `<component-name>`
 - **Component Type**: `Skill | Global Rule | Modular Rule | MCP Server`
-- **Source Path in MASTER-AI**: `c:\Users\Sangam\Desktop\Master AI\02_SKILLS\<name>\SKILL.md`
+- **Source Path in MASTER-AI**: `<PROJECT_ROOT>\02_SKILLS\<name>\SKILL.md`
 - **Destination Path**: `%USERPROFILE%\.gemini\config\skills\<name>\SKILL.md`
 
 ## 2. Global Justification
@@ -27,7 +27,7 @@ Why does this component need to be available across ALL projects on this worksta
 - **Sandboxing**: Confirmed tool operates within approved boundaries.
 
 ## 5. Automated Backup Plan
-- **Backup Snapshot Path**: `c:\Users\Sangam\Desktop\Master AI\22_PUBLISH_AND_DEPLOY\backups\<snapshot_id>\`
+- **Backup Snapshot Path**: `<PROJECT_ROOT>\22_PUBLISH_AND_DEPLOY\backups\<snapshot_id>\`
 - **Rollback Command**: `python 22_PUBLISH_AND_DEPLOY/scripts/rollback.py <snapshot_id>`
 
 ## 6. Complete Proposed Diff / Content

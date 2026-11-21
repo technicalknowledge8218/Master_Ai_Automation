@@ -234,7 +234,7 @@ try:
         sf.write(scene_master, full_dialogue, sr)
 
     # Copy to Artifact directory
-    artifact_dir = r"C:\Users\Sangam\.gemini\antigravity\brain\d97bdd64-3973-442c-a0dd-850f28dc3c0d"
+    artifact_dir = r"<ARTIFACT_DIR>"
     shutil.copy2(dialogue_out, os.path.join(artifact_dir, "shorts_vs_reels_dialogue_offline_cloned.wav"))
     shutil.copy2(scene_master, os.path.join(artifact_dir, "shorts_vs_reels_master_offline_cloned.wav"))
     print(">>> [POST-PROCESSING] Successfully mirrored to Artifacts directory!")

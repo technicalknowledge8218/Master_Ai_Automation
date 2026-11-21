@@ -1,7 +1,7 @@
 import json
 import re
 
-path = r"C:\Users\Sangam\.gemini\antigravity\brain\d97bdd64-3973-442c-a0dd-850f28dc3c0d\.system_generated\logs\transcript.jsonl"
+path = r"<ARTIFACT_DIR>\.system_generated\logs\transcript.jsonl"
 with open(path, "r", encoding="utf-8", errors="ignore") as f:
     for i, line in enumerate(f):
         try:

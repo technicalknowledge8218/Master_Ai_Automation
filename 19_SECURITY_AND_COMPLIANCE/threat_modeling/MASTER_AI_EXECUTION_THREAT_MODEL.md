@@ -89,7 +89,7 @@ MASTER-AI operates as a sovereign, multi-agent AI knowledge, research, and devel
 ---
 
 ### Threat 4: Filesystem Access Outside Task Workspace
-- **Attack Scenario**: An agent attempts to read, write, or delete files in `C:\Windows`, `C:\Users\Sangam\Documents`, or the root MASTER-AI workspace via relative paths (`../../`) or absolute paths (`C:\...`).
+- **Attack Scenario**: An agent attempts to read, write, or delete files in `C:\Windows`, `<USER_HOME>\Documents`, or the root MASTER-AI workspace via relative paths (`../../`) or absolute paths (`C:\...`).
 - **Current Protection**: `TaskSandbox.is_safe_path()` checks `os.path.commonpath` against `sandbox_dir`.
 - **Remaining Weakness**: Prior to Phase 4.3, non-existent target files skipped `os.path.realpath` evaluation, allowing directory junction write-escapes.
 - **Required Mitigation**: Always resolve `os.path.realpath(target)` regardless of file existence; reject UNC paths (`\\...`), device names (`CON`, `NUL`), alternate data streams (`:stream`), and null bytes (`\0`).
@@ -109,7 +109,7 @@ MASTER-AI operates as a sovereign, multi-agent AI knowledge, research, and devel
 ### Threat 6: Credential Theft
 - **Attack Scenario**: An agent attempts to search the host filesystem for `.env` files, SSH keys (`~/.ssh/id_rsa`), AWS credentials (`~/.aws/credentials`), or Git credentials.
 - **Current Protection**: `USERPROFILE`, `HOME`, and `APPDATA` are purged from the child environment. Sandbox file operations cannot escape `sandbox_dir`.
-- **Remaining Weakness**: Hardcoded path guesses in generated code (e.g., `open('C:/Users/Sangam/.ssh/id_rsa')`).
+- **Remaining Weakness**: Hardcoded path guesses in generated code (e.g., `open('<USER_HOME>/.ssh/id_rsa')`).
 - **Required Mitigation**: Child processes run without administrative elevation. `TaskSandbox` file APIs reject all paths outside `sandbox_dir`.
 - **Residual Risk**: Low. Windows file system permissions prevent standard unprivileged processes from accessing protected credentials outside the user session, while sandbox APIs prevent any escape.
 

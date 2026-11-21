@@ -30,7 +30,7 @@ In this phase, we implemented:
 ## 2. Git & Backup Verification
 
 ### 2.1 Git Repository State
-- **Workspace Root**: `C:\Users\Sangam\Desktop\Master AI`
+- **Workspace Root**: `<PROJECT_ROOT>`
 - **Starting Commit**: `c0c8717` (Phase 4.1 Independent Audit Report on `phase-4-agent-ecosystem`)
 - **Active Branch**: `phase-4-2-security-hardening`
 - **Git Remotes**: None (`git remote -v` returned empty; verified 100% local)

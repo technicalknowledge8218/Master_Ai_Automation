@@ -26,7 +26,7 @@ CHAR_LIB = r"F:\Master AI\CHARACTER_LIBRARY"
 BILLU_LIB = r"F:\Master AI\CHARACTER_LIBRARY\billu_chibi"
 AUDIO_DIR = r"F:\Master AI\00_CORE_SYSTEM\engine\video_production\editing_showcase\story_audio"
 OUT_DIR = r"F:\Master AI\00_CORE_SYSTEM\engine\video_production\editing_showcase"
-ARTIFACT_DIR = r"C:\Users\Sangam\.gemini\antigravity\brain\d97bdd64-3973-442c-a0dd-850f28dc3c0d"
+ARTIFACT_DIR = r"<ARTIFACT_DIR>"
 
 SFX_DIR = r"F:\Master AI\00_CORE_SYSTEM\research\phase-7\corporate_drama_reel\sfx"
 BGM_WAV = os.path.join(SFX_DIR, "lofi_bg_track.wav")

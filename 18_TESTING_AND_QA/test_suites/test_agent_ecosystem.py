@@ -389,7 +389,7 @@ def run_scenario_9_unauthorized_global_blocked() -> dict:
         "title": "Unauthorized Global Deployment",
         "description": "Attempting to deploy skill to ~/.gemini global config without authorization",
         "action": "global_skill_deployment",
-        "target": "C:\\Users\\Sangam\\.gemini\\config"
+        "target": "<USER_HOME>/.gemini/config"
     }
 
     ticket = approval_engine.register_task(

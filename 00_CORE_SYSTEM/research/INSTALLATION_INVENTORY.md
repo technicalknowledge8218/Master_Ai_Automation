@@ -46,5 +46,5 @@
 - **Staged Publications:** `F:\Master AI\10_SOCIAL_MEDIA\staged_publications\`
 - **OpenFilm Projects:** `F:\Master AI\09_CONTENT_STUDIO\openfilm_projects\`
 - **Stock Assets & Provenance:** `F:\Master AI\09_CONTENT_STUDIO\stock_assets\`
-- **Whisper Cache:** `C:\Users\Sangam\.cache\huggingface\hub\models--Systran--faster-whisper-tiny` (~75 MB INT8 weights)
+- **Whisper Cache:** `<USER_HOME>\.cache\huggingface\hub\models--Systran--faster-whisper-tiny` (~75 MB INT8 weights)
 - **Snapshots & Backups:** `F:\Master AI\23_CHANGELOG_AND_BACKUP\snapshots\`

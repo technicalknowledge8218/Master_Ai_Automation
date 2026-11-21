@@ -2,7 +2,7 @@
 **Platform**: Master AI powered by JobRun Technologies  
 **Author**: Antigravity Core AI  
 **Created At**: 2026-11-21  
-**Desktop Mirror**: `C:\Users\Sangam\Desktop\MASTER_AI_COMPLETE_IMPLEMENTATION_PLAN.md`  
+**Desktop Mirror**: `<USER_HOME>\Desktop\MASTER_AI_COMPLETE_IMPLEMENTATION_PLAN.md`  
 **Status**: 100% Comprehensive Master Blueprint (Pending User Approval)
 
 ---

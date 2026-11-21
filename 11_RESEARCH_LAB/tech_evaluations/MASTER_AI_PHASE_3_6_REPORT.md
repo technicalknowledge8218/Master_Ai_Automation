@@ -29,7 +29,7 @@ The Phase 3.6 upgrade was executed strictly in adherence to the Master AI Consti
 
 | Mandate | Verification Status | Evidence / Notes |
 | :--- | :---: | :--- |
-| **Workspace Local Only** | **COMPLIANT** | All changes confined to `c:\Users\Sangam\Desktop\Master AI`. |
+| **Workspace Local Only** | **COMPLIANT** | All changes confined to `<PROJECT_ROOT>`. |
 | **Zero Global Modifications** | **COMPLIANT** | `%USERPROFILE%\.gemini\` was inspected strictly read-only; zero files written or altered. |
 | **Zero Git Remote** | **COMPLIANT** | `git remote -v` confirmed empty; no network push or remote setup attempted. |
 | **Zero Secrets Exposed** | **COMPLIANT** | Automated regex scanner validated 105 files; zero credentials or keys present. |

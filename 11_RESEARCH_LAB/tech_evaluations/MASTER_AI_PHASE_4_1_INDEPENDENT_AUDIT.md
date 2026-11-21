@@ -127,14 +127,14 @@ An empirical security test suite was authored and executed in an isolated tempor
 | **Executable Whitelist** | Attempted `cmd.exe /c dir` | Caught `SandboxSecurityViolation` | **PASS** |
 | **Forbidden Patterns** | Command containing `.gemini` | Caught `SandboxSecurityViolation` | **PASS** |
 | **Subprocess OS Escape** | `python -c "import os; print(os.path.exists('C:/Windows/System32'))"` | Subprocess successfully read host path (`True`) | **LIMITATION** |
-| **Subprocess Network Stack** | `python -c "import socket; print(socket.gethostname())"` | Subprocess accessed host network stack (`Sangam-Soni`) | **LIMITATION** |
+| **Subprocess Network Stack** | `python -c "import socket; print(socket.gethostname())"` | Subprocess accessed host network stack (`MASTER-AI-HOST`) | **LIMITATION** |
 
 ### 5.2 Sandbox Classification:
 - **Actual Isolation Level**: **A. Application-Level Path Restriction & Subprocess Wrapper**.
 - **Evidence**:
   - The sandbox creates a standard directory on NTFS (`03_AI_AGENTS/sandbox/tasks/<task_id>/`).
   - Path safety is enforced only when code calls `sandbox.write_file()` or `sandbox.read_file()`.
-  - When code runs via `sandbox.run_subprocess()`, it spawns a standard Windows `python.exe` process under the host user account (`Sangam`).
+  - When code runs via `sandbox.run_subprocess()`, it spawns a standard Windows `python.exe` process under the host user account (`<HOST_USER>`).
   - The subprocess inherits the host environment, host network socket capabilities, and OS read/write capabilities if the executed Python script directly calls `open("C:/...")` or `socket.connect()`.
   - It is **NOT an OS-level sandbox** (no Windows AppContainer, no container jail, no Windows Sandbox), and **NOT network-isolated**.
 - **Verdict**: **PARTIALLY VERIFIED**. Application-level protections work as designed, but OS-level escape or network calls from arbitrary subprocesses are not prevented.

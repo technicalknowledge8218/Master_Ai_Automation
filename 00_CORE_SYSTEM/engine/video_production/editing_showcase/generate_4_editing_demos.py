@@ -15,7 +15,7 @@ if sys.platform == "win32":
 
 SHOWCASE_DIR = r"F:\Master AI\00_CORE_SYSTEM\engine\video_production\editing_showcase"
 os.makedirs(SHOWCASE_DIR, exist_ok=True)
-ARTIFACT_DIR = r"C:\Users\Sangam\.gemini\antigravity\brain\d97bdd64-3973-442c-a0dd-850f28dc3c0d"
+ARTIFACT_DIR = r"<ARTIFACT_DIR>"
 
 # Shared Audio & Assets
 VOICE_WAV = r"F:\Master AI\00_CORE_SYSTEM\engine\voice_dna\offline_cloned_output\showcase\03_gemini_puck_energetic_male.wav"

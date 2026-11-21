@@ -8,7 +8,7 @@ This manifest evaluates, filters, and standardizes the open-source software stac
 
 | Technology | Category | License | CPU / RAM Profile | Role & Evaluation Decision | Installation / Integration Method |
 |---|---|---|---|---|---|
-| **Ollama** | Local LLM Server | MIT | 4 threads, 2–4 GB RAM | **ADOPT (Primary Local Model Runner)**: Already installed v0.40.16. Native Win32 service, supports Q4_K_M GGUF models. | Use existing installation at `C:\Users\Sangam\AppData\Local\Programs\Ollama\`. |
+| **Ollama** | Local LLM Server | MIT | 4 threads, 2–4 GB RAM | **ADOPT (Primary Local Model Runner)**: Already installed v0.40.16. Native Win32 service, supports Q4_K_M GGUF models. | Use existing installation at `<USER_HOME>\AppData\Local\Programs\Ollama\`. |
 | **llama.cpp** | Local LLM Engine | MIT | 4–6 threads, AVX2 | **ADOPT (Secondary / Direct Engine)**: Underlying C++ engine for Ollama and direct CLI inference. | Built-in via Ollama backend; direct binary optional. |
 | **LiteLLM** | Universal LLM Proxy | MIT | <100 MB RAM | **ADOPT (Primary Gateway)**: Standardizes 100+ local and cloud LLM providers behind OpenAI-compatible endpoint. | Python package (`litellm`), workspace local. |
 | **Open WebUI** | Web UI for LLMs | Port of Ollama UI | ~500 MB RAM | **EVALUATED (Alternative)**: Good GUI, but overlaps with custom Master AI Central Dashboard. | Defer in favor of custom unified React Dashboard. |

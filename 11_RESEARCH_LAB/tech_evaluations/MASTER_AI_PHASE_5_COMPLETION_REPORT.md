@@ -2,7 +2,7 @@
 ## Full-Stack Standards, Universal Design Systems & Real Multi-Agent Collaboration
 
 - **Project**: MASTER AI Sovereign Autonomous Ecosystem
-- **Workspace**: `C:\Users\Sangam\Desktop\Master AI`
+- **Workspace**: `<PROJECT_ROOT>`
 - **Starting Commit**: `205520a` (Tag: `v0.4.3.1-adversarial-verification`)
 - **Active Branch**: `phase-5-fullstack-standards`
 - **Release Version**: `v0.5.0-fullstack-standards`

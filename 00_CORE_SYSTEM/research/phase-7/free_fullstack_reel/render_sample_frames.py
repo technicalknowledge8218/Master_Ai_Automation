@@ -386,7 +386,7 @@ def main():
         frame.convert("RGB").save(out_path, quality=95)
         print(f"Saved {filename} at t={t}s")
         
-        brain_path = os.path.join(r"C:\Users\Sangam\.gemini\antigravity\brain\d97bdd64-3973-442c-a0dd-850f28dc3c0d", filename)
+        brain_path = os.path.join(r"<ARTIFACT_DIR>", filename)
         frame.convert("RGB").save(brain_path, quality=95)
 
 if __name__ == "__main__":

@@ -5,7 +5,7 @@ import numpy as np
 CHAR_LIB = r"F:\Master AI\CHARACTER_LIBRARY"
 os.makedirs(CHAR_LIB, exist_ok=True)
 
-brain_dir = r"C:\Users\Sangam\.gemini\antigravity\brain\d97bdd64-3973-442c-a0dd-850f28dc3c0d"
+brain_dir = r"<ARTIFACT_DIR>"
 
 # Files
 f_arjun = os.path.join(brain_dir, "arjun_character_spritesheet_1795031979222.jpg")

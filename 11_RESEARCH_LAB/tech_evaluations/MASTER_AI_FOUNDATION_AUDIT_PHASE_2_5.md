@@ -4,7 +4,7 @@
 > **Date**: 2026-11-16  
 > **Auditor**: Antigravity Core Autonomous Agent  
 > **Status**: COMPLETED  
-> **Workspace**: `C:\Users\Sangam\Desktop\Master AI`  
+> **Workspace**: `<PROJECT_ROOT>`  
 > **Global Configuration Policy**: STRICT MANUAL USER APPROVAL REQUIRED  
 
 ---
@@ -17,7 +17,7 @@ This audit represents an empirical, evidence-based investigation into the **MAST
 1. **Foundation Scaffolding Integrity**: The 24-domain folder structure is fully established. All 24 domain `README.md` files, 14 root governance documents, and Phase 2 policy standards are present, syntactically valid, and properly sized.
 2. **Implementation vs. Blueprint Gap**: While governance, architecture, and standards are comprehensively documented, actual functional code is currently concentrated in Phase 2's `technical-research` skill and its verified Python metadata validation CLI. 94 domain subdirectories currently serve as scaffolded targets awaiting implementation in Phases 3–10.
 3. **Environment & Host Discovery**: The Antigravity host contains 14 built-in skills, 10 installed plugins supplying over 80 domain skills, 8 configured MCP servers in `mcp_config.json`, 4 visual UI sidecars, 9 slash commands, and a multi-agent delegation system (`self`, `research`, `browser`, `image-generator`, `firestore-rules-author`, `flutter_a11y_agent`, and Swarms).
-4. **Global Disconnect & Safety**: Global configurations at `%USERPROFILE%\.gemini\config\` remain decoupled and intact. No unauthorized global modifications occurred. `%USERPROFILE%\.gemini\AGENTS.md` is currently absent, confirming that workspace rules in `C:\Users\Sangam\Desktop\Master AI\AGENTS.md` are correctly localized.
+4. **Global Disconnect & Safety**: Global configurations at `%USERPROFILE%\.gemini\config\` remain decoupled and intact. No unauthorized global modifications occurred. `%USERPROFILE%\.gemini\AGENTS.md` is currently absent, confirming that workspace rules in `<PROJECT_ROOT>\AGENTS.md` are correctly localized.
 5. **Git Repository Status**: Git is currently uninitialized (`.git` absent), adhering strictly to the non-destructive boundary.
 
 ---
@@ -27,7 +27,7 @@ This audit represents an empirical, evidence-based investigation into the **MAST
 ### 1. Verification of Reported Files & Artifacts
 | Category | Claimed in Phase 1 & 2 | Verified on Disk | Size / Verification Evidence | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| **Workspace Root** | `C:\Users\Sangam\Desktop\Master AI` | Exists | Valid directory | **VERIFIED** |
+| **Workspace Root** | `<PROJECT_ROOT>` | Exists | Valid directory | **VERIFIED** |
 | **Domain Folders** | 24 Top-Level Domains | 24 Present | `00_CORE_SYSTEM` through `23_CHANGELOG_AND_BACKUP` | **VERIFIED** |
 | **Domain READMEs**| 24 Domain README Files | 24 Present | All >800 bytes, structured with subfolder manifests | **VERIFIED** |
 | **Constitution** | `00_CORE_SYSTEM/MASTER_AI_CONSTITUTION.md` | Present | 5,849 bytes; 12 supreme laws intact | **VERIFIED** |

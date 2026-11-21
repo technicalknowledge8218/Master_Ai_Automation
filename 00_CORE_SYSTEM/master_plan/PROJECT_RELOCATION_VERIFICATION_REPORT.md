@@ -1,7 +1,7 @@
 # MASTER AI — PROJECT RELOCATION VERIFICATION & PATH CONFIGURATION REPORT
 
 - **Relocation Target**: `F:\Master AI` (Official Project Root)
-- **Previous Location**: `C:\Users\Sangam\Desktop\Master AI`
+- **Previous Location**: `<PROJECT_ROOT>`
 - **Verification Timestamp**: 2026-11-17T04:12:00+05:30
 - **Storage Profile**: Drive F: (Volume: "New Volume") — **331.85 GB Free** / 332.03 GB Total (99.9% available)
 - **Execution Mode**: Read-Only Inspection & Verification (Zero Automatic Modifications Performed)
@@ -26,7 +26,7 @@ A complete, non-destructive, read-only audit of the repository, environment, dep
 4. **Storage Advantage**:
    - Drive F: provides **331.85 GB of free NVMe/SSD space**, completely eliminating the previous 10.8 GB C: drive bottleneck and providing ample capacity for upcoming phases (Local LLM weights, RAG embeddings, and media rendering).
 5. **Path Hardcoding Constraints Identified**:
-   - **7 Python scripts** contain hardcoded `WORKSPACE_ROOT = r"C:\Users\Sangam\Desktop\Master AI"`.
+   - **7 Python scripts** contain hardcoded `WORKSPACE_ROOT = r"<PROJECT_ROOT>"`.
    - **12 virtual environment files** (`.venv\Scripts\activate*`, `pyvenv.cfg`, and `.exe` entry point stub launchers) retain embedded references to the old interpreter path.
    - **16 documentation and rule files** (`AGENTS.md`, `GEMINI.md`, etc.) reference the old C: path.
    - **Historical logs and test summaries** retain records of prior executions.
@@ -112,10 +112,10 @@ Version:    Python 3.14.5 (AMD64)
 
 ## 4. Comprehensive Audit of Old Path References
 
-A complete scan of `F:\Master AI` identified the exact files containing references to `C:\Users\Sangam\Desktop\Master AI`:
+A complete scan of `F:\Master AI` identified the exact files containing references to `<PROJECT_ROOT>`:
 
 ### 4.1 Python Code Scripts (7 Files)
-These scripts hardcode `WORKSPACE_ROOT = r"C:\Users\Sangam\Desktop\Master AI"` at the module level:
+These scripts hardcode `WORKSPACE_ROOT = r"<PROJECT_ROOT>"` at the module level:
 1. `00_CORE_SYSTEM\dashboard\render_dashboard.py` (Line 5)
    - *Impact*: Writes generated dashboard to C: drive instead of F: drive.
 2. `00_CORE_SYSTEM\discovery_engine\discovery_engine.py` (Line 6)
@@ -133,16 +133,16 @@ These scripts hardcode `WORKSPACE_ROOT = r"C:\Users\Sangam\Desktop\Master AI"` a
 
 ### 4.2 Virtual Environment (`.venv`) Files (12 Files)
 1. `F:\Master AI\.venv\pyvenv.cfg` (Line 5):
-   `command = C:\Python314\python.exe -m venv --system-site-packages C:\Users\Sangam\Desktop\Master AI\.venv`
+   `command = C:\Python314\python.exe -m venv --system-site-packages <PROJECT_ROOT>\.venv`
 2. `F:\Master AI\.venv\Scripts\activate` (Lines 44, 49):
-   `VIRTUAL_ENV="C:\Users\Sangam\Desktop\Master AI\.venv"`
+   `VIRTUAL_ENV="<PROJECT_ROOT>\.venv"`
 3. `F:\Master AI\.venv\Scripts\activate.bat` (Line 11):
-   `set "VIRTUAL_ENV=C:\Users\Sangam\Desktop\Master AI\.venv"`
+   `set "VIRTUAL_ENV=<PROJECT_ROOT>\.venv"`
 4. `F:\Master AI\.venv\Scripts\activate.fish` (Line 36):
-   `set -gx VIRTUAL_ENV "C:\Users\Sangam\Desktop\Master AI\.venv"`
+   `set -gx VIRTUAL_ENV "<PROJECT_ROOT>\.venv"`
 5. **Entry-point Stub Executables (8 binaries)**:
    - `pip.exe`, `pip3.exe`, `pip3.14.exe`, `fastapi.exe`, `httpx2.exe`, `jsondiff.exe`, `jsonpatch.exe`, `jsonpointer`.
-   - *Root Cause*: Windows pip/setuptools stub launchers embed a compiled shebang pointing to the interpreter that created them (`#!C:\Users\Sangam\Desktop\Master AI\.venv\Scripts\python.exe`).
+   - *Root Cause*: Windows pip/setuptools stub launchers embed a compiled shebang pointing to the interpreter that created them (`#!<PROJECT_ROOT>\.venv\Scripts\python.exe`).
    - *Behavioral Difference*:
      - Direct binary execution `.\.venv\Scripts\pip.exe` routes to C: (will fail if C: path is deleted).
      - Interpreter-routed execution `.\.venv\Scripts\python.exe -m pip` dynamically binds to F: and works flawlessly.
@@ -212,7 +212,7 @@ def get_subpath(*parts: str) -> Path:
 ```
 
 ### 6.2 Refactor the 7 Hardcoded Python Scripts
-Replace `WORKSPACE_ROOT = r"C:\Users\Sangam\Desktop\Master AI"` with dynamic resolution from `00_CORE_SYSTEM.config.path_config`.
+Replace `WORKSPACE_ROOT = r"<PROJECT_ROOT>"` with dynamic resolution from `00_CORE_SYSTEM.config.path_config`.
 
 ### 6.3 Patch Quality Gate Scanner
 Update `18_TESTING_AND_QA/quality_gates/run_quality_gate.py`:
@@ -221,7 +221,7 @@ Update `18_TESTING_AND_QA/quality_gates/run_quality_gate.py`:
 
 ### 6.4 Virtual Environment (`.venv`) Safe Repair
 Without deleting or recreating the virtual environment:
-1. Update `VIRTUAL_ENV` string in `activate`, `activate.bat`, and `activate.fish` from `C:\Users\Sangam\Desktop\Master AI\.venv` to `F:\Master AI\.venv`.
+1. Update `VIRTUAL_ENV` string in `activate`, `activate.bat`, and `activate.fish` from `<PROJECT_ROOT>\.venv` to `F:\Master AI\.venv`.
 2. Update line 5 of `pyvenv.cfg` to point to `F:\Master AI\.venv`.
 3. Regenerate the entry-point stub wrappers cleanly using:
    `& "F:\Master AI\.venv\Scripts\python.exe" -m pip install --upgrade --force-reinstall --no-deps pip`

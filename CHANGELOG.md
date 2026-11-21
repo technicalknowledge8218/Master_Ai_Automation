@@ -389,7 +389,7 @@
 ## [0.1.0-foundation] - 2026-11-16
 
 ### Initialized
-- **Ecosystem Foundation**: Established sovereign MASTER-AI workspace at `c:\Users\Sangam\Desktop\Master AI`.
+- **Ecosystem Foundation**: Established sovereign MASTER-AI workspace at `<PROJECT_ROOT>`.
 - **Domain Topology**: Created full 24-domain folder architecture (`00_CORE_SYSTEM` through `23_CHANGELOG_AND_BACKUP`).
 - **Domain Documentation**: Generated individual, comprehensive `README.md` files for all 24 domains.
 - **Core Governance Documents**: Initialized architecture, roadmap, rulebook, catalogs, and policies.

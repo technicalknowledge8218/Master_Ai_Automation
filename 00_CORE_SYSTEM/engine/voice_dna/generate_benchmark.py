@@ -18,7 +18,7 @@ GEORGE_LALAJI_VOICE_ID = "JBFqnCBsd6RMkjVDRZzb" # George / Bill Boss
 
 OUT_DIR = r"F:\Master AI\00_CORE_SYSTEM\engine\voice_dna\offline_cloned_output"
 os.makedirs(OUT_DIR, exist_ok=True)
-ARTIFACT_DIR = r"C:\Users\Sangam\.gemini\antigravity\brain\d97bdd64-3973-442c-a0dd-850f28dc3c0d"
+ARTIFACT_DIR = r"<ARTIFACT_DIR>"
 
 dialogue = [
     {

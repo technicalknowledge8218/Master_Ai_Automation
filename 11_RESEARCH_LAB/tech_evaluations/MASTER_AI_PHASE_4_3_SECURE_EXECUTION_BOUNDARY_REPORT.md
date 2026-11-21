@@ -34,7 +34,7 @@ In Phase 4.3, we engineered and verified:
 ## 2. Git & Backup Verification
 
 ### 2.1 Git Repository State
-- **Workspace Root**: `C:\Users\Sangam\Desktop\Master AI`
+- **Workspace Root**: `<PROJECT_ROOT>`
 - **Starting Commit**: `caa5b79` (`feat(phase-4-2): security hardening, token authorization, ledger concurrency, and sandbox isolation`)
 - **Active Branch**: `phase-4-3-secure-execution-boundary`
 - **Parent Commit Verified**: Confirmed child of `caa5b79` on branch `phase-4-2-security-hardening`
@@ -200,13 +200,13 @@ Authored at `03_AI_AGENTS/approval_engine/trust_levels.py`:
 ## 9. Native Subagent Verification (Task 7)
 
 We empirically tested Google Antigravity's native subagent tool `invoke_subagent` without simulation:
-- **Invocation Call**: `invoke_subagent(TypeName="research", Role="Codebase Researcher", Model="flash_lite", Prompt="Empirical Native Subagent Verification: Inspect C:/Users/Sangam/Desktop/Master AI/00_CORE_SYSTEM...")`
+- **Invocation Call**: `invoke_subagent(TypeName="research", Role="Codebase Researcher", Model="flash_lite", Prompt="Empirical Native Subagent Verification: Inspect <PROJECT_ROOT>/00_CORE_SYSTEM...")`
 - **Assigned Worker ID**: `420e6d97-df7e-47a2-a6c4-83c6953c3ee5`
-- **Execution Log URI**: `file:///C:/Users/Sangam/.gemini/antigravity/brain/420e6d97-df7e-47a2-a6c4-83c6953c3ee5/.system_generated/logs/transcript.jsonl`
+- **Execution Log URI**: `file:///<ARTIFACT_DIR>/.system_generated/logs/transcript.jsonl`
 - **Received Response Payload**:
   ```
   Empirical Native Subagent Verification Report:
-  - C:/Users/Sangam/Desktop/Master AI/00_CORE_SYSTEM exists.
+  - <PROJECT_ROOT>/00_CORE_SYSTEM exists.
   - Directory listing (names only): adrs, config, dashboard, discovery_engine, learning_engine, protocols, registry, KNOWLEDGE_MANAGEMENT_POLICY.md, MASTER_AI_CONSTITUTION.md, PROJECT_IMPORT_POLICY.md, README.md, SYSTEM_INSTRUCTIONS.md.
   - Execution environment constraints: Windows PowerShell; read-only exploration access; gcloud CLI is not available/installed in PATH.
   - Data Agent Kit (DAK) setup / GCP services check: gcloud is not recognized, so GCP-dependent DAK tools are offline/unconfigured.
@@ -221,7 +221,7 @@ We empirically tested Google Antigravity's native subagent tool `invoke_subagent
 
 ## 10. Dedicated Boundary Test Suite Results (Task 8)
 
-Executed [test_execution_boundary.py](file:///C:/Users/Sangam/Desktop/Master%20AI/18_TESTING_AND_QA/test_suites/test_execution_boundary.py) covering 24 failure-mode tests:
+Executed [test_execution_boundary.py](file:///<USER_HOME>/Desktop/Master%20AI/18_TESTING_AND_QA/test_suites/test_execution_boundary.py) covering 24 failure-mode tests:
 
 ```
 === MASTER-AI PHASE 4.3 SECURE EXECUTION BOUNDARY TEST SUITE ===

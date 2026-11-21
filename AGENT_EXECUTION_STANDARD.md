@@ -130,7 +130,7 @@ Native Antigravity subagent invocation was empirically verified on 2026-11-17:
 - **Assigned Role**: `Codebase Researcher`
 - **Assigned Model**: `flash_lite`
 - **Conversation ID**: `420e6d97-df7e-47a2-a6c4-83c6953c3ee5`
-- **Log Absolute URI**: `file:///C:/Users/Sangam/.gemini/antigravity/brain/420e6d97-df7e-47a2-a6c4-83c6953c3ee5/.system_generated/logs/transcript.jsonl`
+- **Log Absolute URI**: `file:///<ARTIFACT_DIR>/.system_generated/logs/transcript.jsonl`
 - **Reported Result**: Subagent inspected `00_CORE_SYSTEM`, listed its 11 items (`adrs`, `config`, `dashboard`, `discovery_engine`, `learning_engine`, `protocols`, `registry`, `KNOWLEDGE_MANAGEMENT_POLICY.md`, `MASTER_AI_CONSTITUTION.md`, `PROJECT_IMPORT_POLICY.md`, `README.md`, `SYSTEM_INSTRUCTIONS.md`), verified read-only exploration constraints, and delivered a high-priority notification to the parent session.
 - **Verification**: Proven operational without simulation or mock wrappers.
 

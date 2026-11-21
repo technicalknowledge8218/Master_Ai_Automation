@@ -31,7 +31,7 @@ Rather than assuming security controls worked as intended, we conducted active a
 ## 2. Git & Backup Verification
 
 ### 2.1 Git Repository Verification
-- **Workspace Directory**: `C:\Users\Sangam\Desktop\Master AI`
+- **Workspace Directory**: `<PROJECT_ROOT>`
 - **Starting Branch**: `phase-4-3-secure-execution-boundary`
 - **Verified Starting Commit**: `1a2ce04` (`feat(phase-4-3): secure execution boundary, network isolation, git restrictions, and trust levels`)
 - **Verified Starting Tag**: `v0.4.3-secure-execution-boundary`
@@ -175,63 +175,63 @@ We independently invoked all seven specialist subagents using Antigravity's live
 
 ### Agent 1: AGT-001 `research_agent`
 - **Conversation ID**: `e363bc98-b453-44ee-9dac-fc9b2b6aa4d7`
-- **Transcript**: `file:///C:/Users/Sangam/.gemini/antigravity/brain/e363bc98-b453-44ee-9dac-fc9b2b6aa4d7/.system_generated/logs/transcript.jsonl`
+- **Transcript**: `file:///<ARTIFACT_DIR>/.system_generated/logs/transcript.jsonl`
 - **Received Response**:
   > `Identity: MASTER-AI Technical Research Agent`  
   > `Primary Domain: Official documentation investigation, package release histories, academic papers, and benchmark claims under strict anti-hallucination protocol.`  
-  > `Verification: C:/Users/Sangam/Desktop/Master AI/00_CORE_SYSTEM/MASTER_AI_CONSTITUTION.md exists and has been successfully verified.`
+  > `Verification: <PROJECT_ROOT>/00_CORE_SYSTEM/MASTER_AI_CONSTITUTION.md exists and has been successfully verified.`
 - **Classification**: **VERIFIED**
 
 ### Agent 2: AGT-002 `software_architect`
 - **Conversation ID**: `657eb2f7-54f1-4881-a258-572541d81795`
-- **Transcript**: `file:///C:/Users/Sangam/.gemini/antigravity/brain/657eb2f7-54f1-4881-a258-572541d81795/.system_generated/logs/transcript.jsonl`
+- **Transcript**: `file:///<ARTIFACT_DIR>/.system_generated/logs/transcript.jsonl`
 - **Received Response**:
-  > `Identity: MASTER-AI Software Architect. Primary Domain: Software Architecture, Clean Architecture, and Three-Tier Separation. Verification: C:/Users/Sangam/Desktop/Master AI/00_CORE_SYSTEM/adrs exists.`
+  > `Identity: MASTER-AI Software Architect. Primary Domain: Software Architecture, Clean Architecture, and Three-Tier Separation. Verification: <PROJECT_ROOT>/00_CORE_SYSTEM/adrs exists.`
 - **Classification**: **VERIFIED**
 
 ### Agent 3: AGT-003 `coding_agent`
 - **Conversation ID**: `570cd5f4-74ce-485f-a4f7-faec765c8345`
-- **Transcript**: `file:///C:/Users/Sangam/.gemini/antigravity/brain/570cd5f4-74ce-485f-a4f7-faec765c8345/.system_generated/logs/transcript.jsonl`
+- **Transcript**: `file:///<ARTIFACT_DIR>/.system_generated/logs/transcript.jsonl`
 - **Received Response**:
   > `Identity: MASTER-AI Subagent / Engineering & Science Assistant`  
   > `Primary Domain: Autonomous Software Engineering, Data Analysis & Code Automation within the MASTER-AI ecosystem.`  
-  > `Verification: C:/Users/Sangam/Desktop/Master AI/14_CODE_LIBRARY exists (True).`
+  > `Verification: <PROJECT_ROOT>/14_CODE_LIBRARY exists (True).`
 - **Classification**: **VERIFIED**
 
 ### Agent 4: AGT-004 `testing_agent`
 - **Conversation ID**: `9772db90-73a7-44b7-af84-20d20cccea5b`
-- **Transcript**: `file:///C:/Users/Sangam/.gemini/antigravity/brain/9772db90-73a7-44b7-af84-20d20cccea5b/.system_generated/logs/transcript.jsonl`
+- **Transcript**: `file:///<ARTIFACT_DIR>/.system_generated/logs/transcript.jsonl`
 - **Received Response**:
   > `Identity: MASTER-AI Testing Agent`  
   > `Primary Domain: Zero-defect quality gates, unit testing, integration suites, and end-to-end regression testing (Vitest, PyTest, Playwright).`  
-  > `Verification: C:/Users/Sangam/Desktop/Master AI/18_TESTING_AND_QA exists.`
+  > `Verification: <PROJECT_ROOT>/18_TESTING_AND_QA exists.`
 - **Classification**: **VERIFIED**
 
 ### Agent 5: AGT-005 `documentation_agent`
 - **Conversation ID**: `91603492-732d-4706-b42f-3ba99ee721f4`
-- **Transcript**: `file:///C:/Users/Sangam/.gemini/antigravity/brain/91603492-732d-4706-b42f-3ba99ee721f4/.system_generated/logs/transcript.jsonl`
+- **Transcript**: `file:///<ARTIFACT_DIR>/.system_generated/logs/transcript.jsonl`
 - **Received Response**:
   > `Identity: MASTER-AI Documentation Agent`  
   > `Primary Domain: Documentation, README manifests, API specifications, Architecture Decision Records (ADRs), and Markdown link/path verification across the 24 MASTER-AI domains.`  
-  > `Verification: C:/Users/Sangam/Desktop/Master AI/13_MARKDOWN exists (True).`
+  > `Verification: <PROJECT_ROOT>/13_MARKDOWN exists (True).`
 - **Classification**: **VERIFIED**
 
 ### Agent 6: AGT-006 `security_auditor`
 - **Conversation ID**: `efbc664d-3add-41f3-9ea4-02988f47a554`
-- **Transcript**: `file:///C:/Users/Sangam/.gemini/antigravity/brain/efbc664d-3add-41f3-9ea4-02988f47a554/.system_generated/logs/transcript.jsonl`
+- **Transcript**: `file:///<ARTIFACT_DIR>/.system_generated/logs/transcript.jsonl`
 - **Received Response**:
   > `Identity: MASTER-AI Security Auditor`  
   > `Primary Domain: Security Auditing, Vulnerability Assessment, Secret-Zero Enforcement, and OWASP Top 10 Risk Mitigation.`  
-  > `Verification: C:/Users/Sangam/Desktop/Master AI/19_SECURITY_AND_COMPLIANCE exists.`
+  > `Verification: <PROJECT_ROOT>/19_SECURITY_AND_COMPLIANCE exists.`
 - **Classification**: **VERIFIED**
 
 ### Agent 7: AGT-007 `capability_discovery_agent`
 - **Conversation ID**: `6afe9acf-9231-4635-9624-4e24ea3affe2`
-- **Transcript**: `file:///C:/Users/Sangam/.gemini/antigravity/brain/6afe9acf-9231-4635-9624-4e24ea3affe2/.system_generated/logs/transcript.jsonl`
+- **Transcript**: `file:///<ARTIFACT_DIR>/.system_generated/logs/transcript.jsonl`
 - **Received Response**:
   > `Identity: MASTER-AI Capability Discovery Agent`  
   > `Primary Domain: Workspace capability auditing, skill/tool discovery, and technological gap analysis`  
-  > `Verification: C:/Users/Sangam/Desktop/Master AI/01_KNOWLEDGE_ENGINE does not exist.` (Correctly verified that domain 01 is named `01_GLOBAL_RULES`).
+  > `Verification: <PROJECT_ROOT>/01_KNOWLEDGE_ENGINE does not exist.` (Correctly verified that domain 01 is named `01_GLOBAL_RULES`).
 - **Classification**: **VERIFIED**
 
 ---

@@ -28,7 +28,7 @@ Rather than merely creating more documentation or simulating agents through rena
 
 | Mandate | Verification Status | Concrete Evidence / Result |
 | :--- | :---: | :--- |
-| **Workspace Local Only** | **COMPLIANT** | All files, sandboxes, and runs confined strictly to `c:\Users\Sangam\Desktop\Master AI`. |
+| **Workspace Local Only** | **COMPLIANT** | All files, sandboxes, and runs confined strictly to `<PROJECT_ROOT>`. |
 | **Zero Global Modifications** | **COMPLIANT** | `%USERPROFILE%\.gemini\` inspected strictly read-only; zero bytes written to host config. |
 | **Preserve Phase 3.6 Work** | **COMPLIANT** | Phase 3.6 baseline `25fd42c` intact; all 18 Phase 3.6 regression tests passing (18/18). |
 | **No Master Branch Merge** | **COMPLIANT** | All Phase 4 work isolated on dedicated branch `phase-4-agent-ecosystem`. |

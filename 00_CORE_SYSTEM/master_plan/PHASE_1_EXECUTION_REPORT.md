@@ -1,7 +1,7 @@
 # MASTER AI — PHASE 1: FOUNDATIONAL INFRASTRUCTURE EXECUTION REPORT
 
 - **Project**: Master AI Autonomous Platform
-- **Workspace**: `C:\Users\Sangam\Desktop\Master AI`
+- **Workspace**: `<PROJECT_ROOT>`
 - **Active Git Branch**: `phase-1-foundation-infrastructure`
 - **Execution Date**: 2026-11-17
 - **Operating Environment**: Windows 11 Enterprise (64-bit AMD64)
@@ -97,12 +97,12 @@ During dependency evaluation, an environmental security constraint was investiga
 
 ## 6. Deliverables Created in Phase 1
 
-1. [ffmpeg_runner.py](file:///C:/Users/Sangam/Desktop/Master%20AI/16_VIDEO_LIBRARY/tools/ffmpeg_runner.py): Portable wrapper for static FFmpeg execution.
-2. [.env.example](file:///C:/Users/Sangam/Desktop/Master%20AI/.env.example): Version-controlled template for all platform configuration keys.
-3. [.env.local](file:///C:/Users/Sangam/Desktop/Master%20AI/.env.local): Workspace-local override configuration (git-ignored).
-4. [test_phase1_foundation.py](file:///C:/Users/Sangam/Desktop/Master%20AI/18_TESTING_AND_QA/test_suites/test_phase1_foundation.py): Automated smoke test suite.
-5. [.gitignore](file:///C:/Users/Sangam/Desktop/Master%20AI/.gitignore): Updated with vector database paths (`04_LLM_AND_AI/rag_systems/qdrant_db/`).
-6. [PHASE_1_EXECUTION_REPORT.md](file:///C:/Users/Sangam/Desktop/Master%20AI/00_CORE_SYSTEM/master_plan/PHASE_1_EXECUTION_REPORT.md): This report.
+1. [ffmpeg_runner.py](file:///<USER_HOME>/Desktop/Master%20AI/16_VIDEO_LIBRARY/tools/ffmpeg_runner.py): Portable wrapper for static FFmpeg execution.
+2. [.env.example](file:///<USER_HOME>/Desktop/Master%20AI/.env.example): Version-controlled template for all platform configuration keys.
+3. [.env.local](file:///<USER_HOME>/Desktop/Master%20AI/.env.local): Workspace-local override configuration (git-ignored).
+4. [test_phase1_foundation.py](file:///<USER_HOME>/Desktop/Master%20AI/18_TESTING_AND_QA/test_suites/test_phase1_foundation.py): Automated smoke test suite.
+5. [.gitignore](file:///<USER_HOME>/Desktop/Master%20AI/.gitignore): Updated with vector database paths (`04_LLM_AND_AI/rag_systems/qdrant_db/`).
+6. [PHASE_1_EXECUTION_REPORT.md](file:///<USER_HOME>/Desktop/Master%20AI/00_CORE_SYSTEM/master_plan/PHASE_1_EXECUTION_REPORT.md): This report.
 
 ---
 
