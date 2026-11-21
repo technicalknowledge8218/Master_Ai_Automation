@@ -107,15 +107,39 @@ def run_setup():
         print("🎉 सेटअप पूरा हुआ! अब आप मास्टर एआई शुरू कर सकते हैं:")
         print("   👉 टर्मिनल विज़ार्ड के लिए:  python run.py")
         print("   👉 वेब डैशबोर्ड के लिए:     bash start.sh  (ब्राउज़र: http://localhost:8080)")
-    elif selected_lang == "hinglish":
-        print("🎉 Setup Complete! Ab aap Master AI start kar sakte hain:")
-        print("   👉 Terminal Wizard ke liye:  python run.py")
-        print("   👉 Web Dashboard ke liye:    bash start.sh  (Browser: http://localhost:8080)")
-    else:
+        launch_prompt = "\n🚀 क्या आप अभी Localhost वेब डैशबोर्ड शुरू करना चाहते हैं? [Y/n] > "
+    elif selected_lang == "english":
         print("🎉 Setup Complete! You can now launch Master AI:")
         print("   👉 Terminal Wizard:  python run.py")
         print("   👉 Web Dashboard:    bash start.sh  (Browser: http://localhost:8080)")
+        launch_prompt = "\n🚀 Launch Localhost Web Dashboard now? [Y/n] > "
+    else:
+        print("🎉 Setup Complete! Ab aap Master AI start kar sakte hain:")
+        print("   👉 Terminal Wizard ke liye:  python run.py")
+        print("   👉 Web Dashboard ke liye:    bash start.sh  (Browser: http://localhost:8080)")
+        launch_prompt = "\n🚀 Localhost Web Dashboard abhi start karein? [Y/n] > "
     print("=" * 65 + "\n")
+
+    try:
+        launch_now = input(launch_prompt).strip().lower()
+    except (EOFError, KeyboardInterrupt):
+        launch_now = "y"
+
+    if launch_now in ["", "y", "yes"]:
+        import shutil
+        if shutil.which("termux-open-url"):
+            try:
+                subprocess.Popen(["termux-open-url", "http://localhost:8080"])
+            except Exception:
+                pass
+        elif shutil.which("xdg-open"):
+            try:
+                subprocess.Popen(["xdg-open", "http://localhost:8080"])
+            except Exception:
+                pass
+
+        server_script = WORKSPACE_ROOT / "00_CORE_SYSTEM" / "dashboard" / "server.py"
+        subprocess.call([sys.executable, str(server_script)])
 
 
 if __name__ == "__main__":
